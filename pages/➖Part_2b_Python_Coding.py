@@ -68,7 +68,7 @@ with tab1:
             # Move to the next question automatically
             st.session_state.current_question = None
             st.session_state.waiting_for_next = True
-            st.experimental_rerun()  # Force an immediate rerun to display the next question
+            st.rerun()  # Force an immediate rerun to display the next question
 
     # Display final score when quiz is finished
     if st.session_state.quiz_finished:
