@@ -80,6 +80,43 @@ B. Pass
 C. Stop
 D. Break
 
+# Warming-up questions
+
+Python Fundamentals - Questions About Python Itself
+Question Eleven:
+Who created Python?
+A. Guido van Rossum
+B. Dennis Ritchie
+C. James Gosling
+D. Bjarne Stroustrup
+
+Question Twelve:
+In which year was Python first released?
+A. Nineteen ninety-one
+B. Two thousand
+C. Nineteen eighty-five
+D. Two thousand five
+
+Question Thirteen:
+Python is named after which of the following?
+A. A type of snake
+B. A British comedy show
+C. A Greek mythological figure
+D. A computer scientist
+
+Question Fourteen:
+Which of the following best describes Python?
+A. A compiled programming language
+B. A low-level programming language
+C. A high-level interpreted programming language
+D. A machine language
+
+Question Fifteen:
+Which organization manages the development of Python?
+A. Python Software Foundation
+B. Microsoft Corporation
+C. Oracle Corporation
+D. World Wide Web Consortium
 
 
 
