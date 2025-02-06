@@ -75,7 +75,7 @@ with tab1:
         st.success(f"Quiz Complete! You scored {st.session_state.score} out of 5.")
         
         # Add a restart button
-        if st.button("Restart Quiz"):
+        if st.button("Start/Next"):
             st.session_state.asked_questions = []
             st.session_state.score = 0
             st.session_state.quiz_finished = False
