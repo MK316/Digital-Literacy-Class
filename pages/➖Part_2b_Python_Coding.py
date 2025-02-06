@@ -37,8 +37,8 @@ with tab1:
     # Display introduction audio
     st.audio(AUDIO_FILES["intro"], format="audio/mp3")
 
-    # Start button logic
-    if st.button("Start/Continue Quiz") or st.session_state.waiting_for_next:
+    # Start button logic (only show if quiz is not finished)
+    if not st.session_state.quiz_finished and st.button("Start Quiz"):
         if len(st.session_state.asked_questions) < 5:
             # Select a random question that hasn't been asked yet
             remaining_questions = list(set(st.session_state.questions) - set(st.session_state.asked_questions))
@@ -73,6 +73,14 @@ with tab1:
     # Display final score when quiz is finished
     if st.session_state.quiz_finished:
         st.success(f"Quiz Complete! You scored {st.session_state.score} out of 5.")
+        
+        # Add a restart button
+        if st.button("Restart Quiz"):
+            st.session_state.asked_questions = []
+            st.session_state.score = 0
+            st.session_state.quiz_finished = False
+            st.session_state.current_question = None
+            st.experimental_rerun()  # Restart the quiz immediately
 
 # Tab 2: Placeholder for additional content
 with tab2:
@@ -82,4 +90,4 @@ with tab2:
 # Tab 3: Placeholder for additional content
 with tab3:
     st.header("Tab 3 Content")
-    st.write("This")
+    st.write("This is where you can add content for the third tab.")
