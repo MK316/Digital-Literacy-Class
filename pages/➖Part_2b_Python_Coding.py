@@ -49,11 +49,11 @@ with tab1:
             st.session_state.quiz_finished = True  # Quiz complete
 
     # Display the current question
-    if (
-        "current_question" in st.session_state 
-        and st.session_state.current_question is not None 
-        and not st.session_state.quiz_finished
-    ):
+        if (
+            "current_question" in st.session_state 
+            and st.session_state.current_question is not None 
+            and not st.session_state.quiz_finished
+        ):
     st.audio(AUDIO_FILES.get(st.session_state.current_question, ""), format="audio/mp3")
 
         
