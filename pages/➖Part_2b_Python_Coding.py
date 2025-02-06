@@ -82,4 +82,4 @@ with tab2:
 # Tab 3: Placeholder for additional content
 with tab3:
     st.header("Tab 3 Content")
-    st.write("This
+    st.write("This")
