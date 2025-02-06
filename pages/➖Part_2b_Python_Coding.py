@@ -27,7 +27,8 @@ if "questions" not in st.session_state:
     st.session_state.asked_questions = []
     st.session_state.score = 0
     st.session_state.quiz_finished = False
-    st.session_state.current_question = None  # Ensure a default state
+    st.session_state.current_question = None
+    st.session_state.waiting_for_next = False  # Track when waiting for a new question
 
 # Tab 1: Python Audio Quiz
 with tab1:
@@ -37,7 +38,7 @@ with tab1:
     st.audio(AUDIO_FILES["intro"], format="audio/mp3")
 
     # Start button logic
-    if st.button("Start Quiz"):
+    if st.button("Start/Continue Quiz") or st.session_state.waiting_for_next:
         if len(st.session_state.asked_questions) < 5:
             # Select a random question that hasn't been asked yet
             remaining_questions = list(set(st.session_state.questions) - set(st.session_state.asked_questions))
@@ -45,27 +46,29 @@ with tab1:
                 selected_question = random.choice(remaining_questions)
                 st.session_state.asked_questions.append(selected_question)
                 st.session_state.current_question = selected_question
+                st.session_state.waiting_for_next = False  # Reset the waiting flag
             else:
                 st.session_state.quiz_finished = True  # All questions answered
         else:
             st.session_state.quiz_finished = True  # Quiz complete
 
     # Display the current question if one is selected
-    if (
-        st.session_state.current_question 
-        and not st.session_state.quiz_finished
-    ):
+    if st.session_state.current_question and not st.session_state.quiz_finished:
         st.audio(AUDIO_FILES.get(st.session_state.current_question, ""), format="audio/mp3")
 
         # Display answer choices
         options = ["A", "B", "C", "D"]
-        user_choice = st.radio("Select your answer:", options)
+        user_choice = st.radio("Select your answer:", options, key=st.session_state.current_question)
 
         if st.button("Submit Answer"):
             correct_answer = st.session_state.correct_answers[st.session_state.current_question]
             if user_choice == correct_answer:
                 st.session_state.score += 1  # Increase score if correct
-            st.session_state.current_question = None  # Clear current question
+            
+            # Move to the next question automatically
+            st.session_state.current_question = None
+            st.session_state.waiting_for_next = True
+            st.experimental_rerun()  # Force an immediate rerun to display the next question
 
     # Display final score when quiz is finished
     if st.session_state.quiz_finished:
@@ -79,4 +82,4 @@ with tab2:
 # Tab 3: Placeholder for additional content
 with tab3:
     st.header("Tab 3 Content")
-    st.write("This is where you can add content for the third tab.")
+    st.write("This
