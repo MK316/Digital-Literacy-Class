@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import calendar
 from datetime import datetime
+import pandas as pd
+
 
 # Include custom CSS to justify text in the markdown
 # Include custom CSS to justify text in the markdown
@@ -85,7 +87,6 @@ with tabs[3]:
     }
 
     # Convert to DataFrame and display as a table
-    import pandas as pd
     df_assignments = pd.DataFrame(assignments_data)
 
     # Display table
