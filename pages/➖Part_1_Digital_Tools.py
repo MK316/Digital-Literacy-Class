@@ -5,7 +5,7 @@ def main():
     st.title('Online Resources')
     
     # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs(["💻 Coding platforms", " 📌 Digital tools" ,"🍒 Customized apps"])
+    tab1, tab2, tab3 = st.tabs(["💻 Coding platforms", " 📌 Digital tools" ,"🍒 Customized apps"])
     
     with tab1:
         st.markdown('#### Python coding & repositories')
