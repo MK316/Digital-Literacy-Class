@@ -97,15 +97,15 @@ with tabs[3]:
 with tabs[4]:
     st.header("QR Links")
 
-    st.write("Padlet - sharing files inclass")
+    st.write("1. Padlet - sharing files inclass")
     st.image("https://github.com/MK316/Digital-Literacy-Class/raw/main/images/padlet-dl.jpg")
     st.markdown("---")
     
-    st.write("Padlet - https://mk316.github.io")
+    st.write("2. MK316 Home - https://mk316.github.io")
     st.image("https://github.com/MK316/Digital-Literacy-Class/raw/main/images/mkhome.jpg")
     st.markdown("---")
 
-    st.write("Padlet - Digital Literacy Home")
+    st.write("3. Class - Digital Literacy Home")
     st.image("https://github.com/MK316/Digital-Literacy-Class/raw/main/images/dl-qr.jpg")
     st.markdown("---")
 
