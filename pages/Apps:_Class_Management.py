@@ -137,8 +137,19 @@ with tabs[2]:
         else:
             st.error("Please upload a CSV file before submitting.")
 
-# Text-to-Speech tab
+# Github
+
 with tabs[3]:
+    st.markdown("#### Github IDs")
+    st.markdown("[Github IDs](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing): Group members, Google Drive")
+
+    # Button to open GitHub ID page
+    if st.button("Open GitHub ID Page"):
+        st.markdown(f'<meta http-equiv="refresh" content="0;url=YOUR_GITHUB_ID_PAGE_URL">', unsafe_allow_html=True)
+
+
+# Text-to-Speech tab
+with tabs[4]:
     st.subheader("Text-to-Speech Converter (using Google TTS")
     text_input = st.text_area("Enter the text you want to convert to speech:")
     language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
@@ -173,7 +184,7 @@ with tabs[3]:
         st.audio(speech.getvalue(), format='audio/mp3')
 
 # Word Cloud tab
-with tabs[4]:
+with tabs[5]:
     st.subheader("🌌 Word Cloud Generator")
 
     # Input text for generating the word cloud
