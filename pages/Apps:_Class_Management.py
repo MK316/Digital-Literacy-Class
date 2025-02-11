@@ -145,7 +145,7 @@ with tabs[3]:
 
     # Button to open GitHub ID page
     if st.button("Open GitHub ID Page"):
-        st.markdown(f'<meta http-equiv="refresh" content="0;url=YOUR_GITHUB_ID_PAGE_URL">', unsafe_allow_html=True)
+        st.markdown(f'<meta http-equiv="refresh" content="0;url=https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing">', unsafe_allow_html=True)
 
 
 # Text-to-Speech tab
