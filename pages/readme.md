@@ -1,4 +1,4 @@
-#### 🌱 **Course Weekly Plan**
+#### 🌱 **Weekly Plan**
 
 #### Digital Literacy & English Education
 
