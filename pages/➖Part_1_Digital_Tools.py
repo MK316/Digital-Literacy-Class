@@ -8,7 +8,7 @@ def main():
     tab1, tab2, tab3, tab4 = st.tabs(["💻 Coding platforms", " 📌 Digital tools" ,"🍒 Customized apps","💿 Pronunciation Lessons"])
     
     with tab1:
-        st.header('Python coding & repositories')
+        st.markdown('#### Python coding & repositories')
         st.caption("Useful sites to start Python coding and app development")
         st.markdown("---")
         # Dictionary of useful links and their descriptions
