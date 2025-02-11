@@ -43,6 +43,7 @@ def main():
             st.markdown(info['description'])
             st.markdown(f"[Visit the site]({info['url']})")
             st.markdown(info['site'])
+            st.markdown("---")
 
             st.write(" ")  # Add some space between entries
 
