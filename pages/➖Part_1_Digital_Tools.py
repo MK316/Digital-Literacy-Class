@@ -96,7 +96,7 @@ def main():
             st.write(" ")  # Add some space between entries
     
     with tab3:
-        st.header('Customized Applications: examples')
+        st.markdown('#### 🌱 Customized Applications: examples')
         # CSS to style the markdown links as buttons
         button_style = """
         <style>
