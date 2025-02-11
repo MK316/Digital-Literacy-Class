@@ -70,7 +70,7 @@ with tabs[2]:
     """)
 # Content for the Assignments tab
 with tabs[3]:
-    st.markdown("### 📋 Assignments Overview")
+    st.markdown("### 📋 Assignments Details")
 
     # Define the assignment table with detail instruction links
     assignments_data = {
@@ -78,11 +78,11 @@ with tabs[3]:
         "Due Date": ["TBA", "TBA", "TBA", "TBA", "TBA"],
         "Topic": ["TBA", "TBA", "TBA", "TBA", "TBA"],
         "Instruction Link": [
-            "[A1 Instructions](https://github.com/yourusername/yourrepo/blob/main/A1.md)",
-            "[A2 Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
-            "[A3 Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
-            "[A4 Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
-            "[A5 Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
+            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A1.md)",
+            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
+            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
+            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
+            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
         ]
     }
 
