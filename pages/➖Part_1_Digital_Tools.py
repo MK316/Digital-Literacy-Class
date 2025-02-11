@@ -5,11 +5,11 @@ def main():
     st.title('Online Resources')
     
     # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs(["💻 Online materials", " 📌 Digital tools" ,"🍒 Customized apps","💿 Pronunciation Lessons"])
+    tab1, tab2, tab3, tab4 = st.tabs(["💻 Coding platforms", " 📌 Digital tools" ,"🍒 Customized apps","💿 Pronunciation Lessons"])
     
     with tab1:
-        st.header('Classroom Connections')
-        st.write("Web links commonly used")
+        st.header('Python coding & repositories')
+        st.caption("Useful sites to start Python coding and app development")
         st.markdown("---")
         # Dictionary of useful links and their descriptions
         resources = {
@@ -17,17 +17,17 @@ def main():
                 "url": "https://rec.ac.kr/gnu",
                 "description": "GNU 학습시스템"
             },
-            "🔎 Padlet for activities": {
-                "url": "https://padlet.com/mirankim316/S25Engpro",
-                "description": "Files to upload and share"
+            "🔎 Google Colab": {
+                "url": "https://colab.research.google.com/",
+                "description": "Write code to run online"
             },
-            "🌈 TED": {
-                "url": "https://ted.com",
-                "description": "Listen to public talks (& Choose your final presentation)"
+            "🔎 Github": {
+                "url": "https://github.com",
+                "description": "Code repository"
             },
-            "Dictionary.com": {
-                "url": "https://dictionary.com",
-                "description": "Online dictionary."
+            "🔎 ChatGPT": {
+                "url": "https://openai.com/index/chatgpt/",
+                "description": "Generative AI."
             }
         }
 
