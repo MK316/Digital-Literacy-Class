@@ -58,6 +58,10 @@ def main():
                 "url": "https://youglish.com/",
                 "description": "Use YouTube videos to practice pronunciation in context and see how words are used in real-life speeches."
             },
+            "🔎 PlayPhrase": {
+                "url": "https://www.playphrase.me/",
+                "description": "Search and play English phrases."
+            },
             "🔎 Speechnotes": {
                 "url": "https://speechnotes.co",
                 "description": "a web-based voice recognition tool that transforms speech into text, perfect for students and professionals."
@@ -65,7 +69,23 @@ def main():
             "🔎 Elevenlabs": {
                 "url": "https://elevenlabs.io",
                 "description": "A voice synthesis platform that enables realistic and customizable voice generation for various applications."
-            }
+            },
+            "🔎 SUNO": {
+                "url": "https://suno.io",
+                "description": "A music synthesis platform that generates various music genres."
+            },  
+            "🔎 AhaSlides": {
+                "url": "https://presenter.ahaslides.com/apps/home",
+                "description": "A clouding presentation platform with on spot survey and data sharing."
+            },
+            "🔎 Invideo": {
+                "url": "https://invideo.io/",
+                "description": "A Text-to-Video generating AI."
+            },
+            "🔎 Skybox AI": {
+                "url": "https://skybox.blockadelabs.com/",
+                "description": "A 360 degree worlds from text."
+            },
         }
 
         # Display links and descriptions
