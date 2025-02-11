@@ -18,5 +18,5 @@
 |  W12    |5/19, 21|  Group work  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
 |  W13    |5/26, 28|  Group work | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
 |  W14    |6/2, 5|  Group work |**Final Project Preview** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       |
-|  W15    |6/9, 11|   Group work | TBA | **Final Project Presentation** |
+|  W15    |6/9, 11|   Group work |**Final Project Presentation** |  |
 |  W16    |6/16, 18|  | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       |
