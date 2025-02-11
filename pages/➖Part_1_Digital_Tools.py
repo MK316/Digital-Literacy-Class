@@ -2,7 +2,7 @@ import streamlit as st
 import webbrowser
 
 def main():
-    st.title('Online Resources')
+    st.title('Digital Tools')
     
     # Create tabs
     tab1, tab2, tab3 = st.tabs(["💻 Coding platforms", " 📌 Digital tools" ,"🍒 Customized apps"])
