@@ -40,9 +40,10 @@ def main():
         # Display links and descriptions
         for name, info in resources.items():
             st.markdown(f"##### {name}")
-            st.markdown(f"[site]({info['url']})")
-            st.markdown(info['site'])
             st.markdown(info['description'])
+            st.markdown(f"[Visit the site]({info['url']})")
+            st.markdown(info['site'])
+
             st.write(" ")  # Add some space between entries
 
 
