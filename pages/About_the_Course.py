@@ -68,9 +68,30 @@ with tabs[2]:
     """)
 # Content for the Assignments tab
 with tabs[3]:
-    st.header("Assignments")
-    st.write("List and detail the assignments for the course here, providing due dates, submission guidelines, and grading criteria.")
+    st.markdown("### 📋 Assignments Overview")
 
+    # Define the assignment table with detail instruction links
+    assignments_data = {
+        "ID": ["1", "2", "3", "4", "5"],
+        "Due Date": ["TBA", "TBA", "TBA", "TBA", "TBA"],
+        "Topic": ["TBA", "TBA", "TBA", "TBA", "TBA"],
+        "Instruction Link": [
+            "[A1 Instructions](https://github.com/yourusername/yourrepo/blob/main/A1.md)",
+            "[A2 Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
+            "[A3 Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
+            "[A4 Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
+            "[A5 Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
+        ]
+    }
+
+    # Convert to DataFrame and display as a table
+    import pandas as pd
+    df_assignments = pd.DataFrame(assignments_data)
+
+    # Display table
+    st.markdown(df_assignments.to_markdown(index=False), unsafe_allow_html=True)
+
+    
 # Content for the Links tab
 with tabs[4]:
     st.header("Links")
