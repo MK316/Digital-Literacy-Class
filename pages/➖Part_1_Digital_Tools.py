@@ -13,10 +13,6 @@ def main():
         st.markdown("---")
         # Dictionary of useful links and their descriptions
         resources = {
-            "🔎 GNU LMS": {
-                "url": "https://rec.ac.kr/gnu",
-                "description": "GNU 학습시스템"
-            },
             "🔎 Google Colab": {
                 "url": "https://colab.research.google.com/",
                 "description": "Write code to run online"
@@ -28,6 +24,10 @@ def main():
             "🔎 ChatGPT": {
                 "url": "https://openai.com/index/chatgpt/",
                 "description": "Generative AI."
+                },
+            "🔎 GNU LMS": {
+                "url": "https://rec.ac.kr/gnu",
+                "description": "GNU 학습시스템"
             }
         }
 
