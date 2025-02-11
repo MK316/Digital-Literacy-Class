@@ -4,3 +4,4 @@ numpy
 gtts
 tabulate
 matplotlib
+qrcode
