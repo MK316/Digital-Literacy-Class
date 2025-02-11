@@ -2,7 +2,7 @@
 
 # Course Schedule: Digital Literacy & Python for Language Education
 
-| Week | Date(s) | Mondays | Wednesdays | Acts.&Assigns. |
+| Week | Date(s) | Mondays (1 hr) | Wednesdays (2hrs) | Acts.&Assigns. |
 |------|------|----------|--------|-------|
 |  W01    |3/5      || **Introduction: Digital Literacy** <br> Overview of the course goals. <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** |
 |  W02    |3/10, 12| Group work | **Exploring Digital Tools** <br> Introduction to useful digital tools. <br> Hands-on practice: Digital tools to share. |       |
