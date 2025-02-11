@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 st.markdown("##### Weekly schedule Spring 2025")
 
