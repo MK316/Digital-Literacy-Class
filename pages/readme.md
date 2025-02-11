@@ -1,6 +1,6 @@
-🌱 **Course Schedule**
+#### 🌱 **Course Weekly Plan**
 
-#### Digital Literacy & Python for Language Education
+#### Digital Literacy & English Education
 
 | Week | Date(s) | Mondays (1 hr) | Wednesdays (2 hrs) | Acts.&Assigns. |
 |------|------|----------|--------|-------|
