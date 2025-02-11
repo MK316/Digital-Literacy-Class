@@ -27,7 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Create tabs for different sections of the course
-tabs = st.tabs(["🍐 Course Overview", "🍓 Schedule", "🍏 Evaluation", "🍒 Assignments", "🍋 QR Links", "📆 Calendar"])
+tabs = st.tabs(["🍐 Course Overview", "🍏 Evaluation", "🍒 Assignments", "🍋 QR Links", "📆 Calendar"])
 
 # Content for the Course Overview tab
 with tabs[0]:
@@ -41,25 +41,9 @@ with tabs[0]:
     Students will gain hands-on experience in coding, enabling them to create customized, interactive language learning tools. This approach aims to empower educators to not only navigate but also innovate within the digital era of language teaching. By the end of the course, participants will be adept at integrating coding skills in pedagogically sound ways, enhancing both their teaching practices and their students’ learning experiences.
     </div>
     """, unsafe_allow_html=True)
-
-# Content for the Schedule tab
-with tabs[1]:
-    st.caption("Spring 2025")
-    # URL of the raw markdown file on GitHub
-    markdown_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/pages/readme.md"
-    
-    try:
-        response = requests.get(markdown_url)
-        response.raise_for_status()  # Raises an HTTPError for bad responses
-        markdown_content = response.text
-        st.markdown(markdown_content, unsafe_allow_html=True)
-    except requests.exceptions.HTTPError as err:
-        st.error(f"Failed to retrieve Markdown content: {err}")
-    except requests.exceptions.RequestException as e:
-        st.error(f"Request failed: {e}")
         
 # Content for the Evaluation tab
-with tabs[2]:
+with tabs[1]:
     st.header("Evaluation")
     st.markdown("""
     - Attendance: 10%
@@ -69,7 +53,7 @@ with tabs[2]:
 
     """)
 # Content for the Assignments tab
-with tabs[3]:
+with tabs[2]:
     st.markdown("### 📋 Assignments Details")
 
     # Define the assignment table with detail instruction links
@@ -94,7 +78,7 @@ with tabs[3]:
 
     
 # Content for the Links tab
-with tabs[4]:
+with tabs[3]:
     st.header("QR Links")
 
     st.write("1. Padlet - sharing files inclass")
@@ -110,7 +94,7 @@ with tabs[4]:
     st.markdown("---")
 
 # Content for the Calendar tab
-with tabs[5]:
+with tabs[4]:
     # Dropdown for selecting a month
     month_option = st.selectbox("Select a Month", options=["March", "April", "May", "June"], index=0)
     # Dictionary to map month names to their corresponding numbers
