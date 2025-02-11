@@ -13,14 +13,16 @@ def main():
         st.markdown("---")
         # Dictionary of useful links and their descriptions
         resources = {
-            "🔎 Google Colab": {
-                "url": "https://colab.research.google.com/",
-                "description": "Write code to run online"
-            },
             "🔎 Github": {
                 "url": "https://github.com",
                 "description": "Code repository"
             },
+            
+            "🔎 Google Colab": {
+                "url": "https://colab.research.google.com/",
+                "description": "Write code to run online"
+            },
+
             "🔎 ChatGPT": {
                 "url": "https://openai.com/index/chatgpt/",
                 "description": "Generative AI."
