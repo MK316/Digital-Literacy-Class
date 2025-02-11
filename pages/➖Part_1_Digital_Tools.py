@@ -15,20 +15,24 @@ def main():
         resources = {
             "🔎 Github": {
                 "url": "https://github.com",
+                "site": "https://github.com",
                 "description": "Code repository"
             },
             
             "🔎 Google Colab": {
                 "url": "https://colab.research.google.com/",
+                "site": "https://colab.research.google.com/",
                 "description": "Write code to run online"
             },
 
             "🔎 ChatGPT": {
                 "url": "https://openai.com/index/chatgpt/",
+                "site": "https://openai.com/index/chatgpt/",
                 "description": "Generative AI."
                 },
             "🔎 GNU LMS": {
                 "url": "https://rec.ac.kr/gnu",
+                "site": "https://rec.ac.kr/gnu",
                 "description": "GNU 학습시스템"
             }
         }
@@ -37,6 +41,7 @@ def main():
         for name, info in resources.items():
             st.markdown(f"##### {name}")
             st.markdown(f"[Visit the site]({info['url']})")
+            st.markdown(info['site'])
             st.markdown(info['description'])
             st.write(" ")  # Add some space between entries
 
