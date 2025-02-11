@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
 
-st.markdown("##### Weekly schedule Spring 2025")
-
 # URL of the raw markdown file on GitHub
 markdown_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/pages/readme.md"
     
