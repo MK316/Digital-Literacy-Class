@@ -27,7 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Create tabs for different sections of the course
-tabs = st.tabs(["🍐 Course Overview", "🍓 Schedule", "🍏 Evaluation", "🍒 Assignments", "🍋 Links", "📆 Calendar"])
+tabs = st.tabs(["🍐 Course Overview", "🍓 Schedule", "🍏 Evaluation", "🍒 Assignments", "🍋 QR Links", "📆 Calendar"])
 
 # Content for the Course Overview tab
 with tabs[0]:
@@ -95,8 +95,19 @@ with tabs[3]:
     
 # Content for the Links tab
 with tabs[4]:
-    st.header("Links")
-    st.write("Provide useful links here. This could include additional reading materials, online resources, and related external websites.")
+    st.header("QR Links")
+
+    st.write("Padlet - sharing files inclass")
+    st.image("https://github.com/MK316/Digital-Literacy-Class/blob/main/images/padlet-dl.jpg")
+    st.markdown("---")
+    
+    st.write("Padlet - https://mk316.github.io")
+    st.image("https://github.com/MK316/Digital-Literacy-Class/blob/main/images/mkhome.jpg")
+    st.markdown("---")
+
+    st.write("Padlet - Digital Literacy Home")
+    st.image("https://github.com/MK316/Digital-Literacy-Class/blob/main/images/dl-qr.jpg")
+    st.markdown("---")
 
 # Content for the Calendar tab
 with tabs[5]:
