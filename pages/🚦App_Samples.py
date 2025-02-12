@@ -14,9 +14,9 @@ with tab1:
     url3 = "https://example.com/app3"
 
     # Create links to different applications
-    st.markdown(f"[Go to Application 1: Idiom Quiz]({url1})", unsafe_allow_html=True)
-    st.markdown(f"[Go to Application 2]({url2})", unsafe_allow_html=True)
-    st.markdown(f"[Go to Application 3]({url3})", unsafe_allow_html=True)
+    st.markdown(f"❄️ [Go to Application 1: Idiom Quiz]({url1})", unsafe_allow_html=True)
+    st.markdown(f"❄️ [Go to Application 2]({url2})", unsafe_allow_html=True)
+    st.markdown(f"❄️ [Go to Application 3]({url3})", unsafe_allow_html=True)
 
 # Second and third tabs content
 with tab2:
