@@ -5,29 +5,18 @@ tab1, tab2, tab3 = st.tabs(["Applications", "Tab 2", "Tab 3"])
 
 # First tab content
 with tab1:
-    st.header("Example Applications to develop")
-    st.subheader("Click a button to go to the respective application:")
+    st.header("Welcome to the Applications Tab")
+    st.subheader("Please click a link to go to the respective application:")
 
     # You can replace these URLs with the actual application links you want to use
     url1 = "https://idiomquiz.streamlit.app/"
     url2 = "https://example.com/app2"
     url3 = "https://example.com/app3"
 
-    # Create buttons to link to different applications
-    if st.button("Go to Application 1: Idiom practice example"):
-        st.write(f"You are being redirected to Application 1.")
-        st.rerun()
-        st.experimental_singleton(f"window.location.href = '{url1}';")
-        
-    if st.button("Go to Application 2"):
-        st.write(f"You are being redirected to Application 2.")
-        st.experimental_rerun()
-        st.experimental_singleton(f"window.location.href = '{url2}';")
-        
-    if st.button("Go to Application 3"):
-        st.write(f"You are being redirected to Application 3.")
-        st.experimental_rerun()
-        st.experimental_singleton(f"window.location.href = '{url3}';")
+    # Create links to different applications
+    st.markdown(f"[Go to Application 1]({url1})", unsafe_allow_html=True)
+    st.markdown(f"[Go to Application 2]({url2})", unsafe_allow_html=True)
+    st.markdown(f"[Go to Application 3]({url3})", unsafe_allow_html=True)
 
 # Second and third tabs content
 with tab2:
@@ -37,4 +26,7 @@ with tab2:
 with tab3:
     st.header("This is Tab 3")
     st.write("Content for Tab 3 goes here.")
+
+    
+
 
