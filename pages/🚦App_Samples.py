@@ -5,7 +5,7 @@ tab1, tab2, tab3 = st.tabs(["Applications", "Tab 2", "Tab 3"])
 
 # First tab content
 with tab1:
-    st.header("Welcome to the Applications Tab")
+    st.header("⛳ Sample Applications to Develop")
     st.subheader("Please click a link to go to the respective application:")
 
     # You can replace these URLs with the actual application links you want to use
@@ -14,7 +14,7 @@ with tab1:
     url3 = "https://example.com/app3"
 
     # Create links to different applications
-    st.markdown(f"[Go to Application 1]({url1})", unsafe_allow_html=True)
+    st.markdown(f"[Go to Application 1: Idiom Quiz]({url1})", unsafe_allow_html=True)
     st.markdown(f"[Go to Application 2]({url2})", unsafe_allow_html=True)
     st.markdown(f"[Go to Application 3]({url3})", unsafe_allow_html=True)
 
