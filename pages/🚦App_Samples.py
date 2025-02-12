@@ -5,8 +5,8 @@ tab1, tab2, tab3 = st.tabs(["Applications", "Tab 2", "Tab 3"])
 
 # First tab content
 with tab1:
-    st.header("⛳ Sample Applications to Develop")
-    st.subheader("Please click a link to go to the respective application:")
+    st.markdown("### ⛳ Sample Applications to Develop")
+    st.caption("Click a link to go to the respective application:")
 
     # You can replace these URLs with the actual application links you want to use
     url1 = "https://idiomquiz.streamlit.app/"
