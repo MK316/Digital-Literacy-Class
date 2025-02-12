@@ -16,7 +16,7 @@ with tab1:
     # Create buttons to link to different applications
     if st.button("Go to Application 1: Idiom practice example"):
         st.write(f"You are being redirected to Application 1.")
-        st.experimental_rerun()
+        st.rerun()
         st.experimental_singleton(f"window.location.href = '{url1}';")
         
     if st.button("Go to Application 2"):
