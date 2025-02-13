@@ -4,7 +4,7 @@ import streamlit as st
 tab1, tab2, tab3 = st.tabs(["Applications", "link app", "Tab 3"])
 
 def create_clickable_image(audio_file, image_file):
-    # HTML and JavaScript to embed the audio and make the image clickable
+    # Updated HTML with debugging and error handling in JavaScript
     html_str = f"""
     <html>
     <body>
@@ -13,12 +13,19 @@ def create_clickable_image(audio_file, image_file):
       <source src="{audio_file}" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    <!-- Image element -->
-    <img src="{image_file}" alt="Play Audio" onclick="document.getElementById('myAudio').play();" style="cursor: pointer;" width="300"/>
+    <!-- Image element with onclick JavaScript to play audio and log actions -->
+    <img src="{image_file}" alt="Play Audio" onclick="playAudio()" style="cursor: pointer;" width="300"/>
+    <script>
+    function playAudio() {{
+        var audio = document.getElementById('myAudio');
+        audio.play().then(() => console.log('Audio playing...')).catch(e => console.error('Error playing audio:', e));
+    }}
+    </script>
     </body>
     </html>
     """
     return html_str
+
 
 
 # First tab content
@@ -36,7 +43,7 @@ with tab1:
     st.markdown(f"❄️ [Go to Application 2]({url2})", unsafe_allow_html=True)
     st.markdown(f"❄️ [Go to Application 3]({url3})", unsafe_allow_html=True)
 
-# Second and third tabs content
+
 with tab2:
     st.header("Interactive Audio")
     st.write("Click the image below to play the audio:")
