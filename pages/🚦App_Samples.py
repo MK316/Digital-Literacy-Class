@@ -19,7 +19,7 @@ with tab1:
     st.markdown(f"❄️ [Go to Application 3]({url3})", unsafe_allow_html=True)
 
 with tab2:
-    st.header("Interactive Audio")
+    st.header("Interactive Audio (doesn't work for now")
     st.write("Click the image below to play the audio:")
 
     # Paths to your audio and image files
