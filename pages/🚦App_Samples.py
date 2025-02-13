@@ -1,7 +1,27 @@
 import streamlit as st
 
+def create_clickable_image(audio_file, image_file):
+    # HTML and JavaScript to embed the audio and make the image clickable
+    html_str = f"""
+    <html>
+    <body>
+    <!-- Audio element -->
+    <audio id="myAudio">
+      <source src="{audio_file}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Image element -->
+    <img src="{image_file}" alt="Play Audio" onclick="document.getElementById('myAudio').play();" style="cursor: pointer;" width="300"/>
+    </body>
+    </html>
+    """
+    return html_str
+
+
+
+
 # Create tabs
-tab1, tab2, tab3 = st.tabs(["Applications", "Tab 2", "Tab 3"])
+tab1, tab2, tab3 = st.tabs(["Applications", "link app", "Tab 3"])
 
 # First tab content
 with tab1:
@@ -20,8 +40,18 @@ with tab1:
 
 # Second and third tabs content
 with tab2:
-    st.header("This is Tab 2")
-    st.write("Content for Tab 2 goes here.")
+    st.header("Interactive Audio")
+    st.write("Click the image below to play the audio:")
+
+    # Paths to your audio and image files (replace these with actual paths)
+    audio_file_path = "https://github.com/MK316/Digital-Literacy-Class/raw/main/audio/phonetics.mp3"  # Change to the path of your audio file
+    image_file_path = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/audio.png"  # Change to the path of your image file
+
+    # Create HTML content for clickable image that plays audio
+    html_content = create_clickable_image(audio_file_path, image_file_path)
+
+    # Display HTML content in Streamlit
+    st.markdown(html_content, unsafe_allow_html=True)
 
 with tab3:
     st.header("This is Tab 3")
