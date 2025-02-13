@@ -1,5 +1,8 @@
 import streamlit as st
 
+# Create tabs
+tab1, tab2, tab3 = st.tabs(["Applications", "link app", "Tab 3"])
+
 def create_clickable_image(audio_file, image_file):
     # HTML and JavaScript to embed the audio and make the image clickable
     html_str = f"""
@@ -17,11 +20,6 @@ def create_clickable_image(audio_file, image_file):
     """
     return html_str
 
-
-
-
-# Create tabs
-tab1, tab2, tab3 = st.tabs(["Applications", "link app", "Tab 3"])
 
 # First tab content
 with tab1:
