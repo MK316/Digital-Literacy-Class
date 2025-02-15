@@ -17,7 +17,7 @@ with tabs1[1]:
     except requests.exceptions.RequestException as e:
         st.error(f"Request failed: {e}")
 
-with tabs[2[:
+with tabs[2]:
     st.header("TBA")
 
 
