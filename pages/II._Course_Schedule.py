@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-tabs = st.tabs(["🍐 Weekly", "🐾 Padlet"])
+tabs = st.tabs(["🍐 Weekly", "TBA", "🐾 Padlet"])
 
 with tabs1[0]:
     # URL of the raw markdown file on GitHub
