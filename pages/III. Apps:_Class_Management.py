@@ -150,7 +150,7 @@ with tabs[3]:
 
 # Text-to-Speech tab
 with tabs[4]:
-    st.subheader("Text-to-Speech Converter (using Google TTS)"
+    st.subheader("Text-to-Speech Converter (using Google TTS)")
     text_input = st.text_area("Enter the text you want to convert to speech:")
     language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
 
