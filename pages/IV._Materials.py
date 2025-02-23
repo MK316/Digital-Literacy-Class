@@ -15,8 +15,15 @@ tabs = st.tabs(["Tab 1: Stories", "Tab 2", "Tab 3"])
 
 # Tab 1: Multimedia Content
 with tabs[0]:
-    st.header("Welcome to Our Educational Resource")
-    st.write("This section provides multimedia educational content for better learning.")
+    st.markdown("### Story 1")
+    st.markdown("""
+    In the small town of Willowby, there stood an old library that was rumored to be enchanted. Every night at midnight, the books inside would whisper stories to each other, bringing their characters to life. One evening, Sarah, a curious 15-year-old book lover, decided to sneak into the library to see if the rumors were true.
+
+    As the clock struck twelve, the books began to rustle. To Sarah's amazement, characters stepped out of their pages. She met Alice from Wonderland, the White Rabbit, and even pirates from Treasure Island. They invited her to join their midnight council, where they discussed the tales of their adventures and the wisdom they contained.
+
+    Sarah spent the whole night listening and learning from the characters, promising to keep their secret. As dawn approached, they returned to their pages. Sarah left the library, inspired and filled with stories to tell, forever changed by the magic of the Midnight Library.
+    """)
+    st.markdown("---")
 
     # Displaying the image
     st.image(image_url1, caption="Visual Aid for the Lesson")
