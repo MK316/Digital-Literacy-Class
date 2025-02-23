@@ -33,14 +33,26 @@ tabs = st.tabs(["🍐 Course Overview", "🍏 Evaluation", "🍒 Assignments", "
 with tabs[0]:
     st.caption("🔎 Course Overview")
     
+    # Display the text for the first passage
     st.markdown("""
     <div class="justify-text">
-
     This course is designed for pre-service English teachers to equip them with critical digital literacy skills and an understanding of technology's evolving role in language education. Recognizing the indispensability of digital tools in today’s educational landscape, the curriculum extends beyond traditional digital literacy to include basic coding skills essential for designing and developing learner-centered language apps. 
-    
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Audio for the first passage
+    st.audio('audio_url_for_passage_1.mp3', format='audio/mp3')
+
+    # Display the text for the second passage
+    st.markdown("""
+    <div class="justify-text">
     Students will gain hands-on experience in coding, enabling them to create customized, interactive language learning tools. This approach aims to empower educators to not only navigate but also innovate within the digital era of language teaching. By the end of the course, participants will be adept at integrating coding skills in pedagogically sound ways, enhancing both their teaching practices and their students’ learning experiences.
     </div>
     """, unsafe_allow_html=True)
+
+    # Audio for the second passage
+    st.audio('audio_url_for_passage_2.mp3', format='audio/mp3')
+
         
 # Content for the Evaluation tab
 with tabs[1]:
