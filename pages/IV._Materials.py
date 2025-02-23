@@ -4,11 +4,11 @@ import streamlit as st
 audio_url1 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.mp3"
 image_url1 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png"
 
-audio_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.mp3"
-image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png"
+audio_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story02.mp3"
+image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story02.png"
 
-audio_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.mp3"
-image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png"
+audio_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.mp3"
+image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.png"
 
 # Create Tabs
 tabs = st.tabs(["Tab 1: Stories", "Tab 2", "Tab 3"])
