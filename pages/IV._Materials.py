@@ -63,10 +63,10 @@ with tabs[0]:
     
 # Tab 2: Additional Content
 with tabs[1]:
-    st.header("Further Reading and Resources")
-    st.write("Here you can find additional reading materials and resources.")
+    st.header("TBA")
+    st.write("")
 
 # Tab 3: Discussions and Feedback
 with tabs[2]:
-    st.header("Join the Discussion")
-    st.write("Share your thoughts and feedback with our community.")
+    st.header("TBA")
+    st.write("")
