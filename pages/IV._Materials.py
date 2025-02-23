@@ -36,7 +36,7 @@ with tabs[0]:
     st.audio(audio_url2, format='audio/mp3')
 
     # Displaying the image
-    st.image(image_url1, caption="The whispering woods", width=400)
+    st.image(image_url2, caption="The whispering woods", width=400)
 
     st.markdown("""
     Leo and his friends discovered a path leading to the Whispering Woods, known for the trees that could talk. The locals avoided it, saying it was bewitched, but the adventurous teens couldn’t resist exploring.
