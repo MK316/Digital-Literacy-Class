@@ -15,7 +15,7 @@ tabs = st.tabs(["Tab 1: Stories", "Tab 2", "Tab 3"])
 
 # Tab 1: Multimedia Content
 with tabs[0]:
-    st.markdown("### Story 1: The midnight library")
+    st.markdown("### 🌺 Story 1: The midnight library")
     # Embedding the audio file
     st.audio(audio_url1, format='audio/mp3')
 
@@ -31,7 +31,7 @@ with tabs[0]:
     """)
     st.markdown("---")
 
-    st.markdown("### Story 2: The whispering woods")
+    st.markdown("### 🌺 Story 2: The whispering woods")
     # Embedding the audio file
     st.audio(audio_url2, format='audio/mp3')
 
@@ -46,7 +46,7 @@ with tabs[0]:
     Moved by these stories, the friends promised to protect the woods and share their knowledge. They left the woods wiser, with a deeper respect for nature and its untold stories, ready to advocate for its preservation.    """)
     st.markdown("---")
 
-    st.markdown("### Story 3: The lost compass")
+    st.markdown("### 🌺 Story 3: The lost compass")
     # Embedding the audio file
     st.audio(audio_url3, format='audio/mp3')
 
