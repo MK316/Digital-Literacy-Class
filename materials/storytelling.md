@@ -7,6 +7,7 @@ As the clock struck twelve, the books began to rustle. To Sarah's amazement, cha
 
 Sarah spent the whole night listening and learning from the characters, promising to keep their secret. As dawn approached, they returned to their pages. Sarah left the library, inspired and filled with stories to tell, forever changed by the magic of the Midnight Library.
 
+![](https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png)
 Image Description: A cozy, old library with shelves of books glowing under soft lantern light. A clock shows midnight. Ghostly figures of various book characters, like Alice and a pirate, are semi-visible around a young girl seated at a reading table, engrossed in a book.
 
 ## Story 2: The Whispering Woods
@@ -16,6 +17,7 @@ As they walked deeper into the woods, the trees started whispering. Each tree to
 
 Moved by these stories, the friends promised to protect the woods and share their knowledge. They left the woods wiser, with a deeper respect for nature and its untold stories, ready to advocate for its preservation.
 
+![](https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story02.png)
 Image Description: A mystical forest path under a twilight sky, with towering trees whose leaves rustle in the wind. Silhouettes of teenagers stand listening intently to the trees, faces illuminated by a soft, eerie glow from the trees.
 
 ## Story 3: The Lost Compass
@@ -24,6 +26,8 @@ Emma found an old compass in her attic one rainy afternoon. It wasn’t just any
 The compass led her to various places: a lonely old bookstore, a deserted park, and finally, a small, forgotten art gallery. At each stop, she discovered pieces of her own hidden passions: literature, nature, and art. The journey ended at the gallery, where the compass stopped moving. There, surrounded by beautiful paintings, Emma realized her desire to become an artist.
 
 Inspired, Emma went home to start her first painting, the compass now her most treasured possession, guiding her not just through the city, but through her dreams.
+
+![](https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.png)
 
 Image Description: A teenage girl holding an antique compass, standing before a vibrant cityscape that transitions into dream-like scenes—bookshelves, green park paths, and colorful art canvases. The compass glows warmly, casting a light on her path.
 
