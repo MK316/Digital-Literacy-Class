@@ -2,7 +2,7 @@
 
 ## Story 1: The Midnight Library
 
-[audio](https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.mp3)
+[audio](https://github.com/MK316/Digital-Literacy-Class/blob/main/materials/story01.mp3)
 
 In the small town of Willowby, there stood an old library that was rumored to be enchanted. Every night at midnight, the books inside would whisper stories to each other, bringing their characters to life. One evening, Sarah, a curious 15-year-old book lover, decided to sneak into the library to see if the rumors were true.
 
