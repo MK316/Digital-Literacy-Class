@@ -41,7 +41,7 @@ with tabs[0]:
     """, unsafe_allow_html=True)
 
     # Audio for the first passage
-    st.audio('audio_url_for_passage_1.mp3', format='audio/mp3')
+    st.audio('https://github.com/MK316/Digital-Literacy-Class/raw/main/audio/overview1.mp3', format='audio/mp3')
 
     # Display the text for the second passage
     st.markdown("""
@@ -51,7 +51,7 @@ with tabs[0]:
     """, unsafe_allow_html=True)
 
     # Audio for the second passage
-    st.audio('audio_url_for_passage_2.mp3', format='audio/mp3')
+    st.audio('https://github.com/MK316/Digital-Literacy-Class/raw/main/audio/overview2.mp3', format='audio/mp3')
 
         
 # Content for the Evaluation tab
