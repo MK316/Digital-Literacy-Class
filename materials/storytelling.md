@@ -8,7 +8,7 @@ As the clock struck twelve, the books began to rustle. To Sarah's amazement, cha
 Sarah spent the whole night listening and learning from the characters, promising to keep their secret. As dawn approached, they returned to their pages. Sarah left the library, inspired and filled with stories to tell, forever changed by the magic of the Midnight Library.
 
 <img src = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png" width="400">
-Image Description: A cozy, old library with shelves of books glowing under soft lantern light. A clock shows midnight. Ghostly figures of various book characters, like Alice and a pirate, are semi-visible around a young girl seated at a reading table, engrossed in a book.
++ Image Description: A cozy, old library with shelves of books glowing under soft lantern light. A clock shows midnight. Ghostly figures of various book characters, like Alice and a pirate, are semi-visible around a young girl seated at a reading table, engrossed in a book.
 
 ## Story 2: The Whispering Woods
 Leo and his friends discovered a path leading to the Whispering Woods, known for the trees that could talk. The locals avoided it, saying it was bewitched, but the adventurous teens couldn’t resist exploring.
@@ -18,7 +18,7 @@ As they walked deeper into the woods, the trees started whispering. Each tree to
 Moved by these stories, the friends promised to protect the woods and share their knowledge. They left the woods wiser, with a deeper respect for nature and its untold stories, ready to advocate for its preservation.
 
 <img src = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story02.png" width="400">
-Image Description: A mystical forest path under a twilight sky, with towering trees whose leaves rustle in the wind. Silhouettes of teenagers stand listening intently to the trees, faces illuminated by a soft, eerie glow from the trees.
++ Image Description: A mystical forest path under a twilight sky, with towering trees whose leaves rustle in the wind. Silhouettes of teenagers stand listening intently to the trees, faces illuminated by a soft, eerie glow from the trees.
 
 ## Story 3: The Lost Compass
 Emma found an old compass in her attic one rainy afternoon. It wasn’t just any compass—it pointed to one’s greatest desire rather than magnetic north. Emma, driven by curiosity, followed the compass’s lead, which took her on a journey through her city like never before.
@@ -29,6 +29,5 @@ Inspired, Emma went home to start her first painting, the compass now her most t
 
 <img src = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.png" width="400">
 
-Image Description: A teenage girl holding an antique compass, standing before a vibrant cityscape that transitions into dream-like scenes—bookshelves, green park paths, and colorful art canvases. The compass glows warmly, casting a light on her path.
++ Image Description: A teenage girl holding an antique compass, standing before a vibrant cityscape that transitions into dream-like scenes—bookshelves, green park paths, and colorful art canvases. The compass glows warmly, casting a light on her path.
 
-Generating Images for the Stories: Let's create the first image to illustrate the Midnight Library story. I will send a request to generate this image.
