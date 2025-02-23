@@ -15,7 +15,7 @@ tabs = st.tabs(["Tab 1: Stories", "Tab 2", "Tab 3"])
 
 # Tab 1: Multimedia Content
 with tabs[0]:
-    st.markdown("### Story 1")
+    st.markdown("### Story 1: The midnight library")
     st.markdown("""
     In the small town of Willowby, there stood an old library that was rumored to be enchanted. Every night at midnight, the books inside would whisper stories to each other, bringing their characters to life. One evening, Sarah, a curious 15-year-old book lover, decided to sneak into the library to see if the rumors were true.
 
@@ -26,7 +26,8 @@ with tabs[0]:
     st.markdown("---")
 
     # Displaying the image
-    st.image(image_url1, caption="Visual Aid for the Lesson")
+    st.image(image_url1, caption="The midnight library", width=400)
+
 
     # Embedding the audio file
     st.audio(audio_url1, format='audio/mp3')
