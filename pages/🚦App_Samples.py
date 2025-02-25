@@ -33,7 +33,7 @@ with tab1:
     button_html = f"""
     <a href="{app_url2}" target="_blank">
         <button style='color: white; background-color: #660000; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
-            TCE Application
+            TCE (Teacher Certificate Exam) question Application
         </button>
     </a>
     """
