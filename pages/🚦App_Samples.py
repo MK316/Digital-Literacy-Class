@@ -5,7 +5,7 @@ tab1, tab2, tab3 = st.tabs(["Applications", "Link App", "Tab 3"])
 
 # First tab content
 with tab1:
-    st.markdown("### ⛳ Sample Applications")
+    st.write("The applications linked here were created by MK316 using Python coding and are interactive apps built with Gradio and Streamlit. Deployment was carried out using Streamlit and Hugging Face.")
     st.caption("Last updated: Feb. 26, 2025")
     st.markdown("---")
 
