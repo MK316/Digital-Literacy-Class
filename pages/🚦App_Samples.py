@@ -29,18 +29,32 @@ with tab1:
     """
     st.markdown(button_html, unsafe_allow_html=True)
     st.markdown("---")
-    
+####    
      # Custom button with a link
     app_url2 = "https://mk-316-tce.hf.space/"
     button_html = f"""
     <a href="{app_url2}" target="_blank">
-        <button style='color: white; background-color: #2ca02c; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+        <button style='color: white; background-color: #660000; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
             TCE Application
         </button>
     </a>
     """
     st.markdown(button_html, unsafe_allow_html=True)
+#####
+    st.markdown("---")
     
+     # Custom button with a link
+    app_url3 = "https://melody-play.streamlit.app/"
+    button_html = f"""
+    <a href="{app_url3}" target="_blank">
+        <button style='color: white; background-color: #0066CC; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+            Generate melody Application
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+ #####
+ 
 with tab2:
     st.header("Interactive Audio (doesn't work for now")
     st.write("Click the image below to play the audio:")
