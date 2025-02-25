@@ -13,21 +13,25 @@ with tab1:
     url2 = "https://mk316voca.streamlit.app/"
     url3 = "https://example.com/app3"
 
-    # Create links to different applications
-    st.markdown(f"❄️ [Go to Application 1: Idiom Quiz]({url1})", unsafe_allow_html=True)
-    st.markdown(f"❄️ [Go to Application 2: CEFR vocabulary practice (Listen and Spell)]({url2})", unsafe_allow_html=True)
-    st.markdown(f"❄️ [Go to Application 3]({url3})", unsafe_allow_html=True)
+    # # Create links to different applications
+    # st.markdown(f"❄️ [Go to Application 1: Idiom Quiz]({url1})", unsafe_allow_html=True)
+    # st.markdown(f"❄️ [Go to Application 2: CEFR vocabulary practice (Listen and Spell)]({url2})", unsafe_allow_html=True)
+    # st.markdown(f"❄️ [Go to Application 3]({url3})", unsafe_allow_html=True)
 
-    # Custom button with a link
-    app_url = "https://mk316voca.streamlit.app/"
+     # Custom button with a link
+    app_url1 = "https://mk316voca.streamlit.app/"
     button_html = f"""
-    <a href="{app_url}" target="_blank">
+    <a href="{app_url1}" target="_blank">
         <button style='color: white; background-color: #2ca02c; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
             Go to CEFR Voca Application
         </button>
     </a>
     """
     st.markdown(button_html, unsafe_allow_html=True)
+    
+    
+
+    
 with tab2:
     st.header("Interactive Audio (doesn't work for now")
     st.write("Click the image below to play the audio:")
