@@ -28,7 +28,7 @@ with tab1:
     </a>
     """
     st.markdown(button_html, unsafe_allow_html=True)
-    
+    st.markdown("---")
     
      # Custom button with a link
     app_url2 = "https://mk-316-tce.hf.space/"
