@@ -52,6 +52,48 @@ with tab1:
     """
     st.markdown(button_html, unsafe_allow_html=True)
  #####
+     st.markdown("---")
+    
+     # Custom button with a link
+    st.caption("4. Word frequency: from text to vocabulary list")
+    app_url4 = "https://mk-316-freqlist.hf.space/"
+    button_html = f"""
+    <a href="{app_url4}" target="_blank">
+        <button style='color: white; background-color: #CCCC00; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+            Generate word list by frequency
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+ #####
+      st.markdown("---")
+    
+     # Custom button with a link
+    st.caption("5. Loanword Pronunciation: commonly used English words")
+    app_url5 = "https://mk-316-korean-english.hf.space/"
+    button_html = f"""
+    <a href="{app_url5}" target="_blank">
+        <button style='color: white; background-color: #003366; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+            Loanword pronunciation application
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+ #####
+       st.markdown("---")
+    
+     # Custom button with a link
+    st.caption("6. Pronunciation Feedback")
+    app_url6 = "https://mk-316-pronunciationfeedback.hf.space/"
+    button_html = f"""
+    <a href="{app_url6}" target="_blank">
+        <button style='color: white; background-color: #006666; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+            Pronunciation feedback application
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+ #####
  
 with tab2:
     st.header("Interactive Audio (doesn't work for now")
