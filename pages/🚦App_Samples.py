@@ -5,8 +5,9 @@ tab1, tab2, tab3 = st.tabs(["Applications", "Link App", "Tab 3"])
 
 # First tab content
 with tab1:
-    st.markdown("### ⛳ Sample Applications to Develop")
-
+    st.markdown("### ⛳ Sample Applications (Continuously to be updated")
+    st.caption("As of Feb. 26, 2025")
+    st.markdown("---")
 
     # Application links
     url1 = "https://idiomquiz.streamlit.app/"
