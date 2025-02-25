@@ -52,7 +52,7 @@ with tab1:
     """
     st.markdown(button_html, unsafe_allow_html=True)
  #####
-     st.markdown("---")
+    st.markdown("---")
     
      # Custom button with a link
     st.caption("4. Word frequency: from text to vocabulary list")
@@ -66,7 +66,7 @@ with tab1:
     """
     st.markdown(button_html, unsafe_allow_html=True)
  #####
-      st.markdown("---")
+    st.markdown("---")
     
      # Custom button with a link
     st.caption("5. Loanword Pronunciation: commonly used English words")
@@ -80,7 +80,7 @@ with tab1:
     """
     st.markdown(button_html, unsafe_allow_html=True)
  #####
-       st.markdown("---")
+    st.markdown("---")
     
      # Custom button with a link
     st.caption("6. Pronunciation Feedback")
