@@ -1,4 +1,4 @@
-'''
+```
 import streamlit as st
 from PIL import Image
 import os
@@ -78,4 +78,4 @@ with tabs[0]:
 
     # ✅ Ensure full-width image display
     display_image()
-'''
+```
