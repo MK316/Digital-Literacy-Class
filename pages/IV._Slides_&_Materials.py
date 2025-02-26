@@ -17,6 +17,10 @@ tabs = st.tabs(["Slides: Intro", "Sample Stories", "Tab 3"])
 with tabs [0]:
     st.caption("To be updated")
 
+
+    st.page_link("slides01.py", label="🏠 Lecture slides week01")
+
+
     
 with tabs[1]:
     st.markdown("### 🌺 Story 1: The midnight library")
