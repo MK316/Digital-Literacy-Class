@@ -25,4 +25,4 @@ with tabs[1]:
 
 with tabs[2]:
     st.markdown("#### Group work: Seminar room reservation")
-    st.page_link("https://www.gnu.ac.kr/sadae/cm/cntnts/cntntsView.do?mi=10831&cntntsId=5364", label="Go to GNU", icon="➡️")
+    st.page_link("https://www.gnu.ac.kr/sadae/cm/cntnts/cntntsView.do?mi=10831&cntntsId=5364", label="Go to Center for Future Education, College of Education at GNU", icon="➡️")
