@@ -2,6 +2,9 @@ import streamlit as st
 from PIL import Image
 import os
 
+# Create Tabs
+tabs = st.tabs(["Week01", "TBA", "TBA"])
+
 # Set up the path to the slides folder
 slides_path = "pages/slides01/"  # Ensure this is correct relative to your app's location
 slide_files = sorted([f for f in os.listdir(slides_path) if f.endswith(".png")])
@@ -33,7 +36,7 @@ def display_image():
     st.image(resized_image, caption=f"Slide {st.session_state.slide_index + 1} of {num_slides}")
 
 
-with tab0:
+with tabs[0]:
 
     # Arrange 'Start', 'Previous', 'Next', and 'Slide Selector' in a single row
     col1, col2, col3, col4 = st.columns([1, 1, 1, 5])
@@ -66,3 +69,9 @@ with tab0:
         selected_slide_index = int(selected_slide.split()[-1]) - 1
         if selected_slide_index != st.session_state.slide_index:
             st.session_state.slide_index = selected_slide_index
+
+with tabs[1]:
+    st.caption("To be updated")
+
+with tabs[2]:
+    st.caption("To be updated")
