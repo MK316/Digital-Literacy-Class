@@ -13,7 +13,7 @@
 |  W07    |4/14, 16| Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |       |
 |  W08    |4/21, 23| Group work <br>Coding4ET manual | **Python for Teaching** <br> How Python can help with lesson planning. <br> Simple text-based applications for language learning. |       |
 |  W09    |**4/28**, (30)|   | **Midterm**|       |
-|  W10    |(*5/5), 7|   | **Multimodality I** <br> What is multimodal learning? <br> Using images, text, and audio together in teaching. |       |
+|  W10    |(*5/5), 7| ⛄ _Holiday_  | **Multimodality I** <br> What is multimodal learning? <br> Using images, text, and audio together in teaching. |       |
 |  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
 |  W12    |5/19, 21|  Group work  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
 |  W13    |5/26, 28|  Group work | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
