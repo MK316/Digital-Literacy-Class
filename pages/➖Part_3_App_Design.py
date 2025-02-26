@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Language App Design Guide", layout="wide")
 
 # Main Title
-st.markdown("# 🏗️ Designing a Language Learning Application")
+st.markdown("### 🏗️ Designing a Language Learning Application")
 st.caption("A step-by-step guide from idea to deployment")
 
 # Create Tabs
