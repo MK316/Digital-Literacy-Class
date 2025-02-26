@@ -11,10 +11,14 @@ audio_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials
 image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.png"
 
 # Create Tabs
-tabs = st.tabs(["Tab 1: Stories", "Tab 2", "Tab 3"])
+tabs = st.tabs(["Slides: Intro", "Sample Stories", "Tab 3"])
 
 # Tab 1: Multimedia Content
-with tabs[0]:
+with tabs [0]:
+    st.caption("To be updated")
+
+    
+with tabs[1]:
     st.markdown("### 🌺 Story 1: The midnight library")
     # Embedding the audio file
     st.audio(audio_url1, format='audio/mp3')
@@ -62,7 +66,7 @@ with tabs[0]:
     st.markdown("---")
     
 # Tab 2: Additional Content
-with tabs[1]:
+with tabs[2]:
     st.header("TBA")
     st.write("")
 
