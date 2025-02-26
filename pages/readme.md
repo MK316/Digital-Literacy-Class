@@ -19,7 +19,7 @@
 |  W13    |5/26, 28|  Group work | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
 |  W14    |6/2, 5|  Group work |**Final Project Preview** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       |
 |  W15    |6/9[^1], 11[^2]|   Group work |**Makeup classes** |  |
-|  W16    |6/16, 18|  | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       |
+|  W16    |6/16, 18| Group work | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       |
 
 [^1]: March 3 (make-up class)
 [^2]: May 6 (make-up class)
