@@ -34,7 +34,7 @@ def display_image():
     image = Image.open(slide_path)
 
     # Resize while maintaining aspect ratio
-    st.image(image, caption=f"📖 Slide {st.session_state.slide_index + 1} of {num_slides}", use_column_width=True)
+    st.image(image, caption=f"📖 Slide {st.session_state.slide_index + 1} of {num_slides}", use_container_width=True)
 
 with tabs[0]:
     # 🔹 Navigation Controls
