@@ -14,7 +14,7 @@ image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials
 tabs = st.tabs(["Slides: Intro", "Sample Stories", "Tab 3"])
 
 # Tab 1: Multimedia Content
-with tabs [0]:
+with tabs[0]:
     st.caption("To be updated")
 
 
