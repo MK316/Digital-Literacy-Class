@@ -13,7 +13,12 @@ tab1, tab2 = st.tabs(["🌀 Introduction to Python", "🎓 Why Coding for Future
 # 📌 Tab 1: Introduction to Python
 with tab1:
     st.markdown("### 🚀 Introduction to Python: A Beginner’s Guide")
-    
+
+    st.write(
+        """
+        Python was created in the late 1980s by Guido van Rossum, a Dutch programmer, while working at Centrum Wiskunde & Informatica (CWI) in the Netherlands. He wanted to develop a language that was simple, readable, and easy to use, improving upon existing programming languages
+        """
+    )
     st.write(
         """
         Python is one of the most widely used and beginner-friendly programming languages today. 
