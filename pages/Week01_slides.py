@@ -5,6 +5,15 @@ import os
 # Create Tabs
 tabs = st.tabs(["Week01", "TBA", "TBA"])
 
+# CSS to adjust the alignment of the dropdown to match the buttons
+st.markdown("""
+    <style>
+    .stSelectbox div[data-baseweb="select"] {
+        margin-top: -30px;  /* Adjust this value to align with the buttons */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Set up the path to the slides folder
 slides_path = "pages/slides01/"  # Ensure this is correct relative to your app's location
 slide_files = sorted([f for f in os.listdir(slides_path) if f.endswith(".png")])
@@ -69,6 +78,8 @@ with tabs[0]:
         selected_slide_index = int(selected_slide.split()[-1]) - 1
         if selected_slide_index != st.session_state.slide_index:
             st.session_state.slide_index = selected_slide_index
+        display_image()
+
 
 with tabs[1]:
     st.caption("To be updated")
