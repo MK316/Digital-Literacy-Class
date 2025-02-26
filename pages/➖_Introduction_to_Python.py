@@ -12,7 +12,7 @@ tab1, tab2 = st.tabs(["🌀 Introduction to Python", "🎓 Why Coding for Future
 
 # 📌 Tab 1: Introduction to Python
 with tab1:
-    st.markdown("### ✅ Introduction to Python: A Beginner’s Guide")
+    st.markdown("#### ✅ Introduction to Python: A Beginner’s Guide")
 
     st.write(
         """
