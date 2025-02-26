@@ -5,14 +5,6 @@ import os
 # Create Tabs
 tabs = st.tabs(["Week01", "TBA", "TBA"])
 
-# CSS to adjust the alignment of the dropdown to match the buttons
-st.markdown("""
-    <style>
-    .stSelectbox div[data-baseweb="select"] {
-        margin-top: -30px;  /* Adjust this value to align with the buttons */
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 # Set up the path to the slides folder
 slides_path = "pages/slides01/"  # Ensure this is correct relative to your app's location
