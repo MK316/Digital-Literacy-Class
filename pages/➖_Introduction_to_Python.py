@@ -8,7 +8,7 @@ st.markdown("## 🐍 Python for Future Language Teachers")
 st.caption("Explore how Python can benefit both beginners and future educators in the digital age.")
 
 # Create Tabs
-tab1, tab2 = st.tabs(["🚀 Introduction to Python", "🎓 Why Coding for Future Language Teachers"])
+tab1, tab2 = st.tabs(["🌀 Introduction to Python", "🎓 Why Coding for Future Language Teachers"])
 
 # 📌 Tab 1: Introduction to Python
 with tab1:
@@ -37,9 +37,12 @@ with tab1:
     st.markdown("#### 🔹 Getting Started with Python")
     st.write(
         """
-        Learning Python does not require advanced technical skills. Here’s how to begin:
+        Learning Python does not require advanced technical skills. Here’s how to begin:  
         1️⃣ **Download Python** from [python.org](https://www.python.org/).  
         2️⃣ **Use an IDE (Integrated Development Environment)** like VS Code or PyCharm.  
+
+        _Note that we'll skip steps 1 and 2 since we can use cloud platforms such as Google Colab for coding._
+        
         3️⃣ **Start with basic commands** like printing messages and performing calculations.  
         4️⃣ **Practice regularly** with small projects and exercises.
         """
@@ -59,7 +62,7 @@ with tab2:
         """
     )
 
-    st.markdown("#### 🔹 1️⃣ Creating Interactive Learning Tools")
+    st.markdown("#### 1️⃣ Creating Interactive Learning Tools")
     st.write(
         """
         Python allows teachers to build **custom language learning applications** that support learner-centered instruction.  
@@ -70,7 +73,7 @@ with tab2:
         """
     )
 
-    st.markdown("#### 🔹 2️⃣ Developing Authentic Digital Materials")
+    st.markdown("#### 2️⃣ Developing Authentic Digital Materials")
     st.write(
         """
         Python can help educators **generate and customize** meaningful learning materials:
@@ -80,7 +83,7 @@ with tab2:
         """
     )
 
-    st.markdown("#### 🔹 3️⃣ Strengthening Digital Literacy for Educators and Students")
+    st.markdown("#### 3️⃣ Strengthening Digital Literacy for Educators and Students")
     st.write(
         """
         Digital literacy is a crucial skill for modern teachers. Python can help by:  
