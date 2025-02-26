@@ -4,7 +4,7 @@
 
 | Week | Date(s) | Mondays (1 hr) | Wednesdays (2 hrs) | Acts.&Assigns. |
 |------|------|----------|--------|-------|
-|  W01    |3/ (3), 5      || **Introduction: Digital Literacy** <br> Overview of the course goals. <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** |
+|  W01    |3/ (3), 5      || **Introduction: Digital Literacy** <br> Overview of the course goals. <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** <br> Assign#1|
 |  W02    |3/10, 12| Group work <br> Questions to collect <br> Digital tools to explore | **Exploring Digital Tools** <br> Introduction to useful digital tools. <br> Hands-on practice: Digital tools to share. |       |
 |  W03    |3/17, 19| Group work <br>Coding4ET manual | **Python Basics I** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
 |  W04    |3/24, 16| Group work <br>Coding4ET manual | **Python Basics II** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
