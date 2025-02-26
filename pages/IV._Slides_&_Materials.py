@@ -18,7 +18,7 @@ with tabs [0]:
     st.caption("To be updated")
 
 
-    st.page_link("slides01.py", label="🏠 Lecture slides week01")
+    st.page_link("Week01_slides.py", label="🏠 Lecture slides week01")
 
 
     
