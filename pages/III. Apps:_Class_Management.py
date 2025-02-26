@@ -19,15 +19,21 @@ tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊
 
 # QR Code tab
 with tabs[0]:
-    st.subheader("QR Code Generator")
-    qr_link = st.text_input("Enter a link to generate a QR code:")
-    caption = st.text_input("Enter a caption for your QR code:")  # Allows user to type a caption
+    st.caption("QR code generator")
 
-    # Adding a 'Generate QR Code' button
-    generate_qr_button = st.button("Generate QR Code")
-    
+    # ✅ Place link input, caption input, and button in the same row
+    col1, col2, col3 = st.columns([3, 3, 2])  # Adjust width ratios for better layout
+
+    with col1:
+        qr_link = st.text_input("📌 Enter URL link:", key="qr_link")
+    with col2:
+        caption = st.text_input("Enter a caption (optional):", key="qr_caption")
+    with col3:
+        st.write("")  # Add spacing for alignment
+        generate_qr_button = st.button("🔆 Click to Generate QR", key="generate_qr")
+
     if generate_qr_button and qr_link:
-        # Generate the QR code only when the button is clicked
+        # ✅ Generate the QR code
         qr = qrcode.QRCode(
             version=1,
             error_correction=qrcode.constants.ERROR_CORRECT_L,
@@ -37,14 +43,15 @@ with tabs[0]:
         qr.add_data(qr_link)
         qr.make(fit=True)
 
-        qr_img = qr.make_image(fill='black', back_color='white')
+        qr_img = qr.make_image(fill='black', back_color='yellow')
 
-        # Convert the QR code image to RGB format and resize
-        qr_img = qr_img.convert('RGB')  # Convert to RGB to be compatible with st.image
-        qr_img = qr_img.resize((600, 600))  # Resize the image
+        # ✅ Convert the QR code image to RGB format and resize
+        qr_img = qr_img.convert('RGB')
+        qr_img = qr_img.resize((600, 600))
 
-        # Display the resized image with the user-provided caption
-        st.image(qr_img, caption=caption, use_container_width=False, width=400)
+        # ✅ Display the QR code with caption
+        st.image(qr_img, caption=caption if caption else "Generate", use_container_width=False, width=400)
+
 
 # Timer tab
 with tabs[1]:
