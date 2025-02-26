@@ -24,5 +24,5 @@ with tabs[1]:
     st.components.v1.iframe("https://padlet.com/mirankim316/DL25", width=700, height=800)
 
 with tabs[2]:
-    st.markdown("#### Group work: Seminar room reservation")
+    st.markdown("#### Group work: Seminar room reservation (TBA)")
     st.page_link("https://www.gnu.ac.kr/sadae/cm/cntnts/cntntsView.do?mi=10831&cntntsId=5364", label="Go to Center for Future Education, College of Education at GNU", icon="➡️")
