@@ -29,7 +29,7 @@ with tab1:
         - Should it be **game-based, quiz-based, chatbot-assisted, or interactive storytelling**?
         """
     )
-    st.info("🔍 **Tip:** Explore existing apps like Duolingo, Anki, and iTalki to see what works and what can be improved.")
+    st.info("🔍 **Tip:** Explore existing apps to see what works and what can be improved.")
 
 # 2️⃣ Defining Learning Goals
 with tab2:
@@ -46,7 +46,7 @@ with tab2:
           - ✍️ **Writing** – Sentence-building tasks, grammar correction.
         """
     )
-    st.warning("🎯 **Good practice:** Follow language learning frameworks like CEFR (A1-C2 levels) or ACTFL.")
+    st.warning("🎯 **Good practice:** Follow language learning frameworks like CEFR (A1-C2 levels).")
 
 # 3️⃣ Designing the App
 with tab3:
@@ -72,7 +72,6 @@ with tab4:
         **Choose a programming language & framework**:
         - 🐍 **Python** – Beginner-friendly, great for AI-powered apps.
         - 🌐 **Web-based**: Use **Streamlit**, Flask, or Django.
-        - 📱 **Mobile apps**: Use **React Native, Swift, or Kotlin**.
 
         **Basic structure for a language quiz app (Python & Streamlit example)**:
         ```python
@@ -115,7 +114,6 @@ with tab6:
         """
         **Once your app is ready, launch it online!**
         - 🌍 **Web Apps**: Deploy using **Streamlit Cloud, Hugging Face Spaces, or Heroku**.
-        - 📱 **Mobile Apps**: Publish on **Google Play Store or Apple App Store**.
         - 📊 **Monitor & Update**:
           - Collect **user feedback** to improve UI/UX.
           - Update features based on **learner needs**.
