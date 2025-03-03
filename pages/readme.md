@@ -1,4 +1,4 @@
-#### 🌱 **Weekly Plan**
+#### 🌱 **Weekly Plan (will be updated by Mar. 10)**
 
 #### Digital Literacy & English Education
 
