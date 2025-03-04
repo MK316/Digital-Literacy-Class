@@ -1,4 +1,4 @@
-# Make-up classes and activities
+# Make-up classes and activities (4/9~4/30)
 
 |Date|Make-up (or Due)|Activities|Details|
 |--|--|--|--|
