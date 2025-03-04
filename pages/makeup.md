@@ -5,7 +5,7 @@
 |Apr.9 (Thur)|Individual(Online)|Coding4ET Manual|Lesson 3||
 |Apr.14 & 16|Individual(Online)|Coding4ET Manual|Lesson 3||
 |Apr.21 & 23|No class on the 21st; Midterm (23rd)|Group exam||
-|Apr.28 & Apr.30|Anytime 3 hrs|Video making on 'Digital tools to share' (10 mintues video)|Prepare for your In-class presentation|
+|Apr.28 & Apr.30|Anytime 3 hrs|Video making on 'Digital tools to share' (10 mintues video)|Additionally, prepare for your In-class presentation|
 
 ## Midterm (Ap.23)
 + Time: 2~4PM
