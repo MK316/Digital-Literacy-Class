@@ -7,3 +7,9 @@
 |Apr.21 & 23|No class on the 21st; Midterm (23rd)|Group exam||
 |Apr.28 & Apr.30|Anytime 3 hrs|Video making||
 
+## Midterm (Ap.23)
++ Time: 2~4PM
++ Meeting in groups (미래교육센터)
++ Video instructions will be posted on LMS (https://rec.ac.kr/gnu)
++ Submission: Coding notebook should be saved in your Github account (individual acount under 'Midterm25' repository)
++ The timestamp will appear in your file info, so no changes can be made after the submission.
