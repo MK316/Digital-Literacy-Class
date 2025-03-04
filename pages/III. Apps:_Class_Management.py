@@ -66,7 +66,7 @@ with tabs[1]:
 # Grouping tab
 with tabs[2]:
     st.subheader("👥 Grouping Tool")
-    st.captioin("Your csv file should have a column named 'Names' to use this application.")
+    st.caption("Your csv file should have a column named 'Names' to use this application.")
     st.markdown("[S25DL-roster](https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/s25dl-roster.csv)")
     # Upload file section
     uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
