@@ -10,7 +10,7 @@
 |  W04    |3/24, 16| Group work <br>Coding4ET manual | **Python Basics II** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
 |  W05    |3/31, 4/2| Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |  W06    |4/7, **9**| Group work <br>Coding4ET manual | **Python Basics IV** <br> If-else statements: Making decisions in programs. <br> Writing simple quizzes with Python. |       |
-|  W07    |**4/14, 16**| Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |  [Survey](https://forms.gle/RAcEev4ZoqkcPQK86)      |
+|  W07    |**4/14, 16**| Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |  [Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
 |  W08    |**4/21, 23**| **Midterm (Coding)** | _Reading recess_  |       |
 |  W09    |**4/28, 30**| **Group work**  | **Python for Teaching** <br> How Python can help with lesson planning. <br> Simple text-based applications for language learning.| Story based lesson plan|
 |  W10    |(*5/5)[^2], 7| ⛄ _Holiday_  | **Multimodality I** <br> What is multimodal learning? <br> Using images, text, and audio together in teaching. |Presentation |
