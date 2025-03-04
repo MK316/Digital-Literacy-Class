@@ -191,7 +191,6 @@ with tabs[4]:
         # Display the audio file
         st.audio(speech.getvalue(), format='audio/mp3')
 
-# Word Cloud tab
 with tabs[5]:
     st.subheader("🌌 Word Cloud Generator")
 
@@ -207,5 +206,6 @@ with tabs[5]:
             ax.imshow(wordcloud, interpolation='bilinear')
             ax.axis("off")
             st.pyplot(fig)
+            plt.close(fig)  # Close the figure to prevent memory issues
         else:
             st.warning("Please enter some text to generate a word cloud.")
