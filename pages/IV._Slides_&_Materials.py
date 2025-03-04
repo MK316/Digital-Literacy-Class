@@ -13,7 +13,7 @@ audio_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials
 image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story03.png"
 
 # Create Tabs
-tabs = st.tabs(["Slides: Intro", "Sample Stories", "Tab 3"])
+tabs = st.tabs(["📓 Slides: Intro", "🐾 Sample Stories", "TBA"])
 
 # CSS to align dropdown with buttons
 st.markdown("""
