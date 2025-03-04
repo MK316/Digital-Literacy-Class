@@ -10,6 +10,6 @@
 ## ⏰ Midterm (Ap.23)
 + Time: 2~4PM (2 hrs)
 + Meeting in groups (미래교육센터): Each group should make a reservation in advance.
-+ Video instructions will be posted on LMS (https://rec.ac.kr/gnu)
++ Video instructions will be posted on LMS at 1:50PM (https://rec.ac.kr/gnu)
 + Submission by 4PM: Coding notebook should be saved in your Github account (individual acount under 'Midterm25' repository)
 + The timestamp will appear in your file info, so no changes can be made after the submission.
