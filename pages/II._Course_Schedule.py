@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import streamlit.components.v1 as components
 
-tabs = st.tabs(["🍐 Weekly", "Syllabys", "📙 Github IDs", "🐾 Padlet", "🐳 Group work"])
+tabs = st.tabs(["🍐 Weekly", "📥 Syllabus", "📙 Github IDs", "🐾 Padlet", "🐳 Group work"])
 
 with tabs[0]:
     # URL of the raw markdown file on GitHub
@@ -19,16 +19,12 @@ with tabs[0]:
         st.error(f"Request failed: {e}")
 
 with tabs[1]:
-    st.title("📥 Syllabus to download")
+    st.caption("📥 Syllabus to download")
 
     # GitHub raw file URL (replace with your actual link)
-    pdf_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/data/Syllabus_DLEE.pdf"
+    # pdf_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/data/Syllabus_DLEE.pdf"
 
     # Display a download button
-    st.markdown(f"""
-    **Download your PDF file:**
-    👉 [Click here to download the PDF]( {pdf_url} )
-    """, unsafe_allow_html=True)
 
     # Alternative method using a button
     if st.button("Download PDF 📥"):
