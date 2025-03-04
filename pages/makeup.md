@@ -8,8 +8,8 @@
 |Apr.28 & Apr.30|Anytime 3 hrs|1. Video making on 'Digital tools to share' (10 mintues video)|2. Additionally, prepare for your In-class presentation|
 
 ## Midterm (Ap.23)
-+ Time: 2~4PM
++ Time: 2~4PM (2 hrs)
 + Meeting in groups (미래교육센터): Each group should make a reservation in advance.
 + Video instructions will be posted on LMS (https://rec.ac.kr/gnu)
-+ Submission: Coding notebook should be saved in your Github account (individual acount under 'Midterm25' repository)
++ Submission by 4PM: Coding notebook should be saved in your Github account (individual acount under 'Midterm25' repository)
 + The timestamp will appear in your file info, so no changes can be made after the submission.
