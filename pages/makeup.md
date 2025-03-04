@@ -7,7 +7,7 @@
 |Apr.21 & 23|No class on the 21st; Midterm (23rd)|Group exam||
 |Apr.28 & Apr.30|Anytime 3 hrs|1. Video making on 'Digital tools to share' (10 mintues video)|2. Additionally, prepare for your In-class presentation|
 
-## Midterm (Ap.23)
+## ⏰ Midterm (Ap.23)
 + Time: 2~4PM (2 hrs)
 + Meeting in groups (미래교육센터): Each group should make a reservation in advance.
 + Video instructions will be posted on LMS (https://rec.ac.kr/gnu)
