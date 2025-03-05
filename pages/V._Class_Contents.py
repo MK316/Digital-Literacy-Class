@@ -11,7 +11,7 @@ st.caption("An introduction to Python programming, covering basic concepts and w
 st.markdown("#### 💧 Part 1: Digital Tools")
 st.caption("Exploring digital tools that support teaching and learning, including AI-powered applications and automation tools.")
 
-st.markdown("#### 💧 Part 2")
+st.markdown("#### 💧 Part 2: Coding basics")
 st.write("[1] Coding4ET")
 st.caption("A simplified manual for learning basic Python coding tailored for English teachers. 'ET' refers to English teachers.")
 
