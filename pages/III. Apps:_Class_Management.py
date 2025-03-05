@@ -246,4 +246,8 @@ with tabs[6]:
         st.rerun()  # This forces Streamlit to reload and clear the drawing
 
 with tabs[7]:
-    st.markdown("[🔗 Emoji on GitHub](https://gist.github.com/rxaviers/7360908)")
+    st.markdown("### 🔗 External Resource: Unicode Characters List")
+
+# Create a button that opens the Gist page
+    if st.button("🔍 View Unicode Characters List"):
+    st.markdown('<meta http-equiv="refresh" content="0;url=https://gist.github.com/rxaviers/7360908">', unsafe_allow_html=True)
