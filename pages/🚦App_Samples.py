@@ -117,18 +117,28 @@ with tab2:
 with tab3:
 
     st.markdown("## 📝 Text Enlarger App")
-    st.write("Type in the box below, choose a color, and your text will appear in a larger font.")
+    st.write("Enter your text, choose colors for different parts, and click 'Show' to display.")
 
-    # User input
-    user_text = st.text_area("Enter your text:", placeholder="Type something here...")
+    # User input fields
+    part1 = st.text_input("Enter first part of text:", placeholder="Type here...")
+    part2 = st.text_input("Enter second part of text:", placeholder="Type here...")
+    part3 = st.text_input("Enter third part of text:", placeholder="Type here...")
 
-    # Color picker for font color
-    font_color = st.color_picker("Pick a text color", "#000000")  # Default: Black
+    # Color pickers
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        color1 = st.color_picker("Pick color for part 1", "#000000")
+    with col2:
+        color2 = st.color_picker("Pick color for part 2", "#000000")
+    with col3:
+        color3 = st.color_picker("Pick color for part 3", "#000000")
 
-    # Display text in selected color
-    if user_text:
+    # Show button
+    if st.button("Show"):
+        # Display text in chosen colors
         st.markdown(
-            f"<p style='font-size:32px; font-weight:bold; color:{font_color};'>{user_text}</p>",
+            f"<p style='font-size:32px; font-weight:bold; color:{color1}; display:inline;'>{part1} </p>"
+            f"<p style='font-size:32px; font-weight:bold; color:{color2}; display:inline;'>{part2} </p>"
+            f"<p style='font-size:32px; font-weight:bold; color:{color3}; display:inline;'>{part3}</p>",
             unsafe_allow_html=True
         )
-
