@@ -8,6 +8,7 @@ from wordcloud import WordCloud
 import streamlit.components.v1 as components  # For embedding YouTube videos
 from gtts import gTTS
 import io
+from streamlit_drawable_canvas import st_canvas
 
 # Function to create word cloud
 def create_wordcloud(text):
@@ -15,7 +16,7 @@ def create_wordcloud(text):
     return wordcloud
 
 # Streamlit tabs
-tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud"])
+tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud", "Drawing"])
 
 # QR Code tab
 with tabs[0]:
@@ -209,3 +210,33 @@ with tabs[5]:
             plt.close(fig)  # Close the figure to prevent memory issues
         else:
             st.warning("Please enter some text to generate a word cloud.")
+
+with tabs[6]:
+    st.markdown("## 🎨 Draw a Picture")
+    st.write("Use the canvas below to draw freely. You can change the stroke width and color.")
+
+    # Sidebar options
+    stroke_width = st.slider("Stroke Width", 1, 10, 5)
+    stroke_color = st.color_picker("Stroke Color", "#000000")
+    bg_color = st.color_picker("Background Color", "#FFFFFF")
+
+    # Create the canvas
+    canvas_result = st_canvas(
+        fill_color="rgba(255, 165, 0, 0.3)",  # Optional fill color
+        stroke_width=stroke_width,
+        stroke_color=stroke_color,
+        background_color=bg_color,
+        height=400,
+        width=600,
+        drawing_mode="freedraw",
+        key="canvas",
+    )
+
+    # Show the drawn image
+    if canvas_result.image_data is not None:
+        st.image(canvas_result.image_data, caption="Your Drawing")
+
+    # Button to clear the drawing
+    if st.button("🗑️ Clear Canvas"):
+        st.experimental_rerun()
+
