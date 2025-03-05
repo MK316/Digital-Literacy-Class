@@ -150,6 +150,7 @@ with tab3:
             <span style='color:{color3};'>{text3}</span>
         </p>
         """
+        st.markdown("--"
         st.markdown(combined_text, unsafe_allow_html=True)
 
 with tab4:
