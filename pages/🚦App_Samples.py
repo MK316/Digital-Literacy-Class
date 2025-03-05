@@ -153,7 +153,7 @@ with tab3:
         st.markdown(combined_text, unsafe_allow_html=True)
 
 with tab4:
-        st.markdown("## 📝 Text Enlarger App")
+    st.markdown("## 📝 Text Enlarger App")
     st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
     # Font size selection
