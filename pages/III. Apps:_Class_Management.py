@@ -215,12 +215,16 @@ with tabs[6]:
     st.markdown("## 🎨 Draw a Picture")
     st.write("Use the canvas below to draw freely. You can change the stroke width and color.")
 
+    # Initialize session state for canvas reset
+    if "canvas_key" not in st.session_state:
+        st.session_state["canvas_key"] = 0
+
     # Sidebar options
     stroke_width = st.slider("Stroke Width", 1, 10, 5)
     stroke_color = st.color_picker("Stroke Color", "#000000")
     bg_color = st.color_picker("Background Color", "#FFFFFF")
 
-    # Create the canvas
+    # Create the canvas with a dynamic key
     canvas_result = st_canvas(
         fill_color="rgba(255, 165, 0, 0.3)",  # Optional fill color
         stroke_width=stroke_width,
@@ -229,7 +233,7 @@ with tabs[6]:
         height=400,
         width=600,
         drawing_mode="freedraw",
-        key="canvas",
+        key=f"canvas_{st.session_state['canvas_key']}",  # Unique key to force refresh
     )
 
     # Show the drawn image
@@ -238,5 +242,5 @@ with tabs[6]:
 
     # Button to clear the drawing
     if st.button("🗑️ Clear Canvas"):
-        st.experimental_rerun()
-
+        st.session_state["canvas_key"] += 1  # Change key to refresh the canvas
+        st.rerun()  # Restart the app properly
