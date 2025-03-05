@@ -16,7 +16,7 @@ def create_wordcloud(text):
     return wordcloud
 
 # Streamlit tabs
-tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud", "🎨 Drawing"])
+tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud", "🎨 Drawing","😍 Emoji"])
 
 # QR Code tab
 with tabs[0]:
@@ -244,3 +244,6 @@ with tabs[6]:
     if st.button("🗑️ Clear Canvas"):
         st.session_state["clear_canvas"] = not st.session_state["clear_canvas"]
         st.rerun()  # This forces Streamlit to reload and clear the drawing
+
+with tabs[7]:
+    st.components.v1.iframe("https://gist.github.com/rxaviers/7360908", height=500, scrolling=True)
