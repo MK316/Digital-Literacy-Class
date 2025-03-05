@@ -118,7 +118,7 @@ with tab2:
 with tab3:
 
     st.markdown("#### 🎨 Draw a Picture")
-    st.captioin("Use the canvas below to draw freely. You can change the stroke width and color.")
+    st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
    # Sidebar options
     stroke_width = st.slider("Stroke Width", 1, 10, 5)
