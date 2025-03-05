@@ -246,4 +246,4 @@ with tabs[6]:
         st.rerun()  # This forces Streamlit to reload and clear the drawing
 
 with tabs[7]:
-    st.components.v1.iframe("https://gist.github.com/rxaviers/7360908", height=500, scrolling=True)
+    st.markdown("[🔗 Emoji on GitHub](https://gist.github.com/rxaviers/7360908)")
