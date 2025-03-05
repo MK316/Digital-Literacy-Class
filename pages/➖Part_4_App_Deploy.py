@@ -19,7 +19,7 @@ audio_buffer.seek(0)
 
 # Display content
 st.write("### App Deployment for Beginners")
-st.caption(text)
+st.caption("Description: ", text)
 
 # Play TTS audio
 st.audio(audio_buffer, format="audio/mp3")
