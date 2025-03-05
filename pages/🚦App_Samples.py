@@ -124,7 +124,7 @@ with tab3:
     with col1:
         stroke_width = st.slider("✏️ Stroke Width", 1, 10, 5)
     with col2:
-        st.caption("Choose colors")
+        st.caption("Choose colors: ")
     with col3:
         stroke_color = st.color_picker("🖌 Stroke Color", "#000000")
     with col4:
