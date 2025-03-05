@@ -116,8 +116,6 @@ with tab2:
     st.markdown(audio_html, unsafe_allow_html=True)
 
 with tab3:
-
-    st.markdown("#### 🎨 Draw a Picture")
     st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
    # Sidebar options
