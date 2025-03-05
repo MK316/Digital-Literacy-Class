@@ -22,7 +22,7 @@ tabs = st.tabs(["⏳ Timezone", "🔹 Future Expansion"])
 
 # 🕒 First Tab: Timezone App
 with tabs[0]:
-    st.title("🌍 World Time & TTS Generator")
+    st.markdown("#### 🌍 Saying World Time using TTS Generator")
     st.write("Select a city or country to check the current time and hear it as audio.")
 
     # Dropdown for city selection
@@ -30,10 +30,13 @@ with tabs[0]:
 
     # Get current time in the selected city's timezone
     timezone = pytz.timezone(timezones[selected_city])
-    current_time = datetime.now(timezone).strftime("%H:%M:%S")
+    current_time_24 = datetime.now(timezone)
+
+    # Convert time to 12-hour format with AM/PM
+    current_time_12 = current_time_24.strftime("%I:%M %p")  # Example: "03:45 PM"
 
     # Display the current time
-    st.markdown(f"### 🕒 Current Time in {selected_city}: `{current_time}`")
+    st.markdown(f"### 🕒 Current Time in {selected_city}: `{current_time_12}`")
 
     # Function to generate TTS audio
     def generate_tts(text):
@@ -43,9 +46,9 @@ with tabs[0]:
         audio_buffer.seek(0)
         return audio_buffer
 
-    # Button to generate and play TTS
+    # Button to generate and play TTS in 12-hour format
     if st.button("🔊 Hear Time Announcement"):
-        tts_text = f"The current time in {selected_city} is {current_time}."
+        tts_text = f"The current time in {selected_city} is {current_time_12}."
         audio_file = generate_tts(tts_text)
         st.audio(audio_file, format="audio/mp3")
 
