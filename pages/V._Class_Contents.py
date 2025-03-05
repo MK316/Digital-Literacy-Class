@@ -20,9 +20,11 @@ st.caption("Hands-on practice with Python, focusing on writing code, understandi
 
 st.markdown("#### 💧 Part 3: App Design and implementation")
 st.caption("An introduction to designing applications, including user interface basics and structuring simple applications.")
-st.write("[1] Gradio")
+st.write("[1] Getting ideas")
+st.captioin("To design an English learning app, identify learner needs, explore existing solutions, and add interactive features like voice recognition or AI feedback. Start simple, such as a vocabulary flashcard app. Use Gradio or Streamlit to build a prototype, test with learners, and refine based on feedback.")
+st.write("[2] Gradio")
 st.caption("Using Gradio to create interactive web applications with minimal coding effort.")
-st.write("[2] Streamlit")
+st.write("[3] Streamlit")
 st.caption("Developing web apps with Streamlit to make Python-based applications accessible online.")
 
 st.markdown("#### 💧 Part 4: App Deployment")
