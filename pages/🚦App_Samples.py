@@ -120,19 +120,19 @@ with tab3:
     st.write("Pick a color for each part, enter the text, and click 'Show'.")
 
     # Create 3 rows with 2 columns each (Color picker + Text Input)
-    col1, col2 = st.columns([1,4])
+    col1, col2 = st.columns([1,3])
     with col1:
         color1 = st.color_picker("🎨 Pick color for Part 1", "#FF0000")
     with col2:
         text1 = st.text_input("Enter text for Part 1", "")
 
-    col3, col4 = st.columns([1,4])
+    col3, col4 = st.columns([1,3])
     with col3:
         color2 = st.color_picker("🎨 Pick color for Part 2", "#008000")
     with col4:
         text2 = st.text_input("Enter text for Part 2", "")
 
-    col5, col6 = st.columns([1,4])
+    col5, col6 = st.columns([1,3])
     with col5:
         color3 = st.color_picker("🎨 Pick color for Part 3", "#0000FF")
     with col6:
