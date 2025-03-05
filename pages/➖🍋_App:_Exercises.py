@@ -3,6 +3,7 @@ from datetime import datetime
 import pytz
 from gtts import gTTS
 from io import BytesIO
+import random
 
 # List of available time zones (City/Country)
 timezones = {
@@ -28,15 +29,19 @@ with tabs[0]:
     # Dropdown for city selection
     selected_city = st.selectbox("Choose a City/Country:", list(timezones.keys()))
 
-    # Extract only the city name (remove country)
-    city_name = selected_city.split(",")[0]  # Takes only the part before the comma
-
     # Get current time in the selected city's timezone
     timezone = pytz.timezone(timezones[selected_city])
     current_time_24 = datetime.now(timezone)
 
     # Convert time to 12-hour format with AM/PM
     current_time_12 = current_time_24.strftime("%I:%M %p")  # Example: "03:45 PM"
+
+    # Extract only the city name for TTS output
+    city_name = selected_city.split(",")[0]
+
+    # Select a random city different from the selected one
+    other_cities = [city for city in timezones.keys() if city != selected_city]
+    random_city = random.choice(other_cities).split(",")[0]
 
     # Display the current time
     st.markdown("---")
@@ -51,9 +56,9 @@ with tabs[0]:
         audio_buffer.seek(0)
         return audio_buffer
 
-    # Button to generate and play TTS in 12-hour format (without country name)
+    # Button to generate and play TTS in 12-hour format
     if st.button("🔊 Hear Time Announcement"):
-        tts_text = f"The current time in {city_name} is {current_time_12}."
+        tts_text = f"The current time in {city_name} is {current_time_12}. What time is it in {random_city} now?"
         st.markdown("---")
         audio_file = generate_tts(tts_text)
         st.audio(audio_file, format="audio/mp3")
