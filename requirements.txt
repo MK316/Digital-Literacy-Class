@@ -6,3 +6,4 @@ tabulate
 matplotlib
 qrcode
 wordcloud
+streamlit-drawable-canvas
