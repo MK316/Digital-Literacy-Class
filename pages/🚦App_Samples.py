@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 # Create tabs
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "Drawing", "🌐 TextBoard", "Test"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🎨 Drawing", "🌐 TextBoard", "Test"])
 
 # First tab content
 with tab1:
