@@ -117,22 +117,25 @@ with tab2:
 with tab3:
 
     st.markdown("## 📝 Text Enlarger App")
-    st.write("Pick a color for each part, enter the text, and click 'Show'.")
+    st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
-    # Create 3 rows with 2 columns each (Color picker + Text Input)
-    col1, col2 = st.columns([1,4])
+    # Font size selection (same for all parts)
+    font_size = st.slider("Select Font Size (px)", min_value=10, max_value=100, value=30)
+
+    # Adjust column widths: [1,4] - Smaller column for color, larger for text input
+    col1, col2 = st.columns([1, 4])
     with col1:
         color1 = st.color_picker("🎨 Part 1", "#FF0000")
     with col2:
         text1 = st.text_input("Enter text for Part 1", "")
 
-    col3, col4 = st.columns([1,4])
+    col3, col4 = st.columns([1, 4])
     with col3:
         color2 = st.color_picker("🎨 Part 2", "#008000")
     with col4:
         text2 = st.text_input("Enter text for Part 2", "")
 
-    col5, col6 = st.columns([1,4])
+    col5, col6 = st.columns([1, 4])
     with col5:
         color3 = st.color_picker("🎨 Part 3", "#0000FF")
     with col6:
@@ -140,10 +143,7 @@ with tab3:
 
     # Button to display enlarged text
     if st.button("Show"):
-        st.markdown(
-            f"<h1 style='color:{color1};'>{text1}</h2>"
-            f"<h1 style='color:{color2};'>{text2}</h2>"
-            f"<h1 style='color:{color3};'>{text3}</h2>",
-            unsafe_allow_html=True
-        )
+        st.markdown(f"<p style='color:{color1}; font-size:{font_size}px;'>{text1}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='color:{color2}; font-size:{font_size}px;'>{text2}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='color:{color3}; font-size:{font_size}px;'>{text3}</p>", unsafe_allow_html=True)
 
