@@ -118,14 +118,14 @@ with tab2:
 with tab3:
     st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
-   # Sidebar options
-    stroke_width = st.slider("Stroke Width", 1, 10, 5)
+   # Place Stroke Width, Stroke Color, and Background Color in the same row
+    col1, col2, col3 = st.columns([1, 1, 1])
 
-    # Place Stroke Color and Background Color in the same row
-    col1, col2 = st.columns([1, 1])
     with col1:
-        stroke_color = st.color_picker("🖌 Stroke Color", "#000000")
+        stroke_width = st.slider("✏️ Stroke Width", 1, 10, 5)
     with col2:
+        stroke_color = st.color_picker("🖌 Stroke Color", "#000000")
+    with col3:
         bg_color = st.color_picker("🖼 Background Color", "#FFFFFF")
 
     # Initialize session state for clearing
@@ -148,6 +148,7 @@ with tab3:
     if st.button("🗑️ Clear Canvas"):
         st.session_state["clear_canvas"] = not st.session_state["clear_canvas"]
         st.rerun()  # This forces Streamlit to reload and clear the drawing
+
 
 
 with tab4:
