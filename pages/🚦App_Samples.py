@@ -140,7 +140,7 @@ with tab3:
         stroke_width=stroke_width,
         stroke_color=stroke_color,
         background_color=bg_color,
-        height=400,
+        height=300,
         width=600,
         drawing_mode="freedraw",
         key="main_canvas" if not st.session_state["clear_canvas"] else "new_canvas"
