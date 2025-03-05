@@ -48,7 +48,9 @@ with tabs[0]:
 
     # Button to generate and play TTS in 12-hour format
     if st.button("🔊 Hear Time Announcement"):
+        st.markdown("---")
         tts_text = f"The current time in {selected_city} is {current_time_12}."
+        st.markdown("---")
         audio_file = generate_tts(tts_text)
         st.audio(audio_file, format="audio/mp3")
 
