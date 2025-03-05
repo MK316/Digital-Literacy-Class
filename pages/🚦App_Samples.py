@@ -217,6 +217,7 @@ with tab5:
     with col6:
         text3 = st.text_input("Enter text for Part 3", key="text3")
 
+    st.markdown("---")
     # Live updating text display with bigger font
     st.markdown(
         f'<p style="font-size: 50px; color: {color1}; display: inline;">{text1} </p>'
