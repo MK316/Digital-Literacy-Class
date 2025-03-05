@@ -87,7 +87,38 @@ with tabs[0]:
 
     # ✅ Ensure full-width image display
     display_image()
+
+
+    st.markdown("---")
     
+
+    video_url1 = "https://www.youtube.com/embed/6UbGnNZicU0?si=_hzKvDtqpIdtbhjM"
+
+    st.markdown("#### 1. Video: EBS Documentary 2020 Part I")
+    st.markdown(
+        f"""
+        <iframe width="560" height="315" src="{video_url1}" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        """,
+        unsafe_allow_html=True
+    )
+
+    video_url2 = "https://www.youtube.com/embed/-p_IY4AWDg8?si=Gj6-yq7s_1wFjFvw"
+
+    st.markdown("#### 2. Video: EBS Documentary 2020 Part II")
+    st.markdown(
+        f"""
+        <iframe width="560" height="315" src="{video_url1}" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 with tabs[1]:
     st.markdown("### 🌺 Story 1: The midnight library")
     # Embedding the audio file
