@@ -23,7 +23,7 @@ tabs = st.tabs(["🕒 Timezone", "🔹 Future Expansion"])
 # 🕒 First Tab: Timezone App
 with tabs[0]:
     st.markdown("#### 🌍 Saying World Time using TTS Generator")
-    st.write("Select a city or country to check the current time and hear it as audio.")
+    st.caption("Select a city or country to check the current time and hear it as audio.")
 
     # Dropdown for city selection
     selected_city = st.selectbox("Choose a City/Country:", list(timezones.keys()))
@@ -55,7 +55,7 @@ with tabs[0]:
         st.audio(audio_file, format="audio/mp3")
 
     # Footer
-    st.info("Note: This app fetches real-time data and generates spoken output.")
+    st.caption("Note: This app fetches real-time data and generates spoken output.")
 
 # 📌 Second Tab: Placeholder for Future Features
 with tabs[1]:
