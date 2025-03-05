@@ -246,10 +246,10 @@ with tabs[6]:
         st.rerun()  # This forces Streamlit to reload and clear the drawing
 
 with tabs[7]:
-    st.markdown("### 🔗 External Resource: Unicode Characters List")
+    st.markdown("### 🔗 Complete list of github markdown emoji markup")
     st.write("😘 🎵 🙆‍♀️ 🐾 🌀 🌱 🎈📁 📎 🎧 🔉")
 
 # Create a button that opens the Gist page
     st.markdown("---")
-    st.link_button("Complete list of github markdown emoji markup from Github account rxaviers", "https://gist.github.com/rxaviers/7360908")
+    st.link_button("Complete list of github markdown emoji markup from Github (rxaviers)", "https://gist.github.com/rxaviers/7360908")
     
