@@ -119,15 +119,13 @@ with tab3:
     st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
    # Place Stroke Width, Stroke Color, and Background Color in the same row
-    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+    col1, col2, col3 = st.columns([1, 1, 1])
 
     with col1:
         stroke_width = st.slider("✏️ Stroke Width", 1, 10, 5)
     with col2:
-        st.caption("Choose colors: ")
-    with col3:
         stroke_color = st.color_picker("🖌 Stroke Color", "#000000")
-    with col4:
+    with col3:
         bg_color = st.color_picker("🖼 Background Color", "#FFFFFF")
 
     # Initialize session state for clearing
