@@ -157,29 +157,29 @@ with tab4:
     st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
     # Font size selection
-    font_size = st.slider("Select Font Size (px)", min_value=10, max_value=100, value=30)
+    font_size = st.slider("Select Font Size (px)", min_value=10, max_value=100, value=30, key="font_size")
 
     # Adjust column widths: [1,4] - Smaller column for color, larger for text input
     col1, col2 = st.columns([1, 4])
     with col1:
-        color1 = st.color_picker("🎨 Part 1", "#FF0000")
+        color1 = st.color_picker("🎨 Part 1", "#FF0000", key="color1")
     with col2:
-        text1 = st.text_input("Enter text for Part 1", "")
+        text1 = st.text_input("Enter text for Part 1", "", key="text1")
 
     col3, col4 = st.columns([1, 4])
     with col3:
-        color2 = st.color_picker("🎨 Part 2", "#008000")
+        color2 = st.color_picker("🎨 Part 2", "#008000", key="color2")
     with col4:
-        text2 = st.text_input("Enter text for Part 2", "")
+        text2 = st.text_input("Enter text for Part 2", "", key="text2")
 
     col5, col6 = st.columns([1, 4])
     with col5:
-        color3 = st.color_picker("🎨 Part 3", "#0000FF")
+        color3 = st.color_picker("🎨 Part 3", "#0000FF", key="color3")
     with col6:
-        text3 = st.text_input("Enter text for Part 3", "")
+        text3 = st.text_input("Enter text for Part 3", "", key="text3")
 
     # Simulated pop-up: Clicking the button shows the text inside an expandable section
-    if st.button("Show in Pop-up"):
+    if st.button("Show in Pop-up", key="show_popup"):
         with st.expander("📢 Click to View Your Enlarged Text"):
             combined_text = f"""
             <p style='font-size:{font_size}px;'>
