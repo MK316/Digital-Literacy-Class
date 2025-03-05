@@ -252,3 +252,5 @@ with tabs[7]:
 # Create a button that opens the Gist page
     if st.button("🔍 View Unicode Characters List"):
         st.markdown('<meta http-equiv="refresh" content="0;url=https://gist.github.com/rxaviers/7360908">', unsafe_allow_html=True)
+    st.link_button("View", "https://gist.github.com/rxaviers/7360908")
+    
