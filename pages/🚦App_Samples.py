@@ -1,7 +1,8 @@
 import streamlit as st
+from streamlit_drawable_canvas import st_canvas
 
 # Create tabs
-tab1, tab2, tab3, tab4 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard", "Test"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "Drawing", "🌐 TextBoard", "Test"])
 
 # First tab content
 with tab1:
@@ -116,6 +117,39 @@ with tab2:
 
 with tab3:
 
+    st.markdown("## 🎨 Draw a Picture")
+    st.write("Use the canvas below to draw freely. You can change the stroke width and color.")
+
+    # Sidebar options
+    stroke_width = st.slider("Stroke Width", 1, 10, 5)
+    stroke_color = st.color_picker("Stroke Color", "#000000")
+    bg_color = st.color_picker("Background Color", "#FFFFFF")
+
+    # Initialize session state for clearing
+    if "clear_canvas" not in st.session_state:
+        st.session_state["clear_canvas"] = False
+
+    # Create the canvas (Unique key prevents duplication)
+    canvas_result = st_canvas(
+        fill_color="rgba(255, 165, 0, 0.3)",  
+        stroke_width=stroke_width,
+        stroke_color=stroke_color,
+        background_color=bg_color,
+        height=400,
+        width=600,
+        drawing_mode="freedraw",
+        key="main_canvas" if not st.session_state["clear_canvas"] else "new_canvas"
+    )
+
+    # Clear Canvas button
+    if st.button("🗑️ Clear Canvas"):
+        st.session_state["clear_canvas"] = not st.session_state["clear_canvas"]
+        st.rerun()  # This forces Streamlit to reload and clear the drawing
+
+
+
+with tab4:
+
     st.markdown("#### 📝 Text Board")
     st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
@@ -153,7 +187,7 @@ with tab3:
         st.markdown("---")
         st.markdown(combined_text, unsafe_allow_html=True)
 
-with tab4:
+with tab5:
     st.markdown("## 📝 Text Enlarger App")
     st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
