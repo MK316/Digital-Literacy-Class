@@ -3,7 +3,7 @@
 |Date|Make-up (or Due)|Activities|Details|
 |--|--|--|--|
 |Apr.9 (Thur)|Individual(Online)|Coding4ET Manual|Lesson 3||
-|Apr.14 & 16|Individual(Online)|Coding4ET Manual|Lesson 3||
+|Apr.14 & 16|Individual(Online)|Coding4ET Manual|Lesson 4||
 |Apr.21 & 23|1. Video making on 'Digital tools to share' (10 mintues video)|2. Prepare for your In-class presentation on May 7|
 |(Apr.28) & **Apr.30**||Group quiz||
 
