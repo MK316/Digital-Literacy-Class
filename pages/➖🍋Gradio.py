@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.captioin("About Gradio")
+st.caption("About Gradio")
