@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Create tabs
-tab1, tab2, tab3 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TBA"])
+tab1, tab2, tab3 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard"])
 
 # First tab content
 with tab1:
@@ -115,5 +115,20 @@ with tab2:
     st.markdown(audio_html, unsafe_allow_html=True)
 
 with tab3:
-    st.header("This is Tab 3")
-    st.write("Content for Tab 3 goes here.")
+
+    st.markdown("## 📝 Text Enlarger App")
+    st.write("Type in the box below, choose a color, and your text will appear in a larger font.")
+
+    # User input
+    user_text = st.text_area("Enter your text:", placeholder="Type something here...")
+
+    # Color picker for font color
+    font_color = st.color_picker("Pick a text color", "#000000")  # Default: Black
+
+    # Display text in selected color
+    if user_text:
+        st.markdown(
+            f"<p style='font-size:32px; font-weight:bold; color:{font_color};'>{user_text}</p>",
+            unsafe_allow_html=True
+        )
+
