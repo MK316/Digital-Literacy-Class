@@ -36,7 +36,8 @@ with tabs[0]:
     current_time_12 = current_time_24.strftime("%I:%M %p")  # Example: "03:45 PM"
 
     # Display the current time
-    st.markdown(f"## Current Time in {selected_city}: `{current_time_12}`")
+    st.markdown("## Current Time in {selected_city}: "
+    st.markdown("## f`{current_time_12}`")
 
     # Function to generate TTS audio
     def generate_tts(text):
