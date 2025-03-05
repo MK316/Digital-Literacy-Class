@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Create tabs
-tab1, tab2, tab3 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard"])
+tab1, tab2, tab3 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard", "Test"])
 
 # First tab content
 with tab1:
@@ -151,3 +151,41 @@ with tab3:
         </p>
         """
         st.markdown(combined_text, unsafe_allow_html=True)
+
+with tab4:
+        st.markdown("## 📝 Text Enlarger App")
+    st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
+
+    # Font size selection
+    font_size = st.slider("Select Font Size (px)", min_value=10, max_value=100, value=30)
+
+    # Adjust column widths: [1,4] - Smaller column for color, larger for text input
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        color1 = st.color_picker("🎨 Part 1", "#FF0000")
+    with col2:
+        text1 = st.text_input("Enter text for Part 1", "")
+
+    col3, col4 = st.columns([1, 4])
+    with col3:
+        color2 = st.color_picker("🎨 Part 2", "#008000")
+    with col4:
+        text2 = st.text_input("Enter text for Part 2", "")
+
+    col5, col6 = st.columns([1, 4])
+    with col5:
+        color3 = st.color_picker("🎨 Part 3", "#0000FF")
+    with col6:
+        text3 = st.text_input("Enter text for Part 3", "")
+
+    # Simulated pop-up: Clicking the button shows the text inside an expandable section
+    if st.button("Show in Pop-up"):
+        with st.expander("📢 Click to View Your Enlarged Text"):
+            combined_text = f"""
+            <p style='font-size:{font_size}px;'>
+                <span style='color:{color1};'>{text1} </span>
+                <span style='color:{color2};'>{text2} </span>
+                <span style='color:{color3};'>{text3}</span>
+            </p>
+            """
+            st.markdown(combined_text, unsafe_allow_html=True)
