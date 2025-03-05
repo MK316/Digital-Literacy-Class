@@ -36,8 +36,9 @@ with tabs[0]:
     current_time_12 = current_time_24.strftime("%I:%M %p")  # Example: "03:45 PM"
 
     # Display the current time
+    st.markdown("---")
     st.markdown(f"### 🕒 Current Time in {selected_city}: `{current_time_12}`")
-
+    st.markdown("---")
     # Function to generate TTS audio
     def generate_tts(text):
         tts = gTTS(text=text, lang="en")
@@ -48,7 +49,7 @@ with tabs[0]:
 
     # Button to generate and play TTS in 12-hour format
     if st.button("🔊 Hear Time Announcement"):
-        st.markdown("---")
+        
         tts_text = f"The current time in {selected_city} is {current_time_12}."
         st.markdown("---")
         audio_file = generate_tts(tts_text)
