@@ -251,5 +251,5 @@ with tabs[7]:
 
 # Create a button that opens the Gist page
     st.markdown("---")
-    st.link_button("View", "https://gist.github.com/rxaviers/7360908")
+    st.link_button("Complete list of github markdown emoji markup from Github account rxaviers", "https://gist.github.com/rxaviers/7360908")
     
