@@ -193,7 +193,7 @@ with tab4:
 with tab5:
     st.markdown("## 📝 Live Textboard")
 
-    st.write("Type your text, and it will appear below in a larger font in real-time.")
+    st.caption("Type your text, and hit 'ENTER' to display it below in a larger font.")
 
     # Create a row layout with labels and text input
     col1, col2 = st.columns([1, 4])
