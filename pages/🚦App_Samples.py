@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Create tabs
-tab1, tab2, tab3 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard", "Test"])
+tab1, tab2, tab3, tab4 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🌐 TextBoard", "Test"])
 
 # First tab content
 with tab1:
