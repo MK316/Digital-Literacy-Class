@@ -141,9 +141,13 @@ with tab3:
     with col6:
         text3 = st.text_input("Enter text for Part 3", "")
 
-    # Button to display enlarged text
+    # Button to display combined text on one line
     if st.button("Show"):
-        st.markdown(f"<p style='color:{color1}; font-size:{font_size}px;'>{text1}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='color:{color2}; font-size:{font_size}px;'>{text2}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='color:{color3}; font-size:{font_size}px;'>{text3}</p>", unsafe_allow_html=True)
-
+        combined_text = f"""
+        <p style='font-size:{font_size}px;'>
+            <span style='color:{color1};'>{text1} </span>
+            <span style='color:{color2};'>{text2} </span>
+            <span style='color:{color3};'>{text3}</span>
+        </p>
+        """
+        st.markdown(combined_text, unsafe_allow_html=True)
