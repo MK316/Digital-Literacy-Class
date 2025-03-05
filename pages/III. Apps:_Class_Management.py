@@ -212,13 +212,17 @@ with tabs[5]:
             st.warning("Please enter some text to generate a word cloud.")
 
 with tabs[6]:
-    st.markdown("## 🎨 Draw a Picture")
-    st.write("Use the canvas below to draw freely. You can change the stroke width and color.")
+    st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
-    # Sidebar options
-    stroke_width = st.slider("Stroke Width", 1, 10, 5)
-    stroke_color = st.color_picker("Stroke Color", "#000000")
-    bg_color = st.color_picker("Background Color", "#FFFFFF")
+   # Place Stroke Width, Stroke Color, and Background Color in the same row
+    col1, col2, col3 = st.columns([1, 1, 1])
+
+    with col1:
+        stroke_width = st.slider("✏️ Stroke Width", 1, 10, 5)
+    with col2:
+        stroke_color = st.color_picker("🖌 Stroke Color", "#000000")
+    with col3:
+        bg_color = st.color_picker("🖼 Background Color", "#FFFFFF")
 
     # Initialize session state for clearing
     if "clear_canvas" not in st.session_state:
