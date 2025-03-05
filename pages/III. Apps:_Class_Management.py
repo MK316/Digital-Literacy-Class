@@ -216,15 +216,15 @@ with tabs[6]:
     st.write("Use the canvas below to draw freely. You can change the stroke width and color.")
 
     # Initialize session state for canvas reset
-    if "canvas_key" not in st.session_state:
-        st.session_state["canvas_key"] = 0
+    if "canvas_state" not in st.session_state:
+        st.session_state["canvas_state"] = None  # To store canvas data
 
     # Sidebar options
     stroke_width = st.slider("Stroke Width", 1, 10, 5)
     stroke_color = st.color_picker("Stroke Color", "#000000")
     bg_color = st.color_picker("Background Color", "#FFFFFF")
 
-    # Create the canvas with a dynamic key
+    # Create the canvas
     canvas_result = st_canvas(
         fill_color="rgba(255, 165, 0, 0.3)",  # Optional fill color
         stroke_width=stroke_width,
@@ -233,14 +233,18 @@ with tabs[6]:
         height=400,
         width=600,
         drawing_mode="freedraw",
-        key=f"canvas_{st.session_state['canvas_key']}",  # Unique key to force refresh
+        key="unique_canvas",  # Ensure a unique key to prevent duplication
     )
 
-    # Show the drawn image
+    # Store the drawn image in session state
     if canvas_result.image_data is not None:
-        st.image(canvas_result.image_data, caption="Your Drawing")
+        st.session_state["canvas_state"] = canvas_result.image_data
 
-    # Button to clear the drawing
+    # Show the drawn image (only one display)
+    if st.session_state["canvas_state"] is not None:
+        st.image(st.session_state["canvas_state"], caption="Your Drawing")
+
+    # Button to clear the canvas
     if st.button("🗑️ Clear Canvas"):
-        st.session_state["canvas_key"] += 1  # Change key to refresh the canvas
-        st.rerun()  # Restart the app properly
+        st.session_state["canvas_state"] = None  # Reset stored image
+        st.rerun()  # Force Streamlit to refresh and clear the canvas
