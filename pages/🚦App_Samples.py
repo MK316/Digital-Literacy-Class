@@ -117,28 +117,33 @@ with tab2:
 with tab3:
 
     st.markdown("## 📝 Text Enlarger App")
-    st.write("Enter your text, choose colors for different parts, and click 'Show' to display.")
+    st.write("Pick a color for each part, enter the text, and click 'Show'.")
 
-    # User input fields
-    part1 = st.text_input("Enter first part of text:", placeholder="Type here...")
-    part2 = st.text_input("Enter second part of text:", placeholder="Type here...")
-    part3 = st.text_input("Enter third part of text:", placeholder="Type here...")
-
-    # Color pickers
-    col1, col2, col3 = st.columns(3)
+    # Create 3 rows with 2 columns each (Color picker + Text Input)
+    col1, col2 = st.columns(2)
     with col1:
-        color1 = st.color_picker("Pick color for part 1", "#000000")
+        color1 = st.color_picker("🎨 Pick color for Part 1", "#FF0000")
     with col2:
-        color2 = st.color_picker("Pick color for part 2", "#000000")
-    with col3:
-        color3 = st.color_picker("Pick color for part 3", "#000000")
+        text1 = st.text_input("Enter text for Part 1", "")
 
-    # Show button
+    col3, col4 = st.columns(2)
+    with col3:
+        color2 = st.color_picker("🎨 Pick color for Part 2", "#008000")
+    with col4:
+        text2 = st.text_input("Enter text for Part 2", "")
+
+    col5, col6 = st.columns(2)
+    with col5:
+        color3 = st.color_picker("🎨 Pick color for Part 3", "#0000FF")
+    with col6:
+        text3 = st.text_input("Enter text for Part 3", "")
+
+    # Button to display enlarged text
     if st.button("Show"):
-        # Display text in chosen colors
         st.markdown(
-            f"<p style='font-size:32px; font-weight:bold; color:{color1}; display:inline;'>{part1} </p>"
-            f"<p style='font-size:32px; font-weight:bold; color:{color2}; display:inline;'>{part2} </p>"
-            f"<p style='font-size:32px; font-weight:bold; color:{color3}; display:inline;'>{part3}</p>",
+            f"<h2 style='color:{color1};'>{text1}</h2>"
+            f"<h2 style='color:{color2};'>{text2}</h2>"
+            f"<h2 style='color:{color3};'>{text3}</h2>",
             unsafe_allow_html=True
         )
+
