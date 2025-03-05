@@ -28,6 +28,9 @@ with tabs[0]:
     # Dropdown for city selection
     selected_city = st.selectbox("Choose a City/Country:", list(timezones.keys()))
 
+    # Extract only the city name (remove country)
+    city_name = selected_city.split(",")[0]  # Takes only the part before the comma
+
     # Get current time in the selected city's timezone
     timezone = pytz.timezone(timezones[selected_city])
     current_time_24 = datetime.now(timezone)
@@ -39,6 +42,7 @@ with tabs[0]:
     st.markdown("---")
     st.markdown(f"### 🕒 Current Time in {selected_city}: `{current_time_12}`")
     st.markdown("---")
+
     # Function to generate TTS audio
     def generate_tts(text):
         tts = gTTS(text=text, lang="en")
@@ -47,10 +51,9 @@ with tabs[0]:
         audio_buffer.seek(0)
         return audio_buffer
 
-    # Button to generate and play TTS in 12-hour format
+    # Button to generate and play TTS in 12-hour format (without country name)
     if st.button("🔊 Hear Time Announcement"):
-        
-        tts_text = f"The current time in {selected_city} is {current_time_12}."
+        tts_text = f"The current time in {city_name} is {current_time_12}."
         st.markdown("---")
         audio_file = generate_tts(tts_text)
         st.audio(audio_file, format="audio/mp3")
