@@ -18,8 +18,8 @@ tts.write_to_fp(audio_buffer)
 audio_buffer.seek(0)
 
 # Display content
-st.write("### App Deployment for Beginners")
-st.caption("Description: ", text)
+st.markdown("#### App Deployment for Beginners")
+st.write(text)
 
 # Play TTS audio
 st.audio(audio_buffer, format="audio/mp3")
