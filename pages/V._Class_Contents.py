@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.sidebar.title("📖 V. Class Contents")
-
 st.markdown("### V. Class Contents")
 st.caption("This section provides an overview of the class structure, including topics related to Python programming, app development, and deployment.")
 
