@@ -191,39 +191,36 @@ with tab4:
         st.markdown(combined_text, unsafe_allow_html=True)
 
 with tab5:
-    st.markdown("## 📝 Text Enlarger App")
-    st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
+    st.markdown("## 📝 Live Textboard")
 
-    # Font size selection
-    font_size = st.slider("Select Font Size (px)", min_value=10, max_value=100, value=30, key="font_size")
+    st.write("Type your text, and it will appear below in a larger font in real-time.")
 
-    # Adjust column widths: [1,4] - Smaller column for color, larger for text input
+    # Create a row layout with labels and text input
     col1, col2 = st.columns([1, 4])
+    
     with col1:
-        color1 = st.color_picker("🎨 Part 1", "#FF0000", key="color1")
+        color1 = st.color_picker("Part 1", "#FF0000")
     with col2:
-        text1 = st.text_input("Enter text for Part 1", "", key="text1")
+        text1 = st.text_input("Enter text for Part 1", key="text1")
 
     col3, col4 = st.columns([1, 4])
+    
     with col3:
-        color2 = st.color_picker("🎨 Part 2", "#008000", key="color2")
+        color2 = st.color_picker("Part 2", "#008000")
     with col4:
-        text2 = st.text_input("Enter text for Part 2", "", key="text2")
+        text2 = st.text_input("Enter text for Part 2", key="text2")
 
     col5, col6 = st.columns([1, 4])
+    
     with col5:
-        color3 = st.color_picker("🎨 Part 3", "#0000FF", key="color3")
+        color3 = st.color_picker("Part 3", "#0000FF")
     with col6:
-        text3 = st.text_input("Enter text for Part 3", "", key="text3")
+        text3 = st.text_input("Enter text for Part 3", key="text3")
 
-    # Simulated pop-up: Clicking the button shows the text inside an expandable section
-    if st.button("Show in Pop-up", key="show_popup"):
-        with st.expander("📢 Click to View Your Enlarged Text"):
-            combined_text = f"""
-            <p style='font-size:{font_size}px;'>
-                <span style='color:{color1};'>{text1} </span>
-                <span style='color:{color2};'>{text2} </span>
-                <span style='color:{color3};'>{text3}</span>
-            </p>
-            """
-            st.markdown(combined_text, unsafe_allow_html=True)
+    # Live updating text display with bigger font
+    st.markdown(
+        f'<p style="font-size: 50px; color: {color1}; display: inline;">{text1} </p>'
+        f'<p style="font-size: 50px; color: {color2}; display: inline;">{text2} </p>'
+        f'<p style="font-size: 50px; color: {color3}; display: inline;">{text3}</p>',
+        unsafe_allow_html=True
+    )
