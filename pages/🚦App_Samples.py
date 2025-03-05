@@ -116,7 +116,7 @@ with tab2:
 
 with tab3:
 
-    st.markdown("## 📝 Text Enlarger App")
+    st.markdown("#### 📝 Text Board")
     st.write("Pick a color and font size for each part, enter the text, and click 'Show'.")
 
     # Font size selection (same for all parts)
