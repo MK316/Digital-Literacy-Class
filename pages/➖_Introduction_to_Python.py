@@ -31,7 +31,7 @@ with tab1:
     )
     st.write(
         """
-        According to the TIOBE index, as of February 2025, Python was the most popular programming language, followed by C++, JAVA, C, C#, JavaScript, SQL, etc.
+        According to the [TIOBE index](https://www.tiobe.com/tiobe-index/), as of February 2025, Python was the most popular programming language, followed by C++, JAVA, C, C#, JavaScript, SQL, etc.
         """
     )   
     # URL for the raw image content
