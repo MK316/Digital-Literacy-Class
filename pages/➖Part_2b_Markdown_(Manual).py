@@ -6,7 +6,6 @@ tabs = st.tabs(["Markdown Manual", "Markdown Examples"])
 
 # Tab 1: Markdown Manual
 with tabs[0]:
-    st.write("### Markdown Manual")
     
     # URL of the Markdown file on GitHub
     md_url = "https://github.com/MK316/Coding4ET/raw/main/Lessons/markdown.md"
