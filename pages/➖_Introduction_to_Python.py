@@ -48,7 +48,7 @@ with tab1:
 
         _Note that we'll skip steps 1 and 2 since we can use cloud platforms such as Google Colab for coding._
         
-        2️⃣B. **Visiti [Colab](https://colab.research.google.com) and log in with your Google account**
+        2️⃣B. **Visiti [Colab](https://colab.research.google.com) and log in with your Google account**   
         3️⃣ **Start with basic commands** like printing messages and performing calculations.  
         4️⃣ **Practice regularly** with small projects and exercises.
         """
