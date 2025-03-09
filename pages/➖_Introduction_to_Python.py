@@ -45,8 +45,8 @@ with tab1:
         Learning Python does not require advanced technical skills. Here’s how to begin:   
         (Note: If you want, you can download Python to install on your computer and use an IDE for coding. However, we'll use Google colab, clouding-based Python platform without installing the program directly for our class purposes.)
         
-        **Download Python** from [python.org](https://www.python.org/).  
-        **Use an IDE (Integrated Development Environment)** like VS Code or PyCharm.  
+        - **Download Python** from [python.org](https://www.python.org/).  
+        - **Use an IDE (Integrated Development Environment)** like VS Code or PyCharm.  
 
         Follow the steps below to start:
         
