@@ -44,10 +44,11 @@ with tab1:
         """
         Learning Python does not require advanced technical skills. Here’s how to begin:  
         1️⃣ **Download Python** from [python.org](https://www.python.org/).  
-        2️⃣ **Use an IDE (Integrated Development Environment)** like VS Code or PyCharm.  
+        2️⃣A. **Use an IDE (Integrated Development Environment)** like VS Code or PyCharm.  
 
         _Note that we'll skip steps 1 and 2 since we can use cloud platforms such as Google Colab for coding._
         
+        2️⃣B. **Visiti [Colab](https://colab.research.google.com) and log in with your Google account**
         3️⃣ **Start with basic commands** like printing messages and performing calculations.  
         4️⃣ **Practice regularly** with small projects and exercises.
         """
