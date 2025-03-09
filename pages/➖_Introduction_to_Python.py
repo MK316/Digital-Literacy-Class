@@ -12,6 +12,8 @@ tab1, tab2 = st.tabs(["🌀 Introduction to Python", "🎓 Why Coding for Future
 
 # 📌 Tab 1: Introduction to Python
 with tab1:
+    st.info("Python is a **powerful yet beginner-friendly** language, making it a great choice for anyone entering the world of coding. Whether for automation, analysis, or education, Python **opens doors to new possibilities**.")
+
     st.markdown("#### ✅ Introduction to Python: A Beginner’s Guide")
 
     st.write(
@@ -56,7 +58,6 @@ with tab1:
         """
     )
 
-    st.info("Python is a **powerful yet beginner-friendly** language, making it a great choice for anyone entering the world of coding. Whether for automation, analysis, or education, Python **opens doors to new possibilities**.")
 
 # 📌 Tab 2: Why Coding Matters for Future Language Teachers
 with tab2:
