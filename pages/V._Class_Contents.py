@@ -12,11 +12,17 @@ st.caption("Exploring digital tools that support teaching and learning, includin
 st.markdown("#### 💧 Part 2: Coding basics")
 st.write("[1] Coding4ET")
 st.caption("A simplified manual for learning basic Python coding tailored for English teachers. 'ET' refers to English teachers.")
+st.write("[2] Markdown language manual")
+st.caption("Markdown is a lightweight markup language that allows you to add formatting elements to plain text. It is designed to be easy to read and write, using simple symbols like asterisks and hashes to format words as bold or italic, create headers, and organize content into lists or tables. Markdown is commonly used for writing documentation, formatting readme files on GitHub, and creating content for websites.")
+
+st.markdown("#### 💧 Part 3: Python Coding Practice")
+st.write("[1] Coding examples")
+st.caption("A simple coding to practice.")
 
 st.write("[2] Python Coding with ChatGPT")
 st.caption("Hands-on practice with Python, focusing on writing code, understanding syntax, and building small programs.")
 
-st.markdown("#### 💧 Part 3: App Design and implementation")
+st.markdown("#### 💧 Part 4: App Design and implementation")
 st.caption("An introduction to designing applications, including user interface basics and structuring simple applications.")
 st.write("[1] Getting ideas")
 st.caption("To design an English learning app, identify learner needs, explore existing solutions, and add interactive features like voice recognition or AI feedback. Start simple, such as a vocabulary flashcard app. Use Gradio or Streamlit to build a prototype, test with learners, and refine based on feedback.")
@@ -25,7 +31,7 @@ st.caption("Using Gradio to create interactive web applications with minimal cod
 st.write("[3] Streamlit")
 st.caption("Developing web apps with Streamlit to make Python-based applications accessible online.")
 
-st.markdown("#### 💧 Part 4: App Deployment")
+st.markdown("#### 💧 Part 5: App Deployment")
 st.caption("Learning how to deploy applications online so that they can be accessed by users anywhere.")
 
 st.write("[1] Huggingface")
