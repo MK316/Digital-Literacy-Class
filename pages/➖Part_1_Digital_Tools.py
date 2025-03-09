@@ -82,6 +82,10 @@ def main():
                 "url": "https://invideo.io/",
                 "description": "A Text-to-Video generating AI."
             },
+            "🔎 SORA": {
+                "url": "https://sora.com/",
+                "description": "A Text-to-Video generating AI."
+            },
             "🔎 Skybox AI": {
                 "url": "https://skybox.blockadelabs.com/",
                 "description": "A 360 degree worlds from text."
