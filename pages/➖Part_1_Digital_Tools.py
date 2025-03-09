@@ -137,9 +137,24 @@ def main():
         st.markdown('<a href="https://https://mk-316-pronunciationfeedback.hf.space/" class="button_link" target="_blank">📝 App 4: Pronunciation Feedback</a>', unsafe_allow_html=True)
         st.markdown('<a href="https://mk-316-korean-english.hf.space" class="button_link" target="_blank">🎧 App 5: Loanword English Pronunciation</a>', unsafe_allow_html=True)
         st.markdown('<a href="https://mk-316-oxford5k.hf.space" class="button_link" target="_blank">🐇 App 6: Oxford 5K Vocabulary practice</a>', unsafe_allow_html=True)
-
+        st.markdown('<a href="https://mk-316-wer-recording.hf.space/" class="button_link" target="_blank">🌻 App 7: Pronunciation Feedback</a>', unsafe_allow_html=True)
+        
     
 
+    st.markdown("---")
+    
+     # Custom button with a link
+    st.caption("7. WER Pronunciation Feedback: free recording")
+    app_url6 = "https://mk-316-wer-recording.hf.space/"
+    button_html = f"""
+    <a href="{app_url6}" target="_blank">
+        <button style='color: white; background-color: #00CCFF; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
+            Pronunciation feedback application
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+ #####
 
 if __name__ == "__main__":
     main()
