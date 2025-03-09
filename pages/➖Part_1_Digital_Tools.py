@@ -86,6 +86,10 @@ def main():
                 "url": "https://skybox.blockadelabs.com/",
                 "description": "A 360 degree worlds from text."
             },
+            "🔎 ZEP": {
+                "url": "https://zep.us/en",
+                "description": "Fun Metaverse."
+            },
         }
 
         # Display links and descriptions
