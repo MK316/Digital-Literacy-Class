@@ -131,34 +131,23 @@ def main():
         st.markdown(button_style, unsafe_allow_html=True)
     
         # Creating clickable markdown buttons
-        st.markdown('<a href="https://mk-316-accuracyfeedback.hf.space" class="button_link" target="_blank">🍋 App 1: Accuracy Feedback</a>', unsafe_allow_html=True)
+        st.caption("1. Pronunciation feedback")
+        st.markdown('<a href="https://mk-316-accuracyfeedback.hf.space" class="button_link" target="_blank">🍋 App 1: Accuracy Feedback 1</a>', unsafe_allow_html=True)
+        st.caption("2. Pronunciation feedback: with sentences to practice")
+        st.markdown('<a href="https://mk-316-pronunciationfeedback.hf.space/" class="button_link" target="_blank">📝 App 2: Pronunciation Feedback 2</a>', unsafe_allow_html=True)
+        st.caption("3. WER Pronunciation Feedback: free recording")
+        st.markdown('<a href="https://mk-316-wer-recording.hf.space/" class="button_link" target="_blank">🌻 App 3: Pronunciation Feedback 3</a>', unsafe_allow_html=True)        
+        st.caption("4. Visible intonation")
         st.markdown('<a href="https://mk-316-tts-pitch.hf.space" class="button_link" target="_blank">🍐 App 2: Intonation contour</a>', unsafe_allow_html=True)
+        st.caption("5. What does accented English speech sound like?")
         st.markdown('<a href="https://mk-316-foreignaccent.hf.space" class="button_link" target="_blank">🐼 App 3: Foreign accent examples</a>', unsafe_allow_html=True)
-        st.caption("4. Pronunciation feedback")
-        st.markdown('<a href="https://mk-316-pronunciationfeedback.hf.space/" class="button_link" target="_blank">📝 App 4: Pronunciation Feedback</a>', unsafe_allow_html=True)
-        st.caption("5. English words used in Korean: pronunciation comparison")
+        st.caption("6. English words used in Korean: pronunciation comparison")
         st.markdown('<a href="https://mk-316-korean-english.hf.space" class="button_link" target="_blank">🎧 App 5: Loanword English Pronunciation</a>', unsafe_allow_html=True)
-        st.caption("6. Vocabulary learning with sound")
+        st.caption("7. Vocabulary learning with sound")
         st.markdown('<a href="https://mk-316-oxford5k.hf.space" class="button_link" target="_blank">🐇 App 6: Oxford 5K Vocabulary practice</a>', unsafe_allow_html=True)
-        st.caption("7. WER Pronunciation Feedback: free recording")
-        st.markdown('<a href="https://mk-316-wer-recording.hf.space/" class="button_link" target="_blank">🌻 App 7: Pronunciation Feedback</a>', unsafe_allow_html=True)
-        
-    
 
-    st.markdown("---")
-    
-     # Custom button with a link
-    st.caption("7. WER Pronunciation Feedback: free recording")
-    app_url6 = "https://mk-316-wer-recording.hf.space/"
-    button_html = f"""
-    <a href="{app_url6}" target="_blank">
-        <button style='color: white; background-color: #00CCFF; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
-            Pronunciation feedback application
-        </button>
-    </a>
-    """
-    st.markdown(button_html, unsafe_allow_html=True)
- #####
+st.markdown("---")
+
 
 if __name__ == "__main__":
     main()
