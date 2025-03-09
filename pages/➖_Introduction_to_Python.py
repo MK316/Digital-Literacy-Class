@@ -29,6 +29,16 @@ with tab1:
         including web development, data analysis, artificial intelligence, and automation.
         """
     )
+    st.write(
+        """
+        According to the TIOBE index, as of February 2025, Python was the most popular programming language, followed by C++, JAVA, C, C#, JavaScript, SQL, etc.
+        """
+    )   
+    # URL for the raw image content
+    image_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/images/tiobe202502.jpg"
+
+    # Display the image using Streamlit and set the width
+    st.image(image_url, width=300)  # Set the width to 300 pixels
 
     st.markdown("#### ✅ Why Learn Python?")
     st.markdown(
