@@ -50,7 +50,7 @@ with tab1:
 
         Follow the steps below to start:
         
-        1️⃣ **Visiti [Colab](https://colab.research.google.com) and log in with your Google account**   
+        1️⃣ **Visit [Colab](https://colab.research.google.com); when you run the code, you'll be asked to log in with your Google account (This is for the colab to access your google drive to save the page.**   
         2️⃣ **Start with basic commands** like printing messages and performing calculations.  
         3️⃣ **Practice regularly** with small projects and exercises.
         """
