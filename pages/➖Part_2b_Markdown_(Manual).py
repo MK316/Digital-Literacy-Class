@@ -9,7 +9,7 @@ with tabs[0]:
     st.write("### Markdown Manual")
     
     # URL of the Markdown file on GitHub
-    md_url = "https://raw.githubusercontent.com/MK316/Coding4ET/blob/main/Lessons/markdown.md"
+    md_url = "https://raw.githubusercontent.com/MK316/Coding4ET/raw/main/Lessons/markdown.md"
     
     # Fetch the content of the Markdown file
     response = requests.get(md_url)
