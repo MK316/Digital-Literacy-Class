@@ -17,7 +17,7 @@
 |W06||4/7|**4/9** 🐳 Group work||
 |      | | Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16** 🐳 Group work||
-|      | |Story based lesson plan | Story based lesson plan |  🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
+|      | |Story based lesson plan (discussion)| Story based lesson plan (md file)|  🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
 | W08||**4/21** |**4/23**||
 |     | | _Reading recess_| _Reading recess_  |       |
 |W09||**4/28** 🐳 Group work|**4/30** (Lecture Video)||
