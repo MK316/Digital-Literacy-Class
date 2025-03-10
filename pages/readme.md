@@ -18,7 +18,7 @@
 |      | | Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16** 🐳 Group work||
 |      | |Story based lesson plan (discussion)| Story based lesson plan (md file)|  🌀     |
-| W08||**4/21** |**4/23**||
+| W08||**4/21** (individually) |**4/23**||
 |     | | Online [Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       |
 |W09||**4/28** 🐳 Group work|**4/30** (Lecture Video)||
 |      || **Group quiz**  || |
