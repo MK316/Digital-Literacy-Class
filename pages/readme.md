@@ -13,7 +13,7 @@
 |W04||3/24 🐳 Group work|3/26||
 |      || Coding4ET manual 2.3 <br>🌀[Assign#3: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
 |W05||3/31 🐳 Group work|4/2||
-|      || Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
+|      || Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |W06||4/7|**4/9** 🐳 Group work||
 |      | |  Digital tools to share (discussion) | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16** 🐳 Group work||
