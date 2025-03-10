@@ -9,9 +9,9 @@
 |W02||3/10|3/12||
 |   || **Exploring Digital Tools** <br> Introduction to useful digital tools. Generative AIs <br>🌀[Assign#1 due by 3/12](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md) |**Python Basics I**   |       |
 | W03||3/17|3/19||
-|     || 🐳 Group work <br>Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics I** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
+|     || 🐳 Group work <br>Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics II** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
 |W04||3/24|3/26||
-|      || Group work <br>Coding4ET manual | **Python Basics II** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
+|      || Group work <br>Coding4ET manual | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
 |W05||3/31|4/2||
 |      || Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |W06||4/7|**4/9**||
