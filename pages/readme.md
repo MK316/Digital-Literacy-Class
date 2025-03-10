@@ -19,7 +19,7 @@
 |W07||**4/14** 🐳 |**4/16** 🐳 |
 |      | |Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)<br>Story based lesson plan (discussion)| Story based lesson plan (🌀Assign#5: md file)|     
 | W08||😍**4/21** (individually) |😍**4/23**|
-|     | |  | _Reading recess_  |       
+|     | |  _Reading recess_  | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
 |      || (Lesson Exercises to check)  |📌 **Midterm**| 
 |W10||(**5/5**)[^2]|5/7|
