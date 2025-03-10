@@ -5,7 +5,7 @@
 | Week | Date(s) | Mondays (1 hr) | Wednesdays (2 hrs) | Acts.&Assigns. |
 |------|------|----------|--------|-------|
 |  W01    |3/ (3)[^1], 5      |⛄ _Substitute Holiday_| **Introduction: Digital Literacy** <br> Course Overview <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** |
-|  W02    |3/10, 12| Group work <br> Questions to collect <br> Digital tools to explore | **Exploring Digital Tools** <br> Introduction to useful digital tools. <br> Hands-on practice: Digital tools to share. |   Coding4ET 🌀 Assign#1    |
+|  W02    |3/10, 12| Group work <br> Questions to collect <br> Digital tools to explore | **Exploring Digital Tools** <br> Introduction to useful digital tools. <br> Hands-on practice: Digital tools to share. |   [Coding4ET 🌀 Assign#1](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md))    |
 |  W03    |3/17, 19| 🐳 Group work <br>Coding4ET manual | **Python Basics I** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
 |  W04    |3/24, 16| Group work <br>Coding4ET manual | **Python Basics II** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
 |  W05    |3/31, 4/2| Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
