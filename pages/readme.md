@@ -21,9 +21,9 @@
 | W08||**4/21** (individually) |**4/23**||
 |     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       |
 |W09||**4/28** 🐳 Group work|**4/30** (Lecture Video)||
-|      || 🌀**Group quiz**  || |
+|      || ♥️**Group quiz**  || |
 |W10||(**5/5**)[^2]|5/7||
-|      || ⛄ _Holiday_  | **Midterm** |Presentation |
+|      || ⛄ _Holiday_  | ♥️**Midterm** |Presentation |
 |  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
 |  W12    |5/19, 21|  Group work  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
 |  W13    |5/26, 28|  Group work | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
