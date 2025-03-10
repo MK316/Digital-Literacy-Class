@@ -24,12 +24,12 @@
 |      || _Reading recess_  |♥️**Group quiz**| |
 |W10||(**5/5**)[^2]|5/7||
 |      || ⛄ _Holiday_  | ♥️**Midterm** |Presentation |
-|  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
-|  W12    |5/19, 21|  Group work  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
-|  W13    |5/26, 28|  Group work | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
-|  W14    |6/2, 5|  Group work |**Final Project Preview** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       |
+|  W11    |5/12, 14|  TBA  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
+|  W12    |5/19, 21|  Group work (TBA)  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
+|  W13    |5/26, 28|  Group work (TBA) | **Building Simple Educational Apps** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |       |
+|  W14    |6/2, 5|  Group work (TBA) |**Final Project Preview** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       |
 |  W15    |6/9[^1], 11[^2]|   Group work |**Makeup classes** |  |
-|  W16    |6/16, 18| Group work | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       |
+|  W16    |6/16, 18| Group work (TBA) | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       |
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
