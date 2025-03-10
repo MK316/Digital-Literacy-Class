@@ -15,7 +15,7 @@
 |W05||3/31|4/2||
 |      || Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |W06||4/7|**4/9** 🐳 Group work||
-|      | | Group work <br>Coding4ET manual | **Python Basics IV** <br> If-else statements: Making decisions in programs. <br> Writing simple quizzes with Python. |🌀Assign#: Digital tools to share video making|
+|      | | Group work <br>Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16**||
 |      | | Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |  🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
 | W08||**4/21** 🐳 Group work|**4/23**||
