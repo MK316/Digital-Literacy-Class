@@ -20,10 +20,10 @@
 |      | |Story based lesson plan (discussion)| Story based lesson plan (🌀Assign#5: md file)|     
 | W08||**4/21** (individually) |**4/23**|
 |     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       
-|W09||**4/28** |**4/30** 🐳 |
-|      || _Reading recess_  |🌀**Group assignment (Exercises)**| 
+|W09||**4/28**🐳 |**4/30** 🐳 |
+|      || 🌀**Group assignment (Exercises)**  |♥️**Midterm**| 
 |W10||(**5/5**)[^2]|5/7|
-|      || ⛄ _Holiday_  | ♥️**Midterm** |
+|      || ⛄ _Holiday_  |  |
 | W11||5/12|5/14|
 |     ||  TBA  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       
 |W12||5/19|5/21|
