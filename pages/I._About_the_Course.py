@@ -70,11 +70,11 @@ with tabs[2]:
 
     # Define the assignment table with detail instruction links
     assignments_data = {
-        "ID": ["1", "2", "3", "4", "5"],
-        "Due Date": ["TBA", "TBA", "TBA", "TBA", "TBA"],
-        "Topic": ["TBA", "TBA", "TBA", "TBA", "TBA"],
+        "ID": ["Assign#1", "2", "3", "4", "5"],
+        "Due Date": ["Mar.12", "TBA", "TBA", "TBA", "TBA"],
+        "Topic": ["Creating a repository", "TBA", "TBA", "TBA", "TBA"],
         "Instruction Link": [
-            "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A1.md)",
+            "[Instructions](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)",
             "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
             "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
             "[Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
