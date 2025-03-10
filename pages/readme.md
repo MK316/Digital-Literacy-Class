@@ -21,7 +21,7 @@
 | W08||**4/21** (individually) |**4/23**|
 |     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
-|      || 🌀**Group assignment (Exercises)**  |♥️**Midterm**| 
+|      || Lesson Exercises to check  |♥️**Midterm**| 
 |W10||(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  |
 | W11||5/12|5/14|
