@@ -15,7 +15,7 @@
 |W05||3/31|4/2||
 |      || Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |W06||4/7|**4/9** 🐳 Group work||
-|      | | Group work <br>Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
+|      | | Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16** 🐳 Group work||
 |      | |Story based lesson plan | Story based lesson plan |  🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
 | W08||**4/21** |**4/23**||
