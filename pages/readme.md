@@ -7,13 +7,21 @@
 |  W01    |3/ (3)[^1], 5      |⛄ _Substitute Holiday_| **Introduction: Digital Literacy** <br> Course Overview <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** |
 ||||||
 |  W02    |3/10, 12| Questions to collect <br> Digital tools to explore | **Exploring Digital Tools** <br> Introduction to useful digital tools. <br> Hands-on practice: Digital tools to share. |   [Coding4ET 🌀 Assign#1](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)    |
+||||||
 |  W03    |3/17, 19| 🐳 Group work <br>Coding4ET manual | **Python Basics I** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
+||||||
 |  W04    |3/24, 16| Group work <br>Coding4ET manual | **Python Basics II** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
+||||||
 |  W05    |3/31, 4/2| Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
+||||||
 |  W06    |4/7, **9**| Group work <br>Coding4ET manual | **Python Basics IV** <br> If-else statements: Making decisions in programs. <br> Writing simple quizzes with Python. |Assign#2: Digital tools to share video making|
+||||||
 |  W07    |**4/14, 16**| Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |  [Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
+||||||
 |  W08    |**4/21, 23**| **Midterm (Coding)** | _Reading recess_  |       |
+||||||
 |  W09    |**4/28, 30**| **Group work**  | **Python for Teaching** <br> How Python can help with lesson planning. <br> Simple text-based applications for language learning.| Story based lesson plan|
+||||||
 |  W10    |(*5/5)[^2], 7| ⛄ _Holiday_  | **Multimodality I** <br> What is multimodal learning? <br> Using images, text, and audio together in teaching. |Presentation |
 |  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
 |  W12    |5/19, 21|  Group work  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |       |
