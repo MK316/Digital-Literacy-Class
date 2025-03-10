@@ -120,7 +120,7 @@ with tab1:
     button_html = f"""
     <a href="{app_url6}" target="_blank">
         <button style='color: white; background-color: #CC0066; border: none; border-radius: 5px; padding: 10px 20px; text-align: center; display: inline-block; font-size: 16px;'>
-            Pronunciation feedback application
+            Chemistry learning app gallery
         </button>
     </a>
     """
