@@ -8,10 +8,10 @@
 |      |      |⛄ _Substitute Holiday_| **Introduction: Digital Literacy** <br> Course Overview <br> What is digital literacy? <br> Importance of digital tools in language teaching.  |
 |W02||3/10|3/12|
 |   || **Exploring Digital Tools** <br> Introduction to useful digital tools. Generative AIs <br>🌀[Assign#1 due by 3/12](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md) |**Python Basics I:** Lesson 3.1~3.3   |       
-| W03||3/17 🐳|3/19|
-|     ||  Coding4ET manual 2.3 <br>🌀[Assign#2: 3.3 EX](https://github.com/MK316/Coding4ET/blob/main/Lessons/EX3_3.ipynb) | **Python Basics II** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       
+| W03||3/17 |3/19|
+|     ||  Coding4ET manual 2.3 | **Python Basics II** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       
 |W04||3/24 🐳 |3/26|
-|      || Coding4ET manual 2.3 <br>🌀[Assign#3: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       
+|      || Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       
 |W05||3/31 |4/2|
 |      || Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       
 |W06||4/7|**4/9** 🐳 |
@@ -21,7 +21,7 @@
 | W08||**4/21** (individually) |**4/23**|
 |     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       
 |W09||**4/28** |**4/30** 🐳 |
-|      || _Reading recess_  |♥️**Group quiz**| 
+|      || _Reading recess_  |🌀**Group assignment (Exercises)**| 
 |W10||(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  | ♥️**Midterm** |
 | W11||5/12|5/14|
