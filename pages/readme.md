@@ -21,7 +21,7 @@
 | W08||**4/21** |**4/23**||
 |     | | _Reading recess_| _Reading recess_  |       |
 |W09||**4/28** 🐳 Group work|**4/30** (Lecture Video)||
-|      || **Group work**  || |
+|      || **Group quiz**  || |
 |W10||(**5/5**)[^2]|5/7||
 |      || ⛄ _Holiday_  | **Midterm** |Presentation |
 |  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
