@@ -74,11 +74,11 @@ with tabs[2]:
         "Due Date": ["Mar.12", "TBA", "TBA", "TBA", "TBA"],
         "Topic": ["Creating a repository", "TBA", "TBA", "TBA", "TBA"],
         "Instruction Link": [
-            "🔅[Instructions](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)",
-            "🚫[Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
-            "🚫[Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
-            "🚫[Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
-            "🚫[Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
+            "🔅ON[Instructions](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)",
+            "🚫OFF[Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
+            "🚫OFF[Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
+            "🚫OFF[Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
+            "🚫OFF[Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
         ]
     }
 
