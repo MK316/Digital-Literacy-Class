@@ -12,7 +12,7 @@
 |     ||  Coding4ET manual 2.3 <br>🌀[Assign#2: 3.3 EX](https://github.com/MK316/Coding4ET/blob/main/Lessons/EX3_3.ipynb) | **Python Basics II** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
 |W04||3/24 🐳 Group work|3/26||
 |      || Coding4ET manual 2.3 <br>🌀[Assign#3: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
-|W05||3/31 🐳 Group work|4/2||
+|W05||3/31 |4/2||
 |      || Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
 |W06||4/7|**4/9** 🐳 Group work||
 |      | |  Digital tools to share (discussion) | 🌀Assign#: Digital tools to share video making ||
