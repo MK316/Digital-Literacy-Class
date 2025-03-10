@@ -14,13 +14,13 @@
 |      || Coding4ET manual 2.3 <br>🌀[Assign#3: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics III** <br> Variables: storing words and numbers. <br> Making simple word games with Python. |       |
 |W05||3/31|4/2||
 |      || Group work <br>Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       |
-|W06||4/7|**4/9**||
+|W06||4/7|**4/9** 🐳 Group work||
 |      | | Group work <br>Coding4ET manual | **Python Basics IV** <br> If-else statements: Making decisions in programs. <br> Writing simple quizzes with Python. |🌀Assign#: Digital tools to share video making|
-|W07||**4/14**|**4/16**||
+|W07||**4/14** 🐳 Group work|**4/16**||
 |      | | Group work <br>Coding4ET manual | **Python Basics V** <br> Loops: Repeating actions easily. <br> Generating word practice activities. |  🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)      |
-| W08||**4/21**|**4/23**||
+| W08||**4/21** 🐳 Group work|**4/23**||
 |     | | **Midterm (Coding)** | _Reading recess_  |       |
-|W09||**4/28**|**4/30**||
+|W09||**4/28** 🐳 Group work|**4/30**||
 |      || **Group work**  | **Python for Teaching** <br> How Python can help with lesson planning. <br> Simple text-based applications for language learning.| Story based lesson plan|
 |W10||(*5/5)[^2]|5/7||
 |      || ⛄ _Holiday_  | **Multimodality I** <br> What is multimodal learning? <br> Using images, text, and audio together in teaching. |Presentation |
