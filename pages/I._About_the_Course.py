@@ -27,7 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Create tabs for different sections of the course
-tabs = st.tabs(["🍐 Course Overview", "🍏 Evaluation", "🍒 Assignments", "🍋 QR Links", "📆 Calendar"])
+tabs = st.tabs(["🍐 Course Overview", "🍏 Evaluation", "🍋 QR Links", "📆 Calendar"])
 
 # Content for the Course Overview tab
 with tabs[0]:
@@ -64,33 +64,10 @@ with tabs[1]:
     - Assignments: 30%
 
     """)
-# Content for the Assignments tab
-with tabs[2]:
-    st.markdown("### 📋 Assignments Details")
-
-    # Define the assignment table with detail instruction links
-    assignments_data = {
-        "ID": ["Assign#1", "2", "3", "4", "5"],
-        "Due Date": ["Mar.12", "TBA", "TBA", "TBA", "TBA"],
-        "Topic": ["Creating a repository", "TBA", "TBA", "TBA", "TBA"],
-        "Instruction Link": [
-            "🔅ON: [Instructions](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)",
-            "🚫OFF: [Instructions](https://github.com/yourusername/yourrepo/blob/main/A2.md)",
-            "🚫OFF: [Instructions](https://github.com/yourusername/yourrepo/blob/main/A3.md)",
-            "🚫OFF: [Instructions](https://github.com/yourusername/yourrepo/blob/main/A4.md)",
-            "🚫OFF: [Instructions](https://github.com/yourusername/yourrepo/blob/main/A5.md)"
-        ]
-    }
-
-    # Convert to DataFrame and display as a table
-    df_assignments = pd.DataFrame(assignments_data)
-
-    # Display table
-    st.markdown(df_assignments.to_markdown(index=False), unsafe_allow_html=True)
 
     
 # Content for the Links tab
-with tabs[3]:
+with tabs[2]:
     st.header("QR Links")
 
     st.write("1. Padlet - sharing files inclass")
@@ -106,7 +83,7 @@ with tabs[3]:
     st.markdown("---")
 
 # Content for the Calendar tab
-with tabs[4]:
+with tabs[3]:
     # Dropdown for selecting a month
     month_option = st.selectbox("Select a Month", options=["March", "April", "May", "June"], index=0)
     # Dictionary to map month names to their corresponding numbers
