@@ -17,11 +17,11 @@
 |W06||4/7|**4/9** 🐳 Group work||
 |      | | Coding4ET manual | 🌀Assign#: Digital tools to share video making ||
 |W07||**4/14** 🐳 Group work|**4/16** 🐳 Group work||
-|      | |Story based lesson plan (discussion)| Story based lesson plan (md file)|  🌀     |
+|      | |Story based lesson plan (discussion)| Story based lesson plan (🌀md file)|     |
 | W08||**4/21** (individually) |**4/23**||
-|     | | Online [Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       |
+|     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       |
 |W09||**4/28** 🐳 Group work|**4/30** (Lecture Video)||
-|      || **Group quiz**  || |
+|      || 🌀**Group quiz**  || |
 |W10||(**5/5**)[^2]|5/7||
 |      || ⛄ _Holiday_  | **Midterm** |Presentation |
 |  W11    |5/12, 14|  Group work  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br> Interactive exercises for students. |       |
