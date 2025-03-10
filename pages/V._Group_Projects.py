@@ -1,11 +1,11 @@
 import streamlit as st
 
 # Create three tabs
-tabs = st.tabs(["📌 Project list", "💻 GitHub IDs", "🖼️ Project Gallery"])
+tabs = st.tabs(["🌱 Project list", "💻 GitHub IDs", "🖼️ Project Gallery"])
 
 # First tab: Instructions
 with tabs[0]:
-    st.markdown("### 📌 Project List")
+    st.markdown("### 🌱 Project List")
     st.write("""
     Welcome to the project portal! This page will provide details of each project when scheduled:
     """)
