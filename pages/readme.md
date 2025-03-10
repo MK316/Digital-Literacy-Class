@@ -18,7 +18,7 @@
 |      | |  Digital tools to share (discussion) | 🌀Assign#4: Digital tools to share video making |
 |W07||**4/14** 🐳 |**4/16** 🐳 |
 |      | |Story based lesson plan (discussion)| Story based lesson plan (🌀Assign#5: md file)|     
-| W08||**4/21** (individually) |**4/23**|
+| W08||😍**4/21** (individually) |😍**4/23**|
 |     | | Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86) | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
 |      || (Lesson Exercises to check)  |♥️**Midterm**| 
