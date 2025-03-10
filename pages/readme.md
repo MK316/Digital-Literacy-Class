@@ -7,7 +7,7 @@
 |W01||3/ (3)[^1]|3/5||
 |      |      |⛄ _Substitute Holiday_| **Introduction: Digital Literacy** <br> Course Overview <br> What is digital literacy? <br> Importance of digital tools in language teaching.  | **Grouping** |
 |W02||3/10|3/12||
-|   || **Exploring Digital Tools** <br> Introduction to useful digital tools. |   |   [Coding4ET 🌀 Assign#1](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)    |
+|   || **Exploring Digital Tools** <br> Introduction to useful digital tools. Generative AIs |   |   [Coding4ET 🌀 Assign#1](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md)    |
 | W03||3/17|3/19||
 |     || 🐳 Group work <br>Coding4ET manual | **Python Basics I** <br> Why learn Python for education? <br> Writing simple commands and printing text. <br> Working with numbers and text. |       |
 |W04||3/24|3/26||
