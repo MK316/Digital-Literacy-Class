@@ -73,7 +73,7 @@ with tab2:
         else:
             st.error("Please paste some text to generate the dataframe.")
 
-with tabs[4]:
+with tab3:
     st.subheader("Text-to-Speech Converter (using Google TTS)")
     text_input = st.text_area("Enter the text you want to convert to speech:")
     language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
