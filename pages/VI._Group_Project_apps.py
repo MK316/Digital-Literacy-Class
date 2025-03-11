@@ -12,17 +12,16 @@ import os
 from io import BytesIO
 import io
 
-# Ensure NLTK resources are properly downloaded
-def download_nltk_resources():
+# Ensure that the 'punkt' resource is available
+def setup_nltk():
     try:
         nltk.data.find('tokenizers/punkt')
     except LookupError:
-        # Download the Punkt tokenizer
+        print("Downloading NLTK 'punkt' resource...")
         nltk.download('punkt', quiet=True)  # quiet=True reduces the output clutter
+        print("Download complete.")
 
-# Initialize and download necessary NLTK resources
-download_nltk_resources()
-
+setup_nltk()
 
 
 def preprocess_text(word, proper_nouns):
