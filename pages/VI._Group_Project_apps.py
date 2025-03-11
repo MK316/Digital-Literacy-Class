@@ -10,10 +10,16 @@ def create_word_frequency_dataframe(text, stopwords, proper_nouns):
     clean_text = []
     words = text.split()
     for word in words:
-        if word in proper_nouns:
-            clean_text.append(word)  # Add proper nouns as they are
+        # Remove punctuation from word
+        cleaned_word = word.translate(str.maketrans('', '', string.punctuation))
+        # Check if the cleaned, case-insensitive word is in the proper nouns list
+        if cleaned_word in {pn.lower() for pn in proper_nouns}:  # Proper nouns comparison in case-insensitive manner
+            # Find the original proper noun with preserved case
+            proper_noun = next((pn for pn in proper_nouns if pn.lower() == cleaned_word), cleaned_word)
+            clean_text.append(proper_noun)
         else:
-            clean_text.append(word.translate(str.maketrans('', '', string.punctuation)).lower())
+            # If not a proper noun, convert to lower case for uniformity
+            clean_text.append(cleaned_word.lower())
 
     # Filter out stopwords
     filtered_words = [word for word in clean_text if word.lower() not in stopwords]
