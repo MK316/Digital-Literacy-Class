@@ -10,6 +10,7 @@ from nltk.tokenize import sent_tokenize
 from gtts import gTTS
 import os
 from io import BytesIO
+import io
 
 nltk.download('punkt')
 
