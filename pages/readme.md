@@ -17,11 +17,11 @@
 |W06||4/7|**4/9** 🐳 |
 |      | |  📌**Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | Group activity: <br>🌀Assign#4: Digital tools to share video making |
 |W07||**4/14** 🐳 |**4/16** 🐳 |
-|      | |Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)<br>Learn digital tools (Video review and evaluation)| Story based lesson plan (🌀Assign#5: md file)|     
+|      | |<br>Learn digital tools (Video review and evaluation)| 1. Story based lesson plan (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
-|     | |  No class <br>(Individual: Lesson Exercises)  | No class <br>(Individual: Lesson Exercises) |       
+|     | |   No class <br>(Individual: Lesson Exercises)  | No class <br>(Individual: Lesson Exercises) |       
 |W09||**4/28** |**4/30** 🐳 |
-|      || No class <br>(Individual: Lesson Exercises)  |📌 **Midterm (group quiz)**| 
+|      || No class <br>(Individual: Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm (group quiz)**| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
 | W11||5/12|5/14|
