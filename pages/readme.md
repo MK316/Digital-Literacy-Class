@@ -15,7 +15,7 @@
 |W05||3/31 |4/2|
 |      || Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       
 |W06||4/7|**4/9** 🐳 |
-|      | |  📌**Midterm#1(individual quiz)** | Group activity: <br>🌀Assign#4: Digital tools to share video making |
+|      | |  📌**Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | Group activity: <br>🌀Assign#4: Digital tools to share video making |
 |W07||**4/14** 🐳 |**4/16** 🐳 |
 |      | |Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)<br>Story based lesson plan (discussion)| Story based lesson plan (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
