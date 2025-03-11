@@ -135,7 +135,7 @@ with tab4:
         "Rug": "A floor covering of thick woven material or animal skin, typically not extending over the entire floor."
     }
     
-       def generate_audio(text):
+    def generate_audio(text):
         tts = gTTS(text=text, lang='en')
         audio_bytes = BytesIO()
         tts.save(audio_bytes)
