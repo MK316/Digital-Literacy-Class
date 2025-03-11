@@ -5,27 +5,34 @@ import base64
 import io
 import string
 
+def preprocess_text(word, proper_nouns):
+    # Remove contractions and possessive endings before other punctuation
+    contractions = ["'s", "'ve", "'d", "'ll", "'re", "'m", "'nt"]
+    for contraction in contractions:
+        if word.endswith(contraction):
+            word = word[:-len(contraction)]
+            break
+    
+    # Remove remaining punctuation
+    word = word.translate(str.maketrans('', '', string.punctuation))
+    
+    # Check proper noun preservation
+    if word.lower() in proper_nouns:
+        # Retrieve original proper noun
+        return next((pn for pn in proper_nouns if pn.lower() == word.lower()), word)
+    return word.lower()
+
 def create_word_frequency_dataframe(text, stopwords, proper_nouns):
-    # Create a set for case-insensitive comparison
+    # Create a set for case-insensitive comparison of proper nouns
     proper_noun_set = {pn.lower() for pn in proper_nouns}
     
-    # Clean text by removing punctuation and converting to lower case except proper nouns
+    # Split text into words and clean each word
     clean_text = []
     words = text.split()
     for word in words:
-        # Remove punctuation from the word
-        cleaned_word = word.translate(str.maketrans('', '', string.punctuation))
-        
-        # Check if the word (in any case form) is in the proper noun list
-        if cleaned_word.lower() in proper_noun_set:
-            # Find and preserve the original case from the input proper nouns
-            original_case = next((pn for pn in proper_nouns if pn.lower() == cleaned_word.lower()), word)
-            clean_text.append(original_case)
-        else:
-            # Convert to lower case if not a proper noun
-            clean_text.append(cleaned_word.lower())
-
-    # Filter out stopwords, considering them case-insensitively
+        clean_text.append(preprocess_text(word, proper_noun_set))
+    
+    # Filter out stopwords
     filtered_words = [word for word in clean_text if word.lower() not in stopwords]
     counter = Counter(filtered_words)
     df = pd.DataFrame(counter.items(), columns=['Word', 'Frequency'])
@@ -55,6 +62,9 @@ with tab2:
     stopwords = {word.strip().lower() for word in stopword_input.split(',')} if stopword_input else set()
     proper_noun_input = st.text_area("Enter proper nouns separated by commas:", key="proper_noun_input")
     proper_nouns = {word.strip() for word in proper_noun_input.split(',')} if proper_noun_input else set()
+    
+    st.write("Words are processed by first removing common contractions and possessive endings ('s, 've, etc.), then other punctuation is stripped. Proper nouns are preserved in their specified form.")
+    
     if st.button("Create Dataframe", key="create_df"):
         if text_input_wf:
             df = create_word_frequency_dataframe(text_input_wf, stopwords, proper_nouns)
