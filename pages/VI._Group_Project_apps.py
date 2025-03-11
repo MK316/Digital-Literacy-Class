@@ -6,6 +6,9 @@ import io
 import string
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
+
 
 def preprocess_text(word, proper_nouns):
     # Create a mapping of lowercased proper nouns to their original case
@@ -42,8 +45,23 @@ def get_table_download_link_csv(df):
     b64 = base64.b64encode(towrite.getvalue().encode()).decode()
     return f'<a href="data:file/csv;base64,{b64}" download="word_frequency.csv">Download CSV file</a>'
 
-def generate_wordcloud(text):
-    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
+def generate_wordcloud(text, shape='square', color='black'):
+    # Default mask (none, square will use the full dimensions without a mask)
+    mask = None
+    if shape == 'oval':
+        # Create an oval mask
+        mask = Image.new('RGB', (800, 800), color='white')
+        mask_pil = Image.new('L', (800, 800), 0)
+        mask_draw = ImageDraw.Draw(mask_pil)
+        mask_draw.ellipse((50, 50, 750, 750), fill=255)
+        mask = np.array(mask_pil)
+    elif shape == 'star':
+        # Star mask would be similar, you might need to design it in a graphic editor or use a predefined image
+        mask = np.array(Image.open('path_to_star_mask.png'))
+
+    color_func = lambda *args, **kwargs: color  # Simple color function that uses the same color for all words
+    
+    wordcloud = WordCloud(width=800, height=400, background_color='white', mask=mask, color_func=color_func).generate(text)
     plt.figure(figsize=(10, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
@@ -57,16 +75,18 @@ st.title('Text Analysis Tools')
 # Creating tabs
 tab1, tab2, tab3 = st.tabs(["Word Cloud", "Word Frequency", "TBA"])
 
-# Word Cloud Tab
+# In your Streamlit app setup:
 with tab1:
     st.header("Generate a Word Cloud")
     text_input_wc = st.text_area("Paste your text here:", key="wc_input")
+    shape_option = st.selectbox("Select Frame Shape:", ['square', 'oval', 'star'], index=0)
+    color_option = st.color_picker("Pick a color", '#000000')
     if st.button("Generate Word Cloud", key="generate_wc"):
         if text_input_wc:
-            generate_wordcloud(text_input_wc)
+            generate_wordcloud(text_input_wc, shape=shape_option, color=color_option)
         else:
             st.error("Please paste some text to generate the word cloud.")
-
+            
 # Word Frequency Tab
 with tab2:
     st.header("Generate Word Frequency Dataframe")
