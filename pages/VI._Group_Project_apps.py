@@ -153,13 +153,13 @@ with tab4:
     chosen_scene = None
     
     with col1:
-        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='1. Classroom', width=300)
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Scene 1. Classroom', width=300)
         if st.button("🍊 Click to Choose an item", key="classroom"):
             chosen_scene = "Classroom"
             items = classroom_items
     
     with col2:
-        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='2. Living Room', width=300)
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Scene 2. Living Room', width=300)
         if st.button("🍋 Click to choose an item", key="living_room"):
             chosen_scene = "Living Room"
             items = living_room_items
