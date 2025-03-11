@@ -171,5 +171,5 @@ with tab4:
         
         if audio_bytes:
             st.write(f"You selected **{chosen_scene}**.")
-            st.write(f"**{item}**: {description}")
+            st.write(f"📍 **{item}**: {description}")
             st.audio(audio_bytes, format='audio/mp3')
