@@ -154,13 +154,13 @@ with tab4:
     
     with col1:
         st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)
-        if st.button("Click to Choose", key="classroom"):
+        if st.button("Click to Choose an item from the scene", key="classroom"):
             chosen_scene = "Classroom"
             items = classroom_items
     
     with col2:
         st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Living Room', width=300)
-        if st.button("Click to choose", key="living_room"):
+        if st.button("Click to choose an item from the scene", key="living_room"):
             chosen_scene = "Living Room"
             items = living_room_items
     
