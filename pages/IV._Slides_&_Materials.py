@@ -3,6 +3,9 @@ from PIL import Image
 import os
 
 # Define the URLs for the audio and image from GitHub
+audio_url0 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story00.mp3"
+image_url0 = "https://github.com/MK316/Coding4ET/raw/main/images/fox.jpg"
+
 audio_url1 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.mp3"
 image_url1 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/materials/story01.png"
 
@@ -120,6 +123,26 @@ with tabs[0]:
 
 
 with tabs[1]:
+
+    st.markdown("### 🌺 Story 0: The Clever Fox")
+    # Embedding the audio file
+    st.audio(audio_url0, format='audio/mp3')
+
+    # Displaying the image
+    st.image(image_url0, caption="The midnight library", width=400)
+
+    st.markdown("""
+    Once upon a time in a dense forest, there lived a clever fox named **Freddy**. Known for his wit and intelligence, Freddy's adventures were the stuff of legend among the forest inhabitants.
+    One day, Freddy discovered a shimmering pond while exploring a remote part of the forest. Curious, he crafted a fishing rod from a branch and vine, and soon caught a golden fish that surprisingly spoke, offering him three wishes for its release.
+
+    Freddy's wishes were thoughtful: safety for the forest, wisdom to avoid pitfalls, and a friend to share his adventures. The fish granted his wishes and disappeared with a splash. Moments later, a cheerful squirrel named **Sam** scampered up to him.
+
+    _"Hi Freddy! I heard you wished for a friend,"_ Sam said with a bright smile.
+
+    Delighted, Freddy welcomed Sam, and the two quickly became inseparable. Together, they explored the forest, solving problems and helping other creatures. Freddy found that with Sam, every day was filled with joy and new discoveries.
+    """)
+    st.markdown("---")
+    
     st.markdown("### 🌺 Story 1: The midnight library")
     # Embedding the audio file
     st.audio(audio_url1, format='audio/mp3')
