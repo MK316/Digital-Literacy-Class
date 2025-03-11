@@ -12,15 +12,16 @@ import os
 from io import BytesIO
 import io
 
-# Function to ensure necessary NLTK resources are downloaded
-def setup_nltk():
+# Ensure NLTK resources are properly downloaded
+def download_nltk_resources():
     try:
-        # Check if 'punkt' tokenizer is downloaded; if not, download it
         nltk.data.find('tokenizers/punkt')
     except LookupError:
-        nltk.download('punkt', quiet=True)  # Download quietly without verbose output
+        # Download the Punkt tokenizer
+        nltk.download('punkt', quiet=True)  # quiet=True reduces the output clutter
 
-setup_nltk()  # Call this function at the start of your app to setup NLTK
+# Initialize and download necessary NLTK resources
+download_nltk_resources()
 
 
 
