@@ -143,22 +143,23 @@ with tab4:
         return audio_bytes
     
     st.title('Learn Vocabulary with Scenes')
-    
+
     col1, col2 = st.columns(2)
+    items = {}
     
     with col1:
-        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)  # Ensure the image filename matches your actual file
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)
         if st.button("Choose Classroom", key="classroom"):
             chosen_scene = "Classroom"
             items = classroom_items
     
     with col2:
-        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Living Room', width=300)  # Ensure the image filename matches your actual file
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Living Room', width=300)
         if st.button("Choose Living Room", key="living_room"):
             chosen_scene = "Living Room"
             items = living_room_items
     
-    if 'chosen_scene' in locals():
+    if items:  # Ensure items is not empty
         item, description = random.choice(list(items.items()))
         audio_description = f"{item} is {description.lower()}"
         audio_bytes = generate_audio(audio_description)
