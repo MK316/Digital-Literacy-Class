@@ -14,13 +14,13 @@ def generate_wordcloud(text):
     plt.axis("off")
     plt.show()
 
-def get_table_download_link(df):
-    # Generate a link to download the data as an Excel file
-    towrite = io.BytesIO()  # Create a BytesIO buffer to hold the Excel file
-    df.to_excel(towrite, encoding='utf-8', index=False, header=True)  # Write the dataframe to the buffer
-    towrite.seek(0)  # Important: move back to the beginning of the buffer before reading it
-    b64 = base64.b64encode(towrite.read()).decode()  # Read the buffer and encode it as Base64
-    return f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="word_frequency.xlsx">Download Excel file</a>'
+def get_table_download_link_csv(df):
+    # Generate a link to download the data as a CSV file
+    towrite = io.StringIO()
+    df.to_csv(towrite, index=False)  # Write the dataframe to a StringIO buffer as CSV
+    towrite.seek(0)  # Move to the beginning of the buffer
+    b64 = base64.b64encode(towrite.getvalue().encode()).decode()  # Encode the buffer content as Base64
+    return f'<a href="data:file/csv;base64,{b64}" download="word_frequency.csv">Download CSV file</a>'
     
 def create_word_frequency_dataframe(text):
     # Create a dataframe of words and their frequencies
@@ -55,7 +55,7 @@ with tab2:
         if text_input_wf:
             df = create_word_frequency_dataframe(text_input_wf)
             st.dataframe(df)
-            st.markdown(get_table_download_link(df), unsafe_allow_html=True)
+            st.markdown(get_table_download_link_csv(df), unsafe_allow_html=True)
         else:
             st.error("Please paste some text to generate the dataframe.")
 
