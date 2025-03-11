@@ -3,8 +3,11 @@ import pandas as pd
 from collections import Counter
 import base64
 import io
+import string
 
 def create_word_frequency_dataframe(text, stopwords):
+    # Clean text by removing punctuation
+    text = text.translate(str.maketrans('', '', string.punctuation))
     # Split text into words, filter out stopwords, and count frequencies
     words = text.split()
     filtered_words = [word for word in words if word.lower() not in stopwords]
