@@ -1,5 +1,21 @@
 # 🌳 Story samples
 
+## Story sample: 🦊 The Clever Fox
+Once upon a time in a dense forest, there lived a clever fox named **Freddy**. Known for his wit and intelligence, Freddy's adventures were the stuff of legend among the forest inhabitants.
+
+One day, Freddy discovered a shimmering pond while exploring a remote part of the forest. Curious, he crafted a fishing rod from a branch and vine, and soon caught a golden fish that surprisingly spoke, offering him three wishes for its release.
+
+Freddy's wishes were thoughtful: safety for the forest, wisdom to avoid pitfalls, and a friend to share his adventures. The fish granted his wishes and disappeared with a splash. Moments later, a cheerful squirrel named **Sam** scampered up to him.
+
+_"Hi Freddy! I heard you wished for a friend,"_ Sam said with a bright smile.
+
+Delighted, Freddy welcomed Sam, and the two quickly became inseparable. Together, they explored the forest, solving problems and helping other creatures. Freddy found that with Sam, every day was filled with joy and new discoveries.
+
+![Image of a Fox](https://github.com/MK316/Coding4ET/raw/main/images/fox.jpg)
+📌[image link to use](https://github.com/MK316/Coding4ET/raw/main/images/fox.jpg)
+
+
+---
 ## Story 1: The Midnight Library
 
 [audio](https://github.com/MK316/Digital-Literacy-Class/blob/main/materials/story01.mp3)
