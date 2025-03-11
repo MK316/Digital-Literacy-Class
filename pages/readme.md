@@ -15,7 +15,7 @@
 |W05||3/31 |4/2|
 |      || **Python Basics V**| Dataframe: Handling csv and text files. |       
 |W06||4/7|**4/9** 🐳💙 |
-|      | |  📌 **Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making |
+|      | |  📌 **Midterm I (individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making |
 |W07||**4/14** 🐳💙 |**4/16** 🐳💙 |
 |      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
