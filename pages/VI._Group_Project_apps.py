@@ -8,6 +8,7 @@ from gtts import gTTS
 from io import BytesIO
 import io
 import string
+import random
 
 
 def preprocess_text(word, proper_nouns):
@@ -47,7 +48,7 @@ def generate_wordcloud(text):
 st.set_page_config(page_title="Text Analysis Tools", page_icon="📝")
 st.title('Text Analysis Tools')
 
-tab1, tab2, tab3 = st.tabs(["💬 Word Cloud", "🌱 Word Frequency", "🎧 Read-aloud-Listen"])
+tab1, tab2, tab3 = st.tabs(["💬 Word Cloud", "🌱 Word Frequency", "🎧 Read-aloud-Listen", "🎯 Words with picture"])
 
 with tab1:
     st.header("Generate a Word Cloud")
@@ -103,3 +104,65 @@ with tab3:
         # Display the audio file
         st.audio(speech.getvalue(), format='audio/mp3')
 
+
+
+with tab4:
+    # Define the data for each setting
+    classroom_items = {
+        "Desk": "A piece of furniture with a flat top used for working.",
+        "Blackboard": "A dark panel for writing on with chalk.",
+        "Chalk": "A small stick of colored calcium used for writing on blackboards.",
+        "Notebook": "A book of blank or ruled pages for writing notes.",
+        "Pen": "A writing instrument used to apply ink to a surface.",
+        "Bookshelf": "A shelf or shelves for holding books.",
+        "Books": "Printed works consisting of pages bound together.",
+        "Clock": "A device for telling the time.",
+        "Globe": "A spherical model of the Earth.",
+        "Map": "A diagrammatic representation of an area of land or sea showing physical features.",
+        "Backpack": "A bag with shoulder straps, carried on the back, and used for carrying things."
+    }
+    
+    living_room_items = {
+        "Sofa": "A comfortable seat wide enough for two or three people.",
+        "Cushion": "A soft bag of some ornamental material, used for sitting, reclining, or kneeling.",
+        "Coffee table": "A small, low table suitable for placing in front of a sofa.",
+        "Books": "Printed works consisting of pages bound together.",
+        "Vase": "An open container, often used to hold cut flowers.",
+        "Television": "A device for receiving television broadcasts.",
+        "Bookshelf": "A shelf or shelves for holding books.",
+        "Lamp": "A device for giving light, especially one that has a covering or is set on a post.",
+        "Plant": "A living organism that grows on land or in water and lacks locomotive movement or obvious nervous or sensory organs.",
+        "Rug": "A floor covering of thick woven material or animal skin, typically not extending over the entire floor."
+    }
+    
+       def generate_audio(text):
+        tts = gTTS(text=text, lang='en')
+        audio_bytes = BytesIO()
+        tts.save(audio_bytes)
+        audio_bytes.seek(0)
+        return audio_bytes
+    
+    st.title('Learn Vocabulary with Scenes')
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)  # Ensure the image filename matches your actual file
+        if st.button("Choose Classroom", key="classroom"):
+            chosen_scene = "Classroom"
+            items = classroom_items
+    
+    with col2:
+        st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Living Room', width=300)  # Ensure the image filename matches your actual file
+        if st.button("Choose Living Room", key="living_room"):
+            chosen_scene = "Living Room"
+            items = living_room_items
+    
+    if 'chosen_scene' in locals():
+        item, description = random.choice(list(items.items()))
+        audio_description = f"{item} is {description.lower()}"
+        audio_bytes = generate_audio(audio_description)
+        
+        st.write(f"You selected **{chosen_scene}**.")
+        st.write(f"**{item}**: {description}")
+        st.audio(audio_bytes, format='audio/mp3')
