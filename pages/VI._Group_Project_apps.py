@@ -47,7 +47,7 @@ def generate_wordcloud(text):
 st.set_page_config(page_title="Text Analysis Tools", page_icon="📝")
 st.title('Text Analysis Tools')
 
-tab1, tab2, tab3 = st.tabs(["Word Cloud", "Word Frequency", "Text to Speech"])
+tab1, tab2, tab3 = st.tabs(["💬 Word Cloud", "🌱 Word Frequency", "🎧 Read-aloud-Listen"])
 
 with tab1:
     st.header("Generate a Word Cloud")
