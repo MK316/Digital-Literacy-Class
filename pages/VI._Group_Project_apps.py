@@ -38,7 +38,7 @@ def create_word_frequency_dataframe(text, stopwords, proper_nouns):
     filtered_words = [word for word in clean_text if word.lower() not in stopwords]
     counter = Counter(filtered_words)
     df = pd.DataFrame(counter.items(), columns=['Word', 'Frequency'])
-    df = df.sort_values by='Frequency', ascending=False)
+    df = df.sort_values (by='Frequency', ascending=False)
     return df
 
 def get_table_download_link_csv(df):
