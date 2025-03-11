@@ -80,11 +80,18 @@ with tab3:
         if text_input_tts:
             try:
                 tts = gTTS(text=text_input_tts, lang='en')
+                # Save to BytesIO object
                 audio_file = BytesIO()
                 tts.save(audio_file)
                 audio_file.seek(0)
+
+                # Optionally save to a file to test if the audio is actually generated
+                with open("/tmp/test_audio.mp3", "wb") as f:  # Change path as necessary
+                    f.write(audio_file.getvalue())
+
                 st.audio(audio_file, format='audio/mp3', start_time=0)
             except Exception as e:
                 st.error(f"Failed to convert text to speech: {e}")
         else:
             st.error("Please enter some text to convert.")
+
