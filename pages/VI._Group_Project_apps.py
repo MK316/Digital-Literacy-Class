@@ -13,14 +13,28 @@ from io import BytesIO
 import io
 import ssl
 
+# Attempt to create an unverified SSL context for downloading NLTK data
 try:
     _create_unverified_https_context = ssl._create_unverified_context
 except AttributeError:
-    pass
+    # Handle older Python versions that don't support _create_unverified_context
+    print("Error setting up SSL context: Unverified HTTPS context creation not supported in this Python version.")
 else:
+    # Apply no-SSL verification context
     ssl._create_default_https_context = _create_unverified_https_context
 
-nltk.download()
+# Programmatically download the 'punkt' tokenizer
+def setup_nltk():
+    try:
+        # Check if 'punkt' tokenizer is already downloaded
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        # If not found, download it using the unverified SSL context
+        print("Downloading 'punkt' tokenizer...")
+        nltk.download('punkt', quiet=False)  # quiet=False for verbose output
+        print("'punkt' tokenizer downloaded successfully.")
+
+setup_nltk()
 
 # # Ensure that the 'punkt' resource is available
 # def setup_nltk():
