@@ -21,7 +21,7 @@
 | W08||😍**4/21**  |😍**4/23**|
 |     | |  _Reading recess_  | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
-|      || (Lesson Exercises to check)  |(Lesson Exercises to check)| 
+|      || (Individual: Lesson Exercises)  |(Group: Lesson Exercises to check)| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  | 📌 **Midterm** <br>  |
 | W11||5/12|5/14|
