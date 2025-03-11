@@ -76,21 +76,16 @@ with tab2:
 with tab3:
     st.subheader("Text-to-Speech Converter (using Google TTS)")
     text_input = st.text_area("Enter the text you want to convert to speech:")
-    language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
+    language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 ", ["English (American)", "English (British)", "Korean"])
 
     tts_button = st.button("Convert Text to Speech")
     
     if tts_button and text_input:
         # Map human-readable language selection to language codes and optionally to TLDs for English
         lang_codes = {
-            "Korean": ("ko", None),
             "English (American)": ("en", 'com'),
             "English (British)": ("en", 'co.uk'),
-            "Russian": ("ru", None),
-            "Spanish": ("es", None),
-            "French": ("fr", None),
-            "Chinese": ("zh-CN", None),
-            "Japanese": ("ja", None)
+            "Korean": ("ko", None),
         }
         language_code, tld = lang_codes[language]
 
