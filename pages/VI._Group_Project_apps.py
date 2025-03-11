@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from gtts import gTTS
 from io import BytesIO
 import io
+import string
+
 
 def preprocess_text(word, proper_nouns):
     proper_noun_map = {pn.lower(): pn for pn in proper_nouns}
