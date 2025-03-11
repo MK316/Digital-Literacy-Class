@@ -12,7 +12,15 @@ import os
 from io import BytesIO
 import io
 
-nltk.download('punkt')
+# Downloading the Punkt tokenizer for sentence splitting
+def download_nltk_resources():
+    try:
+        # Check if punkt tokenizer is downloaded, otherwise download it
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt')
+
+download_nltk_resources() 
 
 
 def preprocess_text(word, proper_nouns):
@@ -63,7 +71,7 @@ st.set_page_config(page_title="Text Analysis Tools", page_icon="📝")
 st.title('Text Analysis Tools')
 
 # Creating tabs
-tab1, tab2, tab3 = st.tabs(["Word Cloud", "Word Frequency", "TBA"])
+tab1, tab2, tab3 = st.tabs(["Word Cloud", "Word Frequency", "Read by sentences"])
 
 # Word Cloud Tab
 with tab1:
@@ -99,14 +107,17 @@ with tab3:
     text_input_tts = st.text_area("Paste your text here to convert into speech:", key="tts_input")
     if st.button('Start', key='start_tts'):
         if text_input_tts:
-            sentences = sent_tokenize(text_input_tts)
-            selected_sentence = st.selectbox("Choose a sentence to hear it spoken:", sentences, key="sentence_select")
-            
-            if st.button("Generate Audio", key="generate_audio"):
-                tts = gTTS(text=selected_sentence, lang='en')
-                audio_file = BytesIO()
-                tts.save(audio_file)
-                audio_file.seek(0)
-                st.audio(audio_file, format='audio/mp3', start_time=0)
+            try:
+                sentences = sent_tokenize(text_input_tts)
+                selected_sentence = st.selectbox("Choose a sentence to hear it spoken:", sentences, key="sentence_select")
+                
+                if st.button("Generate Audio", key="generate_audio"):
+                    tts = gTTS(text=selected_sentence, lang='en')
+                    audio_file = BytesIO()
+                    tts.save(audio_file)
+                    audio_file.seek(0)
+                    st.audio(audio_file, format='audio/mp3', start_time=0)
+            except Exception as e:
+                st.error(f"An error occurred: {str(e)}")
         else:
             st.error("Please paste some text to start.")
