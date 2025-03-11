@@ -21,11 +21,11 @@
 | W08||😍**4/21** (individually) |😍**4/23**|
 |     | |  _Reading recess_  | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
-|      || (Lesson Exercises to check)  |📌 **Midterm**| 
+|      || (Lesson Exercises to check)  |(Lesson Exercises to check)| 
 |W10||(**5/5**)[^2]|5/7|
-|      || ⛄ _Holiday_  | **Multimodality I** <br> Designing simple lesson materials with multiple modes. |
+|      || ⛄ _Holiday_  | 📌 **Midterm** <br>  |
 | W11||5/12|5/14|
-|     ||  TBA  | **Multimodality II** <br> Interactive exercises for students. |       
+|     ||  TBA  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br>Interactive exercises for students. |       
 |W12||5/19|5/21|
 |   |  ||  Group work (TBA)  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |     
 |W13||5/26|5/28|
