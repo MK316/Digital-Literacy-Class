@@ -15,13 +15,13 @@
 |W05||3/31 |4/2|
 |      || **Python Basics V**| Dataframe: Handling csv and text files. |       
 |W06||4/7|**4/9** 🐳💙 |
-|      | |  📌**Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making |
+|      | |  📌 **Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making |
 |W07||**4/14** 🐳💙 |**4/16** 🐳💙 |
 |      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
 |     | |  No class (Individual: Lesson Exercises)   |No class (Individual: Lesson Exercises) |       
 |W09||**4/28**🐳💙 |**4/30** 🐳💙 |
-|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm (group quiz)**| 
+|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
 | W11||5/12|5/14|
