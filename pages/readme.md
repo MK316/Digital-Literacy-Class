@@ -15,13 +15,13 @@
 |W05||3/31 |4/2|
 |      || Coding4ET manual | **Python Basics III** <br> Lists: organizing words and phrases. <br> Creating simple vocabulary lists. |       
 |W06||4/7|**4/9** 🐳 |
-|      | |  Digital tools to share (discussion) | 🌀Assign#4: Digital tools to share video making |
+|      | |  Group activity: <br>Digital tools to share (discussion) | Group activity: <br>🌀Assign#4: Digital tools to share video making |
 |W07||**4/14** 🐳 |**4/16** 🐳 |
 |      | |Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)<br>Story based lesson plan (discussion)| Story based lesson plan (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
-|     | |  No class (Individual: Lesson Exercises)  | No class (Individual: Lesson Exercises) |       
+|     | |  No class <br>(Individual: Lesson Exercises)  | No class <br>(Individual: Lesson Exercises) |       
 |W09||**4/28** |**4/30** 🐳 |
-|      || No class (Individual: Lesson Exercises)  |Group: Lesson Exercises to check| 
+|      || No class <br>(Individual: Lesson Exercises)  |Group activity: <br>Lesson Exercises to check| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  | 📌 **Midterm** <br>  |
 | W11||5/12|5/14|
