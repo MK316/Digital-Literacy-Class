@@ -6,37 +6,39 @@ import io
 import string
 
 def preprocess_text(word, proper_nouns):
+    # Create a mapping of lowercased proper nouns to their original case
+    proper_noun_map = {pn.lower(): pn for pn in proper_nouns}
+    
     # Remove contractions and possessive endings before other punctuation
     contractions = ["'s", "'ve", "'d", "'ll", "'re", "'m", "'nt"]
-    for contraction in contractions:
-        if word.endswith(contraction):
-            word = word[:-len(contraction)]
-            break
+    end_part = word[-3:] if len(word) >= 3 else word[-2:]  # Handle edge cases where words are too short
+    if any(end_part.endswith(contraction) for contraction in contractions):
+        for contraction in contractions:
+            if word.endswith(contraction):
+                word = word[:-len(contraction)]
+                break
     
     # Remove remaining punctuation
-    word = word.translate(str.maketrans('', '', string.punctuation))
-    
-    # Check proper noun preservation
-    if word.lower() in proper_nouns:
-        # Retrieve original proper noun
-        return next((pn for pn in proper_nouns if pn.lower() == word.lower()), word)
-    return word.lower()
+    cleaned_word = word.translate(str.maketrans('', '', string.punctuation))
+
+    # Check if the cleaned word is a proper noun (case insensitive match)
+    if cleaned_word.lower() in proper_noun_map:
+        # Return the original case from the user input proper nouns
+        return proper_noun_map[cleaned_word.lower()]
+
+    # Return the word in lowercase if not a proper noun
+    return cleaned_word.lower()
 
 def create_word_frequency_dataframe(text, stopwords, proper_nouns):
-    # Create a set for case-insensitive comparison of proper nouns
-    proper_noun_set = {pn.lower() for pn in proper_nouns}
-    
-    # Split text into words and clean each word
-    clean_text = []
+    # Split text into words and clean each word using the preprocessing function
     words = text.split()
-    for word in words:
-        clean_text.append(preprocess_text(word, proper_noun_set))
-    
-    # Filter out stopwords
+    clean_text = [preprocess_text(word, proper_nouns) for word in words]
+
+    # Filter out stopwords (consider them case-insensitively)
     filtered_words = [word for word in clean_text if word.lower() not in stopwords]
     counter = Counter(filtered_words)
     df = pd.DataFrame(counter.items(), columns=['Word', 'Frequency'])
-    df = df.sort_values(by='Frequency', ascending=False)
+    df = df.sort_values by='Frequency', ascending=False)
     return df
 
 def get_table_download_link_csv(df):
