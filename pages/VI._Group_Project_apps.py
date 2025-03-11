@@ -12,15 +12,16 @@ import os
 from io import BytesIO
 import io
 
-# Downloading the Punkt tokenizer for sentence splitting
-def download_nltk_resources():
+# Function to ensure necessary NLTK resources are downloaded
+def setup_nltk():
     try:
-        # Check if punkt tokenizer is downloaded, otherwise download it
+        # Check if 'punkt' tokenizer is downloaded; if not, download it
         nltk.data.find('tokenizers/punkt')
     except LookupError:
-        nltk.download('punkt')
+        nltk.download('punkt', quiet=True)  # Download quietly without verbose output
 
-download_nltk_resources() 
+setup_nltk()  # Call this function at the start of your app to setup NLTK
+
 
 
 def preprocess_text(word, proper_nouns):
@@ -118,6 +119,6 @@ with tab3:
                     audio_file.seek(0)
                     st.audio(audio_file, format='audio/mp3', start_time=0)
             except Exception as e:
-                st.error(f"An error occurred: {str(e)}")
+                st.error(f"An error occurred while processing text: {str(e)}")
         else:
             st.error("Please paste some text to start.")
