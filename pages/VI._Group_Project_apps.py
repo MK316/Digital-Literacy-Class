@@ -136,16 +136,21 @@ with tab4:
     }
     
     def generate_audio(text):
-        tts = gTTS(text=text, lang='en')
-        audio_bytes = io.BytesIO()
-        tts.save(audio_bytes)
-        audio_bytes.seek(0)
-        return audio_bytes
+        try:
+            tts = gTTS(text=text, lang='en')
+            audio_bytes = io.BytesIO()
+            tts.write_to_fp(audio_bytes)
+            audio_bytes.seek(0)
+            return audio_bytes
+        except Exception as e:
+            st.error(f"Failed to generate audio: {e}")
+            return None
     
     st.title('Learn Vocabulary with Scenes')
-
+    
     col1, col2 = st.columns(2)
     items = {}
+    chosen_scene = None
     
     with col1:
         st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)
@@ -159,11 +164,12 @@ with tab4:
             chosen_scene = "Living Room"
             items = living_room_items
     
-    if items:  # Ensure items is not empty
+    if items and chosen_scene:  # Ensure items is not empty and a scene was chosen
         item, description = random.choice(list(items.items()))
         audio_description = f"{item} is {description.lower()}"
         audio_bytes = generate_audio(audio_description)
         
-        st.write(f"You selected **{chosen_scene}**.")
-        st.write(f"**{item}**: {description}")
-        st.audio(audio_bytes, format='audio/mp3')
+        if audio_bytes:
+            st.write(f"You selected **{chosen_scene}**.")
+            st.write(f"**{item}**: {description}")
+            st.audio(audio_bytes, format='audio/mp3')
