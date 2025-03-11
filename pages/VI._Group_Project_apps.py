@@ -78,10 +78,13 @@ with tab3:
     text_input_tts = st.text_area("Paste your text here to convert into speech:", key="tts_input")
     if st.button('Convert to Speech', key='convert_tts'):
         if text_input_tts:
-            tts = gTTS(text=text_input_tts, lang='en')
-            audio_file = BytesIO()
-            tts.save(audio_file)
-            audio_file.seek(0)
-            st.audio(audio_file, format='audio/mp3', start_time=0)
+            try:
+                tts = gTTS(text=text_input_tts, lang='en')
+                audio_file = BytesIO()
+                tts.save(audio_file)
+                audio_file.seek(0)
+                st.audio(audio_file, format='audio/mp3', start_time=0)
+            except Exception as e:
+                st.error(f"Failed to convert text to speech: {e}")
         else:
             st.error("Please enter some text to convert.")
