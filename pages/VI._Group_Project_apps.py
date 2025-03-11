@@ -154,19 +154,19 @@ with tab4:
     
     with col1:
         st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/classroom.png', caption='Classroom', width=300)
-        if st.button("Classroom: Click to Choose an item", key="classroom"):
+        if st.button("Click to Choose", key="classroom"):
             chosen_scene = "Classroom"
             items = classroom_items
     
     with col2:
         st.image('https://github.com/MK316/Digital-Literacy-Class/raw/main/images/livingroom.png', caption='Living Room', width=300)
-        if st.button("Living Room: Click to Choose an item", key="living_room"):
+        if st.button("Click to choose", key="living_room"):
             chosen_scene = "Living Room"
             items = living_room_items
     
     if items and chosen_scene:  # Ensure items is not empty and a scene was chosen
         item, description = random.choice(list(items.items()))
-        audio_description = f"{item} is {description.lower()}"
+        audio_description = f"{item}. {item} is {description.lower()}"
         audio_bytes = generate_audio(audio_description)
         
         if audio_bytes:
