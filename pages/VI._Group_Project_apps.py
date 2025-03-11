@@ -5,12 +5,18 @@ import base64
 import io
 import string
 
-def create_word_frequency_dataframe(text, stopwords):
-    # Clean text by removing punctuation
-    text = text.translate(str.maketrans('', '', string.punctuation))
-    # Split text into words, filter out stopwords, and count frequencies
+def create_word_frequency_dataframe(text, stopwords, proper_nouns):
+    # Clean text by removing punctuation and converting to lower case except proper nouns
+    clean_text = []
     words = text.split()
-    filtered_words = [word for word in words if word.lower() not in stopwords]
+    for word in words:
+        if word in proper_nouns:
+            clean_text.append(word)  # Add proper nouns as they are
+        else:
+            clean_text.append(word.translate(str.maketrans('', '', string.punctuation)).lower())
+
+    # Filter out stopwords
+    filtered_words = [word for word in clean_text if word.lower() not in stopwords]
     counter = Counter(filtered_words)
     df = pd.DataFrame(counter.items(), columns=['Word', 'Frequency'])
     df = df.sort_values(by='Frequency', ascending=False)
@@ -37,9 +43,11 @@ with tab2:
     text_input_wf = st.text_area("Paste your text here:", key="wf_input")
     stopword_input = st.text_area("Enter stopwords separated by commas:", key="stopword_input")
     stopwords = {word.strip().lower() for word in stopword_input.split(',')} if stopword_input else set()
+    proper_noun_input = st.text_area("Enter proper nouns separated by commas:", key="proper_noun_input")
+    proper_nouns = {word.strip() for word in proper_noun_input.split(',')} if proper_noun_input else set()
     if st.button("Create Dataframe", key="create_df"):
         if text_input_wf:
-            df = create_word_frequency_dataframe(text_input_wf, stopwords)
+            df = create_word_frequency_dataframe(text_input_wf, stopwords, proper_nouns)
             st.dataframe(df)
             st.markdown(get_table_download_link_csv(df), unsafe_allow_html=True)
         else:
