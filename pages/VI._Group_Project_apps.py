@@ -16,12 +16,12 @@ def generate_wordcloud(text):
 
 def get_table_download_link(df):
     # Generate a link to download the data as an Excel file
-    towrite = io.BytesIO()
-    df.to_excel(towrite, encoding='utf-8', index=False, header=True)  
-    towrite.seek(0)  
-    b64 = base64.b64encode(towrite.read()).decode()
+    towrite = io.BytesIO()  # Create a BytesIO buffer to hold the Excel file
+    df.to_excel(towrite, encoding='utf-8', index=False, header=True)  # Write the dataframe to the buffer
+    towrite.seek(0)  # Important: move back to the beginning of the buffer before reading it
+    b64 = base64.b64encode(towrite.read()).decode()  # Read the buffer and encode it as Base64
     return f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="word_frequency.xlsx">Download Excel file</a>'
-
+    
 def create_word_frequency_dataframe(text):
     # Create a dataframe of words and their frequencies
     words = text.split()
