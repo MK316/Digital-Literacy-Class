@@ -137,7 +137,7 @@ with tab4:
     
     def generate_audio(text):
         tts = gTTS(text=text, lang='en')
-        audio_bytes = BytesIO()
+        audio_bytes = io.BytesIO()
         tts.save(audio_bytes)
         audio_bytes.seek(0)
         return audio_bytes
