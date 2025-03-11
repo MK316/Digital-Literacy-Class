@@ -73,25 +73,38 @@ with tab2:
         else:
             st.error("Please paste some text to generate the dataframe.")
 
-with tab3:
-    st.header("Text to Speech Conversion")
-    text_input_tts = st.text_area("Paste your text here to convert into speech:", key="tts_input")
-    if st.button('Convert to Speech', key='convert_tts'):
-        if text_input_tts:
-            try:
-                tts = gTTS(text=text_input_tts, lang='en')
-                # Save to BytesIO object
-                audio_file = BytesIO()
-                tts.save(audio_file)
-                audio_file.seek(0)
+with tabs[4]:
+    st.subheader("Text-to-Speech Converter (using Google TTS)")
+    text_input = st.text_area("Enter the text you want to convert to speech:")
+    language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
 
-                # Optionally save to a file to test if the audio is actually generated
-                with open("/tmp/test_audio.mp3", "wb") as f:  # Change path as necessary
-                    f.write(audio_file.getvalue())
+    tts_button = st.button("Convert Text to Speech")
+    
+    if tts_button and text_input:
+        # Map human-readable language selection to language codes and optionally to TLDs for English
+        lang_codes = {
+            "Korean": ("ko", None),
+            "English (American)": ("en", 'com'),
+            "English (British)": ("en", 'co.uk'),
+            "Russian": ("ru", None),
+            "Spanish": ("es", None),
+            "French": ("fr", None),
+            "Chinese": ("zh-CN", None),
+            "Japanese": ("ja", None)
+        }
+        language_code, tld = lang_codes[language]
 
-                st.audio(audio_file, format='audio/mp3', start_time=0)
-            except Exception as e:
-                st.error(f"Failed to convert text to speech: {e}")
+        # Assuming you have a version of gTTS that supports tld or you have modified it:
+        # This check ensures that the tld parameter is only used when not None.
+        if tld:
+            tts = gTTS(text=text_input, lang=language_code, tld=tld, slow=False)
         else:
-            st.error("Please enter some text to convert.")
+            tts = gTTS(text=text_input, lang=language_code, slow=False)
+        
+        speech = io.BytesIO()
+        tts.write_to_fp(speech)
+        speech.seek(0)
+
+        # Display the audio file
+        st.audio(speech.getvalue(), format='audio/mp3')
 
