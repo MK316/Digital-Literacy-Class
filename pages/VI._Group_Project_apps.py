@@ -11,17 +11,27 @@ from gtts import gTTS
 import os
 from io import BytesIO
 import io
+import ssl
 
-# Ensure that the 'punkt' resource is available
-def setup_nltk():
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        print("Downloading NLTK 'punkt' resource...")
-        nltk.download('punkt', quiet=True)  # quiet=True reduces the output clutter
-        print("Download complete.")
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
 
-setup_nltk()
+nltk.download()
+
+# # Ensure that the 'punkt' resource is available
+# def setup_nltk():
+#     try:
+#         nltk.data.find('tokenizers/punkt')
+#     except LookupError:
+#         print("Downloading NLTK 'punkt' resource...")
+#         nltk.download('punkt', quiet=True)  # quiet=True reduces the output clutter
+#         print("Download complete.")
+
+# setup_nltk()
 
 
 def preprocess_text(word, proper_nouns):
