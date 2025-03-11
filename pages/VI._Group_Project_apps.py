@@ -6,22 +6,26 @@ import io
 import string
 
 def create_word_frequency_dataframe(text, stopwords, proper_nouns):
+    # Create a set for case-insensitive comparison
+    proper_noun_set = {pn.lower() for pn in proper_nouns}
+    
     # Clean text by removing punctuation and converting to lower case except proper nouns
     clean_text = []
     words = text.split()
     for word in words:
-        # Remove punctuation from word
+        # Remove punctuation from the word
         cleaned_word = word.translate(str.maketrans('', '', string.punctuation))
-        # Check if the cleaned, case-insensitive word is in the proper nouns list
-        if cleaned_word in {pn.lower() for pn in proper_nouns}:  # Proper nouns comparison in case-insensitive manner
-            # Find the original proper noun with preserved case
-            proper_noun = next((pn for pn in proper_nouns if pn.lower() == cleaned_word), cleaned_word)
-            clean_text.append(proper_noun)
+        
+        # Check if the word (in any case form) is in the proper noun list
+        if cleaned_word.lower() in proper_noun_set:
+            # Find and preserve the original case from the input proper nouns
+            original_case = next((pn for pn in proper_nouns if pn.lower() == cleaned_word.lower()), word)
+            clean_text.append(original_case)
         else:
-            # If not a proper noun, convert to lower case for uniformity
+            # Convert to lower case if not a proper noun
             clean_text.append(cleaned_word.lower())
 
-    # Filter out stopwords
+    # Filter out stopwords, considering them case-insensitively
     filtered_words = [word for word in clean_text if word.lower() not in stopwords]
     counter = Counter(filtered_words)
     df = pd.DataFrame(counter.items(), columns=['Word', 'Frequency'])
