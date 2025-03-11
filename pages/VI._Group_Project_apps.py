@@ -4,6 +4,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from collections import Counter
 import base64
+import io
 
 def generate_wordcloud(text):
     # Generate and display a word cloud
@@ -39,20 +40,20 @@ tab1, tab2, tab3 = st.tabs(["Word Cloud", "Word Frequency", "TBA"])
 # Word Cloud Tab
 with tab1:
     st.header("Generate a Word Cloud")
-    text_input = st.text_area("Paste your text here:")
-    if st.button("Generate Word Cloud"):
-        if text_input:
-            generate_wordcloud(text_input)
+    text_input_wc = st.text_area("Paste your text here:", key="wc_input")
+    if st.button("Generate Word Cloud", key="generate_wc"):
+        if text_input_wc:
+            generate_wordcloud(text_input_wc)
         else:
             st.error("Please paste some text to generate the word cloud.")
 
 # Word Frequency Tab
 with tab2:
     st.header("Generate Word Frequency Dataframe")
-    text_input = st.text_area("Paste your text here:")
-    if st.button("Create Dataframe"):
-        if text_input:
-            df = create_word_frequency_dataframe(text_input)
+    text_input_wf = st.text_area("Paste your text here:", key="wf_input")
+    if st.button("Create Dataframe", key="create_df"):
+        if text_input_wf:
+            df = create_word_frequency_dataframe(text_input_wf)
             st.dataframe(df)
             st.markdown(get_table_download_link(df), unsafe_allow_html=True)
         else:
@@ -61,4 +62,3 @@ with tab2:
 # TBA Tab
 with tab3:
     st.header("To Be Announced")
-
