@@ -46,7 +46,7 @@ def generate_wordcloud(text):
     st.pyplot(plt)
 
 st.set_page_config(page_title="Text Analysis Tools", page_icon="📝")
-st.title('Text Analysis Tools')
+st.title('Try apps with your story')
 
 tab1, tab2, tab3, tab4 = st.tabs(["💬 Word Cloud", "🌱 Word Frequency", "🎧 Read-aloud-Listen", "🎯 Words with picture"])
 
@@ -146,7 +146,7 @@ with tab4:
             st.error(f"Failed to generate audio: {e}")
             return None
     
-    st.title('Learn Vocabulary with Scenes')
+    st.markdown('### 🌈 Learn Vocabulary with Scenes')
     
     col1, col2 = st.columns(2)
     items = {}
