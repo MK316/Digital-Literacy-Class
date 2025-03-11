@@ -22,7 +22,7 @@
 |     | |  _Reading recess_  | _Reading recess_  |       
 |W09||**4/28**🐳 |**4/30** 🐳 |
 |      || (Lesson Exercises to check)  |(Lesson Exercises to check)| 
-|W10||(**5/5**)[^2]|5/7|
+|W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  | 📌 **Midterm** <br>  |
 | W11||5/12|5/14|
 |     ||  TBA  | **Multimodality II** <br> Designing simple lesson materials with multiple modes. <br>Interactive exercises for students. |       
