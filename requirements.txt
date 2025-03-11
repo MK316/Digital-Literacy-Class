@@ -8,3 +8,4 @@ qrcode
 wordcloud
 streamlit-drawable-canvas
 openpyxl
+nltk
