@@ -10,17 +10,17 @@
 |   || **Exploring Digital Tools** <br> Introduction to useful digital tools. Generative AIs <br>🌀[Assign#1 due by 3/12](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md) |**Python Basics I:** Lesson 3  |       
 | W03||3/17 |3/19|
 |     ||  **Python Basics II:** Lesson 3  | **Python Basics III** Lesson 4 |       
-|W04||3/24 🐳 |3/26|
+|W04||3/24 🐳💙 |3/26|
 |      || Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics IV** Making simple word quiz with Python. |       
 |W05||3/31 |4/2|
 |      || **Python Basics V**| Dataframe: Handling csv and text files. |       
-|W06||4/7|**4/9** 🐳 |
+|W06||4/7|**4/9** 🐳💙 |
 |      | |  📌**Midterm#1(individual quiz)** <br> Conding4ET Lessons 1~4 | Group activity: <br>🌀Assign#4: Digital tools to share video making |
-|W07||**4/14** 🐳 |**4/16** 🐳 |
+|W07||**4/14** 🐳💙 |**4/16** 🐳💙 |
 |      | |<br>Learn digital tools (Video review and evaluation)| 1. Story based lesson plan (🌀Assign#5: md file)|     
 | W08||😍**4/21**  |😍**4/23**|
 |     | |   No class <br>(Individual: Lesson Exercises)  | No class <br>(Individual: Lesson Exercises) |       
-|W09||**4/28** |**4/30** 🐳 |
+|W09||**4/28** |**4/30** 🐳💙 |
 |      || No class <br>(Individual: Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm (group quiz)**| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
