@@ -1,4 +1,4 @@
-# DL class make-up schedule
+# DL class make-up schedule (4/9~4/30)
 
 |Date|Day|Todo|File link|Sumission|
 |--|--|--|--|--|
