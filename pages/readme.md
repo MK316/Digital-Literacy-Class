@@ -9,7 +9,7 @@
 |W02||3/10|3/12|
 |   || **Exploring Digital Tools** <br> Introduction to useful digital tools. Generative AIs <br>🌀[Assign#1 due by 3/12](https://github.com/MK316/Coding4ET/blob/main/Lessons/Ex2.md) |**Python Basics I:** Lesson 3  |       
 | W03||3/17 |3/19|
-|     ||  **Python Basics II:** <br>Lesson 3.4~  | **Python Basics III** Lesson 4 |       
+|     ||  **Python Basics II:** <br>Lesson 3. Operators, functions, andn libraries  | **Python Basics III** Lesson 4 |       
 |W04||3/24 🐳💙 |3/26|
 |      || Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics IV** Making simple word quiz with Python. |       
 |W05||3/31 |4/2|
