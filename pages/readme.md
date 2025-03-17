@@ -15,13 +15,13 @@
 |W05||3/31 |4/2|
 |      || **Python Basics V**| Dataframe: Handling csv and text files. |       
 |W06|Lecture videos + group activities|4/7|**4/9** 🐳💙 |
-|      | |  📌 **Midterm I (individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making |
+|      | |  📌 **Midterm I (individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee) |
 |W07|Lecture videos + group activities|**4/14** 🐳💙 |**4/16** 🐳💙 |
-|      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)|     
+|      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee)|     
 | W08|Make-up(3)|😍**4/21**  |😍**4/23**|
 |     | |  No class (Individual: Lesson Exercises)   |No class (Individual: Lesson Exercises) |       
 |W09|Exam period|**4/28**🐳💙 |**4/30** 🐳💙 |
-|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**| 
+|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee)| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
 | W11||5/12|5/14|
