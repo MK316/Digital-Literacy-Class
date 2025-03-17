@@ -21,7 +21,7 @@
 | W08|Make-up(3)|😍**4/21**  |😍**4/23**|
 |     | |  No class (Individual: Lesson Exercises)   |No class (Individual: Lesson Exercises) |       
 |W09|Exam period|**4/28**🐳💙 |**4/30** 🐳💙 |
-|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[Submit to Googlesheet](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing)| 
+|      || (Lesson Exercises) <br>Online 🌀[Survey (4/14)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[Submit to Googlesheet > Group_Quiz worksheet](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing)| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
 | W11||5/12|5/14|
