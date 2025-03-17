@@ -3,7 +3,7 @@
 #### Digital Literacy & English Education
 
 | Week | Notes | Mondays (1 hr) | Wednesdays (2 hrs) | 
-|------|------|:----------:|:--------:|
+|------|------|:----------|:--------:|
 |W01||3/ (3)[^1]|3/5|
 |      |      |⛄ _Substitute Holiday_| **Introduction: Digital Literacy** <br> Course Overview <br> What is digital literacy? <br> Importance of digital tools in language teaching.  |
 |W02||3/10|3/12|
