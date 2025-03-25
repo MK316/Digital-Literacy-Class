@@ -11,7 +11,7 @@
 | W03||3/17 |3/19|
 |     ||  **Python Basics II:** <br>Lesson 3. Operators, functions, andn libraries  | **Python Basics III** Lesson 3 & 4 <br>❤️ Lecture video is now uploaded on LMS: (Lesson4 + Exercise; makeup class) Due by Mar.26|       
 |W04||3/24 🐳💙 |3/26|
-|      || Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics IV** Making simple word quiz with Python. |       
+|      || Coding4ET manual 2.3 <br>🌀[Assign#2: markdown](https://github.com/MK316/Coding4ET/blob/main/Lessons/Lesson02-3.md) | **Python Basics IV** Coding4ET Lesson 5. Multimodality, Making simple word quiz with Python, Huggingface |       
 |W05||3/31 |4/2|
 |      || **Python Basics V**| Dataframe: Handling csv and text files. |       
 |W06|Lecture videos + group activities|4/7|**4/9** 🐳💙 |
