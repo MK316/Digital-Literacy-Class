@@ -17,7 +17,7 @@
 |W06|Lecture videos + group activities|4/7|**4/9** 🐳💙 |
 |      | |  📌 **Midterm I (individual quiz)** <br> Conding4ET Lessons 1~4 | 🌀Assign#4 (group): Digital tools to share video making<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee) |
 |W07|Group activities|**4/14** 🐳💙 |**4/16** 🐳💙 |
-|      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee)|     
+|      | |🌀Assign#4 (group): Digital tools to share video making| Story based lesson planning (🌀Assign#5: md file)<br>[Submit to Padlet](https://padlet.com/mirankim316/s25_dlee) <br>[emoji](https://gist.github.com/rxaviers/7360908)|     
 | W08|No Classes|😍**4/21**  |😍**4/23**|
 |     | |  No class (Individual: Lesson Exercises)   |No class (Individual: Lesson Exercises) |       
 |W09|Exam period|**4/28**🐳💙 |**4/30** 🐳💙 |
