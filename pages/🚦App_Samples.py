@@ -128,11 +128,11 @@ with tab1:
  #####
  
 with tab2:
-    st.markdown("### 1. 2024.12.14 제1회 경상 디지털 교육 나눔 한마당")
-    st.write("Symposium")
+    st.markdown("### 1. 제1회 경상 디지털 교육 나눔 한마당")
+    st.caption("2024.12.14")
 
     # Paths to your audio and image files
-    st.markdown("#### [Go to workshop page](https://241214.streamlit.app/)")
+    st.markdown("#### 💦 [Go to workshop page](https://241214.streamlit.app/)")
     st.markdown("This page contains sample applications in learning vocabulary, listening, speaking as well as Lesson plan samples prepared by students.")
     
 
