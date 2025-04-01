@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 # Create tabs
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🌱 Apps by MK316", "🌹 Apps by Students", "🎨 Drawing", "🌐 TextBoard", "Test"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🌱 Apps by MK316", "🌹 Workshop sample", "🎨 Drawing", "🌐 TextBoard", "Test"])
 
 # First tab content
 with tab1:
@@ -128,22 +128,13 @@ with tab1:
  #####
  
 with tab2:
-    st.header("Interactive Audio (doesn't work for now")
-    st.write("Click the image below to play the audio:")
+    st.markdown("## 2024.12.14 제1회 경상 디지털 교육 나눔 한마당")
+    st.write("Symposium")
 
     # Paths to your audio and image files
-    audio_file_path = "https://github.com/MK316/Digital-Literacy-Class/raw/main/audio/phonetics.mp3"
-    image_file_path = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/audio.png"
-
-    # Embedding an audio player that plays when the image is clicked
-    audio_html = f"""
-    <audio id="audioPlayer" controls style="display:none;">
-        <source src="{audio_file_path}" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
-    <img src="{image_file_path}" alt="Play Audio" onclick="document.getElementById('audioPlayer').play();" style="cursor: pointer; width: 300px;" />
-    """
-    st.markdown(audio_html, unsafe_allow_html=True)
+    st.markdown("### [Go to workshop page](https://241214.streamlit.app/)"
+    st.markdown("This page contains sample applications in learning vocabulary, listening, speaking as well as Lesson plan samples prepared by students.")
+    
 
 with tab3:
     st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
