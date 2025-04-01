@@ -132,7 +132,7 @@ with tab2:
     st.write("Symposium")
 
     # Paths to your audio and image files
-    st.markdown("### [Go to workshop page](https://241214.streamlit.app/)"
+    st.markdown("### [Go to workshop page](https://241214.streamlit.app/)")
     st.markdown("This page contains sample applications in learning vocabulary, listening, speaking as well as Lesson plan samples prepared by students.")
     
 
