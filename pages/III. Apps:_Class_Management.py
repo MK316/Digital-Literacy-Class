@@ -16,7 +16,7 @@ def create_wordcloud(text):
     return wordcloud
 
 # Streamlit tabs
-tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud", "🎨 Drawing","😍 Emoji"])
+tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 Github IDs","🔊 Text-to-Speech", "⛅ Word Cloud", "🎨 Drawing","😍 Emoji","TBA"])
 
 # QR Code tab
 with tabs[0]:
@@ -263,3 +263,6 @@ with tabs[7]:
     st.markdown("---")
     st.link_button("Go to: Complete list of github markdown emoji markup from Github (rxaviers)", "https://gist.github.com/rxaviers/7360908")
     st.caption("This link provides quick access to a Unicode characters list. Clicking the button below will open an external page owned by rxaviers on GitHub Gist. The page contains a comprehensive table of Unicode characters for reference.")
+
+with tabs[8]:
+    st.markdown("[link](https://forms.gle/QbWNTAdR8J1iz9Zp6)")
