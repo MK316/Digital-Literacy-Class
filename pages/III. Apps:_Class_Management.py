@@ -265,4 +265,4 @@ with tabs[7]:
     st.caption("This link provides quick access to a Unicode characters list. Clicking the button below will open an external page owned by rxaviers on GitHub Gist. The page contains a comprehensive table of Unicode characters for reference.")
 
 with tabs[8]:
-    st.markdown("[link](https://forms.gle/QbWNTAdR8J1iz9Zp6)")
+    st.markdown("[link](https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/temp.txt)")
