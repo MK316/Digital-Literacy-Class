@@ -21,7 +21,7 @@
 | W08|No Classes|😍**4/21**  |😍**4/23**|
 |     | |  No class (Individual: Lesson Exercises)   |No class (Individual: Lesson Exercises) |       
 |W09|Group Quiz|**4/28**🐳💙 |**4/30** 🐳💙 |
-|      || (Lesson Exercises) <br>Online 🌀[Survey (5/10)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[1. Submit APP link to Googlesheet > Group_Quiz worksheet](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing)<br>[2. Submit image file on Padlet](https://padlet.com/mirankim316/s25_dlee)| 
+|      || (Lesson Exercises) <br>Online 🌀[Survey (5/10)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[Quiz video will appear on LMS at 1:55PM](https://rec.ac.kr/gnu), <br>[1. Submit APP link to Googlesheet > Group_Quiz worksheet](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing)<br>[2. Submit image file on Padlet](https://padlet.com/mirankim316/s25_dlee)| 
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Multimodality I** <br> Designing simple lesson materials with multiple modes.  |
 | W11||5/12|5/14|
