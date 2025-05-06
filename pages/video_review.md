@@ -4,7 +4,9 @@
 
 ## 😊Comments by group
 
-### Group 1 Video
+### Group 1 Video: Playphrase.me
+
+[Video](https://padlet.com/mirankim316/digital-literacy-english-education-qx71ehqa4rua3mpk/wish/XGyBQbkdYmE9ZL6K)
 
 + The organization of the presentation was good and the examples of how it can be used in education was also meaningful. Typing out subtitles by hand may hard to students and take
 + Students get to hear how phrases are used in real-life contexts with natural pronunciation, intonation, and emotion. This bridges the gap between textbook English and real-world English. Also, The role play element pushes students to use the expressions creatively, which helps with long-term retention and builds confidence. But some of the clips on playphrase.me may include fast, unclear, or idiomatic language that is difficult for middle school students to understand without support. Since the clips are from various movies or TV shows, some content may not be age-appropriate or relevant for younger students. Teachers may need to pre-screen or carefully guide the search process.
