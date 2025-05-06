@@ -5,13 +5,13 @@
 **Streamlit** is a Python library that turns scripts into shareable web apps—great for creating quizzes, vocabulary tools, pronunciation aids, and more, all without needing web design experience.  
 
 ✅ Perfect for teachers who want to create simple apps to support language learning.  
-🧑‍🏫 No need to know HTML or JavaScript!  
+✅ No need to know HTML or JavaScript!  
 
 ## 2. Getting Started
 
-✔ A GitHub account  
-✔ A free Streamlit Cloud account linked to GitHub  
-✔ Basic Python knowledge (we’ll guide you)  
+✅ A GitHub account  
+✅ A free Streamlit Cloud account linked to GitHub  
+✅ Basic Python knowledge (we’ll guide you)  
 
 ## 3. Workflow Overview
 
@@ -31,6 +31,7 @@ gtts
 Let's start with a simple vocabulary viewer. Copy the following code into a file named app.py.
 
 #### 📘 App 1: Vocabulary List Viewer  
+
 🌀 [App1](https://mk316-app1.streamlit.app/)
 
 ```
@@ -86,8 +87,9 @@ if st.button("Check Answer"):
 
 #### 📘 App 3: Multiple-Choice Quiz using csv file
 
-Prepare a csv file with column names 'Question, Answer, Option1, Option2, Option3, Option4, Option5'  
+✅ Prepare a csv file with column names 'Question, Answer, Option1, Option2, Option3, Option4, Option5'  
 
+🌀 [Sample csv file](https://raw.githubusercontent.com/MK316/App1/refs/heads/main/quiz_questions.csv)  
 🌀 [APP3](https://mk316-app3.streamlit.app/)
 
 ```
