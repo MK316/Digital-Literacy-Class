@@ -13,7 +13,7 @@
 + The narrative format can enhance retention by making language input more memorable and emotionally engaging. However, It might take more time to apply in a regular classroom.
 + One of the advantages is that students can be provided various examples of expressions in a textbook. One of the disadvantages is that if students have bad internet connection, they will have difficulty using the tool.
 
-### Group 2 Video
+### Group 2 Video: ZEP
 
 [Video](https://padlet.com/mirankim316/digital-literacy-english-education-qx71ehqa4rua3mpk/wish/J24jalzjRj94Z0A1)
 
