@@ -13,7 +13,7 @@
 
 ✅ A GitHub account  
 ✅ A free Streamlit Cloud account linked to GitHub  
-✅ Basic Python knowledge (we’ll guide you)  
+✅ Basic Python knowledge
 
 ## 3. Workflow Overview
 
