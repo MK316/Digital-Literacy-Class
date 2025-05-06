@@ -23,7 +23,9 @@
 + It was easy to understand the digital tool that introduced by directly presenting examples of digital tools to be used in video. However, it was unfortunate because it felt like the presenters were only talking about the advantages of ZEP in the part of the target learners.
 + It was impressive to show the actual use and explain the digital tool. However, the speed of tts was so fast that I had difficulty understanding the presentation right away.
 
-### Group 3 Video
+### Group 3 Video: Memrise
+
+[Video](https://padlet.com/mirankim316/digital-literacy-english-education-qx71ehqa4rua3mpk/wish/NvylWEolXqPDQ0OX)
 
 + The variety of quiz types, conversation simulations with AI, and use of native speaker videos make Memrise feel dynamic and engaging. And they clearly highlight how the reward system helps with learner motivation and consistency, which is a major plus for language acquisition. But since Memrise is primarily designed for self-paced learning, it might be challenging to integrate into a classroom where students progress at different speeds. Teachers would need to create structured plans to align it with lessons. Also, teachers may not be able to easily track students’ individual progress or customize the content in Memrise to match specific classroom goals unless they use additional tools outside the app.
 + If executed properly according to the instructions, it seems like it would be suitable for students to use.
