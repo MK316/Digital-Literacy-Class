@@ -23,7 +23,7 @@
 |W09|Group Quiz|**4/28**🐳💙 |**4/30** 🐳💙 |
 |      || (Lesson Exercises) <br>Online 🌀[Survey (5/10)](https://forms.gle/RAcEev4ZoqkcPQK86)  |📌 **Midterm II (group quiz)**<br>[Quiz video will appear on LMS at 1:55PM](https://rec.ac.kr/gnu), <br>[1. Submit APP link to Googlesheet > Group_Quiz worksheet](https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing)<br>[2. Submit image file on Padlet](https://padlet.com/mirankim316/s25_dlee)| 
 |W10||💛(**5/5**)[^2]|5/7|
-|      || ⛄ _Holiday_  |  **Streamlit practice** <br> Designing simple lesson materials with streamlit. <br>📌 [Streamlit practice](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlit.md) |
+|      || ⛄ _Holiday_  |  **Streamlit practice** <br> Designing simple lesson materials with streamlit. <br>📌 [Streamlit practice](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlit.md) <br>[Peer review](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/video_review.md)|
 | W11||5/12|5/14|
 |     ||  TBA  | **Multimodality I**  <br>Interactive exercises for students. |       
 |W12||5/19|5/21|
