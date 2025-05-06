@@ -15,6 +15,9 @@
 
 ### Group 2 Video
 
+[Video](https://padlet.com/mirankim316/digital-literacy-english-education-qx71ehqa4rua3mpk/wish/J24jalzjRj94Z0A1)
+
+
 + summarizing of the benefits of ZEP was good. I would have liked to see more step-by-step instructions on how to prepare for class.
 + Informative and suitable for classroom instruction.
 + It was easy to understand the digital tool that introduced by directly presenting examples of digital tools to be used in video. However, it was unfortunate because it felt like the presenters were only talking about the advantages of ZEP in the part of the target learners.
