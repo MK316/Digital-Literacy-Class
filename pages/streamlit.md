@@ -31,6 +31,7 @@ gtts
 Let's start with a simple vocabulary viewer. Copy the following code into a file named app.py.
 
 #### 📘 App 1: Vocabulary List Viewer  
+🌀 [App1](https://mk316-app1.streamlit.app/)
 
 ```
 import streamlit as st
@@ -57,6 +58,7 @@ st.dataframe(df)
 ✅ Exercise: Replace the words and examples with your current lesson content.
 
 #### 📘 App 2: Simple Multiple-Choice Quiz
+🌀 [App2](https://mk316-app2.streamlit.app/)
 
 ```
 import streamlit as st
@@ -85,6 +87,7 @@ if st.button("Check Answer"):
 #### 📘 App 3: Multiple-Choice Quiz using csv file
 
 Prepare a csv file with column names 'Question, Answer, Option1, Option2, Option3, Option4, Option5'
+🌀 [APP3](https://mk316-app3.streamlit.app/)
 
 ```
 import streamlit as st
@@ -135,6 +138,8 @@ else:
 
 
 #### 📘 App 4: Pronunciation Practice with TTS
+
+📌 **Important: The following code contains an error. Find it and fix it to make the application work properly.**
 
 ```
 from gtts import gTTS
