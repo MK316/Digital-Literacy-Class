@@ -18,7 +18,8 @@
 ## 3. Workflow Overview
 
 1. Write your app as a .py file (e.g., app.py) in your new repository
-2. Write a file named "requirements.txt" with necessary libraries/pacakge list that needs installations
+2. Write a file named "requirements.txt" with necessary libraries/pacakge list that needs installations.
+   
 e.g., requirements.txt
 ```
 streamlit
