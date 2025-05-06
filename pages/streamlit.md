@@ -11,7 +11,7 @@
 
 ## 2. Getting Started
 
-✅ A GitHub account  
+✅ A GitHub account: make a new repository named 'Myapps'    
 ✅ A free Streamlit Cloud account linked to GitHub  
 ✅ Basic Python knowledge
 
