@@ -9,3 +9,5 @@ st.markdown("""
 💦 Go to [Streamlit practice](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlit.md)  
 
 """) 
+
+st.caption("Note that this page itself is deployed on Streamlit.")
