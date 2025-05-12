@@ -43,7 +43,8 @@ Bob	15	B
 7. Scroll down and click Commit new file  
 ✅ You now have a CSV file you can access anywhere!
 
-   
+---
+
 ### Step 2: Open Google Colab and Read the File
 
 + Visit https://colab.research.google.com
@@ -80,6 +81,7 @@ df
 | Load a file with spaces | `pd.read_csv("file.txt", delimiter=" ")` |
 | Load a semicolon file   | `pd.read_csv("file.txt", delimiter=";")` |
 
+---
 
 ### Step 3: Basic Data Access and Manipulation
 
@@ -103,6 +105,7 @@ df["Age"].mean()   # Average age
 ```
 df[df["Grade"] == "A"]    # Students who got an A
 ```
+---
 
 ### 4. 💾 Step 4: Save Modified Data
 
@@ -118,6 +121,7 @@ df.to_csv("updated_students.csv", index=False)
 from google.colab import files
 files.download("updated_students.csv")
 ```
+---
 
 ### Summary
 
