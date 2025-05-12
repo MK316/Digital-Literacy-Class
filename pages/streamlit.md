@@ -163,5 +163,64 @@ if word:
     st.audio(audio_fp.getvalue(), format="audio/mp3")
 
 ```
+---
 
 ## 5. Multi paged application (Next time)
+
+Streamlit makes it easy to build web applications with Python. You can organize your app using multiple pages, which helps separate content and keep things neat.
+
+### Step 1. Folder Setup
+
+```
+my_app/
+│
+├── Home.py
+├── requirements.txt
+├── pages├── Page1.py
+         ├── Page2.py
+         └── ...
+
+```
+
+### Step 2. Multi-tab page
+
+```
+import streamlit as st
+
+# Page Title
+st.title("📚 My Multi-Tab Streamlit App")
+
+# Create tabs
+tabs = st.tabs(["1. Home", "2. Data View", "3. Chart", "📩 Contact"])
+
+# Tab 1: Home
+with tabs[0]:
+    st.header("1. Home")
+    st.write("Welcome! This is a multi-tab application built with Streamlit.")
+    st.markdown("Use the tabs above to navigate.")
+
+# Tab 2: Data View
+with tabs[1]:
+    st.header("2. Data View")
+    st.write("Here's a sample dataframe:")
+    import pandas as pd
+    data = pd.DataFrame({
+        "Name": ["Alice", "Bob", "Charlie"],
+        "Score": [85, 92, 78]
+    })
+    st.dataframe(data)
+
+# Tab 3: Chart
+with tabs[2]:
+    st.header("3. Chart")
+    st.line_chart(data["Score"])
+
+# Tab 4: Contact
+with tabs[3]:
+    st.header("📩 Contact")
+    name = st.text_input("Your name:")
+    message = st.text_area("Your message:")
+    if st.button("Send"):
+        st.success("Thanks, your message has been sent!")
+```
+
