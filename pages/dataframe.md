@@ -1,4 +1,4 @@
-# Beginner’s Guide to Pandas DataFrames Using GitHub & Colab
+# 	🌱 Beginner’s Guide to Pandas DataFrames Using GitHub & Colab
 
 ## Learning Goals
 By the end of this tutorial, you'll be able to:
