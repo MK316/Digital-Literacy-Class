@@ -25,7 +25,7 @@
 |W10||💛(**5/5**)[^2]|5/7|
 |      || ⛄ _Holiday_  |  **Streamlit practice** <br> Designing simple lesson materials with streamlit. <br>📌 [Streamlit practice](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlit.md) <br>[Peer review](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/video_review.md)|
 | W11||5/12|5/14|
-|     ||  TBA  | **Multimodality I**  <br>Interactive exercises for students. |       
+|     ||  [Create and handling a dataframe](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/dataframe.md)  | **Multimodality I**  <br>Interactive exercises for students. |       
 |W12||5/19|5/21|
 |   |  ||  Group work (TBA)  | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |     
 |W13||5/26|5/28|
