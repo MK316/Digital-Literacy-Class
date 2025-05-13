@@ -16,4 +16,4 @@ st.markdown("""
 
 """) 
 
-st.caption("Note that this page itself is deployed on Streamlit.")
+st.caption("Note that this page itself is an application deployed on Streamlit.")
