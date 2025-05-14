@@ -132,3 +132,7 @@ files.download("updated_students.csv")
 | Filter           | `df[df["Grade"] == "A"]` |
 | Save file        | `df.to_csv("file.csv")`  |
 | Download         | `files.download()`       |
+
+## Move to the second worksheet
+
++ [Worksheet link](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/dataframe2.md)
