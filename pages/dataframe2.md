@@ -8,7 +8,7 @@ Here's a complete Streamlit app that:
 + ✅ Displays a dropdown menu of the words
 + ✅ Uses gTTS to generate and play audio when a word is selected
 
-** Note:** Don't forget to updatae 'requirements.txt' file when you expand your code files.
+**Note:** Don't forget to updatae 'requirements.txt' file when you expand your code files.
 
 
 ```
