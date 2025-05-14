@@ -1,7 +1,7 @@
 # Dataframe worksheet 2 (sample code to implement voca apps)
 
 
-## 🌀 Multi tab code in streamlit files
+## 🌱 Multi tab code in streamlit files
 
 + Note that our streamlit sample (finalproject25) has three tabs
 + Here's how to set tabs in a single .py file
@@ -20,7 +20,7 @@ with tab3:
 
 ```
 
-## 🌀 Sample 1: Wordlist - displaying a dataframe (csv) on the screen
+## 🌱 Libraries to specify and import
 
 + Libraries to import for 3 sample codes
   
@@ -34,6 +34,7 @@ import random
 
 📌 Among the libraries listed above, "streamlit, pandas," and "gtts" should also be included in your requirements.txt file.
 
+## 🌀 Sample 1: Wordlist - displaying a dataframe (csv) on the screen
 
 ```
 with tab1:
