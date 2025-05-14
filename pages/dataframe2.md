@@ -76,6 +76,33 @@ with tab2:
         st.audio(audio_fp, format='audio/mp3')
 ```
 
+🚩 (0514 updataed to solve the audio issue on I-pad
+
+1. iPad isn't on silent mode
+2. Browser has autoplay/media permissions
+
+also, try out the code below:
+
+```
+with tab2:
+    st.title("🔊 Word Pronunciation Practice")
+
+    url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/word_frequency.csv" # <- your file url
+    df = pd.read_csv(url)
+
+    st.markdown("## Select a word to hear its pronunciation")
+    selected_word = st.selectbox("Choose a word:", df["Word"].dropna().unique())
+
+    # Button to trigger audio playback
+    if selected_word and st.button("▶️ Play Audio"):
+        tts = gTTS(selected_word, lang='en')
+        audio_fp = BytesIO()
+        tts.write_to_fp(audio_fp)
+        audio_fp.seek(0)
+        st.audio(audio_fp, format='audio/mp3')
+```
+
+
 + Same code with comments
 
 ```
