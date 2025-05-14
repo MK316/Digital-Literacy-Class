@@ -19,9 +19,6 @@ from io import BytesIO
 
 st.title("🔊 Word Pronunciation Practice")
 
-# --- Load CSV from GitHub ---
-# @st.cache_data (optional - when you use a big data)
-
 # Load word list from GitHub
 url = "https://raw.githubusercontent.com/your-username/your-repo/main/word_frequency.csv"  # Replace this with your link
 df = pd.read_csv(url)
