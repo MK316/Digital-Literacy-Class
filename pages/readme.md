@@ -30,8 +30,8 @@
 |   |  |App designing: Group work|  App design to share (in-class discussion)<br> **Building Simple Educational Apps 1** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use.   | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities. |     
 |W13||5/26|5/28|
 |      ||  Group work (TBA) | **Building Simple Educational Apps 2** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use. |
-| W14||6/2|6/4|
-|     ||  Group work (TBA) |**Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       
+| W14||6/2|🌈 6/4|
+|     ||  Group work (TBA) | **Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       
 |W15||6/9[^1]|6/11[^2]|
 |      ||   Group work (TBA) |**Final project submission** <br> Showcasing student projects.|  
 | W16||6/16||
