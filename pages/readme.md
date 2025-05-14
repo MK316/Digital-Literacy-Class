@@ -34,8 +34,8 @@
 |     ||  Group work (TBA) | **Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       
 |W15||6/9[^1]|6/11[^2]|
 |      ||   Project collaborative work | Project collaborative work|  
-| W16||6/16|(6/20)|
-|     | | Reflection essay submission (online) | 🌈 **Final project submission** <br> Showcasing student projects. |       
+| W16||6/16|(6/23, Mon)|
+|     | | Reflection essay submission (online) | 🌈 **Final project submission including video recording** <br> Showcasing student projects. |       
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
