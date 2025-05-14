@@ -35,7 +35,7 @@
 |W15||6/9[^1]|6/11[^2]|
 |      ||   Project collaborative work | Project collaborative work|  
 | W16||6/16||
-|     | | Reflection essay submission (online) | **Final project submission** <br> Showcasing student projects. |       
+|     | | Reflection essay submission (online) | 🌈 **Final project submission** <br> Showcasing student projects. |       
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
