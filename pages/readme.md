@@ -33,9 +33,9 @@
 | W14||6/2|6/4|
 |     ||  Group work (TBA) |**Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       
 |W15||6/9[^1]|6/11[^2]|
-|      ||   Group work (TBA) |**Final project submission** |  
+|      ||   Group work (TBA) |**Final project submission** <br> Showcasing student projects.|  
 | W16||6/16||
-|     | | Reflection essay submission | **Final Project Presentation** <br> Showcasing student projects. <br> Reflection on what was learned. |       
+|     | | Reflection essay submission |  |       
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
