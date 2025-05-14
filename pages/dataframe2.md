@@ -10,6 +10,29 @@ Here's a complete Streamlit app that:
 
 **Note:** Don't forget to updatae 'requirements.txt' file when you expand your code files.
 
+```
+import streamlit as st
+import pandas as pd
+from gtts import gTTS
+from io import BytesIO
+
+st.title("🔊 Word Pronunciation Practice")
+
+url = "https://raw.githubusercontent.com/your-username/your-repo/main/word_frequency.csv"  # Replace this with your link
+df = pd.read_csv(url)
+
+st.markdown("## Select a word to hear its pronunciation")
+selected_word = st.selectbox("Choose a word:", df["Word"].dropna().unique())
+
+if selected_word:
+    tts = gTTS(selected_word, lang='en')
+    audio_fp = BytesIO()
+    tts.write_to_fp(audio_fp)
+    audio_fp.seek(0)
+    st.audio(audio_fp, format='audio/mp3')
+```
+
++ Same code with comments
 
 ```
 import streamlit as st
