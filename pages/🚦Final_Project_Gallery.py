@@ -3,7 +3,6 @@ import requests
 
 # Define GitHub raw README.md URLs for each project
 project_urls = {
-    "👥 Project intro": "",
     "👥 Project 1 (G1)": "https://github.com/KY7437/G01Final/raw/main/README.md",
     "👥 Project 2 (G2)": "https://github.com/yunju05/G02Final/raw/main/README.md",
     "👥 Project 3 (G3)": "https://github.com/JW-1211/G03Final/raw/main/README.md"
