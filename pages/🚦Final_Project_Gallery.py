@@ -18,7 +18,7 @@ tabs = st.tabs(tab_labels)
 with tabs[0]:
     st.markdown("### 👋 Welcome to the Final Project Gallery")
     st.write("""
-    This page showcases final group projects from our course.
+    This page showcases the final group projects from our Spring 2025 course, _Digital Literacy and English Education_.
 
     Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
 
