@@ -9,3 +9,4 @@ wordcloud
 streamlit-drawable-canvas
 openpyxl
 nltk
+requests
