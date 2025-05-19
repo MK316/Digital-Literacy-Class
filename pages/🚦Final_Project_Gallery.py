@@ -1,19 +1,38 @@
 import streamlit as st
 import requests
 
-# Define GitHub raw README.md URLs for each project
+# Define GitHub raw README.md URLs for each project (tabs 2–4)
 project_urls = {
     "👥 Project 1 (G1)": "https://github.com/KY7437/G01Final/raw/main/README.md",
     "👥 Project 2 (G2)": "https://github.com/yunju05/G02Final/raw/main/README.md",
     "👥 Project 3 (G3)": "https://github.com/JW-1211/G03Final/raw/main/README.md"
 }
 
-# Create tabs for each project
-tabs = st.tabs(list(project_urls.keys()))
+# Add an intro tab to the beginning
+tab_labels = ["📘 Introduction"] + list(project_urls.keys())
 
-# Loop through each tab and load the corresponding README
-for tab, (label, url) in zip(tabs, project_urls.items()):
-    with tab:
+# Create tabs
+tabs = st.tabs(tab_labels)
+
+# Tab 1: Introduction
+with tabs[0]:
+    st.markdown("### 👋 Welcome to the Final Project Gallery")
+    st.write("""
+    This page showcases final group projects from our course.
+
+    Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
+
+    You can:
+    - Read their project summary
+    - See visual demos
+    - Learn about the group’s goals and findings
+
+    👉 Start by selecting a group tab.
+    """)
+
+# Remaining tabs (project readmes)
+for i, (label, url) in enumerate(project_urls.items()):
+    with tabs[i + 1]:  # offset by 1 due to the intro tab
         try:
             response = requests.get(url)
             response.raise_for_status()
