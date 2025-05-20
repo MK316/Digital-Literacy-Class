@@ -30,6 +30,9 @@ with tabs[0]:
     👉 Start by selecting a group tab.
     """)
 
+    st.markdown("---")
+    st.video("https://www.youtube.com/watch?v=ADi7F695d90")
+    
 # Remaining tabs (project readmes)
 for i, (label, url) in enumerate(project_urls.items()):
     with tabs[i + 1]:  # offset by 1 due to the intro tab
@@ -41,5 +44,5 @@ for i, (label, url) in enumerate(project_urls.items()):
         except Exception as e:
             st.error(f"❌ Could not load README from {label}.")
             st.exception(e)
-    st.markdown("---")
-    st.video("https://www.youtube.com/watch?v=ADi7F695d90")
+
+
