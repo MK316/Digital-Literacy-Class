@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import streamlit.components.v1 as components
 
 # Define GitHub raw README.md URLs for each project (tabs 2–4)
 project_urls = {
@@ -31,7 +32,11 @@ with tabs[0]:
     """)
 
     st.markdown("---")
-    st.video("https://www.youtube.com/watch?v=ADi7F695d90", width=300)
+    st.video("https://www.youtube.com/watch?v=ADi7F695d90")
+
+
+
+    components.iframe("https://www.youtube.com/embed/ADi7F695d90", width=300, height=200)
     
 # Remaining tabs (project readmes)
 for i, (label, url) in enumerate(project_urls.items()):
