@@ -16,7 +16,7 @@ st.video(url)
 ```
 
 
-2. Youtube video with controlled size
+2. Youtube video: to controll the video size
    
 ```
 import streamlit.components.v1 as components
