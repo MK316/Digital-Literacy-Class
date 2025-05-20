@@ -34,6 +34,8 @@ st.markdown("---")
 
 ## 3. Multi tabs
 
+Make sure you have correct identatioins when writing codes for each tab below.
+
 ```
 import streamlit as st
 
