@@ -41,3 +41,5 @@ for i, (label, url) in enumerate(project_urls.items()):
         except Exception as e:
             st.error(f"❌ Could not load README from {label}.")
             st.exception(e)
+    st.markdown("---")
+    st.video("https://www.youtube.com/watch?v=ADi7F695d90")
