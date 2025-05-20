@@ -31,3 +31,21 @@ components.iframe("https://www.youtube.com/embed/ADi7F695d90", width=300, height
 ```
 st.markdown("---")
 ```
+
+## 3. Multi tabs
+
+```
+tab1, tab2, tab3 = st.tabs(["name1", "name2", "name3"])
+
+with tab1:
+   st.write("This is a message.")
+   st.markdown("---")
+
+with tab2:
+   st.title("This is a title.")
+   st.caption("Last updated: 25. 05. 20")
+
+with tab3:
+   st.header("This is a header.")
+   st.write("This is optional.")
+```
