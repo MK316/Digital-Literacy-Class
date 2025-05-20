@@ -8,6 +8,14 @@
 st.video("https://www.youtube.com/embed/ADi7F695d90")
 ```
 
+or
+
+```
+url="https://www.youtube.com/embed/ADi7F695d90"
+st.video(url)
+```
+
+
 2. Youtube video with controlled size
    
 ```
