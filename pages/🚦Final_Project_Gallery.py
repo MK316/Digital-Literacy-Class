@@ -32,7 +32,11 @@ with tabs[0]:
     """)
 
     st.markdown("---")
-    st.markdown("[Group 1 Github repo](https://github.com/KY7437/G01Final), [Group 2 repo](https://github.com/yunju05/G02Final), [Group 3 repo](https://github.com/JW-1211/G03Final)")
+    st.markdown("""
+    + [Group 1 Github repo](https://github.com/KY7437/G01Final) 
+    + [Group 2 repo](https://github.com/yunju05/G02Final) 
+    + [Group 3 repo](https://github.com/JW-1211/G03Final)
+    """)
 
 
 
