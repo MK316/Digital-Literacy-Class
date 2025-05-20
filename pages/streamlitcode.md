@@ -4,6 +4,8 @@
 
 #### 1. Youtube video
 
+Sample video url: https://www.youtube.com/embed/ADi7F695d90
+
 ```
 st.video("https://www.youtube.com/embed/ADi7F695d90")
 ```
