@@ -38,9 +38,6 @@ with tabs[0]:
     + [Group 3 repo](https://github.com/JW-1211/G03Final)
     """)
 
-
-
-    components.iframe("https://www.youtube.com/embed/ADi7F695d90", width=300, height=200)
     
 # Remaining tabs (project readmes)
 for i, (label, url) in enumerate(project_urls.items()):
