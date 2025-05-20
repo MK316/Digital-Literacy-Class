@@ -1,4 +1,4 @@
-# Streamlit code collection
+# 🌿 Streamlit code collection
 
 ## 1. Video link
 
