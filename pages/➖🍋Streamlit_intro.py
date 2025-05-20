@@ -7,6 +7,7 @@ st.write("Streamlit is a simple and powerful Python library that lets you turn y
 st.markdown("""
 💦 Go to [Streamlit](https://share.streamlit.io/)  
 💦 Go to [Streamlit practice](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlit.md)  
+💦 Go to [Streamlit code collection](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/streamlitcode.md)
 """)
 st.markdown("---")
 
