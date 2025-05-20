@@ -165,7 +165,7 @@ if word:
 ```
 ---
 
-## 5. Multi paged application (Next time)
+## 5. Multi paged application
 
 Streamlit makes it easy to build web applications with Python. You can organize your app using multiple pages, which helps separate content and keep things neat.
 
@@ -224,3 +224,8 @@ with tabs[3]:
         st.success("Thanks, your message has been sent!")
 ```
 
+#### youtube video to display
+
+```
+st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+```
