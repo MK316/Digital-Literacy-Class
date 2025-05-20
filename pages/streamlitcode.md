@@ -53,3 +53,8 @@ with tab3:
    st.header("This is a header.")
    st.write("This is optional.")
 ```
+
+## 4. Voca learning multi tab app sample
+
++ [app link](https://dlclass.streamlit.app/App_Voca-learning)
++ [py file link](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/%F0%9F%9A%A6App_Voca-learning.py)
