@@ -35,6 +35,8 @@ st.markdown("---")
 ## 3. Multi tabs
 
 ```
+import streamlit as st
+
 tab1, tab2, tab3 = st.tabs(["name1", "name2", "name3"])
 
 with tab1:
