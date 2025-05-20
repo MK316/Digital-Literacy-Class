@@ -58,3 +58,27 @@ with tab3:
 
 + [app link](https://dlclass.streamlit.app/App_Voca-learning)
 + [py file link](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/%F0%9F%9A%A6App_Voca-learning.py)
+
+## 5. QR code generator
+
+```
+import streamlit as st
+import qrcode
+from PIL import Image
+
+st.title("🔳 QR Code Generator")
+
+# User input
+text = st.text_input("Enter text or URL to generate QR code:")
+
+if text:
+    # Generate QR code
+    qr = qrcode.QRCode(box_size=10, border=4)
+    qr.add_data(text)
+    qr.make(fit=True)
+    img = qr.make_image(fill_color="black", back_color="white")
+
+    # Display image
+    st.image(img, caption="Your QR Code", use_container_width=False)
+
+```
