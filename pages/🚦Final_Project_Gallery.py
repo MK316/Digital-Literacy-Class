@@ -31,7 +31,7 @@ with tabs[0]:
     """)
 
     st.markdown("---")
-    st.video("https://www.youtube.com/watch?v=ADi7F695d90")
+    st.video("https://www.youtube.com/watch?v=ADi7F695d90", width=300)
     
 # Remaining tabs (project readmes)
 for i, (label, url) in enumerate(project_urls.items()):
