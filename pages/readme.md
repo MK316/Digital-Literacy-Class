@@ -27,7 +27,7 @@
 | W11||5/12|5/14|
 |     ||  [Dataframe basics](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/dataframe.md)  | [Streamlit multi-paged app for final project](https://github.com/MK316/streamlit25/tree/main) |       
 |W12||5/19|5/21|
-|   |  |App designing: Group work|  [APP template](https://finalproject25.streamlit.app/)<br>App design to share (in-class discussion)<br> **Building Simple Educational Apps 1** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use.   | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities.<br> **Building Simple Educational Apps 2** <br> Introduction to Streamlit: Making easy web-based tools. |     
+|   |  |App designing: Group work|  [APP template](https://finalproject25.streamlit.app/), [Streamlit codes](https://dlclass.streamlit.app/%F0%9F%8D%8BStreamlit_intro)<br>App design to share (in-class discussion)<br> **Building Simple Educational Apps 1** <br> Introduction to Streamlit: Making easy web-based tools. <br> Creating a small app for class use.   | **Using AI in Language Teaching** <br> Understanding AI tools for education. <br> Practical uses of AI in classroom activities.<br> **Building Simple Educational Apps 2** <br> Introduction to Streamlit: Making easy web-based tools. |     
 |W13||5/26|5/28|
 |      ||  Group work: PBL| Group work: PBL  <br> Creating a small app for class use. |
 | W14||6/2|🌈 6/4|
