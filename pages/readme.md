@@ -35,7 +35,7 @@
 |W15||6/9[^1]|6/11[^2]|
 |      ||  Group work: PBL | Group work: PBL|  
 | W16||6/16|(6/23, Mon)|
-|     | | Reflection essay submission (online) | 🌈 **Final project submission including video recording** <br> Showcasing student projects. |       
+|     | | Reflection essay submission (online) | 🌈 **Final project submission including video recording** <br> Showcasing student projects. <br>[To do 1: DL Self-evaluation (by 6/23)](https://forms.gle/ExyVoghNjpWQDyRU8)|       
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
