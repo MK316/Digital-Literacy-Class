@@ -37,7 +37,7 @@ with tab2:
     st.markdown("### English Classroom with Code-based applications")
     st.markdown("### 🌳 Group 1")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG1.png"    
-    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=200)
     
     st.markdown("""
     + Group 1 Digital Classroom: [Click to Enter](https://g01final.streamlit.app/)
@@ -48,7 +48,7 @@ with tab3:
     st.markdown("### English Classroom with Code-based applications")
     st.markdown("### 🌿 Group 2")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"    
-    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=200)
     
     st.markdown("""
     + Group 2 Digital Classroom: [Click to Enter](https://g02final.streamlit.app/)
@@ -59,7 +59,7 @@ with tab4:
     st.markdown("### English Classroom with Code-based applications")
     st.markdown("### 🌵 Group 3")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG3.png"    
-    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=200)
     
     st.markdown("""
     + Group 3 Digital Classroom: [Click to Enter](https://g03final.streamlit.app/)
