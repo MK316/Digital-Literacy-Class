@@ -31,7 +31,7 @@
 |W13||5/26|5/28|
 |      ||  Group work: PBL| Group work: PBL  <br> Creating a small app for class use. |
 | W14||6/2|🌈 6/4|
-|     ||  Group work (PBL) | **Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.|       
+|     ||  Group work (PBL) | **Final Project Presentation** <br> Sharing ideas and getting feedback. <br> Improving the final project.<br> [Peer Evaluation](https://forms.gle/G5hKzFVDnPUdcSGAA)|       
 |W15||6/9[^1]|6/11[^2]|
 |      ||  Group work: PBL | Group work: PBL|  
 | W16||6/16|(6/23, Mon)|
