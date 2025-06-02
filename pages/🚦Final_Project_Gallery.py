@@ -34,30 +34,29 @@ with tab1:
 
 # Tab 2: Project 1 (G1)
 with tab2:
-    try:
-        response = requests.get("https://github.com/KY7437/G01Final/raw/main/README.md")
-        response.raise_for_status()
-        st.markdown(response.text, unsafe_allow_html=False)
-    except Exception as e:
-        st.error("❌ Could not load README from Project 1 (G1).")
-        st.exception(e)
+    st.markdown("### Group 1 Lesson with Code-based application")
+    image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG1.png"    
+    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    
+    st.markdown("""
+    + Group 1 Digital Classroom: [Click to Enter](https://g01final.streamlit.app/)
+    + Github files to view: [link](https://github.com/yunju05/G02Final/raw/main/README.md)
 
 # Tab 3: Project 2 (G2)
 with tab3:
-    try:
-        response = requests.get("https://github.com/yunju05/G02Final/raw/main/README.md")
-        response.raise_for_status()
-        st.markdown(response.text, unsafe_allow_html=False)
-    except Exception as e:
-        st.error("❌ Could not load README from Project 2 (G2).")
-        st.exception(e)
-
+    st.markdown("### Group 2 Lesson with Code-based application")
+    image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"    
+    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    
+    st.markdown("""
+    + Group 2 Digital Classroom: [Click to Enter](https://g02final.streamlit.app/)
+    + Github files to view: [link](https://github.com/KY7437/G01Final/raw/main/README.md)
 # Tab 4: Project 3 (G3)
 with tab4:
-    try:
-        response = requests.get("https://github.com/JW-1211/G03Final/raw/main/README.md")
-        response.raise_for_status()
-        st.markdown(response.text, unsafe_allow_html=False)
-    except Exception as e:
-        st.error("❌ Could not load README from Project 3 (G3).")
-        st.exception(e)
+    st.markdown("### Group 3 Lesson with Code-based application")
+    image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG3.png"    
+    st.image(image_url, caption="This image is linked from GitHub", width=200)
+    
+    st.markdown("""
+    + Group 3 Digital Classroom: [Click to Enter](https://g03final.streamlit.app/)
+    + Github files to view: [link](https://github.com/JW-1211/G03Final/raw/main/README.md)
