@@ -41,7 +41,7 @@ with tab2:
     st.markdown("""
     + Group 1 Digital Classroom: [Click to Enter](https://g01final.streamlit.app/)
     + Github files to view: [link](https://github.com/yunju05/G02Final/raw/main/README.md)
-
+    """)
 # Tab 3: Project 2 (G2)
 with tab3:
     st.markdown("### Group 2 Lesson with Code-based application")
@@ -51,6 +51,7 @@ with tab3:
     st.markdown("""
     + Group 2 Digital Classroom: [Click to Enter](https://g02final.streamlit.app/)
     + Github files to view: [link](https://github.com/KY7437/G01Final/raw/main/README.md)
+    """)
 # Tab 4: Project 3 (G3)
 with tab4:
     st.markdown("### Group 3 Lesson with Code-based application")
@@ -60,3 +61,4 @@ with tab4:
     st.markdown("""
     + Group 3 Digital Classroom: [Click to Enter](https://g03final.streamlit.app/)
     + Github files to view: [link](https://github.com/JW-1211/G03Final/raw/main/README.md)
+    """)
