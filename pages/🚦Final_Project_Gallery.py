@@ -34,7 +34,7 @@ with tab1:
 
 # Tab 2: Project 1 (G1)
 with tab2:
-    st.markdown("### 📗 Group 1 Lesson with Code-based application")
+    st.markdown("### 🌳 Group 1 English Classroom with Code-based applications")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG1.png"    
     st.image(image_url, caption="This image is linked from GitHub", width=200)
     
@@ -44,7 +44,7 @@ with tab2:
     """)
 # Tab 3: Project 2 (G2)
 with tab3:
-    st.markdown("### 📘 Group 2 Lesson with Code-based application")
+    st.markdown("### 🌿 Group 2 English Classroom with Code-based applications")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"    
     st.image(image_url, caption="This image is linked from GitHub", width=200)
     
@@ -54,7 +54,7 @@ with tab3:
     """)
 # Tab 4: Project 3 (G3)
 with tab4:
-    st.markdown("### 📙 Group 3 Lesson with Code-based application")
+    st.markdown("### 🌵 Group 3 English Classroom with Code-based applications")
     image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG3.png"    
     st.image(image_url, caption="This image is linked from GitHub", width=200)
     
