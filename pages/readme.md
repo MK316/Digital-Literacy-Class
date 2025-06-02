@@ -35,7 +35,7 @@
 |W15||6/9[^1]|6/11[^2]|
 |      ||  Group work: PBL | Group work: PBL|  
 | W16||6/16|(6/23, Mon)|
-|     | | Reflection essay submission (online) <br>Self-reflection questions [Self-eval Preview](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Self-evaluatioin.md) <br>[To do 1: DL Self-evaluation (by 6/23)](https://forms.gle/ExyVoghNjpWQDyRU8)| 🌈 **Final project submission including video recording** <br> Showcasing student projects. |       
+|     | | Reflection essay submission (online) <br>Self-reflection questions <br>[Self-eval-Preview](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Self-evaluatioin.md) <br>[To do 1: DL Self-evaluation (by 6/23)](https://forms.gle/ExyVoghNjpWQDyRU8)| 🌈 **Final project submission including video recording** <br> Showcasing student projects. |       
 
 [^1]: March 3 (make-up class)
 [^2]: May 5 (make-up class)
