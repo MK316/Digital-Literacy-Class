@@ -36,7 +36,7 @@ with tab1:
 # Tab 2: Project 1 (G1)
 with tab2:
     st.markdown("### English Classroom with Code-based Applications")
-    st.markdown("### 🌳 Group 1")
+    st.markdown("### 🌳 Group 1 APP Project")
 
     # Create two columns
     col1, col2 = st.columns([1, 2])
@@ -67,7 +67,7 @@ with tab2:
 # Tab 3: Project 2 (G2)
 with tab3:
     st.markdown("### English Classroom with Code-based Applications")
-    st.markdown("### 🌳 Group 2")
+    st.markdown("### 🌳 Group 2 APP Project")
 
     # Create two columns
     col1, col2 = st.columns([1, 2])
@@ -101,7 +101,7 @@ with tab3:
 
 with tab4:
     st.markdown("### English Classroom with Code-based Applications")
-    st.markdown("### 🌳 Group 3")
+    st.markdown("### 🌳 Group 3 APP Project")
 
     # Create two columns
     col1, col2 = st.columns([1, 2])
