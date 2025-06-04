@@ -16,12 +16,15 @@ with tab1:
     st.write("""
     This page showcases the final group projects from our Spring 2025 course, _Digital Literacy and English Education_.
 
-    Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
+    - Each group consisted of four to five second-year future English teachers who collaborated over the course of one month. 
+    - Their task was to design and demonstrate a code-based application that could be used in English lesson planning and teaching practice.
+    - Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
 
     You can:
-    - Read their project summary
-    - See visual demos
-    - Learn about the group’s goals and findings
+    ✅ Use the application customized for their target learner group.
+    ✅ Read their project summary
+    ✅ See visual demos
+    ✅ Learn about the group’s goals and findings
 
     👉 Start by selecting a group tab.
     """)
