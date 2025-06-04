@@ -66,15 +66,37 @@ with tab2:
 
 # Tab 3: Project 2 (G2)
 with tab3:
-    st.markdown("### English Classroom with Code-based applications")
-    st.markdown("### 🌿 Group 2")
-    image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"    
-    st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=200)
-    
-    st.markdown("""
-    + Group 2 Digital Classroom (Streamlit app): [Click to Enter](https://g02final.streamlit.app/)
-    + Github files to view: [link](https://github.com/KY7437/G01Final/raw/main/README.md)
-    """)
+    st.markdown("### English Classroom with Code-based Applications")
+    st.markdown("### 🌳 Group 2")
+
+    # Create two columns
+    col1, col2 = st.columns([1, 2])
+
+    # Left column: QR image
+    with col1:
+        image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"
+        st.image(image_url2, caption="Spring 2025 Digital Literacy & English Education", width=200)
+
+    # Right column: Blue button
+    with col2:
+        st.markdown("#### ")
+        st.markdown(
+            """
+            <a href="https://g02final.streamlit.app/" target="_blank">
+                <button style="background-color:#1f77b4; color:white; padding:10px 24px; border:none; border-radius:8px; font-size:16px; cursor:pointer;">
+                    Visit the Application
+                </button>
+            </a>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    # GitHub link at the bottom
+    st.markdown("---")
+    st.markdown("📁 GitHub files to view: [link](https://github.com/KY7437/G01Final/raw/main/README.md)")
+
+
+
 # Tab 4: Project 3 (G3)
 with tab4:
     st.markdown("### English Classroom with Code-based applications")
