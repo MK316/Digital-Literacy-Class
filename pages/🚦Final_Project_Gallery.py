@@ -69,3 +69,5 @@ with tab4:
 with tab5:
     st.write("❄️ Peer review summaries of each group’s app and its classroom application will be posted here after all presentations are finished.")
     st.markdown("[Peer review link](https://forms.gle/Gfqi98HVKbEFcWiNA)")
+    url-peer = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DL-Peer.png"
+    st.image(url-peer, width = 300)
