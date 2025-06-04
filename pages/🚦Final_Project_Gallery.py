@@ -2,11 +2,12 @@ import streamlit as st
 import requests
 
 # Create tabs
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📘 Introduction",
     "👥 Project 1 (G1)",
     "👥 Project 2 (G2)",
-    "👥 Project 3 (G3)"
+    "👥 Project 3 (G3)",
+    "⛄ Peer Review (Coming soon)"
 ])
 
 # Tab 1: Introduction
@@ -65,3 +66,5 @@ with tab4:
     + Group 3 Digital Classroom (Streamlit app): [Click to Enter](https://g03final.streamlit.app/)
     + Github files to view: [link](https://github.com/JW-1211/G03Final/raw/main/README.md)
     """)
+with tab5:
+    st.write("❄️ Peer review summaries of each group’s app and its classroom application will be posted here after all presentations are finished.")
