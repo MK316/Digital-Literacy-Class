@@ -41,7 +41,7 @@ with tab2:
     st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=200)
     
     st.markdown("""
-    + Group 1 Digital Classroom (Streamlit app): [Click to Enter](https://g01final.streamlit.app/)
+    + Group 1 Digital Classroom (Streamlit app): [Click to Enter](https://s25g01final.streamlit.app/)
     + Github files to view: [link](https://github.com/yunju05/G02Final/raw/main/README.md)
     """)
 # Tab 3: Project 2 (G2)
