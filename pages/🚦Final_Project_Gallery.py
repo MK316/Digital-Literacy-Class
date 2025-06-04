@@ -58,7 +58,7 @@ with tab2:
         )
     with col2:
         image_url = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG1.png"
-        st.image(image_url, caption="Spring 2025 Digital Literacy & English Education", width=100)
+        st.image(image_url, caption="Enter via QR", width=100)
 
     # GitHub link at the bottom
     st.markdown("---")
@@ -73,12 +73,10 @@ with tab3:
     col1, col2 = st.columns([1, 2])
 
     # Left column: QR image
-    with col1:
-        image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"
-        st.image(image_url2, caption="Enter via QR", width=200)
+
 
     # Right column: Blue button
-    with col2:
+    with col1:
         st.markdown("#### ")
         st.markdown(
             """
@@ -90,7 +88,9 @@ with tab3:
             """,
             unsafe_allow_html=True,
         )
-
+    with col2:
+        image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"
+        st.image(image_url2, caption="Enter via QR", width=100)
     # GitHub link at the bottom
     st.markdown("---")
     st.markdown("📁 GitHub files to view: [link](https://github.com/KY7437/G01Final/raw/main/README.md)")
@@ -107,12 +107,9 @@ with tab4:
     col1, col2 = st.columns([1, 2])
 
     # Left column: QR image
-    with col1:
-        image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG3.png"
-        st.image(image_url3, caption="Spring 2025 Digital Literacy & English Education", width=200)
 
     # Right column: Blue button
-    with col2:
+    with col1:
         st.markdown("#### ")
         st.markdown(
             """
@@ -124,6 +121,9 @@ with tab4:
             """,
             unsafe_allow_html=True,
         )
+    with col2:
+        image_url3 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG3.png"
+        st.image(image_url3, caption="Enter via QR", width=100)
 
     # GitHub link at the bottom
     st.markdown("---")
