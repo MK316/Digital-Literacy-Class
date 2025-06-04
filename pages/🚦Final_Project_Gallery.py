@@ -20,7 +20,7 @@ with tab1:
     - Their task was to design and demonstrate a code-based application that could be used in English lesson planning and teaching practice.
     - Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
 
-    You can:
+    You can:  
     ✅ Use the application customized for their target learner group.  
     ✅ Read their project summary  
     ✅ See visual demos  
