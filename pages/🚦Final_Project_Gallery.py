@@ -75,7 +75,7 @@ with tab3:
     # Left column: QR image
     with col1:
         image_url2 = "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/DLG2.png"
-        st.image(image_url2, caption="Spring 2025 Digital Literacy & English Education", width=200)
+        st.image(image_url2, caption="Enter via QR", width=200)
 
     # Right column: Blue button
     with col2:
