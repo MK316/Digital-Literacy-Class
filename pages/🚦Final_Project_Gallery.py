@@ -25,13 +25,7 @@ with tab1:
 
     👉 Start by selecting a group tab.
     """)
-    
-    st.markdown("---")
-    st.markdown("""
-    + [Group 1 Github repo](https://github.com/KY7437/G01Final)  
-    + [Group 2 repo](https://github.com/yunju05/G02Final)  
-    + [Group 3 repo](https://github.com/JW-1211/G03Final)
-    """)
+
 
 # Tab 2: Project 1 (G1)
 with tab2:
