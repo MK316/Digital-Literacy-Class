@@ -21,10 +21,10 @@ with tab1:
     - Use the tabs above to explore each group’s project. Each tab will display a live preview of the group’s `README.md` file from their GitHub repository.
 
     You can:
-    ✅ Use the application customized for their target learner group.
-    ✅ Read their project summary
-    ✅ See visual demos
-    ✅ Learn about the group’s goals and findings
+    ✅ Use the application customized for their target learner group.  
+    ✅ Read their project summary  
+    ✅ See visual demos  
+    ✅ Learn about the group’s goals and findings  
 
     👉 Start by selecting a group tab.
     """)
