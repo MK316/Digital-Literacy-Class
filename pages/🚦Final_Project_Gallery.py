@@ -173,7 +173,7 @@ with tab5:
         "Group 3": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group3.png"
     }
     if selected_group in swot_image_urls:
-        st.image(swot_image_urls[selected_group], caption=f"SWOT Analysis: {selected_group}", use_column_width=True)
+        st.image(swot_image_urls[selected_group], caption=f"SWOT Analysis: {selected_group}", use_container_width=True)
 
 
 
