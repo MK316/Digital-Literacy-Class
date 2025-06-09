@@ -176,32 +176,8 @@ with tab5:
         st.image(swot_image_urls[selected_group], caption=f"SWOT Analysis: {selected_group}", use_container_width=True)
 
 
-
     # --- Bar Chart: Group vs Overall Average ---
-    st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
-    group_means = group_df.loc[:, "Q01":"Q07"].mean()
-    overall_means = df.loc[:, "Q01":"Q07"].mean()
-    labels = [question_labels[q] for q in group_means.index]
-    x = np.arange(len(labels))
-    width = 0.35
-    fig, ax = plt.subplots(figsize=(9, 4.5))
-    bars1 = ax.bar(x - width/2, group_means.values, width, label=f"{selected_group}", color='skyblue')
-    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='yellow')
-    for bar in bars1:
-        height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8)
-    for bar in bars2:
-        height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8, color='gray')
-    ax.set_ylabel("Average Rating")
-    ax.set_title("Average Ratings: Group vs Overall")
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels, rotation=45, ha='right')
-    ax.set_ylim(0, 10)
-    ax.legend()
-    st.pyplot(fig)
-    # --- Bar Chart: Group vs Overall Average ---
-    st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
+    st.markdown("### 📊 Quantitative Ratings (1–10 Scale)")
     group_means = group_df.loc[:, "Q01":"Q07"].mean()
     overall_means = df.loc[:, "Q01":"Q07"].mean()
     labels = [question_labels[q] for q in group_means.index]
