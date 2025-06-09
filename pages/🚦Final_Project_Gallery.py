@@ -156,9 +156,6 @@ with tab5:
 
     st.markdown(f"## 🧾 Feedback Summary for {selected_group}")
 
-    # --- Bar Chart: Group vs Overall Average ---
-    st.markdown("### 📊 Quantitative Ratings (1–10 Scale)")
-
     question_labels = {
         "Q01": "1. Easy to navigate",
         "Q02": "2. Useful for English learning",
@@ -170,7 +167,7 @@ with tab5:
     }
 
     # --- SWOT Chart using Matplotlib ---
-    st.markdown("### 🧭 SWOT Matrix for This Group")
+    st.markdown("### 1. 🧭 SWOT Matrix for This Group")
 
     swot_data = {
         "Strengths": ["Creative use of vocabulary", "Clear navigation"],
@@ -207,7 +204,8 @@ with tab5:
     st.pyplot(fig)
 
 
-
+    # --- Bar Chart: Group vs Overall Average ---
+    st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
         
     group_means = group_df.loc[:, "Q01":"Q07"].mean()
     overall_means = df.loc[:, "Q01":"Q07"].mean()
@@ -239,7 +237,7 @@ with tab5:
 
     # --- Wordcloud and Comments: Q08 & Q09 ---
     for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
-        st.markdown(f"### ☁️ {title}")
+        st.markdown(f"### 3. ☁️ {title}")
         text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
 
         # Download Korean font if needed
