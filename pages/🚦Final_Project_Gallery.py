@@ -191,31 +191,50 @@ with tab5:
 
     swot_data = swot_descriptions.get(selected_group, {})
 
-    fig, ax = plt.subplots(figsize=(10, 8))
-    ax.axhline(0, color='black', linewidth=1)
-    ax.axvline(0, color='black', linewidth=1)
+    # Plot Quadrogram (empty quadrants)
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.axhline(0, color='black')
+    ax.axvline(0, color='black')
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
     ax.axis('off')
 
-    # Titles
-    ax.text(-0.95, 0.95, "Strengths", fontsize=12, fontweight='bold')
-    ax.text(0.05, 0.95, "Opportunities", fontsize=12, fontweight='bold')
-    ax.text(-0.95, -0.05, "Weaknesses", fontsize=12, fontweight='bold')
-    ax.text(0.05, -0.05, "Threats", fontsize=12, fontweight='bold')
-
-    # Descriptions
-    for i, point in enumerate(swot_data.get("Strengths", [])):
-        ax.text(-0.95, 0.80 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
-    for i, point in enumerate(swot_data.get("Opportunities", [])):
-        ax.text(0.05, 0.80 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
-    for i, point in enumerate(swot_data.get("Weaknesses", [])):
-        ax.text(-0.95, -0.20 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
-    for i, point in enumerate(swot_data.get("Threats", [])):
-        ax.text(0.05, -0.20 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
+    ax.text(-0.9, 0.9, "Strengths", fontsize=12, fontweight='bold')
+    ax.text(0.4, 0.9, "Opportunities", fontsize=12, fontweight='bold')
+    ax.text(-0.9, -0.1, "Weaknesses", fontsize=12, fontweight='bold')
+    ax.text(0.4, -0.1, "Threats", fontsize=12, fontweight='bold')
 
     st.pyplot(fig)
 
+    # Display SWOT descriptions below
+    for quadrant in ["Strengths", "Weaknesses", "Opportunities", "Threats"]:
+        st.markdown(f"**{quadrant}**")
+        for item in swot_data.get(quadrant, []):
+            st.markdown(f"- {item}")
+
+    # --- Bar Chart: Group vs Overall Average ---
+    st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
+    group_means = group_df.loc[:, "Q01":"Q07"].mean()
+    overall_means = df.loc[:, "Q01":"Q07"].mean()
+    labels = [question_labels[q] for q in group_means.index]
+    x = np.arange(len(labels))
+    width = 0.35
+    fig, ax = plt.subplots(figsize=(9, 4.5))
+    bars1 = ax.bar(x - width/2, group_means.values, width, label=f"{selected_group}", color='skyblue')
+    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='yellow')
+    for bar in bars1:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8)
+    for bar in bars2:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8, color='gray')
+    ax.set_ylabel("Average Rating")
+    ax.set_title("Average Ratings: Group vs Overall")
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, rotation=45, ha='right')
+    ax.set_ylim(0, 10)
+    ax.legend()
+    st.pyplot(fig)
     # --- Bar Chart: Group vs Overall Average ---
     st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
     group_means = group_df.loc[:, "Q01":"Q07"].mean()
