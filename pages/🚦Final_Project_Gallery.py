@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+import os
 
 font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
 font_path = "/tmp/NanumGothic.ttf"
