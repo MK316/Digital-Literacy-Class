@@ -202,7 +202,7 @@ with tab5:
         ax.text(0.5, -0.35 - i * 0.15, f"- {point}", fontsize=10)
 
     st.pyplot(fig)
-
+    st.markdown("---")
 
     # --- Bar Chart: Group vs Overall Average ---
     st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
@@ -234,10 +234,10 @@ with tab5:
     ax.legend()
 
     st.pyplot(fig)
-
+    st.markdown("---")
     # --- Wordcloud and Comments: Q08 & Q09 ---
     for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
-        st.markdown(f"### 3. ☁️ {title}")
+        st.markdown(f"### ☁️ {title}")
         text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
 
         # Download Korean font if needed
