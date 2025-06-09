@@ -177,7 +177,7 @@ with tab5:
 
     fig, ax = plt.subplots(figsize=(9, 4.5))
     bars1 = ax.bar(x - width/2, group_means.values, width, label=f"{selected_group}", color='skyblue')
-    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='lightgray')
+    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='yellow')
 
     for bar in bars1:
         height = bar.get_height()
