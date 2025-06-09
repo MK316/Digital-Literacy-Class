@@ -16,7 +16,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "👥 Project 1 (G1)",
     "👥 Project 2 (G2)",
     "👥 Project 3 (G3)",
-    "⛄ Peer Review (Coming soon)"
+    "⛄ Peer Evaluation (Ready)"
 ])
 
 # Tab 1: Introduction
