@@ -153,8 +153,9 @@ with tab5:
     
     st.markdown(f"## 🧾 Feedback Summary for {selected_group}")
     
-    # --- Q01 to Q07: Bar chart summaries ---
+# --- Q01 to Q07: Bar chart summaries with mean labels ---
     st.markdown("### 📊 Quantitative Ratings (1–10 Scale)")
+
     question_labels = {
         "Q01": "1. Easy to navigate",
         "Q02": "2. Useful for English learning",
@@ -164,17 +165,25 @@ with tab5:
         "Q06": "6. Adaptable for student levels",
         "Q07": "7. Overall effectiveness"
     }
-    
+
     ratings_means = group_df.loc[:, "Q01":"Q07"].mean()
-    
+
     fig, ax = plt.subplots(figsize=(8, 4))
-    ratings_means.plot(kind='bar', ax=ax, color='skyblue')
+    bars = ax.bar(ratings_means.index, ratings_means.values, color='skyblue')
     ax.set_ylabel("Average Rating")
     ax.set_ylim(0, 10)
     ax.set_title("Average Ratings for Each Category")
+    ax.set_xticks(range(len(ratings_means)))
     ax.set_xticklabels([question_labels[col] for col in ratings_means.index], rotation=45, ha='right')
+
+# Add value labels on top of each bar
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width() / 2, height + 0.2, f"{height:.1f}",
+                ha='center', va='bottom', fontsize=9)
+
     st.pyplot(fig)
-    
+   
     # --- Q08 & Q09: Wordcloud and comments ---
     for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
         st.markdown(f"### ☁️ {title}")
