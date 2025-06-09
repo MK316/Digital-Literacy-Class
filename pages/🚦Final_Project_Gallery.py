@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-font_path = "https://github.com/google/fonts/blob/main/ofl/nanumgothic/NanumGothic-Regular.ttf"
+font_path = "https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf"
 
 # Create tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
