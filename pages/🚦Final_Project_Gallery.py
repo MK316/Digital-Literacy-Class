@@ -166,7 +166,7 @@ with tab5:
     }
 
     # --- SWOT Display as Image ---
-    st.markdown("### 1. 🧭 SWOT Matrix for This Group")
+
     swot_image_urls = {
         "Group 1": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group1.png",
         "Group 2": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group2.png",
