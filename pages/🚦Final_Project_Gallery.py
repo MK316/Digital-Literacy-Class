@@ -177,7 +177,7 @@ with tab5:
     
         if text_data.strip():
             wc = WordCloud(width=600, height=300, background_color="white").generate(text_data)
-            st.image(wc.to_array(), use_column_width=True)
+            st.image(wc.to_array(), use_container_width=True)
     
             with st.expander("📋 Show all comments"):
                 for i, comment in enumerate(group_df[col], 1):
