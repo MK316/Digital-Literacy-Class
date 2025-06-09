@@ -137,7 +137,6 @@ with tab4:
 
 with tab5:
 
-
     # Korean font (download from GitHub if not available)
     font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
     font_path = "/tmp/NanumGothic.ttf"
@@ -169,99 +168,49 @@ with tab5:
     # --- SWOT Chart using Matplotlib ---
     st.markdown("### 1. 🧭 SWOT Matrix for This Group")
 
-    swot_data = {
-        "Strengths": ["Creative use of vocabulary", "Clear navigation"],
-        "Weaknesses": ["Limited grammar coverage", "Some UI issues"],
-        "Opportunities": ["Could include speaking tools", "Possible for cross-level adaptation"],
-        "Threats": ["Tech access varies", "Needs teacher training"]
+    swot_descriptions = {
+        "Group 1": {
+            "Strengths": ["Well-structured 'Study Alone' page with clear learning progression."],
+            "Weaknesses": ["App instructions were a bit lengthy and may cause confusion without improved readability."],
+            "Opportunities": ["Expandable across proficiency levels.", "Potential to integrate speaking or writing components."],
+            "Threats": ["Limited access for users unfamiliar with tech.", "Navigation may be less intuitive for some students."]
+        },
+        "Group 2": {
+            "Strengths": ["Effective grammar activities like sentence rearrangement and crosswords."],
+            "Weaknesses": ["Lack of instructional videos and post-lesson review tools."],
+            "Opportunities": ["Good potential for peer collaboration and self-directed learning.", "Scope for enhanced multimedia content."],
+            "Threats": ["Overloaded vocabulary lists.", "Insufficient scaffolding for lower-level students."]
+        },
+        "Group 3": {
+            "Strengths": ["Innovative integration of AI grammar checker and clear Padlet guidelines."],
+            "Weaknesses": ["App selection may be too broad, reducing learner focus."],
+            "Opportunities": ["Blended instruction with strong writing-grammar connections.", "Flexible components allow adaptive teaching."],
+            "Threats": ["Overpacked content may exceed class time.", "Lack of built-in self-assessment for students."]
+        }
     }
 
-    fig, ax = plt.subplots(figsize=(6, 6))
+    swot_data = swot_descriptions.get(selected_group, {})
 
+    fig, ax = plt.subplots(figsize=(6, 6))
     ax.axhline(0, color='black')
     ax.axvline(0, color='black')
-
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
     ax.axis('off')
 
-    # Quadrant labels
     ax.text(-0.9, 0.9, "Strengths", fontsize=12, fontweight='bold')
     ax.text(0.5, 0.9, "Opportunities", fontsize=12, fontweight='bold')
     ax.text(-0.9, -0.2, "Weaknesses", fontsize=12, fontweight='bold')
     ax.text(0.5, -0.2, "Threats", fontsize=12, fontweight='bold')
 
-    # Populate SWOT points
-    for i, point in enumerate(swot_data["Strengths"]):
+    for i, point in enumerate(swot_data.get("Strengths", [])):
         ax.text(-0.9, 0.75 - i * 0.15, f"- {point}", fontsize=10)
-    for i, point in enumerate(swot_data["Opportunities"]):
+    for i, point in enumerate(swot_data.get("Opportunities", [])):
         ax.text(0.5, 0.75 - i * 0.15, f"- {point}", fontsize=10)
-    for i, point in enumerate(swot_data["Weaknesses"]):
+    for i, point in enumerate(swot_data.get("Weaknesses", [])):
         ax.text(-0.9, -0.35 - i * 0.15, f"- {point}", fontsize=10)
-    for i, point in enumerate(swot_data["Threats"]):
+    for i, point in enumerate(swot_data.get("Threats", [])):
         ax.text(0.5, -0.35 - i * 0.15, f"- {point}", fontsize=10)
 
     st.pyplot(fig)
     st.markdown("---")
-
-    # --- Bar Chart: Group vs Overall Average ---
-    st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
-        
-    group_means = group_df.loc[:, "Q01":"Q07"].mean()
-    overall_means = df.loc[:, "Q01":"Q07"].mean()
-
-    labels = [question_labels[q] for q in group_means.index]
-    x = np.arange(len(labels))
-    width = 0.35
-
-    fig, ax = plt.subplots(figsize=(9, 4.5))
-    bars1 = ax.bar(x - width/2, group_means.values, width, label=f"{selected_group}", color='skyblue')
-    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='yellow')
-
-    for bar in bars1:
-        height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8)
-
-    for bar in bars2:
-        height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8, color='gray')
-
-    ax.set_ylabel("Average Rating")
-    ax.set_title("Average Ratings: Group vs Overall")
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels, rotation=45, ha='right')
-    ax.set_ylim(0, 10)
-    ax.legend()
-
-    st.pyplot(fig)
-    st.markdown("---")
-    # --- Wordcloud and Comments: Q08 & Q09 ---
-    for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
-        st.markdown(f"### ☁️ {title}")
-        text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
-
-        # Download Korean font if needed
-        if not os.path.exists(font_path):
-            response = requests.get(font_url)
-            with open(font_path, "wb") as f:
-                f.write(response.content)
-
-        if text_data.strip():
-            wc = WordCloud(
-                width=600,
-                height=300,
-                background_color="white",
-                font_path=font_path
-            ).generate(text_data)
-
-            st.image(wc.to_array(), use_container_width=True)
-
-            with st.expander("📋 Show all comments"):
-                for i, comment in enumerate(group_df[col], 1):
-                    if pd.notnull(comment):
-                        st.markdown(f"- {comment}")
-        else:
-            st.info("No comments available for this question.")
-
-
-
