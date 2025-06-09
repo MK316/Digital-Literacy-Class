@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import os
+import numpy as np
 
 font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
 font_path = "/tmp/NanumGothic.ttf"
@@ -134,26 +135,27 @@ with tab4:
     st.markdown("---")
     st.markdown("📁 GitHub files to view: [link](https://github.com/JW-1211/G03Final/raw/main/README.md)")
 
-
-
-
 with tab5:
+
+    # Korean font (download from GitHub if not available)
+    font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
+    font_path = "/tmp/NanumGothic.ttf"
+
     st.write("❄️ Peer review summaries of each group’s app and its classroom application will be posted here after all presentations are finished.")
 
+    # Load feedback data
+    df = pd.read_csv("https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/DL-feedback.csv")
 
-# Load data
-    df = pd.read_csv("https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/DL-feedback.csv")  # <- replace with actual file path if needed
-    
-    # Sidebar selection
+    # Group selector
     group_list = df['Group'].unique()
     selected_group = st.selectbox("🔍 Select a group to view feedback:", group_list)
-    
-    # Filter by group
+
+    # Filter by selected group
     group_df = df[df['Group'] == selected_group]
-    
+
     st.markdown(f"## 🧾 Feedback Summary for {selected_group}")
-    
-# --- Q01 to Q07: Bar chart summaries with mean labels ---
+
+    # --- Bar Chart: Group vs Overall Average ---
     st.markdown("### 📊 Quantitative Ratings (1–10 Scale)")
 
     question_labels = {
@@ -166,49 +168,61 @@ with tab5:
         "Q07": "7. Overall effectiveness"
     }
 
-    ratings_means = group_df.loc[:, "Q01":"Q07"].mean()
+    group_means = group_df.loc[:, "Q01":"Q07"].mean()
+    overall_means = df.loc[:, "Q01":"Q07"].mean()
 
-    fig, ax = plt.subplots(figsize=(8, 4))
-    bars = ax.bar(ratings_means.index, ratings_means.values, color='skyblue')
-    ax.set_ylabel("Average Rating")
-    ax.set_ylim(0, 10)
-    ax.set_title("Average Ratings for Each Category")
-    ax.set_xticks(range(len(ratings_means)))
-    ax.set_xticklabels([question_labels[col] for col in ratings_means.index], rotation=45, ha='right')
+    labels = [question_labels[q] for q in group_means.index]
+    x = np.arange(len(labels))
+    width = 0.35
 
-# Add value labels on top of each bar
-    for bar in bars:
+    fig, ax = plt.subplots(figsize=(9, 4.5))
+    bars1 = ax.bar(x - width/2, group_means.values, width, label=f"{selected_group}", color='skyblue')
+    bars2 = ax.bar(x + width/2, overall_means.values, width, label='All Groups (Average)', color='lightgray')
+
+    for bar in bars1:
         height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width() / 2, height + 0.2, f"{height:.1f}",
-                ha='center', va='bottom', fontsize=9)
+        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8)
+
+    for bar in bars2:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2, height + 0.1, f"{height:.1f}", ha='center', va='bottom', fontsize=8, color='gray')
+
+    ax.set_ylabel("Average Rating")
+    ax.set_title("Average Ratings: Group vs Overall")
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, rotation=45, ha='right')
+    ax.set_ylim(0, 10)
+    ax.legend()
 
     st.pyplot(fig)
-   
-    # --- Q08 & Q09: Wordcloud and comments ---
+
+    # --- Wordcloud and Comments: Q08 & Q09 ---
     for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
         st.markdown(f"### ☁️ {title}")
         text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
 
-        # Download font if not already downloaded
+        # Download Korean font if needed
         if not os.path.exists(font_path):
             response = requests.get(font_url)
             with open(font_path, "wb") as f:
                 f.write(response.content)
-        
+
         if text_data.strip():
             wc = WordCloud(
                 width=600,
                 height=300,
                 background_color="white",
-                font_path=font_path  # 👈 Add this line
+                font_path=font_path
             ).generate(text_data)
 
             st.image(wc.to_array(), use_container_width=True)
-    
+
             with st.expander("📋 Show all comments"):
                 for i, comment in enumerate(group_df[col], 1):
                     if pd.notnull(comment):
                         st.markdown(f"- {comment}")
         else:
             st.info("No comments available for this question.")
-    
+
+
+
