@@ -165,52 +165,17 @@ with tab5:
         "Q07": "7. Overall effectiveness"
     }
 
-    # --- SWOT Chart using Matplotlib ---
+    # --- SWOT Display as Image ---
     st.markdown("### 1. 🧭 SWOT Matrix for This Group")
-
-    swot_descriptions = {
-        "Group 1": {
-            "Strengths": ["Well-structured 'Study Alone' page with clear learning progression."],
-            "Weaknesses": ["App instructions were a bit lengthy and may cause confusion without improved readability."],
-            "Opportunities": ["Expandable across proficiency levels.", "Potential to integrate speaking or writing components."],
-            "Threats": ["Limited access for users unfamiliar with tech.", "Navigation may be less intuitive for some students."]
-        },
-        "Group 2": {
-            "Strengths": ["Effective grammar activities like sentence rearrangement and crosswords."],
-            "Weaknesses": ["Lack of instructional videos and post-lesson review tools."],
-            "Opportunities": ["Good potential for peer collaboration and self-directed learning.", "Scope for enhanced multimedia content."],
-            "Threats": ["Overloaded vocabulary lists.", "Insufficient scaffolding for lower-level students."]
-        },
-        "Group 3": {
-            "Strengths": ["Innovative integration of AI grammar checker and clear Padlet guidelines."],
-            "Weaknesses": ["App selection may be too broad, reducing learner focus."],
-            "Opportunities": ["Blended instruction with strong writing-grammar connections.", "Flexible components allow adaptive teaching."],
-            "Threats": ["Overpacked content may exceed class time.", "Lack of built-in self-assessment for students."]
-        }
+    swot_image_urls = {
+        "Group 1": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group1.png",
+        "Group 2": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group2.png",
+        "Group 3": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group3.png"
     }
+    if selected_group in swot_image_urls:
+        st.image(swot_image_urls[selected_group], caption=f"SWOT Analysis: {selected_group}", use_column_width=True)
 
-    swot_data = swot_descriptions.get(selected_group, {})
 
-    # Plot Quadrogram (empty quadrants)
-    fig, ax = plt.subplots(figsize=(5, 5))
-    ax.axhline(0, color='black')
-    ax.axvline(0, color='black')
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(-1, 1)
-    ax.axis('off')
-
-    ax.text(-0.9, 0.9, "Strengths", fontsize=12, fontweight='bold')
-    ax.text(0.4, 0.9, "Opportunities", fontsize=12, fontweight='bold')
-    ax.text(-0.9, -0.1, "Weaknesses", fontsize=12, fontweight='bold')
-    ax.text(0.4, -0.1, "Threats", fontsize=12, fontweight='bold')
-
-    st.pyplot(fig)
-
-    # Display SWOT descriptions below
-    for quadrant in ["Strengths", "Weaknesses", "Opportunities", "Threats"]:
-        st.markdown(f"**{quadrant}**")
-        for item in swot_data.get(quadrant, []):
-            st.markdown(f"- {item}")
 
     # --- Bar Chart: Group vs Overall Average ---
     st.markdown("### 2. 📊 Quantitative Ratings (1–10 Scale)")
