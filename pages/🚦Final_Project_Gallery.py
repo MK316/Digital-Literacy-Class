@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+font_path = "https://github.com/google/fonts/blob/main/ofl/nanumgothic/NanumGothic-Regular.ttf"
+
 # Create tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📘 Introduction",
@@ -176,7 +178,13 @@ with tab5:
         text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
     
         if text_data.strip():
-            wc = WordCloud(width=600, height=300, background_color="white").generate(text_data)
+            wc = WordCloud(
+                width=600,
+                height=300,
+                background_color="white",
+                font_path=font_path  # 👈 Add this line
+            ).generate(text_data)
+
             st.image(wc.to_array(), use_container_width=True)
     
             with st.expander("📋 Show all comments"):
