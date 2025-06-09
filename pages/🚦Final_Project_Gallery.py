@@ -1,5 +1,8 @@
 import streamlit as st
 import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 
 # Create tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
@@ -131,5 +134,55 @@ with tab4:
 
 with tab5:
     st.write("❄️ Peer review summaries of each group’s app and its classroom application will be posted here after all presentations are finished.")
-    st.markdown("[Peer review link](https://forms.gle/Gfqi98HVKbEFcWiNA)")
 
+
+# Load data
+    df = pd.read_csv("https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/refs/heads/main/data/DL-feedback.csv")  # <- replace with actual file path if needed
+    
+    # Sidebar selection
+    group_list = df['Group'].unique()
+    selected_group = st.selectbox("🔍 Select a group to view feedback:", group_list)
+    
+    # Filter by group
+    group_df = df[df['Group'] == selected_group]
+    
+    st.markdown(f"## 🧾 Feedback Summary for {selected_group}")
+    
+    # --- Q01 to Q07: Bar chart summaries ---
+    st.markdown("### 📊 Quantitative Ratings (1–10 Scale)")
+    question_labels = {
+        "Q01": "1. Easy to navigate",
+        "Q02": "2. Useful for English learning",
+        "Q03": "3. Explained classroom use",
+        "Q04": "4. Creativity/originality",
+        "Q05": "5. Helpful for my teaching",
+        "Q06": "6. Adaptable for student levels",
+        "Q07": "7. Overall effectiveness"
+    }
+    
+    ratings_means = group_df.loc[:, "Q01":"Q07"].mean()
+    
+    fig, ax = plt.subplots(figsize=(8, 4))
+    ratings_means.plot(kind='bar', ax=ax, color='skyblue')
+    ax.set_ylabel("Average Rating")
+    ax.set_ylim(0, 10)
+    ax.set_title("Average Ratings for Each Category")
+    ax.set_xticklabels([question_labels[col] for col in ratings_means.index], rotation=45, ha='right')
+    st.pyplot(fig)
+    
+    # --- Q08 & Q09: Wordcloud and comments ---
+    for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
+        st.markdown(f"### ☁️ {title}")
+        text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
+    
+        if text_data.strip():
+            wc = WordCloud(width=600, height=300, background_color="white").generate(text_data)
+            st.image(wc.to_array(), use_column_width=True)
+    
+            with st.expander("📋 Show all comments"):
+                for i, comment in enumerate(group_df[col], 1):
+                    if pd.notnull(comment):
+                        st.markdown(f"- {comment}")
+        else:
+            st.info("No comments available for this question.")
+    
