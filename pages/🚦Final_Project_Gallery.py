@@ -191,26 +191,28 @@ with tab5:
 
     swot_data = swot_descriptions.get(selected_group, {})
 
-    fig, ax = plt.subplots(figsize=(9, 7))
-    ax.axhline(0, color='black')
-    ax.axvline(0, color='black')
+    fig, ax = plt.subplots(figsize=(10, 8))
+    ax.axhline(0, color='black', linewidth=1)
+    ax.axvline(0, color='black', linewidth=1)
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
     ax.axis('off')
 
+    # Titles
     ax.text(-0.95, 0.95, "Strengths", fontsize=12, fontweight='bold')
     ax.text(0.05, 0.95, "Opportunities", fontsize=12, fontweight='bold')
     ax.text(-0.95, -0.05, "Weaknesses", fontsize=12, fontweight='bold')
     ax.text(0.05, -0.05, "Threats", fontsize=12, fontweight='bold')
 
+    # Descriptions
     for i, point in enumerate(swot_data.get("Strengths", [])):
-        ax.text(-0.95, 0.80 - i * 0.15, f"- {point}", fontsize=10)
+        ax.text(-0.95, 0.80 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
     for i, point in enumerate(swot_data.get("Opportunities", [])):
-        ax.text(0.05, 0.80 - i * 0.15, f"- {point}", fontsize=10)
+        ax.text(0.05, 0.80 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
     for i, point in enumerate(swot_data.get("Weaknesses", [])):
-        ax.text(-0.95, -0.20 - i * 0.15, f"- {point}", fontsize=10)
+        ax.text(-0.95, -0.20 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
     for i, point in enumerate(swot_data.get("Threats", [])):
-        ax.text(0.05, -0.20 - i * 0.15, f"- {point}", fontsize=10)
+        ax.text(0.05, -0.20 - i * 0.10, f"- {point}", fontsize=10, wrap=True)
 
     st.pyplot(fig)
 
