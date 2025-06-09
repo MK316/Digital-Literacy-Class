@@ -137,6 +137,7 @@ with tab4:
 
 with tab5:
 
+
     # Korean font (download from GitHub if not available)
     font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
     font_path = "/tmp/NanumGothic.ttf"
@@ -224,5 +225,40 @@ with tab5:
         else:
             st.info("No comments available for this question.")
 
+    # --- SWOT Chart using Matplotlib ---
+    st.markdown("### 🧭 SWOT Matrix for This Group")
 
+    swot_data = {
+        "Strengths": ["Creative use of vocabulary", "Clear navigation"],
+        "Weaknesses": ["Limited grammar coverage", "Some UI issues"],
+        "Opportunities": ["Could include speaking tools", "Possible for cross-level adaptation"],
+        "Threats": ["Tech access varies", "Needs teacher training"]
+    }
+
+    fig, ax = plt.subplots(figsize=(6, 6))
+
+    ax.axhline(0, color='black')
+    ax.axvline(0, color='black')
+
+    ax.set_xlim(-1, 1)
+    ax.set_ylim(-1, 1)
+    ax.axis('off')
+
+    # Quadrant labels
+    ax.text(-0.9, 0.9, "Strengths", fontsize=12, fontweight='bold')
+    ax.text(0.5, 0.9, "Opportunities", fontsize=12, fontweight='bold')
+    ax.text(-0.9, -0.2, "Weaknesses", fontsize=12, fontweight='bold')
+    ax.text(0.5, -0.2, "Threats", fontsize=12, fontweight='bold')
+
+    # Populate SWOT points
+    for i, point in enumerate(swot_data["Strengths"]):
+        ax.text(-0.9, 0.75 - i * 0.15, f"- {point}", fontsize=10)
+    for i, point in enumerate(swot_data["Opportunities"]):
+        ax.text(0.5, 0.75 - i * 0.15, f"- {point}", fontsize=10)
+    for i, point in enumerate(swot_data["Weaknesses"]):
+        ax.text(-0.9, -0.35 - i * 0.15, f"- {point}", fontsize=10)
+    for i, point in enumerate(swot_data["Threats"]):
+        ax.text(0.5, -0.35 - i * 0.15, f"- {point}", fontsize=10)
+
+    st.pyplot(fig)
 
