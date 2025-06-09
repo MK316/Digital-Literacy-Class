@@ -4,8 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-font_path = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
+font_url = "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/main/data/NanumGothic-Regular.ttf"
+font_path = "/tmp/NanumGothic.ttf"
 
+        
 # Create tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📘 Introduction",
@@ -176,7 +178,13 @@ with tab5:
     for col, title in zip(["Q08", "Q09"], ["Q08: Most impressive aspect", "Q09: Suggestions for improvement"]):
         st.markdown(f"### ☁️ {title}")
         text_data = " ".join(str(comment) for comment in group_df[col] if pd.notnull(comment))
-    
+
+        # Download font if not already downloaded
+        if not os.path.exists(font_path):
+            response = requests.get(font_url)
+            with open(font_path, "wb") as f:
+                f.write(response.content)
+        
         if text_data.strip():
             wc = WordCloud(
                 width=600,
