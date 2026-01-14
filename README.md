@@ -28,17 +28,17 @@ Participants will be able to:
 
 | Week | Focus | Activities|
 |------|------|------|
-| W01 | Course introduction; Digital literacy in English education | |
+| W01 | Course introduction; Digital and AI literacy in English education | |
 | W02 | Exploring digital tools for English teaching; Generative AI overview | |
-| W03 | Python basics I: logic, functions, and libraries | |
-| W04 | Python basics II: multimodality and simple language tasks | |
-| W05 | Data handling: text and CSV files for teaching materials | |
-| W06 | Midterm I: Individual assessment and tool-based activities | |
-| W07 | Digital storytelling and lesson planning (group work) | |
-| W08 | Independent learning week (no class) | |
-| W09 | Midterm II: Group-based digital project assessment | |
+| W03 | Python basics I: variables, data types, and operators | coding exercises|
+| W04 | Python basics II: function, libraries, and modules |coding exercises |
+| W05 | Python basics III: multimodality and simple language tasks | coding exercises|
+| W06 | Data handling: text and CSV files for teaching materials | |
+| W07 |PBL (application) Digital storytelling and lesson planning (group work) | |
+| W08 | Midterm: Individual assessment and tool-based activity tasks| |
+| W09 | Coding to application|application designing|
 | W10 | Introduction to Streamlit: web-based lesson materials | |
-| W11 | Streamlit multi-page apps and instructional design | |
+| W11 | Streamlit apps and instructional design for pre-service English teachers | |
 | W12 | App design for English teaching; AI use in language classrooms | |
 | W13 | Project-based learning (PBL): group app development | |
 | W14 | Final project presentation and peer feedback | |
