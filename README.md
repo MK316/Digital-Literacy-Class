@@ -39,10 +39,10 @@ Participants will be able to:
 | W09 | Coding to application|application designing|
 | W10 | Introduction to Streamlit: web-based lesson materials | |
 | W11 | Streamlit apps and instructional design for pre-service English teachers | |
-| W12 | App design for English teaching; AI use in language classrooms | |
-| W13 | Project-based learning (PBL): group app development | |
-| W14 | Final project presentation and peer feedback | |
-| W15 | Final project refinement and submission | |
+| W12 | App design for English teaching; AI use in language classrooms |Group activities |
+| W13 | Project-based learning (PBL): group app development |Group activities |
+| W14 | Final project presentation and peer feedback |Group activities |
+| W15 | Final project refinement and submission |Reflection |
 
 ---
 
