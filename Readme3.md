@@ -44,8 +44,8 @@ The pacing below is approximate. Topics are listed in the order they build on ea
 | 3 | Information Literacy & Digital Equity | Evaluating online sources; the digital divide in language-learning contexts | Warschauer (2002) |
 | 4–5 | Python Basics | Variables, data types, input/output, conditionals, and loops, practiced through short exercises relevant to language-teaching materials | — |
 | 6 | Python & Text | Strings, lists, and reading/writing files, applied to a text-based exercise (e.g., working with a reading passage) | Coiro & Dobler (2007) |
-| 7 | Functions & Code Organization | Organizing code into reusable functions, building on earlier exercises | Wing (2006) |
-| 8 | Midterm Exam | Written test on digital literacy knowledge (Weeks 1–7) | — |
+| 7 | Functions & Code Organization; **Midterm Exam** (TBA) | Organizing code into reusable functions, building on earlier exercises | Wing (2006); Written test on digital literacy knowledge (Weeks 1–7) |
+| 8 | Mini-Project: Build & Present | Within your team of 4, split into pairs; | — |
 | 9 | Mini-Project: Build & Present | Within your team of 4, split into pairs; design, build, and present a small Python tool | — |
 | 10–11 | HTML Basics | Structure, tags, and basic CSS styling — building a simple webpage | — |
 | 12–13 | Streamlit | Turning a Python script into a running, interactive web app; deployment; teams begin combining pair scripts into one project | — |
