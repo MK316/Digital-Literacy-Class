@@ -1,5 +1,5 @@
 # Digital Literacy and English Education
-### Course Syllabus | 15 Weeks
+### Fall 2026 Course Syllabus | 15 Weeks
 
 ---
 
