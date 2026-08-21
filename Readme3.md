@@ -26,7 +26,7 @@ Across all of these, you will be developing **computational thinking** — the a
 ## Group & Project Structure
 
 - You will be placed into **teams of 4** for the semester.
-- **Mini-Project (Week 9):** within your team of 4, you will split into **two pairs**. Each pair builds a small Python tool independently and presents it to the class.
+- **Mini-Project (Week 8-10):** within your team of 4, you will split into **two pairs**. Each pair builds a small Python tool independently and presents it to the class.
 - **Final Project (Weeks 12–15):** your full team of 4 comes back together, combining and building on what each pair created in the mini-project into one larger, deployed application, presented with a group reflection essay.
 
 This structure means the final project isn't started from scratch — it grows out of work you've already done and tested earlier in the semester.
