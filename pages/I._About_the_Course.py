@@ -88,16 +88,16 @@ with tabs[3]:
     # Dropdown for selecting a month
     month_option = st.selectbox(
         "Select a Month",
-        options=["March", "April", "May", "June"],
+        options=["September", "October", "November", "December"],
         index=0
     )
 
     # Dictionary to map month names to their corresponding numbers
     month_to_number = {
-        "March": 3,
-        "April": 4,
-        "May": 5,
-        "June": 6
+        "September": 9,
+        "October": 10,
+        "November": 11,
+        "December": 12
     }
 
     # Get selected month number
