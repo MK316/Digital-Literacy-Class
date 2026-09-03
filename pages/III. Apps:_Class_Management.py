@@ -198,7 +198,7 @@ with tabs[2]:
             grouped_df.to_csv(csv_buffer, index=False)
             st.download_button(
                 label="📥 Download Grouped CSV",
-                data=csv_buffer.getvalue().encode('utf-8'),
+                data=csv_buffer.getvalue().encode('utf-8-sig'),
                 file_name=f"grouped_{selected_course.replace(' ', '_')}.csv",
                 mime="text/csv"
             )
