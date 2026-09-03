@@ -162,7 +162,7 @@ with tabs[3]:
                 cal_html += "<td></td>"
 
             else:
-                if (day, month_number) in holidays:
+                if (month_number, day) in holidays:
                     cal_html += (
                         f"<td style='color:red; font-weight:bold;'>{day}</td>"
                     )
