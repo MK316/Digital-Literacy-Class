@@ -13,7 +13,7 @@
 | **W07** | **10/15** | 📌 **Midterm I** <br> Making a simple word quiz with Python <br> Introduction to Hugging Face <br> Basic application design |||
 | **W08** | **10/22** |: Review of Python basics and digital literacy concepts <br> Practice activities |||
 | **W09** | **10/29** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |||
-| **W10** | **11/5** | **Digital Tools for Language Teaching** <br> Group activities using digital and AI tools <br> Designing and sharing multimedia learning materials <br> 🌀 Group Assignment |UNESCO (2024)<br> — Chapter 5(G5)||
+| **W10** | **11/5** | **Digital Tools for Language Teaching** <br> Group activities using digital and AI tools <br> Designing and sharing multimedia learning materials <br> 🌀 Group Assignment |||
 | **W11** | **11/12** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app |Koç & Savaş (2025)<br> - G6||
 | **W12** | **11/19** | 📌 **Midterm II: Group Quiz / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |||
 | **W13** | **11/26** | **Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project |||
