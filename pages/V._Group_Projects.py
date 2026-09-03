@@ -10,12 +10,12 @@ with tabs[0]:
     Welcome to the project portal! This page will provide details of each project when scheduled:
     """)
 
-    st.markdown("#### No project is assigned yet. (as of 2025. 03. 09)")
+    st.markdown("#### See Course schedule")
 
 # Second tab: GitHub IDs
 with tabs[1]:
     st.markdown("### 💻 GitHub IDs for Group Projects")
-    st.page_link("https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing", label="Make your own account and share your IDs here", icon="➡️")
+    st.page_link("https://docs.google.com/spreadsheets/d/1knnx8Om_gb21AjS6Aa6lGv_dyU-sNAGOMHCcX6vupiQ/edit?usp=sharing", label="Make your own account and share your IDs here", icon="➡️")
   
 
 # Third tab: Project Gallery
