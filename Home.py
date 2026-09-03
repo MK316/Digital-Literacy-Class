@@ -7,4 +7,4 @@ st.image("https://github.com/MK316/Digital-Literacy-Class/raw/main/images/dl-log
 
 st.markdown("---")
 st.markdown("⛺Goto [MK316 home](https://mk316.github.io)")
-st.caption("Last updated: Feb.25, 2025")
+st.caption("Last updated: Sep.3, 2026")
