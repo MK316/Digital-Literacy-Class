@@ -34,7 +34,7 @@ with tabs[1]:
 
 with tabs[2]:
     st.markdown("#### Github IDs to share")
-    st.page_link("https://docs.google.com/spreadsheets/d/1z2uYvH-foo3BZ6a4_T80TK7HOQbIJIYIUe5SWOEaGyk/edit?usp=sharing", label="Make your own account and share your IDs here", icon="➡️")
+    st.page_link("https://docs.google.com/spreadsheets/d/1knnx8Om_gb21AjS6Aa6lGv_dyU-sNAGOMHCcX6vupiQ/edit?usp=sharing", label="Make your own account and share your IDs here", icon="➡️")
     
 
 with tabs[3]:
