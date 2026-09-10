@@ -4,7 +4,7 @@ from streamlit_pdf_viewer import pdf_viewer
 
 st.set_page_config(page_title="PDF 뷰어", layout="wide")
 
-st.title("📄 PDF 자료 보기")
+st.title("🐣 In-class activities: APP design practice")
 
 # -----------------------------
 # 탭 구성 (3개 - 나머지 2개는 추후 사용)
