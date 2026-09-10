@@ -243,7 +243,7 @@ with tabs[3]:
     st.markdown(button_html, unsafe_allow_html=True)
 
 with tabs[4]:
-    st.markdown("[Google drive](https://drive.google.com/drive/folders/1u9VB5AYDtKNRj0vzyXgo6AwAfcvWE3t2?usp=sharing))
+    st.markdown("[Google drive](https://drive.google.com/drive/folders/1u9VB5AYDtKNRj0vzyXgo6AwAfcvWE3t2?usp=sharing)")
 
 # Text-to-Speech tab
 with tabs[5]:
