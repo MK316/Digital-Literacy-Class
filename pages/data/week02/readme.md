@@ -1,5 +1,5 @@
 
-# Individual AI-Assisted Design Task | Participant Guide
+# Week 02: Individual AI-Assisted Design Task | Participant Guide
 ### AI 활용 영어학습 활동/앱 설계 공통 안내문
 
 ## 1. Before You Start (시작하기 전에)
