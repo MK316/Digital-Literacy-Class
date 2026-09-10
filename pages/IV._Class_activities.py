@@ -7,27 +7,32 @@ st.set_page_config(page_title="PDF 뷰어", layout="wide")
 st.title("📄 PDF 자료 보기")
 
 # -----------------------------
-# 1) PDF 파일 목록 설정
+# 1) 항목 목록 설정
 # -----------------------------
-# 표시할 이름(드롭다운에 보이는 라벨) : 실제 파일 경로
-PDF_FILES = {
-    "1. HTML 가이드": "pages/data/week02/files/01-HTML-guide.pdf",
-    "2. 과업 안내문": "pages/data/week02/files/02-task-guide.pdf",
-    "3. Task 01": "pages/data/week02/files/Task_01.pdf",
-    "4. Task 02": "pages/data/week02/files/Task_02.pdf",
-    "5. Task 03": "pages/data/week02/files/Task_03.pdf",
-    "6. Submit & Reflection": "https://forms.gle/urACShNuqUFxJP73A",
+# 각 항목은 "type"이 "pdf" 또는 "link" 중 하나입니다.
+# pdf: 화면에 PDF를 표시
+# link: 버튼을 눌러야만 새 탭으로 이동 (예: Google Form)
+ITEMS = {
+    "1. HTML 가이드": {"type": "pdf", "path": "pages/data/week02/files/01-HTML-guide.pdf"},
+    "2. 과업 안내문": {"type": "pdf", "path": "pages/data/week02/files/02-task-guide.pdf"},
+    "3. Task 01": {"type": "pdf", "path": "pages/pages/data/week02/files/Task_01.pdf"},
+    "4. Task 02": {"type": "pdf", "path": "pages/data/week02/files/Task_02.pdf"},
+    "5. Task 03": {"type": "pdf", "path": "pages/data/week02/files/Task_03.pdf"},
+    "6. 사후 설문지 (Google Form)": {
+        "type": "link",
+        "url": "https://forms.gle/urACShNuqUFxJP73A",
+    },
 }
 
 # -----------------------------
 # 2) 드롭다운 메뉴
 # -----------------------------
 selected_label = st.selectbox(
-    "확인할 PDF 파일을 선택하세요",
-    options=list(PDF_FILES.keys()),
+    "확인할 항목을 선택하세요",
+    options=list(ITEMS.keys()),
 )
 
-selected_path = PDF_FILES[selected_label]
+selected_item = ITEMS[selected_label]
 
 # -----------------------------
 # 3) PDF 표시 함수
@@ -58,4 +63,11 @@ def display_pdf(file_path: str):
 # 4) 실행
 # -----------------------------
 st.divider()
-display_pdf(selected_path)
+
+if selected_item["type"] == "link":
+    st.write(f"**{selected_label}**")
+    st.write("아래 버튼을 누르면 새 탭에서 이동합니다.")
+    st.link_button("🔗 새 탭에서 열기", selected_item["url"])
+
+elif selected_item["type"] == "pdf":
+    display_pdf(selected_item["path"])
