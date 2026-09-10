@@ -5,7 +5,7 @@
 | Week | Thursdays (3 hrs) | Weekly Plan |Assignments|Reflection|
 |------|:------------------:|-------------|-------------|-------------|
 | **W01** | **9/3** | **Introduction: Digital Literacy** <br> Course overview <br> What is digital literacy? <br> Importance of digital tools in language teaching |||
-| **W02** | **9/10** | **Exploring Digital Tools** <br> Introduction to useful digital tools including Generative AI <br> File handling: Colab and GitHub repository <br> 🌀 [Assign#1](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/assignments.md) |||
+| **W02** | **9/10** | **Exploring Digital Tools** <br> Introduction to useful digital tools including Generative AI <br> File handling: Colab and GitHub repository |🌀 [Assign#1](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/assignments.md): html 앱 만들어 보고 파일 올리기||
 | **W03** | **9/17** | **Python Basics I** <br> Basic syntax, variables, operators, and functions <br> Simple coding exercises |UNESCO (2024)<br> — Chapter 1(G1) & 2(G2)||
 | **W04** | **9/24** | ⛄ **Holiday – No Class** |||
 | **W05** | **10/1** | ⛄ **Holiday – No Class** |**Python Basics II**: Make-up videos(TBA)||
