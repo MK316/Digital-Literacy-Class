@@ -22,6 +22,10 @@ ITEMS = {
         "type": "link",
         "url": "https://forms.gle/urACShNuqUFxJP73A",
     },
+    "7. 확인하기 (Google sheet)": {
+        "type": "link",
+        "url": "https://docs.google.com/spreadsheets/d/1knnx8Om_gb21AjS6Aa6lGv_dyU-sNAGOMHCcX6vupiQ/edit?usp=sharing",
+    },
 }
 
 # -----------------------------
