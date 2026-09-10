@@ -13,7 +13,7 @@ st.title("📄 PDF 자료 보기")
 PDF_FILES = {
     "1. HTML 가이드": "pages/data/week02/files/01-HTML-guide.pdf",
     "2. 과업 안내문": "pages/data/week02/files/02-task-guide.pdf",
-    "3. Task 01": "pages/pages/data/week02/files/Task_01.pdf",
+    "3. Task 01": "pages/data/week02/files/Task_01.pdf",
     "4. Task 02": "pages/data/week02/files/Task_02.pdf",
     "5. Task 03": "pages/data/week02/files/Task_03.pdf",
 }
