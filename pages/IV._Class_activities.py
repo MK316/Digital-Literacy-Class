@@ -16,7 +16,7 @@ PDF_FILES = {
     "3. Task 01": "pages/data/week02/files/Task_01.pdf",
     "4. Task 02": "pages/data/week02/files/Task_02.pdf",
     "5. Task 03": "pages/data/week02/files/Task_03.pdf",
-    "6. Submit & Reflection: "https://forms.gle/urACShNuqUFxJP73A",
+    "6. Submit & Reflection": "https://forms.gle/urACShNuqUFxJP73A",
 }
 
 # -----------------------------
