@@ -18,7 +18,7 @@ def create_wordcloud(text):
     return wordcloud
 
 # Streamlit tabs
-tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 GoogleSheet","🔊 Text-to-Speech", "🎨 Drawing"])
+tabs = st.tabs(["📈 QR", "⏳ Timer", "👥 Grouping", "🐤 GoogleSheet","Google drive","🔊 Text-to-Speech", "🎨 Drawing"])
 
 # QR Code tab
 with tabs[0]:
@@ -242,9 +242,11 @@ with tabs[3]:
     """
     st.markdown(button_html, unsafe_allow_html=True)
 
+with tabs[4]:
+    st.markdown("[Google drive](https://drive.google.com/drive/folders/1u9VB5AYDtKNRj0vzyXgo6AwAfcvWE3t2?usp=sharing))
 
 # Text-to-Speech tab
-with tabs[4]:
+with tabs[5]:
     st.subheader("Text-to-Speech Converter (using Google TTS)")
     text_input = st.text_area("Enter the text you want to convert to speech:")
     language = st.selectbox("Choose a language: 🇰🇷 🇺🇸 🇬🇧 🇷🇺 🇫🇷 🇪🇸 🇯🇵 ", ["Korean", "English (American)", "English (British)", "Russian", "Spanish", "French", "Japanese"])
@@ -286,7 +288,7 @@ with tabs[4]:
     st.caption("🇨🇳 Chinese: 由教师设计的编程应用程序为学习者提供个性化的学习体验，通过互动和适应性工具使复杂的概念更容易理解。它们增强学习参与度，提供即时反馈，并支持主动学习。")
     st.caption("🇯🇵 Japanese: 教師が設計したコーディングアプリケーションは、学習者のニーズに合わせた学習体験を提供し、複雑な概念をインタラクティブで適応性のあるツールを通じて理解しやすくします。また、学習への集中力を高め、即時フィードバックを提供し、主体的な学習をサポートします。")
 
-with tabs[5]:
+with tabs[6]:
     st.caption("Use the canvas below to draw freely. You can change the stroke width and color.")
 
    # Place Stroke Width, Stroke Color, and Background Color in the same row
