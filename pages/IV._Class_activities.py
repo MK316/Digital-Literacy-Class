@@ -24,7 +24,7 @@ with tab1:
     ITEMS = {
         "1. HTML 가이드": {"type": "pdf", "path": "pages/data/week02/files/01-HTML-guide.pdf"},
         "2. 과업 안내문": {"type": "pdf", "path": "pages/data/week02/files/02-task-guide.pdf"},
-        "3. Task 01": {"type": "pdf", "path": "pages/pages/data/week02/files/Task_01.pdf"},
+        "3. Task 01": {"type": "pdf", "path": "pages/data/week02/files/Task_01.pdf"},
         "4. Task 02": {"type": "pdf", "path": "pages/data/week02/files/Task_02.pdf"},
         "5. Task 03": {"type": "pdf", "path": "pages/data/week02/files/Task_03.pdf"},
         "6. 사후 설문지 (Google Form)": {
