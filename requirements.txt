@@ -11,3 +11,4 @@ openpyxl
 nltk
 requests
 pytz
+streamlit-pdf-viewer
