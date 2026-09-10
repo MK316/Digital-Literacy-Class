@@ -14,7 +14,7 @@
 
 > ※ 첫 응답을 확인한 후 배정된 개별 과업(Task 01/02/03)을 확인하고, 본인이 원하는 방식으로 자유롭게 진행하세요.
 
-## 3. Your Task (과업 및 목표)
+## 3. Your Task (과업 및 목표): One will be assigned (Task 1, Task 2, Task 3)
 - **제공 정보**: Learner info (중 2 EFL, A2–B1), Short text, Six target expressions
 - **최종 목표**: Create a browser-based English learning activity/app that helps the learners understand and appropriately use the six target expressions.
 - The specific instructional design is your decision.
