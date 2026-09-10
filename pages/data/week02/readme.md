@@ -50,10 +50,10 @@
 - **Mac**: `Command + Shift + 4` → 앱 화면 영역 선택 → 자동 저장된 PNG 파일을 바탕화면에서 확인
 
 ## Quick Checklist
-1. New Chat
-2. Common First Prompt
-3. Open Assigned Task
+1. New Chat: [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/new), [Gemini](https://gemini.google.com/app))
+2. Common First Prompt (Copy from the manual)
+3. Open Assigned Task (Task1, Task2, Task3)
 4. Work 20 Mins
 5. STOP
-6. Keep Chat Open
-7. Submit
+6. Keep Chat Open (ChatGPT, Claud, Gemini)
+7. Submit files and reflection: 📌 [Google form](https://forms.gle/urACShNuqUFxJP73A)
