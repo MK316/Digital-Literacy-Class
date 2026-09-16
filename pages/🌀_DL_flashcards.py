@@ -29,25 +29,34 @@ TZ = ZoneInfo("Asia/Seoul")
 
 # ============================================================
 # DATA FILE
-# pages/🌀_DL_flashcards.py
-# pages/terms_data.md
+#
+# pages/
+# ├── 🌀_DL_flashcards.py
+# └── terms_data.md
 # ============================================================
 
 APP_DIR = Path(__file__).resolve().parent
 DATA_FILE = APP_DIR / "terms_data.md"
 
+
 if not DATA_FILE.is_file():
+
     st.error("terms_data.md was not found.")
-    st.write("App file:")
+
+    st.write("Current app file:")
     st.code(str(Path(__file__).resolve()))
 
     st.write("Expected data file:")
     st.code(str(DATA_FILE))
 
-    st.write("Files found in this folder:")
+    st.write("Files visible in this directory:")
+
     try:
-        visible_files = sorted(p.name for p in APP_DIR.iterdir())
-        st.code("\n".join(visible_files))
+        filenames = sorted(
+            p.name for p in APP_DIR.iterdir()
+        )
+        st.code("\n".join(filenames))
+
     except Exception as e:
         st.code(str(e))
 
@@ -60,28 +69,24 @@ if not DATA_FILE.is_file():
 
 @st.cache_data
 def load_terms_from_markdown(path_str):
-    """
-    Expected format:
 
-    ### 001. Hardware
+    text = Path(path_str).read_text(
+        encoding="utf-8"
+    )
 
-    **Explanation:** ...
-    
-    **Quiz prompt:** ...
-    
-    **Accepted answers:** ...
+    # Normalize Windows / Mac line endings
+    text = text.replace("\r\n", "\n")
+    text = text.replace("\r", "\n")
 
-    ---
 
-    The final item does NOT need a trailing ---.
-    """
+    # --------------------------------------------------------
+    # Each entry begins with:
+    #
+    # ### 001. Hardware
+    #
+    # and ends immediately before the next ### heading.
+    # --------------------------------------------------------
 
-    text = Path(path_str).read_text(encoding="utf-8")
-
-    # Normalize line endings
-    text = text.replace("\r\n", "\n").replace("\r", "\n")
-
-    # Each entry begins with ### number. keyword
     entry_pattern = re.compile(
         r"^###\s*(\d+)\.\s*(.+?)\s*$"
         r"(.*?)"
@@ -89,52 +94,83 @@ def load_terms_from_markdown(path_str):
         re.MULTILINE | re.DOTALL,
     )
 
+
     terms = []
+
 
     for entry in entry_pattern.finditer(text):
 
         number = int(entry.group(1))
         keyword = entry.group(2).strip()
+
         body = entry.group(3)
 
+
+        # ----------------------------------------------------
+        # Explanation
+        # ----------------------------------------------------
+
         explanation_match = re.search(
-            r"\*\*Explanation:\*\*\s*(.*?)"
-            r"(?=\n\s*\n?\*\*Quiz prompt:\*\*)",
+            r"\*\*Explanation:\*\*\s*"
+            r"(.*?)"
+            r"(?=\n\s*\*\*Quiz prompt:\*\*)",
             body,
             re.DOTALL,
         )
+
+
+        # ----------------------------------------------------
+        # Quiz prompt
+        # ----------------------------------------------------
 
         question_match = re.search(
-            r"\*\*Quiz prompt:\*\*\s*(.*?)"
-            r"(?=\n\s*\n?\*\*Accepted answers:\*\*)",
+            r"\*\*Quiz prompt:\*\*\s*"
+            r"(.*?)"
+            r"(?=\n\s*\*\*Accepted answers:\*\*)",
             body,
             re.DOTALL,
         )
+
+
+        # ----------------------------------------------------
+        # Accepted answers
+        # ----------------------------------------------------
 
         aliases_match = re.search(
-            r"\*\*Accepted answers:\*\*\s*(.*?)(?:\n\s*---|\Z)",
+            r"\*\*Accepted answers:\*\*\s*"
+            r"(.*?)"
+            r"(?=\n\s*---|\Z)",
             body,
             re.DOTALL,
         )
 
-        if not explanation_match or not question_match:
+
+        if not explanation_match:
             continue
+
+        if not question_match:
+            continue
+
 
         explanation = re.sub(
             r"\s+",
             " ",
-            explanation_match.group(1).strip()
+            explanation_match.group(1).strip(),
         )
+
 
         question = re.sub(
             r"\s+",
             " ",
-            question_match.group(1).strip()
+            question_match.group(1).strip(),
         )
+
 
         aliases = []
 
+
         if aliases_match:
+
             aliases_raw = aliases_match.group(1).strip()
 
             if aliases_raw not in {
@@ -144,12 +180,15 @@ def load_terms_from_markdown(path_str):
                 "None",
                 "none",
                 "N/A",
+                "n/a",
             }:
+
                 aliases = [
                     x.strip()
                     for x in aliases_raw.split(";")
                     if x.strip()
                 ]
+
 
         terms.append(
             {
@@ -161,40 +200,46 @@ def load_terms_from_markdown(path_str):
             }
         )
 
-    # Keep terms in numerical order
-    terms.sort(key=lambda x: x["number"])
+
+    terms.sort(
+        key=lambda x: x["number"]
+    )
 
     return terms
 
 
-TERMS = load_terms_from_markdown(str(DATA_FILE))
+TERMS = load_terms_from_markdown(
+    str(DATA_FILE)
+)
 
+
+# ============================================================
+# DATA CHECK
+# ============================================================
 
 if len(TERMS) != TOTAL_TERMS:
-    st.error(
-        f"Expected {TOTAL_TERMS} vocabulary entries, "
-        f"but found {len(TERMS)}."
-    )
 
-    st.write(
-        "The file was found successfully, but the Markdown format "
-        "could not be parsed into exactly 100 entries."
+    st.error(
+        f"terms_data.md was found, but "
+        f"{len(TERMS)} entries were loaded. "
+        f"Expected {TOTAL_TERMS}."
     )
 
     if TERMS:
+
         st.write("Entries successfully loaded:")
-        st.write(
-            [
-                f'{x["number"]}. {x["keyword"]}'
-                for x in TERMS
-            ]
-        )
+
+        for item in TERMS:
+            st.write(
+                f'{item["number"]}. '
+                f'{item["keyword"]}'
+            )
 
     st.stop()
 
 
 # ============================================================
-# SET INFORMATION
+# SETS
 # ============================================================
 
 SET_LABELS = {
@@ -207,13 +252,18 @@ SET_LABELS = {
 
 
 def get_set_items(set_no):
-    start = (set_no - 1) * SET_SIZE
+
+    start = (
+        set_no - 1
+    ) * SET_SIZE
+
     end = start + SET_SIZE
+
     return TERMS[start:end]
 
 
 # ============================================================
-# BASIC FUNCTIONS
+# TIME
 # ============================================================
 
 def now_kst():
@@ -221,53 +271,75 @@ def now_kst():
 
 
 def fmt_time(dt):
-    if not dt:
-        return ""
-    return dt.strftime("%Y-%m-%d %H:%M:%S")
 
+    if dt is None:
+        return ""
+
+    return dt.strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
+
+
+# ============================================================
+# ANSWER CHECKING
+# ============================================================
 
 def normalize_answer(text):
+
     """
-    Grading ignores:
-    - upper/lower case
+    Ignore:
+    - capitalization
     - spaces
     - hyphens
     - underscores
     - punctuation
+
+    Example:
+    Hugging Face == huggingface
     """
+
     return re.sub(
         r"[^a-z0-9]",
         "",
-        (text or "").lower()
+        (text or "").lower(),
     )
 
 
-def answer_is_correct(user_answer, item):
+def answer_is_correct(
+    user_answer,
+    item,
+):
 
-    accepted_answers = [
+    accepted = [
         item["keyword"],
         *item["aliases"],
     ]
 
-    normalized_answers = {
+    accepted_normalized = {
         normalize_answer(x)
-        for x in accepted_answers
+        for x in accepted
     }
 
-    return normalize_answer(user_answer) in normalized_answers
+    return (
+        normalize_answer(user_answer)
+        in accepted_normalized
+    )
 
+
+# ============================================================
+# NAME CHECK
+# ============================================================
 
 def valid_english_name(name):
-    """
-    English alphabet only,
-    with spaces, periods, hyphens, and apostrophes allowed.
-    """
-    name = (name or "").strip()
+
+    name = (
+        name or ""
+    ).strip()
 
     return bool(
         re.fullmatch(
             r"[A-Za-z][A-Za-z .'-]*",
-            name
+            name,
         )
     )
 
@@ -276,9 +348,32 @@ def valid_english_name(name):
 # SESSION STATE
 # ============================================================
 
-def clear_widget_keys():
+DEFAULT_STATE = {
+    "active_set": 1,
+    "selected_unknown": [],
+    "card_index": 0,
+    "practice_ready": False,
+    "quiz_started": False,
+    "quiz_submitted": False,
+    "quiz_order": [],
+    "quiz_start": None,
+    "quiz_end": None,
+    "student_name": "",
+    "quiz_results": [],
+}
 
-    for key in list(st.session_state.keys()):
+
+for key, value in DEFAULT_STATE.items():
+
+    if key not in st.session_state:
+        st.session_state[key] = value
+
+
+def clear_dynamic_widgets():
+
+    for key in list(
+        st.session_state.keys()
+    ):
 
         if (
             key.startswith("unknown_")
@@ -287,15 +382,18 @@ def clear_widget_keys():
             del st.session_state[key]
 
 
-def reset_learning_state(new_set=None):
+def reset_learning_state(
+    new_set=None,
+):
 
-    clear_widget_keys()
+    clear_dynamic_widgets()
 
     if new_set is not None:
         st.session_state.active_set = new_set
 
     st.session_state.selected_unknown = []
     st.session_state.card_index = 0
+
     st.session_state.practice_ready = False
 
     st.session_state.quiz_started = False
@@ -307,40 +405,7 @@ def reset_learning_state(new_set=None):
     st.session_state.quiz_end = None
 
     st.session_state.student_name = ""
-    st.session_state.quiz_results = []
 
-
-if "active_set" not in st.session_state:
-    st.session_state.active_set = 1
-
-if "selected_unknown" not in st.session_state:
-    st.session_state.selected_unknown = []
-
-if "card_index" not in st.session_state:
-    st.session_state.card_index = 0
-
-if "practice_ready" not in st.session_state:
-    st.session_state.practice_ready = False
-
-if "quiz_started" not in st.session_state:
-    st.session_state.quiz_started = False
-
-if "quiz_submitted" not in st.session_state:
-    st.session_state.quiz_submitted = False
-
-if "quiz_order" not in st.session_state:
-    st.session_state.quiz_order = []
-
-if "quiz_start" not in st.session_state:
-    st.session_state.quiz_start = None
-
-if "quiz_end" not in st.session_state:
-    st.session_state.quiz_end = None
-
-if "student_name" not in st.session_state:
-    st.session_state.student_name = ""
-
-if "quiz_results" not in st.session_state:
     st.session_state.quiz_results = []
 
 
@@ -348,14 +413,20 @@ if "quiz_results" not in st.session_state:
 # PDF REPORT
 # ============================================================
 
-def shorten_text(text, max_length=34):
+def shorten_text(
+    text,
+    max_length=38,
+):
 
     text = str(text)
 
     if len(text) <= max_length:
         return text
 
-    return text[: max_length - 1] + "…"
+    return (
+        text[: max_length - 1]
+        + "…"
+    )
 
 
 def build_pdf_report(
@@ -369,6 +440,7 @@ def build_pdf_report(
     buffer = io.BytesIO()
 
     page_size = landscape(A4)
+
     width, height = page_size
 
     c = canvas.Canvas(
@@ -376,21 +448,37 @@ def build_pdf_report(
         pagesize=page_size,
     )
 
+
+    # --------------------------------------------------------
+    # Header
+    # --------------------------------------------------------
+
     left = 26
     top = height - 26
 
-    # Title
-    c.setFont("Helvetica-Bold", 14)
+
+    c.setFont(
+        "Helvetica-Bold",
+        14,
+    )
+
     c.drawString(
         left,
         top,
         "Digital Literacy Quiz Report",
     )
 
-    # Metadata
-    c.setFont("Helvetica", 8)
+
+    # --------------------------------------------------------
+    # Student information
+    # --------------------------------------------------------
 
     meta_y = top - 20
+
+    c.setFont(
+        "Helvetica",
+        8,
+    )
 
     c.drawString(
         left,
@@ -399,22 +487,27 @@ def build_pdf_report(
     )
 
     c.drawString(
-        left + 190,
+        left + 180,
         meta_y,
         f"Set: {set_no}",
     )
 
     c.drawString(
-        left + 260,
+        left + 245,
         meta_y,
         f"Start: {fmt_time(start_time)}",
     )
 
     c.drawString(
-        left + 470,
+        left + 465,
         meta_y,
         f"End: {fmt_time(end_time)}",
     )
+
+
+    # --------------------------------------------------------
+    # Score
+    # --------------------------------------------------------
 
     score = sum(
         1
@@ -423,12 +516,16 @@ def build_pdf_report(
     )
 
     percentage = (
-        score / len(results) * 100
-        if results
-        else 0
+        score
+        / len(results)
+        * 100
     )
 
+
+    # --------------------------------------------------------
     # Table
+    # --------------------------------------------------------
+
     table_data = [
         [
             "No.",
@@ -438,19 +535,24 @@ def build_pdf_report(
         ]
     ]
 
+
     for r in results:
 
         table_data.append(
             [
                 str(r["no"]),
+
                 shorten_text(
-                    r["user_answer"] or "—",
-                    38,
+                    r["user_answer"]
+                    or "—",
+                    40,
                 ),
+
                 shorten_text(
                     r["correct_answer"],
-                    30,
+                    32,
                 ),
+
                 (
                     "Correct"
                     if r["correct"]
@@ -459,22 +561,25 @@ def build_pdf_report(
             ]
         )
 
+
     table = Table(
         table_data,
+
         colWidths=[
             38,
             310,
             250,
             92,
         ],
+
         rowHeights=[
             17
         ]
         + [
             16
-        ]
-        * len(results),
+        ] * len(results),
     )
+
 
     table.setStyle(
         TableStyle(
@@ -483,57 +588,70 @@ def build_pdf_report(
                     "BACKGROUND",
                     (0, 0),
                     (-1, 0),
-                    colors.HexColor("#EEEEEE"),
+                    colors.HexColor(
+                        "#EEEEEE"
+                    ),
                 ),
+
                 (
                     "FONTNAME",
                     (0, 0),
                     (-1, 0),
                     "Helvetica-Bold",
                 ),
+
                 (
                     "FONTNAME",
                     (0, 1),
                     (-1, -1),
                     "Helvetica",
                 ),
+
                 (
                     "FONTSIZE",
                     (0, 0),
                     (-1, -1),
                     7.4,
                 ),
+
                 (
                     "ALIGN",
                     (0, 0),
                     (0, -1),
                     "CENTER",
                 ),
+
                 (
                     "ALIGN",
                     (-1, 1),
                     (-1, -1),
                     "CENTER",
                 ),
+
                 (
                     "VALIGN",
                     (0, 0),
                     (-1, -1),
                     "MIDDLE",
                 ),
+
                 (
                     "GRID",
                     (0, 0),
                     (-1, -1),
                     0.4,
-                    colors.HexColor("#BBBBBB"),
+                    colors.HexColor(
+                        "#BBBBBB"
+                    ),
                 ),
+
                 (
                     "LEFTPADDING",
                     (0, 0),
                     (-1, -1),
                     5,
                 ),
+
                 (
                     "RIGHTPADDING",
                     (0, 0),
@@ -544,12 +662,19 @@ def build_pdf_report(
         )
     )
 
-    table_width, table_height = table.wrap(
+
+    _, table_height = table.wrap(
         width - 2 * left,
         height,
     )
 
-    table_y = meta_y - 10 - table_height
+
+    table_y = (
+        meta_y
+        - 10
+        - table_height
+    )
+
 
     table.drawOn(
         c,
@@ -557,8 +682,15 @@ def build_pdf_report(
         table_y,
     )
 
-    # Score
-    c.setFont("Helvetica-Bold", 10)
+
+    # --------------------------------------------------------
+    # Final score
+    # --------------------------------------------------------
+
+    c.setFont(
+        "Helvetica-Bold",
+        10,
+    )
 
     c.drawString(
         left,
@@ -570,6 +702,7 @@ def build_pdf_report(
         ),
     )
 
+
     c.setFont(
         "Helvetica-Oblique",
         7,
@@ -579,10 +712,12 @@ def build_pdf_report(
         left + 240,
         table_y - 20,
         (
-            "Grading ignores capitalization, "
-            "spaces, hyphens, and punctuation."
+            "Capitalization, spaces, "
+            "hyphens, and punctuation "
+            "are ignored in grading."
         ),
     )
+
 
     c.showPage()
     c.save()
@@ -601,28 +736,26 @@ st.markdown(
     <style>
 
     .flashcard {
-        border: 1px solid #d9d9d9;
-        border-radius: 14px;
-        padding: 32px 28px;
-        min-height: 170px;
+        border: 1px solid #d8d8d8;
+        border-radius: 16px;
+        padding: 35px 30px;
+        min-height: 180px;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
         text-align: center;
+
         background: #fafafa;
-        margin: 8px 0 14px 0;
+
+        margin-top: 10px;
+        margin-bottom: 16px;
     }
 
     .flashcard-term {
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 0.2px;
-    }
-
-    .flashcard-definition {
-        font-size: 1.05rem;
-        line-height: 1.6;
-        text-align: left;
     }
 
     </style>
@@ -632,7 +765,7 @@ st.markdown(
 
 
 # ============================================================
-# HEADER
+# TITLE
 # ============================================================
 
 st.title(
@@ -641,7 +774,7 @@ st.title(
 
 st.caption(
     "100 core terms · "
-    "5 non-overlapping sets · "
+    "5 sets · "
     "20 terms per set"
 )
 
@@ -650,17 +783,41 @@ st.caption(
 # SET SELECTION
 # ============================================================
 
-set_no = st.selectbox(
+selected_set = st.selectbox(
     "Choose a 20-word set",
-    options=[1, 2, 3, 4, 5],
-    format_func=lambda x: SET_LABELS[x],
-    index=st.session_state.active_set - 1,
-    disabled=st.session_state.quiz_started,
+    options=[
+        1,
+        2,
+        3,
+        4,
+        5,
+    ],
+
+    format_func=lambda x: (
+        SET_LABELS[x]
+    ),
+
+    index=(
+        st.session_state.active_set
+        - 1
+    ),
+
+    disabled=(
+        st.session_state.quiz_started
+    ),
 )
 
 
-if set_no != st.session_state.active_set:
-    reset_learning_state(set_no)
+if (
+    selected_set
+    != st.session_state.active_set
+):
+
+    reset_learning_state(
+        selected_set
+    )
+
+    st.rerun()
 
 
 items = get_set_items(
@@ -683,7 +840,8 @@ tab_list, tab_practice, tab_quiz, tab_result = st.tabs(
 
 
 # ============================================================
-# TAB 1 — WORD LIST
+# TAB 1
+# WORD LIST
 # ============================================================
 
 with tab_list:
@@ -695,8 +853,10 @@ with tab_list:
     )
 
     st.write(
-        "Review the 20 keywords in this set."
+        "Review the 20 keywords "
+        "before starting your practice."
     )
+
 
     rows = []
 
@@ -709,17 +869,26 @@ with tab_list:
             }
         )
 
+
     st.dataframe(
         rows,
         hide_index=True,
         use_container_width=True,
     )
 
+
+    # --------------------------------------------------------
+    # All 100 words
+    # --------------------------------------------------------
+
     with st.expander(
-        "Show all 100 keywords"
+        "View all 100 keywords"
     ):
 
-        for s in range(1, 6):
+        for s in range(
+            1,
+            6,
+        ):
 
             st.markdown(
                 f"**{SET_LABELS[s]}**"
@@ -727,22 +896,21 @@ with tab_list:
 
             words = [
                 x["keyword"]
-                for x in get_set_items(s)
+                for x
+                in get_set_items(s)
             ]
 
             st.write(
                 " · ".join(words)
             )
 
-    st.download_button(
-        "Download vocabulary data (.md)",
-        data=DATA_FILE.read_bytes(),
-        file_name="terms_data.md",
-        mime="text/markdown",
-    )
+
+    # --------------------------------------------------------
+    # Markdown source
+    # --------------------------------------------------------
 
     with st.expander(
-        "View vocabulary data source"
+        "View vocabulary descriptions"
     ):
 
         st.markdown(
@@ -753,7 +921,8 @@ with tab_list:
 
 
 # ============================================================
-# TAB 2 — PRACTICE
+# TAB 2
+# PRACTICE
 # ============================================================
 
 with tab_practice:
@@ -763,30 +932,41 @@ with tab_practice:
     )
 
     st.write(
-        "Check only the terms you do not know yet. "
-        "You will study only the selected terms."
+        "Choose only the words "
+        "you do not know well. "
+        "You will practice those words "
+        "before taking the final quiz."
     )
 
+
+    # --------------------------------------------------------
+    # Select unknown words
+    # --------------------------------------------------------
+
     with st.form(
-        f"unknown_form_{st.session_state.active_set}"
+        f"unknown_form_"
+        f"{st.session_state.active_set}"
     ):
 
         col1, col2 = st.columns(2)
 
         selected_terms = []
 
+
         for i, item in enumerate(items):
 
-            target_col = (
+            column = (
                 col1
                 if i < 10
                 else col2
             )
 
-            with target_col:
+
+            with column:
 
                 checked = st.checkbox(
                     item["keyword"],
+
                     key=(
                         f"unknown_"
                         f"{st.session_state.active_set}_"
@@ -794,10 +974,13 @@ with tab_practice:
                     ),
                 )
 
+
                 if checked:
+
                     selected_terms.append(
                         item["keyword"]
                     )
+
 
         apply_selection = (
             st.form_submit_button(
@@ -806,6 +989,7 @@ with tab_practice:
             )
         )
 
+
     if apply_selection:
 
         st.session_state.selected_unknown = (
@@ -813,10 +997,14 @@ with tab_practice:
         )
 
         st.session_state.card_index = 0
+
         st.session_state.practice_ready = False
+
         st.session_state.quiz_started = False
         st.session_state.quiz_submitted = False
+
         st.session_state.quiz_results = []
+
 
     selected_items = [
         item
@@ -827,26 +1015,31 @@ with tab_practice:
 
 
     # --------------------------------------------------------
-    # FLASHCARD PRACTICE
+    # Flashcards
     # --------------------------------------------------------
 
     if selected_items:
 
         st.divider()
 
-        st.markdown(
-            f"**Selected for practice: "
-            f"{len(selected_items)} word(s)**"
+
+        st.write(
+            f"Selected for practice: "
+            f"**{len(selected_items)} word(s)**"
         )
+
 
         idx = min(
             st.session_state.card_index,
             len(selected_items) - 1,
         )
 
+
         st.session_state.card_index = idx
 
+
         item = selected_items[idx]
+
 
         st.markdown(
             f"""
@@ -859,10 +1052,12 @@ with tab_practice:
             unsafe_allow_html=True,
         )
 
+
         st.caption(
             f"Card {idx + 1} "
             f"of {len(selected_items)}"
         )
+
 
         with st.expander(
             "Show explanation"
@@ -872,27 +1067,36 @@ with tab_practice:
                 item["explanation"]
             )
 
+
             if item["aliases"]:
 
                 st.caption(
-                    "Also used: "
+                    "Also called / accepted: "
                     + ", ".join(
                         item["aliases"]
                     )
                 )
 
-        previous_col, next_col = st.columns(2)
+
+        previous_col, next_col = (
+            st.columns(2)
+        )
+
 
         with previous_col:
 
             if st.button(
                 "← Previous",
-                disabled=(idx == 0),
+                disabled=(
+                    idx == 0
+                ),
                 use_container_width=True,
             ):
 
                 st.session_state.card_index -= 1
+
                 st.rerun()
+
 
         with next_col:
 
@@ -906,9 +1110,12 @@ with tab_practice:
             ):
 
                 st.session_state.card_index += 1
+
                 st.rerun()
 
+
         st.write("")
+
 
         if st.button(
             "I’m ready for the quiz",
@@ -924,13 +1131,18 @@ with tab_practice:
             )
 
 
+    # --------------------------------------------------------
+    # No unknown words
+    # --------------------------------------------------------
+
     else:
 
         st.info(
-            "No unknown terms are selected. "
-            "If you already know all 20 terms, "
-            "you can unlock the quiz directly."
+            "No words are currently selected. "
+            "If you already know all 20 words, "
+            "you can proceed directly to the quiz."
         )
+
 
         if st.button(
             "I know all 20 · Unlock quiz",
@@ -946,23 +1158,25 @@ with tab_practice:
 
 
 # ============================================================
-# TAB 3 — QUIZ
+# TAB 3
+# QUIZ
 # ============================================================
 
 with tab_quiz:
 
     st.subheader(
-        "Final Quiz · 20 items"
+        "Final Quiz · 20 Questions"
     )
 
     st.write(
-        "Each term in this set appears exactly once. "
-        "Read the description and type the keyword."
+        "Read each description and "
+        "type the correct keyword. "
+        "Each word appears exactly once."
     )
 
 
     # --------------------------------------------------------
-    # LOCKED
+    # Quiz locked
     # --------------------------------------------------------
 
     if (
@@ -972,13 +1186,13 @@ with tab_quiz:
     ):
 
         st.warning(
-            "Complete the Practice step "
+            "Complete the Practice section "
             "before starting the quiz."
         )
 
 
     # --------------------------------------------------------
-    # READY TO START
+    # Start screen
     # --------------------------------------------------------
 
     elif (
@@ -988,15 +1202,19 @@ with tab_quiz:
 
         name = st.text_input(
             "Name (English only)",
-            value=st.session_state.student_name,
+            value=(
+                st.session_state.student_name
+            ),
             placeholder="e.g., Minji Kim",
         )
 
+
         st.caption(
-            "English letters only. "
+            "Use English letters only. "
             "Spaces, hyphens, apostrophes, "
             "and periods are allowed."
         )
+
 
         if st.button(
             "Start Quiz",
@@ -1010,21 +1228,27 @@ with tab_quiz:
                     "using English letters only."
                 )
 
+
             else:
 
                 st.session_state.student_name = (
                     name.strip()
                 )
 
+
                 order = list(
-                    range(len(items))
+                    range(
+                        len(items)
+                    )
                 )
 
                 random.shuffle(order)
 
+
                 st.session_state.quiz_order = (
                     order
                 )
+
 
                 st.session_state.quiz_start = (
                     now_kst()
@@ -1032,12 +1256,14 @@ with tab_quiz:
 
                 st.session_state.quiz_end = None
 
+
                 st.session_state.quiz_started = True
                 st.session_state.quiz_submitted = False
 
                 st.session_state.quiz_results = []
 
-                # Remove old quiz answers
+
+                # Remove old answers
                 for key in list(
                     st.session_state.keys()
                 ):
@@ -1045,13 +1271,15 @@ with tab_quiz:
                     if key.startswith(
                         "quiz_answer_"
                     ):
+
                         del st.session_state[key]
+
 
                 st.rerun()
 
 
     # --------------------------------------------------------
-    # QUIZ IN PROGRESS
+    # Quiz running
     # --------------------------------------------------------
 
     elif st.session_state.quiz_started:
@@ -1063,12 +1291,14 @@ with tab_quiz:
             f"{fmt_time(st.session_state.quiz_start)}"
         )
 
+
         with st.form(
             f"quiz_form_"
             f"{st.session_state.active_set}"
         ):
 
             current_answers = []
+
 
             for q_no, item_idx in enumerate(
                 st.session_state.quiz_order,
@@ -1077,22 +1307,31 @@ with tab_quiz:
 
                 item = items[item_idx]
 
+
                 st.markdown(
                     f"**{q_no}. "
                     f'{item["question"]}**'
                 )
 
+
                 answer = st.text_input(
                     "Your answer",
+
                     key=(
                         f"quiz_answer_"
                         f"{st.session_state.active_set}_"
                         f"{item_idx}"
                     ),
+
                     max_chars=60,
+
+                    placeholder=(
+                        "Type the keyword"
+                    ),
+
                     label_visibility="collapsed",
-                    placeholder="Type the keyword",
                 )
+
 
                 current_answers.append(
                     (
@@ -1101,6 +1340,7 @@ with tab_quiz:
                         answer,
                     )
                 )
+
 
             submitted = (
                 st.form_submit_button(
@@ -1111,25 +1351,36 @@ with tab_quiz:
             )
 
 
+        # ----------------------------------------------------
+        # Submit
+        # ----------------------------------------------------
+
         if submitted:
 
-            blanks = [
+            blank_questions = [
                 q_no
-                for q_no, _, answer
+                for (
+                    q_no,
+                    _,
+                    answer,
+                )
                 in current_answers
                 if not answer.strip()
             ]
 
-            if blanks:
+
+            if blank_questions:
 
                 st.error(
-                    "Please answer all "
-                    "20 questions before submitting."
+                    "Please answer all 20 "
+                    "questions before submitting."
                 )
+
 
             else:
 
                 results = []
+
 
                 for (
                     q_no,
@@ -1139,15 +1390,19 @@ with tab_quiz:
 
                     item = items[item_idx]
 
+
                     results.append(
                         {
                             "no": q_no,
+
                             "user_answer": (
                                 answer.strip()
                             ),
+
                             "correct_answer": (
                                 item["keyword"]
                             ),
+
                             "correct": (
                                 answer_is_correct(
                                     answer,
@@ -1157,22 +1412,27 @@ with tab_quiz:
                         }
                     )
 
+
                 st.session_state.quiz_results = (
                     results
                 )
+
 
                 st.session_state.quiz_end = (
                     now_kst()
                 )
 
+
                 st.session_state.quiz_started = False
+
                 st.session_state.quiz_submitted = True
+
 
                 st.rerun()
 
 
     # --------------------------------------------------------
-    # SUBMITTED
+    # Quiz finished
     # --------------------------------------------------------
 
     else:
@@ -1184,20 +1444,23 @@ with tab_quiz:
             if r["correct"]
         )
 
+
         st.success(
             f"Quiz completed: "
             f"{score}/{SET_SIZE}"
         )
 
+
         st.write(
             "Open the **Result** tab "
             "to review your answers "
-            "and download the PDF report."
+            "and download your PDF report."
         )
 
 
 # ============================================================
-# TAB 4 — RESULT
+# TAB 4
+# RESULT
 # ============================================================
 
 with tab_result:
@@ -1206,6 +1469,7 @@ with tab_result:
         "Quiz Result"
     )
 
+
     if not st.session_state.quiz_submitted:
 
         st.info(
@@ -1213,11 +1477,13 @@ with tab_result:
             "to see your result."
         )
 
+
     else:
 
         results = (
             st.session_state.quiz_results
         )
+
 
         score = sum(
             1
@@ -1225,13 +1491,18 @@ with tab_result:
             if r["correct"]
         )
 
+
         percentage = (
-            score / len(results) * 100
+            score
+            / len(results)
+            * 100
         )
+
 
         metric1, metric2, metric3 = (
             st.columns(3)
         )
+
 
         metric1.metric(
             "Score",
@@ -1250,34 +1521,46 @@ with tab_result:
             ),
         )
 
+
         st.write(
             f"**Name:** "
             f"{st.session_state.student_name}"
         )
+
 
         st.write(
             f"**Start:** "
             f"{fmt_time(st.session_state.quiz_start)}"
         )
 
+
         st.write(
             f"**End:** "
             f"{fmt_time(st.session_state.quiz_end)}"
         )
 
+
+        # ----------------------------------------------------
+        # Results table
+        # ----------------------------------------------------
+
         result_rows = []
+
 
         for r in results:
 
             result_rows.append(
                 {
                     "No.": r["no"],
+
                     "Your answer": (
                         r["user_answer"]
                     ),
+
                     "Correct answer": (
                         r["correct_answer"]
                     ),
+
                     "Result": (
                         "✓"
                         if r["correct"]
@@ -1285,6 +1568,7 @@ with tab_result:
                     ),
                 }
             )
+
 
         st.dataframe(
             result_rows,
@@ -1305,26 +1589,37 @@ with tab_result:
             results,
         )
 
+
         safe_name = re.sub(
             r"[^A-Za-z0-9_-]",
             "_",
             st.session_state.student_name.strip(),
         )
 
+
         st.download_button(
             "Download one-page PDF report",
+
             data=pdf_bytes,
+
             file_name=(
                 f"digital_literacy_quiz_"
                 f"{safe_name}_"
-                f"set{st.session_state.active_set}.pdf"
+                f"set"
+                f"{st.session_state.active_set}"
+                f".pdf"
             ),
+
             mime="application/pdf",
+
             type="primary",
+
             use_container_width=True,
         )
 
+
         st.write("")
+
 
         if st.button(
             "Reset this set"
