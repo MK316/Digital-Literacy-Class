@@ -12,3 +12,4 @@ nltk
 requests
 pytz
 streamlit-pdf-viewer
+reportlab>=4.0
