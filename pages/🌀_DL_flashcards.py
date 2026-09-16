@@ -23,19 +23,36 @@ SET_SIZE = 20
 TZ = ZoneInfo("Asia/Seoul")
 
 
-
-
 def find_data_file():
-    """Find terms_data.md."""
-    app_dir = Path(__file__).resolve().parent
+    """Find pages/data/terms_data.md from different Streamlit locations."""
+    
+    app_file = Path(__file__).resolve()
+    app_dir = app_file.parent
+    cwd = Path.cwd().resolve()
 
     candidates = [
-        app_dir / "data" / "terms_data.md",  # pages/data/terms_data.md
-        app_dir / "terms_data.md",           # pages/terms_data.md
+        # If this Python file is directly inside pages/
+        app_dir / "data" / "terms_data.md",
+
+        # If this Python file is in the repository root
+        app_dir / "pages" / "data" / "terms_data.md",
+
+        # If this Python file is one level below pages/
+        app_dir.parent / "data" / "terms_data.md",
+
+        # From Streamlit working directory
+        cwd / "pages" / "data" / "terms_data.md",
+        cwd / "data" / "terms_data.md",
     ]
 
     for path in candidates:
-        if path.exists():
+        if path.is_file():
+            return path
+
+    # Last fallback: search parents for pages/data/terms_data.md
+    for parent in app_file.parents:
+        path = parent / "pages" / "data" / "terms_data.md"
+        if path.is_file():
             return path
 
     return None
