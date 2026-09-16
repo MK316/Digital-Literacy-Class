@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
-
+from pathlib import Path
 import streamlit as st
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
@@ -23,18 +23,22 @@ SET_SIZE = 20
 TZ = ZoneInfo("Asia/Seoul")
 
 
+
+
 def find_data_file():
-    """Find terms_data.md whether this app is in the repo root or in pages/."""
+    """Find terms_data.md."""
     app_dir = Path(__file__).resolve().parent
+
     candidates = [
-        app_dir / "terms_data.md",
-        app_dir.parent / "data"/"terms_data.md",
+        app_dir / "data" / "terms_data.md",  # pages/data/terms_data.md
+        app_dir / "terms_data.md",           # pages/terms_data.md
     ]
+
     for path in candidates:
         if path.exists():
             return path
-    return None
 
+    return None
 
 @st.cache_data
 def load_terms_from_markdown(path_str):
