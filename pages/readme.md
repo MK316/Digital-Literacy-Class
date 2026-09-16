@@ -6,10 +6,10 @@
 |------|:------------------:|-------------|-------------|-------------|
 | **W01** | **9/3** | **Introduction: Digital Literacy** <br> Course overview <br> What is digital literacy? <br> Importance of digital tools in language teaching |||
 | **W02** | **9/10** | **Exploring Digital Tools** <br> Introduction to useful digital tools including Generative AI <br> File handling: Colab and GitHub repository |🌀 [Assign#1](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/assignments.md): html 앱 만들어 보고 파일 올리기||
-| **W03** | **9/17** | **Python Basics I** <br> Basic syntax, variables, operators, and functions <br> Simple coding exercises |UNESCO (2024)<br> — Chapter 1(G1) & 2(G2)||
+| **W03** | **9/17** | **Python Basics I** <br> Basic syntax, variables, operators, and functions <br> Simple coding exercises |UNESCO (2024)<br> — Chapter 1(G1) & 2(G2)|week03 activity|
 | **W04** | **9/24** | ⛄ **Holiday – No Class** |||
 | **W05** | **10/1** | ⛄ **Holiday – No Class** |**Python Basics II**: Make-up videos(TBA)||
-| **W06** | **10/8** | **Python Basics III** <br> Functions and libraries <br> Working with multimodal resources <br> 🌀 Assign#2: Markdown |UNESCO (2024)<br> — Chapter 1~5(G5) video-link to share||
+| **W06** | **10/8** | **Python Basics III** <br> Functions and libraries <br> Working with multimodal resources <br> 🌀 Assign#2: Markdown |UNESCO (2024)<br> — Chapter 1~5(G5) video-link to share|Quiz flashcard|
 | **W07** | **10/15** | 📌 **Midterm I** <br> Making a simple word quiz with Python <br> Introduction to Hugging Face <br> Basic application design |||
 | **W08** | **10/22** |: Review of Python basics and digital literacy concepts <br> Practice activities |||
 | **W09** | **10/29** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |||
