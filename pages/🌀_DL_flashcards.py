@@ -28,7 +28,7 @@ def find_data_file():
     app_dir = Path(__file__).resolve().parent
     candidates = [
         app_dir / "terms_data.md",
-        app_dir.parent / "data/terms_data.md",
+        app_dir.parent / "data"/"terms_data.md",
     ]
     for path in candidates:
         if path.exists():
