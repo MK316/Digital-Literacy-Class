@@ -23,39 +23,24 @@ SET_SIZE = 20
 TZ = ZoneInfo("Asia/Seoul")
 
 
-def find_data_file():
-    """Find pages/data/terms_data.md from different Streamlit locations."""
-    
-    app_file = Path(__file__).resolve()
-    app_dir = app_file.parent
-    cwd = Path.cwd().resolve()
 
-    candidates = [
-        # If this Python file is directly inside pages/
-        app_dir / "data" / "terms_data.md",
 
-        # If this Python file is in the repository root
-        app_dir / "pages" / "data" / "terms_data.md",
+DATA_FILE = Path(__file__).resolve().with_name("terms_data.md")
 
-        # If this Python file is one level below pages/
-        app_dir.parent / "data" / "terms_data.md",
+if not DATA_FILE.exists():
+    st.error("terms_data.md was not found.")
 
-        # From Streamlit working directory
-        cwd / "pages" / "data" / "terms_data.md",
-        cwd / "data" / "terms_data.md",
-    ]
+    st.write("Python page file:")
+    st.code(str(Path(__file__).resolve()))
 
-    for path in candidates:
-        if path.is_file():
-            return path
+    st.write("Expected data file:")
+    st.code(str(DATA_FILE))
 
-    # Last fallback: search parents for pages/data/terms_data.md
-    for parent in app_file.parents:
-        path = parent / "pages" / "data" / "terms_data.md"
-        if path.is_file():
-            return path
+    st.write("Files Streamlit can actually see in this folder:")
+    folder = Path(__file__).resolve().parent
+    st.code("\n".join(sorted(p.name for p in folder.iterdir())))
 
-    return None
+    st.stop()
 
 @st.cache_data
 def load_terms_from_markdown(path_str):
