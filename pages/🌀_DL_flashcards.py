@@ -1,4 +1,5 @@
 import csv
+import html
 import io
 import random
 import re
@@ -226,6 +227,108 @@ def reset_learning_state(new_set=None):
     st.session_state.quiz_end = None
     st.session_state.student_name = ""
     st.session_state.quiz_results = []
+
+
+
+# ============================================================
+# BROWSER TEXT-TO-SPEECH
+# ============================================================
+
+def explanation_audio_button(text, language="en-US", rate=0.92):
+    """
+    Add a browser-based audio button for the explanation.
+
+    This uses the browser's built-in Web Speech API, so no audio files
+    or external TTS service are required.
+    """
+
+    safe_text = html.escape(text, quote=True)
+
+    component_html = f"""
+    <div style="display:flex; gap:8px; align-items:center; margin:2px 0 8px 0;">
+        <button
+            id="playButton"
+            onclick="playExplanation()"
+            style="
+                border:1px solid #d0d0d0;
+                border-radius:8px;
+                background:white;
+                padding:7px 12px;
+                font-size:14px;
+                cursor:pointer;
+            "
+        >
+            🔊 Play explanation
+        </button>
+
+        <button
+            id="stopButton"
+            onclick="stopExplanation()"
+            style="
+                border:1px solid #d0d0d0;
+                border-radius:8px;
+                background:white;
+                padding:7px 12px;
+                font-size:14px;
+                cursor:pointer;
+            "
+        >
+            ■ Stop
+        </button>
+    </div>
+
+    <script>
+        const explanationText = `{safe_text}`;
+
+        function chooseEnglishVoice() {{
+            const voices = window.speechSynthesis.getVoices();
+
+            const preferred = voices.find(v =>
+                v.lang === "{language}" &&
+                /Samantha|Google US English|Microsoft|English/i.test(v.name)
+            );
+
+            if (preferred) return preferred;
+
+            return voices.find(v => v.lang === "{language}")
+                || voices.find(v => v.lang.startsWith("en"))
+                || null;
+        }}
+
+        function playExplanation() {{
+            window.speechSynthesis.cancel();
+
+            const utterance = new SpeechSynthesisUtterance(explanationText);
+            utterance.lang = "{language}";
+            utterance.rate = {rate};
+            utterance.pitch = 1.0;
+
+            const voice = chooseEnglishVoice();
+            if (voice) {{
+                utterance.voice = voice;
+            }}
+
+            window.speechSynthesis.speak(utterance);
+        }}
+
+        function stopExplanation() {{
+            window.speechSynthesis.cancel();
+        }}
+
+        window.speechSynthesis.getVoices();
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {{
+            window.speechSynthesis.onvoiceschanged = () => {{
+                window.speechSynthesis.getVoices();
+            }};
+        }}
+    </script>
+    """
+
+    st.components.v1.html(
+        component_html,
+        height=52,
+        scrolling=False,
+    )
 
 
 # ============================================================
@@ -491,6 +594,13 @@ with tab_practice:
 
         with st.expander("Show explanation"):
             st.write(item["explanation"])
+
+            explanation_audio_button(
+                item["explanation"],
+                language="en-US",
+                rate=0.92,
+            )
+
             if item["aliases"]:
                 st.caption("Also called / accepted: " + ", ".join(item["aliases"]))
 
