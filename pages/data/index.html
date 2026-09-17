@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UNESCO AI CFT Quiz</title>
+
+<!-- PDF generator -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 18px 60px;
+}
+
+.header,
+.question,
+.result-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #666;
+    line-height: 1.5;
+}
+
+.name-box {
+    margin-top: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.question h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.option {
+    display: block;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.option:hover {
+    background: #f2f2f2;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary {
+    background: #e5e7eb;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.result-box {
+    display: none;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.result-item {
+    padding: 11px 0;
+    border-top: 1px solid #eee;
+}
+
+.correct {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+.rubric {
+    margin-top: 8px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-left: 4px solid #999;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>UNESCO AI Competency Framework for Teachers Quiz</h1>
+
+<p class="subtitle">
+Part I: Multiple Choice Questions (Q1–Q8)<br>
+Part II: Short Answer & Essay Questions (Q9–Q10)<br>
+<strong>Total: 15 points</strong>
+</p>
+
+<div class="name-box">
+<label><strong>Name (English only)</strong></label>
+<input
+    id="studentName"
+    type="text"
+    placeholder="e.g., Minji Kim"
+>
+</div>
+
+</div>
+
+
+<h2>Part I. Multiple Choice</h2>
+
+<div id="mcqContainer"></div>
+
+
+<h2>Part II. Short Answer & Essay</h2>
+
+
+<div class="question">
+
+<h3>
+Q9. Define what “Ethics by Design” means in the context of
+validating AI tools for education before they are adopted in schools.
+</h3>
+
+<textarea
+    id="q9"
+    placeholder="Write your answer here."
+></textarea>
+
+<p class="subtitle">
+2 points
+</p>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+Q10. Explain why teachers must critically evaluate AI-generated
+content due to its “stochastic” nature and “black box” opaqueness.
+How does this critical verification role preserve teacher agency
+and ensure safe learning for students?
+</h3>
+
+<textarea
+    id="q10"
+    placeholder="Write your answer here."
+></textarea>
+
+<p class="subtitle">
+5 points
+</p>
+
+</div>
+
+
+<div class="actions">
+
+<button
+    class="primary"
+    onclick="submitQuiz()"
+>
+Submit Quiz
+</button>
+
+<button
+    class="secondary"
+    onclick="resetQuiz()"
+>
+Reset
+</button>
+
+</div>
+
+
+<div
+    id="resultBox"
+    class="result-box"
+>
+
+<div
+    id="scoreDisplay"
+    class="score"
+></div>
+
+<div id="resultDetails"></div>
+
+<div class="actions">
+
+<button
+    class="primary"
+    onclick="downloadPDF()"
+>
+Download PDF Result
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   QUIZ DATA
+========================================================= */
+
+const mcqs = [
+
+{
+q:
+"Q1. According to a 2022 survey cited by UNESCO, how many countries worldwide had developed AI competency frameworks or training programmes for teachers?",
+
+options: [
+"A) 7 countries",
+"B) 15 countries",
+"C) 25 countries",
+"D) 40 countries"
+],
+
+answer: "A"
+},
+
+
+{
+q:
+"Q2. Which of the following is NOT explicitly mentioned in Chapter 1 as a potential risk posed by AI in education?",
+
+options: [
+"A) Threats to privacy and data protection",
+"B) Reinforcing bias and discrimination",
+"C) Causing the complete physical destruction of paper textbook industries",
+"D) Widening inequality or the digital divide"
+],
+
+answer: "C"
+},
+
+
+{
+q:
+"Q3. Who is the primary target audience of the UNESCO AI Competency Framework for Teachers (AI CFT)?",
+
+options: [
+"A) AI engineers developing educational software",
+"B) General teachers who apply AI to facilitate learning across core subject areas",
+"C) Students specializing in computer science",
+"D) Government officials responsible only for national AI policy"
+],
+
+answer: "B"
+},
+
+
+{
+q:
+"Q4. How does generative AI differ technologically from previous generations of digital ICT tools, according to Section 1.4?",
+
+options: [
+"A) It produces fully deterministic outputs that can always be predicted.",
+"B) Generative AI outputs are stochastic and less predictable, and its underlying methods operate as a 'black box'.",
+"C) It does not depend on data and therefore eliminates bias.",
+"D) It is limited to fixed rule-based calculations."
+],
+
+answer: "B"
+},
+
+
+{
+q:
+"Q5. Which principle emphasizes that AI tools must be intentionally designed and well-regulated from the start to advance human capabilities, inclusivity, and sustainability?",
+
+options: [
+"A) Ethics by design",
+"B) Automation by default",
+"C) Technology neutrality",
+"D) Efficiency first"
+],
+
+answer: "A"
+},
+
+
+{
+q:
+"Q6. According to Chapter 2, how does AI transform the traditional educational relationship between teachers and learners?",
+
+options: [
+"A) It removes teachers from the learning process.",
+"B) It transforms the traditional teacher–student relationship into a teacher–AI–student triangular dynamic.",
+"C) It turns all learners into AI developers.",
+"D) It makes teacher–student interaction unnecessary."
+],
+
+answer: "B"
+},
+
+
+{
+q:
+"Q7. Under the principle of 'human accountability' in Section 2.2, who must ultimately remain accountable for pedagogical decisions and student learning outcomes?",
+
+options: [
+"A) The AI system itself",
+"B) Human teachers and educational authorities",
+"C) Software vendors only",
+"D) Students only"
+],
+
+answer: "B"
+},
+
+
+{
+q:
+"Q8. What environmental concern regarding AI is specifically highlighted in Section 2.4 as crucial for teacher and student awareness?",
+
+options: [
+"A) The physical size of classroom computers",
+"B) High carbon emissions and energy consumption throughout the AI life cycle",
+"C) The color of AI hardware",
+"D) The number of paper worksheets used in class"
+],
+
+answer: "B"
+}
+
+];
+
+
+let startTime = new Date();
+
+let quizResult = null;
+
+
+/* =========================================================
+   DISPLAY QUESTIONS
+========================================================= */
+
+function renderQuestions() {
+
+    const container =
+        document.getElementById("mcqContainer");
+
+    container.innerHTML = "";
+
+
+    mcqs.forEach((item, index) => {
+
+        const box =
+            document.createElement("div");
+
+        box.className = "question";
+
+
+        const title =
+            document.createElement("h3");
+
+        title.textContent = item.q;
+
+        box.appendChild(title);
+
+
+        item.options.forEach(option => {
+
+            const letter =
+                option.substring(0, 1);
+
+
+            const label =
+                document.createElement("label");
+
+            label.className = "option";
+
+
+            const radio =
+                document.createElement("input");
+
+            radio.type = "radio";
+
+            radio.name =
+                "q" + (index + 1);
+
+            radio.value = letter;
+
+
+            label.appendChild(radio);
+
+            label.appendChild(
+                document.createTextNode(option)
+            );
+
+
+            box.appendChild(label);
+
+        });
+
+
+        container.appendChild(box);
+
+    });
+
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+function validEnglishName(name) {
+
+    return /^[A-Za-z][A-Za-z .'-]*$/.test(
+        name.trim()
+    );
+
+}
+
+
+/* =========================================================
+   KEYWORD CHECKING
+========================================================= */
+
+function containsAny(text, words) {
+
+    const lower =
+        text.toLowerCase();
+
+    return words.some(
+        word => lower.includes(word)
+    );
+
+}
+
+
+/* =========================================================
+   Q9 GRADING
+========================================================= */
+
+function gradeQ9(text) {
+
+    let score = 0;
+
+
+    const beforeUse = containsAny(
+        text,
+        [
+            "before adoption",
+            "before use",
+            "before deployment",
+            "prior to adoption",
+            "from the start",
+            "validation",
+            "validate"
+        ]
+    );
+
+
+    const ethicalPrinciples = containsAny(
+        text,
+        [
+            "ethical",
+            "ethics",
+            "human rights",
+            "human-centered",
+            "human centred",
+            "inclusion",
+            "inclusive",
+            "fairness",
+            "equity",
+            "human agency"
+        ]
+    );
+
+
+    const safeguards = containsAny(
+        text,
+        [
+            "safety",
+            "privacy",
+            "accountability",
+            "regulation",
+            "regulated",
+            "sustainability",
+            "risk",
+            "oversight"
+        ]
+    );
+
+
+    if (beforeUse) {
+        score += 1;
+    }
+
+
+    if (
+        ethicalPrinciples ||
+        safeguards
+    ) {
+
+        score += 1;
+
+    }
+
+
+    return {
+
+        score: score,
+
+        max: 2,
+
+        feedback:
+        "Expected ideas: AI tools should be ethically considered and validated before adoption, with human-centered safeguards such as inclusion, fairness, safety, privacy, accountability, regulation, or sustainability built into their design."
+
+    };
+
+}
+
+
+/* =========================================================
+   Q10 GRADING
+========================================================= */
+
+function gradeQ10(text) {
+
+    let score = 0;
+
+
+    const stochastic = containsAny(
+        text,
+        [
+            "stochastic",
+            "unpredictable",
+            "probabilistic",
+            "variable output",
+            "random"
+        ]
+    );
+
+
+    const blackbox = containsAny(
+        text,
+        [
+            "black box",
+            "opaque",
+            "opacity",
+            "not transparent",
+            "hidden process"
+        ]
+    );
+
+
+    const verification = containsAny(
+        text,
+        [
+            "verify",
+            "verification",
+            "critically evaluate",
+            "critical evaluation",
+            "fact-check",
+            "fact check",
+            "check accuracy",
+            "evaluate"
+        ]
+    );
+
+
+    const agency = containsAny(
+        text,
+        [
+            "teacher agency",
+            "professional judgment",
+            "professional judgement",
+            "human accountability",
+            "teacher judgment",
+            "teacher judgement",
+            "pedagogical decision",
+            "teacher control"
+        ]
+    );
+
+
+    const safety = containsAny(
+        text,
+        [
+            "safe learning",
+            "student safety",
+            "misinformation",
+            "inaccurate",
+            "accuracy",
+            "bias",
+            "harm",
+            "protect students",
+            "reliable"
+        ]
+    );
+
+
+    if (stochastic) score++;
+    if (blackbox) score++;
+    if (verification) score++;
+    if (agency) score++;
+    if (safety) score++;
+
+
+    return {
+
+        score: score,
+
+        max: 5,
+
+        feedback:
+        "Expected ideas: stochastic outputs may vary or be unpredictable; black-box processes are opaque; teachers must critically verify AI-generated content; human verification preserves teacher professional judgment and accountability; and verification helps protect students from inaccurate, biased, or unsafe content."
+
+    };
+
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+function submitQuiz() {
+
+    const name =
+        document
+        .getElementById("studentName")
+        .value
+        .trim();
+
+
+    if (!validEnglishName(name)) {
+
+        alert(
+            "Please enter your name using English letters only."
+        );
+
+        return;
+
+    }
+
+
+    /* Check MCQs */
+
+    for (
+        let i = 1;
+        i <= 8;
+        i++
+    ) {
+
+        const answer =
+            document.querySelector(
+                `input[name="q${i}"]:checked`
+            );
+
+
+        if (!answer) {
+
+            alert(
+                `Please answer Q${i}.`
+            );
+
+            return;
+
+        }
+
+    }
+
+
+    const q9 =
+        document
+        .getElementById("q9")
+        .value
+        .trim();
+
+
+    const q10 =
+        document
+        .getElementById("q10")
+        .value
+        .trim();
+
+
+    if (!q9) {
+
+        alert(
+            "Please answer Q9."
+        );
+
+        return;
+
+    }
+
+
+    if (!q10) {
+
+        alert(
+            "Please answer Q10."
+        );
+
+        return;
+
+    }
+
+
+    const endTime =
+        new Date();
+
+
+    const results = [];
+
+
+    let total =
+        0;
+
+
+    /* MCQ grading */
+
+    mcqs.forEach(
+        (item, index) => {
+
+            const selected =
+                document.querySelector(
+                    `input[name="q${index + 1}"]:checked`
+                ).value;
+
+
+            const correct =
+                selected === item.answer;
+
+
+            if (correct) {
+                total++;
+            }
+
+
+            results.push({
+
+                no: index + 1,
+
+                type: "Multiple Choice",
+
+                answer: selected,
+
+                correctAnswer:
+                    item.answer,
+
+                score:
+                    correct ? 1 : 0,
+
+                max: 1,
+
+                status:
+                    correct
+                    ? "Correct"
+                    : "Incorrect"
+
+            });
+
+        }
+    );
+
+
+    /* Q9 */
+
+    const q9Result =
+        gradeQ9(q9);
+
+
+    total +=
+        q9Result.score;
+
+
+    results.push({
+
+        no: 9,
+
+        type: "Short Answer",
+
+        answer: q9,
+
+        correctAnswer:
+            "Rubric-based",
+
+        score:
+            q9Result.score,
+
+        max:
+            q9Result.max,
+
+        feedback:
+            q9Result.feedback
+
+    });
+
+
+    /* Q10 */
+
+    const q10Result =
+        gradeQ10(q10);
+
+
+    total +=
+        q10Result.score;
+
+
+    results.push({
+
+        no: 10,
+
+        type: "Essay",
+
+        answer: q10,
+
+        correctAnswer:
+            "Rubric-based",
+
+        score:
+            q10Result.score,
+
+        max:
+            q10Result.max,
+
+        feedback:
+            q10Result.feedback
+
+    });
+
+
+    quizResult = {
+
+        name: name,
+
+        start:
+            startTime,
+
+        end:
+            endTime,
+
+        score:
+            total,
+
+        max:
+            15,
+
+        results:
+            results
+
+    };
+
+
+    showResults();
+
+}
+
+
+/* =========================================================
+   RESULT SCREEN
+========================================================= */
+
+function showResults() {
+
+    const scoreBox =
+        document.getElementById(
+            "scoreDisplay"
+        );
+
+
+    scoreBox.textContent =
+
+        `Score: ${quizResult.score}/15 ` +
+
+        `(${Math.round(
+            quizResult.score / 15 * 100
+        )}%)`;
+
+
+    const detailBox =
+        document.getElementById(
+            "resultDetails"
+        );
+
+
+    detailBox.innerHTML = "";
+
+
+    quizResult.results.forEach(
+        result => {
+
+            const div =
+                document.createElement(
+                    "div"
+                );
+
+
+            div.className =
+                "result-item";
+
+
+            if (
+                result.no <= 8
+            ) {
+
+                const css =
+                    result.score === 1
+                    ? "correct"
+                    : "incorrect";
+
+
+                div.innerHTML = `
+
+                <strong>
+                Q${result.no}
+                </strong>
+
+                &nbsp; | &nbsp;
+
+                Your answer:
+                <strong>
+                ${result.answer}
+                </strong>
+
+                &nbsp; | &nbsp;
+
+                Correct:
+                <strong>
+                ${result.correctAnswer}
+                </strong>
+
+                &nbsp; | &nbsp;
+
+                <span class="${css}">
+                ${result.status}
+                </span>
+
+                `;
+
+            }
+
+            else {
+
+                div.innerHTML = `
+
+                <strong>
+                Q${result.no}
+                </strong>
+
+                &nbsp; | &nbsp;
+
+                Score:
+                <strong>
+                ${result.score}/${result.max}
+                </strong>
+
+                <div class="rubric">
+                ${result.feedback}
+                </div>
+
+                `;
+
+            }
+
+
+            detailBox.appendChild(
+                div
+            );
+
+        }
+    );
+
+
+    const resultBox =
+        document.getElementById(
+            "resultBox"
+        );
+
+
+    resultBox.style.display =
+        "block";
+
+
+    resultBox.scrollIntoView({
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+function resetQuiz() {
+
+    document
+    .getElementById(
+        "studentName"
+    )
+    .value = "";
+
+
+    document
+    .querySelectorAll(
+        'input[type="radio"]'
+    )
+    .forEach(
+        item =>
+            item.checked = false
+    );
+
+
+    document
+    .getElementById("q9")
+    .value = "";
+
+
+    document
+    .getElementById("q10")
+    .value = "";
+
+
+    document
+    .getElementById(
+        "resultBox"
+    )
+    .style.display = "none";
+
+
+    quizResult = null;
+
+
+    startTime =
+        new Date();
+
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+/* =========================================================
+   PDF
+========================================================= */
+
+function cleanPDFText(text) {
+
+    return String(text)
+
+    .replace(/[–—]/g, "-")
+
+    .replace(/[“”]/g, '"')
+
+    .replace(/[‘’]/g, "'");
+
+}
+
+
+function downloadPDF() {
+
+    if (!quizResult) {
+
+        alert(
+            "Please submit the quiz first."
+        );
+
+        return;
+
+    }
+
+
+    const {
+        jsPDF
+    } =
+        window.jspdf;
+
+
+    const doc =
+        new jsPDF();
+
+
+    const margin =
+        14;
+
+
+    const maxWidth =
+        182;
+
+
+    let y =
+        16;
+
+
+    function write(
+        text,
+        size = 10,
+        bold = false,
+        spacing = 5
+    ) {
+
+        doc.setFont(
+            "helvetica",
+            bold
+            ? "bold"
+            : "normal"
+        );
+
+
+        doc.setFontSize(
+            size
+        );
+
+
+        const lines =
+            doc.splitTextToSize(
+                cleanPDFText(text),
+                maxWidth
+            );
+
+
+        lines.forEach(
+            line => {
+
+                if (
+                    y > 280
+                ) {
+
+                    doc.addPage();
+
+                    y = 16;
+
+                }
+
+
+                doc.text(
+                    line,
+                    margin,
+                    y
+                );
+
+
+                y += spacing;
+
+            }
+        );
+
+    }
+
+
+    write(
+        "UNESCO AI Competency Framework for Teachers Quiz",
+        15,
+        true,
+        7
+    );
+
+
+    write(
+        `Name: ${quizResult.name}`
+    );
+
+
+    write(
+        `Start: ${quizResult.start.toLocaleString()}`
+    );
+
+
+    write(
+        `End: ${quizResult.end.toLocaleString()}`
+    );
+
+
+    write(
+        `Total Score: ${quizResult.score}/15`,
+        11,
+        true,
+        7
+    );
+
+
+    quizResult.results.forEach(
+        r => {
+
+            write(
+                `Q${r.no} - ${r.type}`,
+                10,
+                true
+            );
+
+
+            write(
+                `Your answer: ${r.answer}`,
+                9
+            );
+
+
+            if (
+                r.no <= 8
+            ) {
+
+                write(
+                    `Correct answer: ${r.correctAnswer}`,
+                    9
+                );
+
+            }
+
+
+            write(
+                `Score: ${r.score}/${r.max}`,
+                9,
+                false,
+                7
+            );
+
+
+            if (
+                r.feedback
+            ) {
+
+                write(
+                    `Rubric: ${r.feedback}`,
+                    8
+                );
+
+            }
+
+        }
+    );
+
+
+    write(
+        "Note: Q9 and Q10 use automated concept-based scoring and may be reviewed by the instructor.",
+        8
+    );
+
+
+    const filename =
+
+        quizResult.name
+
+        .replace(
+            /[^A-Za-z0-9_-]/g,
+            "_"
+        );
+
+
+    doc.save(
+        `AI_CFT_Quiz_${filename}.pdf`
+    );
+
+}
+
+
+renderQuestions();
+
+</script>
+
+</body>
+</html>
