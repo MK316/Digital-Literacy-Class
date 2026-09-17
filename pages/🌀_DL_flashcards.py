@@ -1,5 +1,4 @@
 import csv
-import html
 import io
 import random
 import re
@@ -8,6 +7,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import streamlit as st
+from gtts import gTTS
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
 from reportlab.pdfgen import canvas
@@ -211,6 +211,18 @@ def clear_dynamic_widgets():
             del st.session_state[key]
 
 
+def select_all_practice_words(set_no):
+    """Select all 20 practice checkboxes for the current set."""
+    for i in range(SET_SIZE):
+        st.session_state[f"unknown_{set_no}_{i}"] = True
+
+
+def clear_all_practice_words(set_no):
+    """Clear all 20 practice checkboxes for the current set."""
+    for i in range(SET_SIZE):
+        st.session_state[f"unknown_{set_no}_{i}"] = False
+
+
 def reset_learning_state(new_set=None):
     clear_dynamic_widgets()
 
@@ -231,104 +243,31 @@ def reset_learning_state(new_set=None):
 
 
 # ============================================================
-# BROWSER TEXT-TO-SPEECH
+# GTTS AUDIO
 # ============================================================
 
-def explanation_audio_button(text, language="en-US", rate=0.92):
+@st.cache_data(show_spinner=False)
+def make_gtts_audio(keyword, explanation):
     """
-    Add a browser-based audio button for the explanation.
-
-    This uses the browser's built-in Web Speech API, so no audio files
-    or external TTS service are required.
-    """
-
-    safe_text = html.escape(text, quote=True)
-
-    component_html = f"""
-    <div style="display:flex; gap:8px; align-items:center; margin:2px 0 8px 0;">
-        <button
-            id="playButton"
-            onclick="playExplanation()"
-            style="
-                border:1px solid #d0d0d0;
-                border-radius:8px;
-                background:white;
-                padding:7px 12px;
-                font-size:14px;
-                cursor:pointer;
-            "
-        >
-            🔊 Play explanation
-        </button>
-
-        <button
-            id="stopButton"
-            onclick="stopExplanation()"
-            style="
-                border:1px solid #d0d0d0;
-                border-radius:8px;
-                background:white;
-                padding:7px 12px;
-                font-size:14px;
-                cursor:pointer;
-            "
-        >
-            ■ Stop
-        </button>
-    </div>
-
-    <script>
-        const explanationText = `{safe_text}`;
-
-        function chooseEnglishVoice() {{
-            const voices = window.speechSynthesis.getVoices();
-
-            const preferred = voices.find(v =>
-                v.lang === "{language}" &&
-                /Samantha|Google US English|Microsoft|English/i.test(v.name)
-            );
-
-            if (preferred) return preferred;
-
-            return voices.find(v => v.lang === "{language}")
-                || voices.find(v => v.lang.startsWith("en"))
-                || null;
-        }}
-
-        function playExplanation() {{
-            window.speechSynthesis.cancel();
-
-            const utterance = new SpeechSynthesisUtterance(explanationText);
-            utterance.lang = "{language}";
-            utterance.rate = {rate};
-            utterance.pitch = 1.0;
-
-            const voice = chooseEnglishVoice();
-            if (voice) {{
-                utterance.voice = voice;
-            }}
-
-            window.speechSynthesis.speak(utterance);
-        }}
-
-        function stopExplanation() {{
-            window.speechSynthesis.cancel();
-        }}
-
-        window.speechSynthesis.getVoices();
-        if (window.speechSynthesis.onvoiceschanged !== undefined) {{
-            window.speechSynthesis.onvoiceschanged = () => {{
-                window.speechSynthesis.getVoices();
-            }};
-        }}
-    </script>
+    Create one MP3 clip with gTTS.
+    The keyword is spoken first, followed by the explanation.
     """
 
-    st.components.v1.html(
-        component_html,
-        height=52,
-        scrolling=False,
+    text_to_speak = f"{keyword}. {explanation}"
+
+    audio_buffer = io.BytesIO()
+
+    tts = gTTS(
+        text=text_to_speak,
+        lang="en",
+        tld="com",
+        slow=False,
     )
+
+    tts.write_to_fp(audio_buffer)
+    audio_buffer.seek(0)
+
+    return audio_buffer.getvalue()
 
 
 # ============================================================
@@ -538,6 +477,24 @@ with tab_practice:
         "You will practice those words before taking the final quiz."
     )
 
+    select_col, clear_col = st.columns(2)
+
+    with select_col:
+        st.button(
+            "Select all 20",
+            on_click=select_all_practice_words,
+            args=(st.session_state.active_set,),
+            use_container_width=True,
+        )
+
+    with clear_col:
+        st.button(
+            "Clear all",
+            on_click=clear_all_practice_words,
+            args=(st.session_state.active_set,),
+            use_container_width=True,
+        )
+
     with st.form(f"unknown_form_{st.session_state.active_set}"):
         col1, col2 = st.columns(2)
         selected_terms = []
@@ -590,16 +547,25 @@ with tab_practice:
             unsafe_allow_html=True,
         )
 
+        try:
+            audio_bytes = make_gtts_audio(
+                item["keyword"],
+                item["explanation"],
+            )
+
+            st.audio(
+                audio_bytes,
+                format="audio/mp3",
+            )
+
+        except Exception as e:
+            st.warning("Audio is temporarily unavailable.")
+            st.caption(str(e))
+
         st.caption(f"Card {idx + 1} of {len(selected_items)}")
 
         with st.expander("Show explanation"):
             st.write(item["explanation"])
-
-            explanation_audio_button(
-                item["explanation"],
-                language="en-US",
-                rate=0.92,
-            )
 
             if item["aliases"]:
                 st.caption("Also called / accepted: " + ", ".join(item["aliases"]))
