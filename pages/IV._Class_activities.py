@@ -9,7 +9,7 @@ st.title("📄 PDF 자료 보기")
 # -----------------------------
 # 탭 구성 (3개 - 나머지 2개는 추후 사용)
 # -----------------------------
-tab1, tab2, tab3 = st.tabs(["Week02", "Week03", "탭 3 (준비 중)"])
+tab1, tab2, tab3 = st.tabs(["Week02", "Week03", "Week04"])
 
 # =========================================
 # TAB 1: 기존 PDF / 링크 뷰어
@@ -171,6 +171,22 @@ with tab2:
 
 # =========================================
 # TAB 3: 추후 사용 예정
+# https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/html/readme.md
 # =========================================
 with tab3:
-    st.info("이 탭은 추후 사용 예정입니다.")
+    st.subheader("💻 HTML Hands-on Activity")
+
+    MD_URL = (
+        "https://raw.githubusercontent.com/"
+        "MK316/Digital-Literacy-Class/"
+        "main/pages/html/readme.md"
+    )
+
+    try:
+        response = requests.get(MD_URL, timeout=10)
+        response.raise_for_status()
+
+        st.markdown(response.text)
+
+    except requests.exceptions.RequestException:
+        st.error("Markdown 파일을 불러올 수 없습니다.")
