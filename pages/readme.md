@@ -10,8 +10,8 @@
 | **W04** | **9/24** | ⛄ **Holiday – No Class** |||
 | **W05** | **10/1** |Instructional context; My first HTML app |🌀[Terminology Flashcards](https://dlclass.streamlit.app/DL_flashcards)|[Assign#2](https://github.com/MK316/Digital-Literacy-Class/blob/main/coding/python_basics_homework01.ipynb)|
 | **W06** | **10/8** | **Python Basics II** <br> Functions and libraries <br> Working with multimodal resources <br> 🌀 Assign#2: Markdown |UNESCO (2024)<br> — Chapter 1~5(G5) video-link to share (Padlet)|[Quiz flashcard](https://dlclass.streamlit.app/DL_flashcards)|
-| **W07** | **10/15** | 📌 **Midterm I** <br> Making a simple word quiz with Python <br> Introduction to Hugging Face <br> Basic application design |||
-| **W08** | **10/22** |: Review of Python basics and digital literacy concepts <br> Practice activities |||
+| **W07** | **10/15** | 📌 **Midterm I** <br> UNESCO reading, Flashcards, Basic coding <br> Basic application design |||
+| **W08** | **10/22** |Introduction to Hugging Face <br> Practice activities |||
 | **W09** | **10/29** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |||
 | **W10** | **11/5** | **Digital Tools for Language Teaching** <br> Designing and sharing multimedia learning materials <br> 🌀 Group Assignment |||
 | **W11** | **11/12** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app |Koç & Savaş (2025)<br> - G6||
