@@ -175,7 +175,6 @@ with tab2:
 # https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/html/readme.md
 # =========================================
 with tab3:
-    st.subheader("💻 HTML Hands-on Activity")
 
     MD_URL = (
         "https://raw.githubusercontent.com/"
