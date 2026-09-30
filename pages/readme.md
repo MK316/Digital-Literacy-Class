@@ -19,7 +19,7 @@
 | **W12** | **11/26** | **Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project |||
 | **W13** | **12/3** | **Final Project: PBL I** <br> App designing and group work; <br> App development <br> Using AI in language teaching <br> Developing learner-centered educational tools ||Group work (3 hrs)|
 | **W14** | **12/10** | 🌈 **Final Project: Presentation** <br> Showcasing student projects <br> Testing and peer feedback <br> Revising the final project |||
-| **W15** | **12/17** | **Final Report** <br>  <br> Peer evaluation and feedback <br> Reflection and self-evaluation |||
+| **W15** | **12/17** | **Final Report** |Peer evaluation and feedback <br> Reflection and self-evaluation ||
 
 ### References
 - UNESCO. (2024). *AI competency framework for teachers*. UNESCO. https://doi.org/10.54675/ZJTE2084
