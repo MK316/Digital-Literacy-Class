@@ -15,7 +15,7 @@
 | **W09** | **10/29** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |||
 | **W10** | **11/5** | **Digital Tools for Language Teaching** <br> Group activities using digital and AI tools <br> Designing and sharing multimedia learning materials <br> 🌀 Group Assignment |||
 | **W11** | **11/12** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app |Koç & Savaş (2025)<br> - G6||
-| **W12** | **11/19** | 📌 **Midterm II: Group Quiz / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |||
+| **W12** | **11/19** | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |||
 | **W13** | **11/26** | **Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project |||
 | **W14** | **12/3** | **Final Project: PBL I** <br> App designing and group work <br> Using AI in language teaching <br> Developing learner-centered educational tools |||
 | **W15** | **12/10** | **Final Project: PBL II** <br> App development <br> Testing and peer feedback <br> Revising the final project |||
