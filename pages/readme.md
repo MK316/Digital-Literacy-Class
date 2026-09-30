@@ -17,7 +17,7 @@
 | **W10** | **11/12** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app |Koç & Savaş (2025)<br> - G6||
 | **W11** | **11/19** | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |||
 | **W12** | **11/26** | **Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project |||
-| **W13** | **12/3** | **Final Project: PBL I** <br> App designing and group work; <br> App development <br> Using AI in language teaching <br> Developing learner-centered educational tools |||
+| **W13** | **12/3** | **Final Project: PBL I** <br> App designing and group work; <br> App development <br> Using AI in language teaching <br> Developing learner-centered educational tools ||Group work (3 hrs)|
 | **W14** | **12/10** | 🌈 **Final Project: Presentation** <br> Showcasing student projects <br> Testing and peer feedback <br> Revising the final project |||
 | **W15** | **12/17** | **Final Report** <br>  <br> Peer evaluation and feedback <br> Reflection and self-evaluation |||
 
