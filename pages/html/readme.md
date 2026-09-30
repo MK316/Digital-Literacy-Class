@@ -14,7 +14,7 @@ By the end of this activity, you should be able to:
 
 ---
 
-## STEP 1. Create Your First HTML App
+## 💙 STEP 1. Create Your First HTML App
 
 First, we will create a simple English vocabulary quiz. You will use three components:
 
@@ -119,7 +119,7 @@ Check the following:
 
 ---
 
-## STEP 2. Modify HTML: Change What Learners See
+## 💙 STEP 2. Modify HTML: Change What Learners See
 
 HTML determines the content and structure of your app.
 
@@ -157,7 +157,7 @@ Changing the content should reflect your instructional decisions rather than sim
 
 ---
 
-## STEP 3. Modify CSS: Change How the App Looks
+## 💙 STEP 3. Modify CSS: Change How the App Looks
 
 CSS controls the visual appearance of your app.
 
@@ -196,7 +196,7 @@ Compare your original design with the modified version.
 
 ---
 
-## STEP 4. Modify JavaScript: Change What Happens
+## 💙 STEP 4. Modify JavaScript: Change What Happens
 
 JavaScript controls the behavior of your app.
 
@@ -248,7 +248,7 @@ We have changed the wording of the feedback, but we have not yet implemented a d
 
 ---
 
-## STEP 5. Use AI to Change the Learning Logic
+## 💙 STEP 5. Use AI to Change the Learning Logic
 
 Now we will make a more meaningful modification.
 
@@ -303,7 +303,7 @@ Instead, identify the parts that implement your instructional decision.
 
 ---
 
-## STEP 6. Test and Debug Your App
+## 💙 STEP 6. Test and Debug Your App
 
 AI-generated code does not necessarily work correctly.
 
@@ -339,7 +339,7 @@ Make one change at a time and test your app after each modification.
 
 ---
 
-## STEP 7. Pair Testing
+## 💙 STEP 7. Pair Testing
 
 Now exchange your app with another student.
 
@@ -358,7 +358,7 @@ Based on the feedback you receive, identify one improvement you would like to ma
 
 ---
 
-## Final Reflection
+## 💙 Final Reflection
 
 Before finishing today's activity, reflect on the following questions:
 
