@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from streamlit_pdf_viewer import pdf_viewer
+import requests
 
 st.set_page_config(page_title="PDF 뷰어", layout="wide")
 
