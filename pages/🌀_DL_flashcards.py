@@ -1,12 +1,14 @@
 import csv
 import io
 import random
+import html
 import re
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import streamlit as st
+import requests
 from gtts import gTTS
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
@@ -30,91 +32,67 @@ TZ = ZoneInfo("Asia/Seoul")
 
 
 # ============================================================
-# DATA FILE
-#
-# repository/
-# └── pages/
-#     ├── 🌀_DL_flashcards.py
-#     └── data/
-#         └── terms_data.csv
+# DATA SOURCE (GitHub raw CSV)
 # ============================================================
 
-APP_DIR = Path(__file__).resolve().parent
-DATA_FILE = APP_DIR / "data" / "terms_data.csv"
-
-if not DATA_FILE.is_file():
-    st.error("terms_data.csv was not found.")
-    st.write("Current app file:")
-    st.code(str(Path(__file__).resolve()))
-    st.write("Expected CSV file:")
-    st.code(str(DATA_FILE))
-    st.stop()
+DATA_URL = (
+    "https://raw.githubusercontent.com/MK316/Digital-Literacy-Class/"
+    "refs/heads/main/pages/data/terms_data_with_context.csv"
+)
 
 
-# ============================================================
-# LOAD CSV DATA
-# ============================================================
+@st.cache_data(ttl=3600, show_spinner=False)
+def fetch_csv_bytes(url):
+    """Fetch the latest published CSV; cache for one hour."""
+    response = requests.get(url, timeout=20)
+    response.raise_for_status()
+    return response.content
 
-@st.cache_data
-def load_terms_from_csv(path_str):
-    """Load vocabulary data from a UTF-8 CSV file."""
+
+@st.cache_data(show_spinner=False)
+def parse_terms(csv_bytes):
+    """Read the CSV including the new context_paragraph field."""
     terms = []
+    content = csv_bytes.decode("utf-8-sig")
+    reader = csv.DictReader(io.StringIO(content))
+    required_columns = {
+        "number", "set", "set_name", "keyword", "explanation",
+        "quiz_prompt", "accepted_answers", "context_paragraph",
+    }
+    missing = required_columns - set(reader.fieldnames or [])
+    if missing:
+        raise ValueError("Missing CSV column(s): " + ", ".join(sorted(missing)))
 
-    with Path(path_str).open(
-        "r",
-        encoding="utf-8-sig",
-        newline="",
-    ) as f:
-        reader = csv.DictReader(f)
-
-        required_columns = {
-            "number",
-            "set",
-            "set_name",
-            "keyword",
-            "explanation",
-            "quiz_prompt",
-            "accepted_answers",
-        }
-
-        actual_columns = set(reader.fieldnames or [])
-        missing_columns = required_columns - actual_columns
-
-        if missing_columns:
-            raise ValueError(
-                "Missing CSV column(s): "
-                + ", ".join(sorted(missing_columns))
-            )
-
-        for row in reader:
-            aliases_raw = (row.get("accepted_answers") or "").strip()
-            aliases = [
-                x.strip()
-                for x in aliases_raw.split(";")
-                if x.strip()
-            ]
-
-            terms.append(
-                {
-                    "number": int(row["number"]),
-                    "set": int(row["set"]),
-                    "set_name": row["set_name"].strip(),
-                    "keyword": row["keyword"].strip(),
-                    "explanation": row["explanation"].strip(),
-                    "question": row["quiz_prompt"].strip(),
-                    "aliases": aliases,
-                }
-            )
-
-    terms.sort(key=lambda x: x["number"])
+    for row in reader:
+        aliases = [
+            value.strip()
+            for value in (row.get("accepted_answers") or "").split(";")
+            if value.strip()
+        ]
+        terms.append({
+            "number": int(row["number"]),
+            "set": int(row["set"]),
+            "set_name": row["set_name"].strip(),
+            "keyword": row["keyword"].strip(),
+            "explanation": row["explanation"].strip(),
+            "question": row["quiz_prompt"].strip(),
+            "aliases": aliases,
+            "context": (row.get("context_paragraph") or "").strip(),
+        })
+    terms.sort(key=lambda item: item["number"])
     return terms
 
 
 try:
-    TERMS = load_terms_from_csv(str(DATA_FILE))
-except Exception as e:
-    st.error("The CSV file was found, but it could not be read.")
-    st.code(str(e))
+    CSV_BYTES = fetch_csv_bytes(DATA_URL)
+    TERMS = parse_terms(CSV_BYTES)
+except Exception as exc:
+    st.error("Unable to load the vocabulary CSV from GitHub.")
+    st.code(str(exc))
+    st.markdown(f"[Open CSV directly]({DATA_URL})")
+    if st.button("Retry loading CSV"):
+        fetch_csv_bytes.clear()
+        st.rerun()
     st.stop()
 
 
@@ -198,6 +176,7 @@ DEFAULT_STATE = {
     "quiz_end": None,
     "student_name": "",
     "quiz_results": [],
+    "reading_index": 0,
 }
 
 for key, value in DEFAULT_STATE.items():
@@ -231,6 +210,7 @@ def reset_learning_state(new_set=None):
 
     st.session_state.selected_unknown = []
     st.session_state.card_index = 0
+    st.session_state.reading_index = 0
     st.session_state.practice_ready = False
     st.session_state.quiz_started = False
     st.session_state.quiz_submitted = False
@@ -425,8 +405,8 @@ items = get_set_items(st.session_state.active_set)
 # TABS
 # ============================================================
 
-tab_list, tab_practice, tab_quiz, tab_result = st.tabs(
-    ["1. Word List", "2. Practice", "3. Quiz", "4. Result"]
+tab_list, tab_practice, tab_reading, tab_quiz, tab_result = st.tabs(
+    ["1. Word List", "2. Practice", "3. Reading with the keyword", "4. Quiz", "5. Result"]
 )
 
 
@@ -460,8 +440,8 @@ with tab_list:
 
     st.download_button(
         "Download vocabulary data (.csv)",
-        data=DATA_FILE.read_bytes(),
-        file_name="terms_data.csv",
+        data=CSV_BYTES,
+        file_name="terms_data_with_context.csv",
         mime="text/csv",
     )
 
@@ -612,7 +592,75 @@ with tab_practice:
 
 
 # ============================================================
-# TAB 3 — QUIZ
+# TAB 3 — READING WITH THE KEYWORD
+# ============================================================
+
+
+def render_reading_context(passage, keyword, highlight=False):
+    """Keep the passage readable; optionally highlight the actual keyword."""
+    safe_passage = html.escape(passage)
+    if highlight and keyword:
+        # Match the term as a whole word or phrase (case insensitive).
+        pattern = re.compile(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", re.I)
+        safe_passage = pattern.sub(
+            lambda match: "<mark>" + match.group(0) + "</mark>",
+            safe_passage,
+        )
+    safe_passage = safe_passage.replace("\n", "<br>")
+    st.markdown(
+        '<div style="line-height:1.85;font-size:1.13rem;max-width:900px;'
+        'padding:20px;border:1px solid #ddd;border-radius:12px;">'
+        + safe_passage + "</div>",
+        unsafe_allow_html=True,
+    )
+
+
+with tab_reading:
+    st.subheader("Reading with the keyword")
+    st.write(
+        "Read each passage and use the surrounding context to infer the "
+        "meaning of the keyword. You can highlight the word or reveal "
+        "its explanation after reading."
+    )
+    if not items:
+        st.info("No reading passages are available for this set.")
+    else:
+        reading_options = list(range(len(items)))
+        reading_index = st.selectbox(
+            "Select a passage",
+            options=reading_options,
+            index=min(st.session_state.reading_index, len(items) - 1),
+            format_func=lambda idx: f"{items[idx]['number']}. {items[idx]['keyword']}",
+            key=f"reading_choice_{st.session_state.active_set}",
+        )
+        st.session_state.reading_index = reading_index
+        selected_reading = items[reading_index]
+        st.caption(f"Passage {reading_index + 1} of {len(items)} · "
+                   f"{SET_LABELS[st.session_state.active_set]}")
+
+        highlight = st.checkbox(
+            "Highlight the keyword",
+            value=False,
+            key=f"reading_highlight_{st.session_state.active_set}",
+        )
+        if selected_reading["context"]:
+            render_reading_context(
+                selected_reading["context"], selected_reading["keyword"], highlight
+            )
+        else:
+            st.warning("No context paragraph was provided for this keyword.")
+
+        with st.expander("Show meaning / explanation", expanded=False):
+            st.write(selected_reading["explanation"])
+            if selected_reading["aliases"]:
+                st.caption("Also accepted: " + ", ".join(selected_reading["aliases"]))
+
+        # The selector above also supports direct movement to any passage.
+        st.caption("Choose another keyword above to read the next passage.")
+
+
+# ============================================================
+# TAB 4 — QUIZ
 # ============================================================
 
 with tab_quiz:
@@ -743,7 +791,7 @@ with tab_quiz:
 
 
 # ============================================================
-# TAB 4 — RESULT
+# TAB 5 — RESULT
 # ============================================================
 
 with tab_result:
