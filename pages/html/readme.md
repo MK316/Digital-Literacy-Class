@@ -24,7 +24,7 @@ First, we will create a simple English vocabulary quiz. You will use three compo
 | CSS | Appearance and design | How does the app look? |
 | JavaScript | Interaction and behavior | What happens when learners respond? |
 
-### Task 1: Create an index.html file
+### 💦 Task 1: Create an index.html file
 
 1. Open your GitHub repository.
 2. Create a new file named `index.html`.
@@ -104,7 +104,7 @@ First, we will create a simple English vocabulary quiz. You will use three compo
 </html>
 ```
 
-### Task 2: Run your app
+### 💦 Task 2: Run your app
 
 Open your `index.html` file in a web browser. You can download the file from GitHub and open it locally or use GitHub Pages if it is configured for your repository.
 
@@ -125,7 +125,7 @@ HTML determines the content and structure of your app.
 
 In this step, we will modify the quiz to make it more appropriate for our target learners.
 
-### Task 3: Change the quiz content
+### 💦 Task 3: Change the quiz content
 
 Find the following HTML code:
 
@@ -163,7 +163,7 @@ CSS controls the visual appearance of your app.
 
 In our current code, the buttons are light blue.
 
-### Task 4: Change the button design
+### 💦 Task 4: Change the button design
 
 Find this CSS code:
 
@@ -202,7 +202,7 @@ JavaScript controls the behavior of your app.
 
 For example, it determines what happens when learners click an answer button.
 
-### Task 5: Modify the feedback
+### 💦 Task 5: Modify the feedback
 
 Find the following JavaScript code:
 
@@ -264,7 +264,7 @@ You decide that the app should work as follows:
 
 This is an instructional decision because it changes how learners receive feedback and how many opportunities they have to respond.
 
-### Task 6: Ask AI to modify your code
+### 💦 Task 6: Ask AI to modify your code
 
 Copy your entire `index.html` code and provide it to ChatGPT with the following prompt:
 
@@ -286,7 +286,7 @@ Replace your existing code with the revised code provided by AI.
 
 Save the file and run your app again.
 
-### Task 7: Inspect the AI-generated code
+### 💦 Task 7: Inspect the AI-generated code
 
 Before testing the app, examine the new JavaScript code.
 
