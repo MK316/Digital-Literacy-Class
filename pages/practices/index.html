@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First English Learning App</title>
+
+    <!-- CSS: Change how the app looks -->
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin: 50px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 12px;
+            margin: 5px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML: Change what learners see -->
+
+    <h1>Vocabulary Quiz</h1>
+
+    <p>What does "take part in" mean?</p>
+
+    <button onclick="checkAnswer('participate')">
+        Participate in
+    </button>
+
+    <button onclick="checkAnswer('avoid')">
+        Avoid
+    </button>
+
+    <button onclick="checkAnswer('watch')">
+        Watch
+    </button>
+
+    <h3 id="feedback"></h3>
+
+
+    <!-- JavaScript: Change what happens -->
+
+    <script>
+
+        function checkAnswer(answer) {
+
+            if (answer === "participate") {
+                document.getElementById("feedback").innerText =
+                    "Correct! Well done!";
+            }
+
+            else {
+                document.getElementById("feedback").innerText =
+                    "Incorrect. The answer is Participate in.";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
