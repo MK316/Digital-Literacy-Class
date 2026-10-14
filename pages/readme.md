@@ -10,12 +10,12 @@
 |  | **9/24** | ⛄ **Holiday – No Class** |||
 | **W04** | **10/1** |**Instructional context**; My first HTML app |🌀[More practice](https://github.com/MK316/DLHW/blob/main/python_basics_practice_yourname.ipynb)<br>🌀[Terminology Flashcards](https://dlclass.streamlit.app/DL_flashcards)|[Assign#2](https://github.com/MK316/Digital-Literacy-Class/blob/main/coding/python_basics_homework01.ipynb)<br>[Answer sample](https://github.com/MK316/DLHW/blob/main/week03_homework_MK316.ipynb)|
 | **W05** | **10/8** | **Python Basics II** <br> Functions and libraries; data type <br> [Working with multimodal resources](https://github.com/MK316/Coding4ET/blob/main/Lessons/Multimodality.ipynb) <br> Markdown |UNESCO (2024)<br> — Chapter 1~5(G5) video-link to share (Padlet)|🌀[data type](https://github.com/MK316/Coding4ET/blob/main/Lessons/EX4.ipynb)<br>[Quiz flashcard practice](https://dlclass.streamlit.app/DL_flashcards)|
-| **W06** | **10/15** | 📌 **Midterm I** |UNESCO reading, Flashcards, Basic coding||
+| **W06** | **10/15** | 📌 **Midterm I** |UNESCO reading, Flashcards, Basic coding|[UNESCO Essay Qs](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/data/unesco_2024.md)|
 | **W07** | **10/22** |Introduction to Hugging Face, Streamlit <br> Practice activities |<br>[Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)<br>[Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)||
 | **W08** | **10/29** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |||
 | **W09** | **11/5** | **Digital Tools for Language Teaching** <br> Designing and sharing multimedia learning materials <br> 🌀 Group Assignment |||
 | **W10** | **11/12** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app |Koç & Savaş (2025)<br> - G6||
-| **W11** | **11/19** | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |[UNESCO Essay Qs](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/data/unesco_2024.md)||
+| **W11** | **11/19** | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application |||
 | **W12** | **11/26** | **Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project |||
 | **W13** | **12/3** | **Final Project: PBL I** <br> App designing and group work; <br> App development <br> Using AI in language teaching <br> Developing learner-centered educational tools ||Group work (3 hrs)|
 | **W14** | **12/10** | 🌈 **Final Project: Presentation** <br> Showcasing student projects <br> Testing and peer feedback <br> Revising the final project |||
