@@ -49,6 +49,7 @@ Review the code and exercises in both notebooks:
 
 - 📓 [Basic Coding 1](https://github.com/MK316/Digital-Literacy-Class/blob/main/coding/python_basics_01.ipynb)
 - 📓 [Basic Coding 2 (Homework)](https://github.com/MK316/Digital-Literacy-Class/blob/main/coding/python_basics_homework01.ipynb)
+- 📓 [Multimodality practice](https://github.com/MK316/Coding4ET/blob/main/Lessons/Multimodality.ipynb)
 
 > 💡 **Tip:** Make sure you can log in to Google Colab with your Google account **before** the exam.
 > (시험 전에 Google 계정으로 Colab에 **미리 로그인**할 수 있는지 확인하세요.)
