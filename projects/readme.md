@@ -1,4 +1,4 @@
-# Mini-project guidelines
+# Mini-project guidelines (Check this page after 10/20)
 
 * Group meeting: 10/22 (3 hrs)
 * Location: 1층 미래교육센터 및 강의실 (e.g., 334)
