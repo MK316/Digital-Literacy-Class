@@ -28,7 +28,7 @@ Answer these questions as a group. Write your answers down; you will use them in
 
 + **Learners**: Who will use the app? (e.g., middle school students, high school students, adult beginners)
 
-#### Korean school levels and U.S. grade equivalents (K–12)
+##### 참고: Korean school levels and U.S. grade equivalents (K–12)
 
 Korean grade levels correspond directly to U.S. grade numbers. School divisions differ, however: in the U.S., middle school usually covers Grades 6–8 and high school Grades 9–12, so Korean middle school 3rd year (Grade 9) is the first year of U.S. high school (freshman).
 
