@@ -6,7 +6,7 @@
 This sheet covers Chapters 1–5. Each chapter has **two items**:
 
 - **📗 Sample answer:** Shows what a good answer looks like. Read it carefully and notice how it starts with a topic sentence and then gives two supporting points. The **Key points from the text** list shows other ideas you could also use.
-- **Numbered questions (1–5):** Practice questions. Prepare your own answer to each one before the quiz.
+- **Numbered questions (1–5):** Practice questions. Prepare your own answer to each one before the quiz. **Your answer to this question should be written in English.**
 
 **How to write your answer**
 
@@ -24,7 +24,7 @@ This sheet covers Chapters 1–5. Each chapter has **two items**:
 이 자료는 1~5장을 다루며, 각 장마다 **두 가지 항목**이 있습니다.
 
 - **📗 샘플 답안:** 좋은 답안이 어떤 모습인지 보여줍니다. 주제문으로 시작한 뒤 두 가지 근거를 제시하는 흐름을 눈여겨보세요. **Key points from the text**에는 답안에 활용할 수 있는 다른 근거들도 정리되어 있습니다.
-- **번호가 붙은 문항(1~5):** 연습 문항입니다. 퀴즈 전에 각 문항에 대한 자신의 답을 미리 준비해 오세요.
+- **번호가 붙은 문항(1~5):** 연습 문항입니다. 퀴즈 전에 각 문항에 대한 자신의 답을 미리 영어로 준비해 오세요. **답안은 반드시 영어로 작성합니다.**
 
 **답안 작성 방법**
 
