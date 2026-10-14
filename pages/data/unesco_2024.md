@@ -1,9 +1,39 @@
-# Part 1 Practice Questions
+# Part 1 Practice Questions for the midterm exam (10/15)
 ### UNESCO *AI Competency Framework for Teachers* (2024), Chapters 1–5
 
-**Instructions:** For each question, write **one clear topic sentence** and support it with **two points** from the reading. Write about 4–6 sentences. You may use the sentence frames to help you organize your answer.
+## 📌 How to Use This Sheet
+
+This sheet covers Chapters 1–5. Each chapter has **two items**:
+
+- **📗 Sample answer:** Shows what a good answer looks like. Read it carefully and notice how it starts with a topic sentence and then gives two supporting points. The **Key points from the text** list shows other ideas you could also use.
+- **Numbered questions (1–5):** Practice questions. Prepare your own answer to each one before the quiz.
+
+**How to write your answer**
+
+1. Start with **one clear topic sentence** that directly answers the question.
+2. Support it with **two points from the reading**, and explain why each point matters.
+3. Use the **sentence frames** if they help you organize your ideas.
+4. Base your answer on the reading, not only on your own opinion. The chapter and section in parentheses tell you where to look.
+
+**Length:** Your answer only needs to be **about as long as the sample answers (4–6 sentences)**. You do not need to write more than that. Focus on writing clearly and accurately.
 
 ---
+
+## 학습 안내
+
+이 자료는 1~5장을 다루며, 각 장마다 **두 가지 항목**이 있습니다.
+
+- **📗 샘플 답안:** 좋은 답안이 어떤 모습인지 보여줍니다. 주제문으로 시작한 뒤 두 가지 근거를 제시하는 흐름을 눈여겨보세요. **Key points from the text**에는 답안에 활용할 수 있는 다른 근거들도 정리되어 있습니다.
+- **번호가 붙은 문항(1~5):** 연습 문항입니다. 퀴즈 전에 각 문항에 대한 자신의 답을 미리 준비해 오세요.
+
+**답안 작성 방법**
+
+1. 질문에 직접 답하는 **명확한 주제문 한 문장**으로 시작하세요.
+2. **읽기 자료에서 찾은 근거 두 가지**로 주제문을 뒷받침하고, 각 근거가 왜 중요한지 설명하세요.
+3. 생각을 정리하는 데 도움이 된다면 **문장틀(Sentence frames)**을 활용하세요.
+4. 개인 의견만이 아니라 읽기 자료의 내용을 바탕으로 쓰세요. 괄호 안의 장·절 번호를 참고하면 해당 내용을 찾을 수 있습니다.
+
+**분량:** 답안은 **샘플 답안 정도의 길이(4~6문장)**면 충분합니다. 그 이상 길게 쓸 필요는 없습니다. 명확하고 정확하게 쓰는 데 집중하세요.
 
 ### 📗 The risks of AI in education (Chapter 1, Section 1.1) 
 
