@@ -109,15 +109,15 @@ When something is wrong or missing, ask the AI to fix **one thing at a time**, f
 
 Save each working version (e.g., `index_v1.html`, `index_v2.html`) so you can go back if something breaks.
 
-### 💦 Step 6. Upload your draft to Padlet (15 mins)
+### 💦 Step 6. Upload your draft & photos in the Google form link (15 mins)
 
-Post the following in **one Padlet post** per group:
+Get the below files/contents ready before fill in the Google form ❤️[here]().
+You'll be asked to upload files and type contents in the Google form.
 
 1. Group name and members
-2. `index_G1.html` file (your latest version, group number G1)
-3. 1–2 screenshots of your app
-4. Feature list (from Step 2), with one sentence on how each feature supports learning
-5. The final prompt you used
-6. Next steps: one thing you would add or change in the next version
+2. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)
+3. The start and final prompt you used in AI platform
+4. One thing you would want to add or change in the next version
+5. Final html file: `G1_project_draft.html` (your latest version, replace the group number)
 
 ❤️ Don't forget: Group leader uploads the **end-of-meeting photo** on Padlet.
