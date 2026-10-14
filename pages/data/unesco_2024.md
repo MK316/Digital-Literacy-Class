@@ -5,21 +5,9 @@
 
 ---
 
-### 1. AI vs. older digital tools (Chapter 1, Section 1.4)
 
-The framework says that AI is different from older digital tools (ICT tools).
 
-1. Write one topic sentence explaining why teachers need new skills to use AI.
-2. Give two ways AI is different from older digital tools. For each one, explain what teachers need to be able to do.
-
-> **Sentence frames**
-> - Teachers need new skills to use AI because ______.
-> - First, unlike older digital tools, AI ______. Therefore, teachers need to be able to ______.
-> - Second, AI also ______, which means teachers should ______.
-
----
-
-### 2. The risks of AI in education (Chapter 1, Section 1.1)
+### 1. The risks of AI in education (Chapter 1, Section 1.1)
 
 The framework warns that AI can bring serious risks to education.
 
@@ -32,7 +20,19 @@ The framework warns that AI can bring serious risks to education.
 > - Another risk is ______. This is serious because ______.
 
 ---
+### 2. AI vs. older digital tools (Chapter 1, Section 1.4)
 
+The framework says that AI is different from older digital tools (ICT tools).
+
+1. Write one topic sentence explaining why teachers need new skills to use AI.
+2. Give two ways AI is different from older digital tools. For each one, explain what teachers need to be able to do.
+
+> **Sentence frames**
+> - Teachers need new skills to use AI because ______.
+> - First, unlike older digital tools, AI ______. Therefore, teachers need to be able to ______.
+> - Second, AI also ______, which means teachers should ______.
+
+---
 ### 3. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
 
 The framework states that teachers should not and cannot be replaced by technology.
