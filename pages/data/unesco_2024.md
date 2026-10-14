@@ -5,7 +5,7 @@
 
 ---
 
-### 📗 1. The risks of AI in education (Chapter 1, Section 1.1)
+### 📗 The risks of AI in education (Chapter 1, Section 1.1) 
 
 > AI in education needs careful consideration because, along with its benefits, it can pose significant risks to students, teachers and society. One risk is that AI can violate data privacy and deepen existing inequalities, creating new forms of discrimination. This matters because students from vulnerable groups may be treated unfairly or excluded. Another risk is that AI can reduce teaching and learning to calculations and automated tasks. This is serious because it can devalue the role of teachers and weaken their relationships with learners.
 
@@ -13,7 +13,7 @@
 
 ---
 
-### 2. AI vs. older digital tools (Chapter 1, Section 1.4)
+### 1. AI vs. older digital tools (Chapter 1, Section 1.4)
 
 The framework says that AI is different from older digital tools (ICT tools).
 
@@ -27,7 +27,15 @@ The framework says that AI is different from older digital tools (ICT tools).
 
 ---
 
-### 3. AI and linguistic and cultural diversity (Chapter 2, Sections 2.1–2.2)
+
+### 📗 Can AI replace teachers? (Chapter 2, Sections 2.2–2.3) 
+
+> The framework argues that AI should not replace teachers because teachers must remain accountable for decisions in education. One reason is that the ethical and legal responsibility for using AI belongs to humans, so teachers should stay responsible for pedagogical decisions when they use AI. In addition, interaction and collaboration between teachers and learners are at the core of education. For this reason, AI tools should never be designed to take over teachers' legitimate role, and teachers' rights need legal protection.
+
+**Key points from the text:** human-accountable use of AI, teachers' accountability for pedagogical decisions, teacher–learner interaction as the core of education, protecting teachers' rights
+
+---
+### 2. AI and linguistic and cultural diversity (Chapter 2, Sections 2.1–2.2)
 
 The framework warns that AI-generated content may undermine local languages, cultures and indigenous knowledge.
 
@@ -41,16 +49,7 @@ The framework warns that AI-generated content may undermine local languages, cul
 
 ---
 
-
-### 📗 4. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
-
-> The framework argues that AI should not replace teachers because teachers must remain accountable for decisions in education. One reason is that the ethical and legal responsibility for using AI belongs to humans, so teachers should stay responsible for pedagogical decisions when they use AI. In addition, interaction and collaboration between teachers and learners are at the core of education. For this reason, AI tools should never be designed to take over teachers' legitimate role, and teachers' rights need legal protection.
-
-**Key points from the text:** human-accountable use of AI, teachers' accountability for pedagogical decisions, teacher–learner interaction as the core of education, protecting teachers' rights
-
----
-
-### 📗 5. How the five aspects work together (Chapter 3, Section 3.2)
+### 📗 How the five aspects work together (Chapter 3, Section 3.2)
 
 > The five aspects are related in that they are complementary, interdependent and support each other's growth. For example, when a teacher understands the foundations of AI, it helps them apply AI pedagogy and deal with ethical dilemmas more effectively. Similarly, continuous professional development can improve a teacher's understanding of all the other aspects. Therefore, proficiency in one area can strengthen proficiency in another.
 
@@ -58,7 +57,7 @@ The framework warns that AI-generated content may undermine local languages, cul
 
 ---
 
-### 6. The three progression levels (Chapter 3, Section 3.3)
+### 3. The three progression levels (Chapter 3, Section 3.3)
 
 The framework describes three levels: Acquire, Deepen and Create.
 
@@ -72,7 +71,16 @@ The framework describes three levels: Acquire, Deepen and Create.
 
 ---
 
-### 7. Safe and responsible use of AI (Chapter 4, Section 4.2)
+
+
+### 📗 Using AI for assessment (Chapter 4, Section 4.2)
+
+> According to the framework, AI in assessment should be used carefully and should never replace human judgement on students' learning outcomes. First, teachers must stay responsible because AI can produce hallucinations, incorrect answers and misrepresentations of facts, and it cannot make value judgements. Second, using AI to automate grading and feedback can take away human accountability for decisions that affect students. Therefore, teachers should not let AI make judgements or predictions about learners' social, ethical and psychological development.
+
+**Key points from the text:** "debunk myths" about fully automated assessment, risks of AI usurping human accountability, AI's limitations (hallucinations, no value judgements), human-accountable decision loops
+
+---
+### 4. Safe and responsible use of AI (Chapter 4, Section 4.2)
 
 At the 'Deepen' level, teachers are expected to use AI safely and responsibly.
 
@@ -85,22 +93,13 @@ At the 'Deepen' level, teachers are expected to use AI safely and responsibly.
 > - Another rule is ______, because ______.
 
 ---
-
-### 📗 8. Using AI for assessment (Chapter 4, Section 4.2)
-
-> According to the framework, AI in assessment should be used carefully and should never replace human judgement on students' learning outcomes. First, teachers must stay responsible because AI can produce hallucinations, incorrect answers and misrepresentations of facts, and it cannot make value judgements. Second, using AI to automate grading and feedback can take away human accountability for decisions that affect students. Therefore, teachers should not let AI make judgements or predictions about learners' social, ethical and psychological development.
-
-**Key points from the text:** "debunk myths" about fully automated assessment, risks of AI usurping human accountability, AI's limitations (hallucinations, no value judgements), human-accountable decision loops
-
----
-
-### 📗 9. Checking AI tools before using them in schools (Chapter 5, Section 5.1)
+### 📗 Checking AI tools before using them in schools (Chapter 5, Section 5.1)
 
 > AI tools must be checked before they are used in schools because untested tools could cause irreversible harm to students, especially younger children. One criterion is bias. It is important because biased data or algorithms can exclude or discriminate against certain groups of students. Another criterion is the collection and use of users' data, since AI tools may expose students' personal information without proper protection. This is especially important because most AI applications for education are considered high-risk under the EU AI Act.
 
 **Key points from the text:** validation as a precondition for responsible use; criteria include security, bias, accuracy, data privacy, explainability, linguistic and cultural representativeness, age-appropriateness, business models, impact on teachers' rights
 
-### 10. Supporting teachers to use AI (Chapter 5, Section 5.2)
+### 5. Supporting teachers to use AI (Chapter 5, Section 5.2)
 
 The framework says that defining teachers' AI competencies is not enough on its own.
 
