@@ -7,22 +7,22 @@
 
 # To do
 
-## 1. Read & Share as a Group (30 mins)
+## 1. Read & Share as a Group (20 mins)
 
 + [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
 
-## 2. 2022년 교육과정 기본어휘 (20 mins)
+## 2. 2022년 교육과정 기본어휘 (10 mins)
 + Check the word list: what it is, how it is organized, how levels are marked, what kind of information is included in the list.
 + You don't need to work with this list yet. Just check out and get familiarize yourself with the list.
 + Choose 10 words to use for your mini-app that can help learners study and practice the words.
 
-## 3. Design your vocabulary application (with the 10 chosen words as sample) (130 mins)
+## 3. Design your vocabulary application (with the 10 chosen words as sample) (120 mins)
 
 > Goal: Build a **first draft** of a vocabulary web app (`index.html`) using generative AI, with your 10 words as sample data.
 > You will connect the data to the full 3,000-word list later. For now, focus on **what learners do** and **why it helps them learn**.
 
-### 💦 Step 1. Discuss: Who, what, and how? (25 mins)
+### 💦 Step 1. Discuss: Who, what, and how? (20 mins)
 
 Answer these questions as a group. Write your answers down; you will use them in Step 4.
 
@@ -48,7 +48,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 + **Use of the list information**: How will your app use the Level(*, **), Word-family (species~specify), and Variation (rumor / rumour) information?
 + Also, use the 7 elements of context we've learned (LPGCTXF) => Week 03 [ppt link](https://github.com/MK316/Digital-Literacy-Class/blob/main/materials/prompting-context-week3.pdf).
 
-### 💦 Step 2. Decide and share your features (15 mins)
+### 💦 Step 2. Decide and share your features (20 mins)
 
 + Choose **3–4 core features** only. Keep it small enough to build today.
 + Examples:
@@ -94,7 +94,7 @@ Copy the template below, fill in the blanks with your answers from Steps 1–3, 
 + Save the result as `index.html` and open it in a web browser (Chrome recommended).
 + Tip: Keep the word data in **one place** in the code. This will make it easy to connect the full 3,000-word list later.
 
-### 💦 Step 5. Test and improve (30 mins)
+### 💦 Step 5. Test and improve (20 mins)
 
 Take turns using the app **as a learner**. Check:
 
