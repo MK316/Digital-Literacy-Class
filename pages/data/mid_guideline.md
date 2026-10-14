@@ -1,4 +1,4 @@
-# 📌 Midterm I
+# 📌 Midterm I Study Guide
 
 **Date:** Thursday, October 15 (10월 15일 목요일)
 **Total:** 65 points (총점 65점)
