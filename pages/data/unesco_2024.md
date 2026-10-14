@@ -5,17 +5,11 @@
 
 ---
 
-### 1. The risks of AI in education (Chapter 1, Section 1.1)
+### 📗 1. The risks of AI in education (Chapter 1, Section 1.1)
 
-The framework warns that AI can bring serious risks to education.
+> AI in education needs careful consideration because, along with its benefits, it can pose significant risks to students, teachers and society. One risk is that AI can violate data privacy and deepen existing inequalities, creating new forms of discrimination. This matters because students from vulnerable groups may be treated unfairly or excluded. Another risk is that AI can reduce teaching and learning to calculations and automated tasks. This is serious because it can devalue the role of teachers and weaken their relationships with learners.
 
-1. Write one topic sentence explaining why AI in education needs careful consideration.
-2. Give two risks that AI can pose to students or teachers, and explain why each one matters.
-
-> **Sentence frames**
-> - AI in education needs careful consideration because ______.
-> - One risk is that AI can ______. This matters because ______.
-> - Another risk is ______. This is serious because ______.
+**Key points from the text:** threats to human agency, data privacy, inequality and discrimination, climate impact, devaluing teachers, narrowing education to what AI can process, spending on technology instead of teachers
 
 ---
 
@@ -47,31 +41,20 @@ The framework warns that AI-generated content may undermine local languages, cul
 
 ---
 
-### 4. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
 
-The framework states that teachers should not and cannot be replaced by technology.
+### 📗 4. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
 
-1. Write one topic sentence stating the framework's position on this issue.
-2. Give two reasons from the reading that support this position.
+> The framework argues that AI should not replace teachers because teachers must remain accountable for decisions in education. One reason is that the ethical and legal responsibility for using AI belongs to humans, so teachers should stay responsible for pedagogical decisions when they use AI. In addition, interaction and collaboration between teachers and learners are at the core of education. For this reason, AI tools should never be designed to take over teachers' legitimate role, and teachers' rights need legal protection.
 
-> **Sentence frames**
-> - The framework argues that ______ because ______.
-> - One reason is that ______.
-> - In addition, ______. For this reason, ______.
+**Key points from the text:** human-accountable use of AI, teachers' accountability for pedagogical decisions, teacher–learner interaction as the core of education, protecting teachers' rights
 
 ---
 
-### 5. How the five aspects work together (Chapter 3, Section 3.2)
+### 📗 5. How the five aspects work together (Chapter 3, Section 3.2)
 
-The framework says that its five aspects are connected, not separate.
+> The five aspects are related in that they are complementary, interdependent and support each other's growth. For example, when a teacher understands the foundations of AI, it helps them apply AI pedagogy and deal with ethical dilemmas more effectively. Similarly, continuous professional development can improve a teacher's understanding of all the other aspects. Therefore, proficiency in one area can strengthen proficiency in another.
 
-1. Write one topic sentence explaining how the five aspects are related.
-2. Give two examples of how growth in one aspect can help another aspect.
-
-> **Sentence frames**
-> - The five aspects are related in that ______.
-> - For example, when a teacher ______, it helps them ______.
-> - Similarly, ______ can improve ______.
+**Key points from the text:** the aspects are "intertwined and complementary, not isolated"; AI foundations → better pedagogy and ethics; professional development → understanding of all aspects
 
 ---
 
@@ -103,33 +86,19 @@ At the 'Deepen' level, teachers are expected to use AI safely and responsibly.
 
 ---
 
-### 8. Using AI for assessment (Chapter 4, Section 4.2)
+### 📗 8. Using AI for assessment (Chapter 4, Section 4.2)
 
-The framework warns against using AI to fully automate the grading of students' work.
+> According to the framework, AI in assessment should be used carefully and should never replace human judgement on students' learning outcomes. First, teachers must stay responsible because AI can produce hallucinations, incorrect answers and misrepresentations of facts, and it cannot make value judgements. Second, using AI to automate grading and feedback can take away human accountability for decisions that affect students. Therefore, teachers should not let AI make judgements or predictions about learners' social, ethical and psychological development.
 
-1. Write one topic sentence stating the framework's view on AI in assessment.
-2. Give two reasons why teachers must stay responsible for decisions about students' learning outcomes.
-
-> **Sentence frames**
-> - According to the framework, AI in assessment ______.
-> - First, teachers must stay responsible because ______.
-> - Second, ______. Therefore, ______.
+**Key points from the text:** "debunk myths" about fully automated assessment, risks of AI usurping human accountability, AI's limitations (hallucinations, no value judgements), human-accountable decision loops
 
 ---
 
-### 9. Checking AI tools before using them in schools (Chapter 5, Section 5.1)
+### 📗 9. Checking AI tools before using them in schools (Chapter 5, Section 5.1)
 
-The framework says that AI tools should be validated before they are used in schools.
+> AI tools must be checked before they are used in schools because untested tools could cause irreversible harm to students, especially younger children. One criterion is bias. It is important because biased data or algorithms can exclude or discriminate against certain groups of students. Another criterion is the collection and use of users' data, since AI tools may expose students' personal information without proper protection. This is especially important because most AI applications for education are considered high-risk under the EU AI Act.
 
-1. Write one topic sentence explaining why this validation is necessary.
-2. Give two criteria that should be checked when validating an AI tool, and explain why each one is important.
-
-> **Sentence frames**
-> - AI tools must be checked before they are used in schools because ______.
-> - One criterion is ______. It is important because ______.
-> - Another criterion is ______, since ______.
-
----
+**Key points from the text:** validation as a precondition for responsible use; criteria include security, bias, accuracy, data privacy, explainability, linguistic and cultural representativeness, age-appropriateness, business models, impact on teachers' rights
 
 ### 10. Supporting teachers to use AI (Chapter 5, Section 5.2)
 
