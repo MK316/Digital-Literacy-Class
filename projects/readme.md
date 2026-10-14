@@ -38,7 +38,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 | High school (고등학교) | 1–3 | Grades 10–12 | 15–18 |
 ---
 
-+ **Learners**: Who will use the app? (e.g., middle school students (K6~8), high school students (K9~12), adult beginners)
++ **Learners**: Who will use the app? (e.g., K6, K9, K12, adult beginners, etc.)
 
 + **Goal**: What should learners be able to do after using the app?
   + Recognize the meaning? Spell the word? Use it in a sentence? Know its word family?
