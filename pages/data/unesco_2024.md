@@ -1,4 +1,4 @@
-# Part 1 Practice Questions for the midterm exam (10/15)
+# Part 1 Practice Questions for the Midterm Exam (10/15)
 ### UNESCO *AI Competency Framework for Teachers* (2024), Chapters 1–5
 
 ## 📌 How to Use This Sheet
