@@ -43,7 +43,7 @@ The midterm has **three parts**. Please review all the materials below before th
 
 - **15 questions × 2 points = 30 points** (15문항, 문항당 2점)
 - You will write code in **Google Colab** during the exam.
-  (시험 중 **Google Colab에서 직접 코딩**합니다.)
+  (시험 중 **Google Colab에서 직접 코딩**합니다. AI autocomplete 기능을 끄고 시험을 보게 되므로 스스로 할 수 있는지 반드시 체크하세요. 앱 샘플 코드와 같이 어려운 부분은 간략한 형태로만 질문하게 되니 전체 코드를 이해할 필요는 없습니다.)
 
 Review the code and exercises in both notebooks:
 
