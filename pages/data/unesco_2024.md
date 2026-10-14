@@ -5,8 +5,6 @@
 
 ---
 
-
-
 ### 1. The risks of AI in education (Chapter 1, Section 1.1)
 
 The framework warns that AI can bring serious risks to education.
@@ -20,6 +18,7 @@ The framework warns that AI can bring serious risks to education.
 > - Another risk is ______. This is serious because ______.
 
 ---
+
 ### 2. AI vs. older digital tools (Chapter 1, Section 1.4)
 
 The framework says that AI is different from older digital tools (ICT tools).
@@ -33,21 +32,8 @@ The framework says that AI is different from older digital tools (ICT tools).
 > - Second, AI also ______, which means teachers should ______.
 
 ---
-### 3. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
 
-The framework states that teachers should not and cannot be replaced by technology.
-
-1. Write one topic sentence stating the framework's position on this issue.
-2. Give two reasons from the reading that support this position.
-
-> **Sentence frames**
-> - The framework argues that ______ because ______.
-> - One reason is that ______.
-> - In addition, ______. For this reason, ______.
-
----
-
-### 4. AI and linguistic and cultural diversity (Chapter 2, Sections 2.1–2.2)
+### 3. AI and linguistic and cultural diversity (Chapter 2, Sections 2.1–2.2)
 
 The framework warns that AI-generated content may undermine local languages, cultures and indigenous knowledge.
 
@@ -58,6 +44,20 @@ The framework warns that AI-generated content may undermine local languages, cul
 > - This is a concern for language teachers because ______.
 > - First, teachers can ______ by ______.
 > - Second, they should ______ so that ______.
+
+---
+
+### 4. Can AI replace teachers? (Chapter 2, Sections 2.2–2.3)
+
+The framework states that teachers should not and cannot be replaced by technology.
+
+1. Write one topic sentence stating the framework's position on this issue.
+2. Give two reasons from the reading that support this position.
+
+> **Sentence frames**
+> - The framework argues that ______ because ______.
+> - One reason is that ______.
+> - In addition, ______. For this reason, ______.
 
 ---
 
