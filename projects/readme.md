@@ -46,6 +46,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
   + How many times, and in what kinds of contexts, will learners encounter each word? (Webb 2007)
   + Will learners **retrieve** the word (recall it from memory), not just see it again? When and how often? (Nakata et al. 2021)
 + **Use of the list information**: How will your app use the Level(*, **), Word-family (species~specify), and Variation (rumor / rumour) information?
++ Also, use the 7 context we've learned.
 
 ### 💦 Step 2. Decide and share your features (15 mins)
 
