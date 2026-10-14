@@ -7,7 +7,7 @@
 
 # To do
 
-## 1. Read & Share (30 mins)
+## 1. Read & Share as a Group (30 mins)
 
 + [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
