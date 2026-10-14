@@ -26,7 +26,18 @@
 
 Answer these questions as a group. Write your answers down; you will use them in Step 4.
 
-+ **Learners**: Who will use the app? (e.g., elementary students, middle school students, adult beginners)
++ **Learners**: Who will use the app? (e.g., middle school students, high school students, adult beginners)
+
+#### Korean school levels and U.S. grade equivalents (K–12)
+
+Korean grade levels correspond directly to U.S. grade numbers. School divisions differ, however: in the U.S., middle school usually covers Grades 6–8 and high school Grades 9–12, so Korean middle school 3rd year (Grade 9) is the first year of U.S. high school (freshman).
+
+| Korean school | Korean grade | U.S. grade (K–12) | Typical age |
+|---|---|---|---|
+| Elementary school (초등학교) | 1–6 | Grades 1–6 | 6–12 |
+| Middle school (중학교) | 1–3 | Grades 7–9 | 12–15 |
+| High school (고등학교) | 1–3 | Grades 10–12 | 15–18 |
+
 + **Goal**: What should learners be able to do after using the app?
   + Recognize the meaning? Spell the word? Use it in a sentence? Know its word family?
 + **Learning activities**: How will learners meet and practice the words? Connect your ideas to the readings:
