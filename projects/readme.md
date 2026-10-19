@@ -5,7 +5,23 @@
 
 ❤️ Note: At the end of this activity, you'll be asked to report your meeting log with photos at the start, middle, and the end of your meeting, specifying locations, participants, result files, and your activity details.
 
-# To do
+# Before you get started: 
+
+## Group leader only
+1. Create a repository named 'G1_miniproject'
+2. Create a README.md file on the leader's github
+3. Share the repository with your members: add collaborators for the repository. (collaborator 추가 방법을 모를 때는 AI에게 물어볼 것)
+
+## Group member
+1. Accept the invitation from your team leader.
+Check your email for the GitHub collaboration invitation and click Accept invitation. You can edit files in the leader’s repository only after you accept it.
+2. Choose one member to work on the README.md file.
+While that member edits README.md, the rest of the team continues with the discussion below. Make sure your group’s README.md includes an answer for every part marked with 💙 below.
+
+3. Fill in README.md with the content listed below.
+Use Markdown formatting (for example, # for headings and - for lists) when you edit the file. Think of this as a report for today.
+---
+# Group work starts from here:
 
 ## 1. Read & Share as a Group (Less than 20 mins)
 The links provide the summary of a paper. Share the idea of each paper in groups. (The main point, what teachers learn from this article paper, etc.)
@@ -13,7 +29,9 @@ The links provide the summary of a paper. Share the idea of each paper in groups
 + [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
 
-## 2. 2022년 교육과정 기본어휘 (10 mins)
+💙 What have you learned from the two articles? (제목은 영문으로, 내용은 한글로 README.md에 작성할 것)
+
+# 2. 2022년 교육과정 기본어휘 (10 mins)
 ### 교육과정 영어 기초어휘목록(기본 어휘 목록)이란?
 
 + 교육과정 영어 기초어휘목록(기본 어휘 목록)은 국가 영어과 교육과정의 부록(2022 개정 교육과정 [별표 3])으로 제시되는 어휘 목록으로, 성취기준을 달성하는 데 필요한 가장 기본적인 3,000개의 단어로 구성되어 있음. 목록에서 *표가 붙은 800개는 초등학교에서, **표가 붙은 1,200개는 중학교와 고등학교 공통과목에서 사용하도록 권장되며, 나머지 단어는 고등학교 선택과목에서 활용.
@@ -25,7 +43,7 @@ The links provide the summary of a paper. Share the idea of each paper in groups
 
 + Check the word list ([교육과정기초어휘 목록 pdf](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Basicvoca.pdf)): what it is, how it is organized, how levels are marked, what kind of information is included in the list.
 + You don't need to work with this list yet. Just check out and get familiarize yourself with the list.
-+ **Choose 10~20 words** from the list to use for your mini-app that can help learners study and practice the words. (Think: Which words would you choose, why those words?)
++ **Choose 10~20 words** from the list to use for your mini-app that can help learners study and practice the words. 💙 Write the reason why you chose those words in your README.md file
 
 ## 3. Design your vocabulary application Step by Step (with the selected words as sample, learning vocabulary in your application) (120 mins)
 
@@ -48,6 +66,8 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 | High school (고등학교) | 1–3 | Grades 10–12 | 15–18 |
 ---
 
+💙 APP design draft: 어떤 디자인을 조에서 원하는지 특징을 한글/영어로 작성할 것.아래 항목을 디자인 아래에 위치시키고 각각에 대해 논의한 바를 기록해 둘 것.
+
 + **Learners**: Who will use the app? (e.g., K6, K9, K12, adult beginners, etc.)
 
 + **Goal**: What should learners be able to do after using the app?
@@ -60,6 +80,8 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 
 ### 💦 Step 2. Decide and share your features (20 mins)
 
+💙 APP features: 아래 내용을 고려하여 앱 특성을 계획한 대로 정리할 것.
+
 + Choose **3–4 core features** only. Keep it small enough to build today.
 + Examples:
   + Flashcards (word → meaning, meaning → word)
@@ -71,9 +93,10 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 + For each feature, write one sentence: **"This feature helps learners ___ because ___."**
 + ✅ Post your feature list on [Padlet]() before moving on.
 
-### 💦 Step 3. Prepare your 10-word sample data (15 mins)
+### 💦 Step 3. Prepare your 10 (or 20)-word sample data (15 mins)
 
 Make a table of your 10 words. Include the information from the list plus anything your features need.
+(markdown으로 README.md 파일에 어떻게 테이블 만드는지 AI에게 물어보아도 됨.)
 
 | Word | Word-family | Variation | Level | Meaning (Korean) | Example sentence |
 |---|---|---|---|---|---|
@@ -85,7 +108,7 @@ Make a table of your 10 words. Include the information from the list plus anythi
 
 ### 💦 Step 4. Write your prompt and generate the app (30 mins)
 
-Copy the template below, fill in the blanks with your answers from Steps 1–3, and give it to a generative AI tool (e.g., ChatGPT, Claude, Gemini).
+💙 Copy the template below, fill in the blanks with your answers from Steps 1–3, and give it to a generative AI tool (e.g., ChatGPT, Claude, Gemini).
 
 > Create a vocabulary learning web app as a **single `index.html` file** (HTML, CSS, and JavaScript all in one file, no external server or database).
 >
@@ -96,7 +119,7 @@ Copy the template below, fill in the blanks with your answers from Steps 1–3, 
 > 2. [feature 2 and how it works]
 > 3. [feature 3 and how it works]
 >
-> **Word data**: Use the 10 words below. Store them in a JavaScript array at the top of the code so we can easily replace it with more words later.
+> 💙**Word data**: Use the target words below. Store them in a JavaScript array at the top of the code so we can easily replace it with more words later.
 > [paste your table from Step 3]
 >
 > **Design**: [e.g., simple and colorful, large buttons, mobile-friendly, Korean instructions]
@@ -106,10 +129,10 @@ Copy the template below, fill in the blanks with your answers from Steps 1–3, 
 
 ### 💦 Step 5. Test and improve (20 mins)
 
-Take turns using the app **as a learner**. Check:
+💙 Take turns using the app **as a learner**. 💙 Check:
 
-+ [ ] Do all features work? (Click every button.)
-+ [ ] Are all 10 words, meanings, and sentences correct?
++ [ ] Do all features work? (e.g., Click every button.)
++ [ ] Are all words, meanings, and sentences correct?
 + [ ] Does the app give clear feedback when the answer is right or wrong?
 + [ ] Do learners **retrieve** words, and meet each word **more than once**?
 + [ ] Is it easy to use on a phone?
@@ -117,17 +140,20 @@ Take turns using the app **as a learner**. Check:
 When something is wrong or missing, ask the AI to fix **one thing at a time**, for example:
 > "The quiz shows the same word twice in a row. Please shuffle the questions so each word appears once per round. Give me the full updated index.html."
 
-Save each working version (e.g., `index_v1.html`, `index_v2.html`) so you can go back if something breaks.
+💙 Save each working version (e.g., `index_v1.html`, `index_v2.html`) so you can go back if something breaks.
 
 ### 💦 Step 6. Upload your draft & photos in the Google form link (15 mins)
 
-Get the below files/contents ready before fill in the Google form ❤️[here]().
-You'll be asked to upload files and type contents in the Google form.
+1. All members complete the following Google form (5 mins): [link to open](https://docs.google.com/forms/d/e/1FAIpQLSeGAGjp7EYsua7SyBDT8Oa3R4wIZ0wPyHrAn01ympMBpN1hbA/viewform)
+2. 과목은 '영어교육' 선택할 것
 
-1. Group name and members
-2. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)
-3. The start and final prompt you used in AI platform
-4. One thing you would want to add or change in the next version
-5. Final html file: `G1_project_draft.html` (your latest version, replace the group number)
+3. Get the below files/contents ready:.
+Only one member submit this form❤️[here](https://forms.gle/pSX6kcUt1iiisCsT8). You'll be asked to upload files and type contents in the Google form.
 
-❤️ Don't forget: Group leader uploads the **end-of-meeting photo** on Padlet.
+A. Group name and members
+B. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)
+C. The start and final prompt you used in AI platform
+D. One thing you would want to add or change in the next version
+E. Final html file: `G1_project_draft.html` (your latest version, replace the group number)
+
+❤️ Good work! If you have questions regarding this activity, group leaders can chat with me on Kakaotalk.
