@@ -7,7 +7,7 @@
 
 # Before you get started: 
 
-## To do #1: Group leader only
+## To do #1: Group leader only (Use the main monitor to share the screen of the leader's work)
 1. Create a repository named 'G1_miniproject'.
 2. Create a README.md file on **the leader's github repository (G1_miniproject)**.내용은 다른 조원이 하게 됨.
 3. Share the repository with your members:
