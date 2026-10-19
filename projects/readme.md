@@ -105,7 +105,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 ### 💦 Step 3. Prepare your 10 (to 20 words)-word sample data (15 mins)
 
 Make a table of your 10 words. Include the information from the list plus anything your features need.
-(markdown으로 README.md 파일에 어떻게 테이블 만드는지 AI에게 물어보아도 됨.)
+(markdown으로 README.md 파일에 어떻게 테이블 만드는지 AI에게 물어보아도 됨. 또는 위에 제시했던 [sample README.md file](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/sample_readme.md) 파일을 활용할 것.)
 
 | Word | Word-family | Variation | Level | Meaning (Korean) | Example sentence |
 |---|---|---|---|---|---|
