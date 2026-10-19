@@ -80,8 +80,8 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 + **Goal**: What should learners be able to do after using the app?
   + Recognize the meaning? Spell the word? Use it in a sentence? Know its word family?
 + **Learning activities**: How will learners meet and practice the words? Connect your ideas to the readings:
-  + How many times, and in what kinds of contexts, will learners encounter each word? (Webb 2007)
-  + Will learners **retrieve** the word (recall it from memory), not just see it again? When and how often? (Nakata et al. 2021)
+  + How many times, and in what kinds of contexts, will learners encounter each word? (Webb 2007 참고)
+  + Will learners **retrieve** the word (recall it from memory), not just see it again? When and how often? (Nakata et al. 2021 참고)
 + **Use of the list information**: How will your app use the Level(*, **), Word-family (species~specify), and Variation (rumor / rumour) information?
 + Also, use the 7 elements of context we've learned (LPGCTXF) => Week 03 [ppt link](https://github.com/MK316/Digital-Literacy-Class/blob/main/materials/prompting-context-week3.pdf).
 
