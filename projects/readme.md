@@ -7,12 +7,12 @@
 
 # Before you get started: 
 
-## Group leader only
+## To do #1: Group leader only
 1. Create a repository named 'G1_miniproject'.
 2. Create a README.md file on **the leader's github repository (G1_miniproject)**.
 3. Share the repository with your members: add collaborators for the repository. (collaborator 추가 방법을 모를 때는 AI에게 물어볼 것)
 
-## Group members
+## To do #2: The Group members
 1. Accept the invitation from your team leader.
 Check your email for the GitHub collaboration invitation and click Accept invitation. You can edit files in the leader’s repository only after you accept it.
 2. Choose one member to work on the README.md file.
