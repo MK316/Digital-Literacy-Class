@@ -100,7 +100,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
   + Example sentences with the target word highlighted
   + Score, progress bar, or "review again" list for missed words
 + For each feature, write one sentence: **"This feature helps learners ___ because ___."**
-+ ✅ Post your feature list on [Padlet]() before moving on.
++ ✅ Write your feature list on your README.md before moving on.
 
 ### 💦 Step 3. Prepare your 10 (or 20)-word sample data (15 mins)
 
