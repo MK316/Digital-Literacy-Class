@@ -129,10 +129,8 @@ Make a table of your 10 words. Include the information from the list plus anythi
 > 1. [feature 1 and how it works]
 > 2. [feature 2 and how it works]
 > 3. [feature 3 and how it works]
->
-> 💙**Word data**: Use the target words below. Store them in a JavaScript array at the top of the code so we can easily replace it with more words later.
-> [paste your table from Step 3]
->
+
+
 > **Design**: [e.g., simple and colorful, large buttons, mobile-friendly, Korean instructions]
 
 + Save the result as `index.html` and open it in a web browser (Chrome recommended).
