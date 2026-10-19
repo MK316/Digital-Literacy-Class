@@ -1,4 +1,4 @@
-# G1 Mini-project: Vocabulary Learning App
+# G1 Mini-project: Vocabulary Learning App (ver. 1.0; asof 10/22, 2026)
 
 > 📌 **How to use this sample**
 > Replace everything in `[square brackets]` with your group's own content, and delete the hint lines that start with `>`.
