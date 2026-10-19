@@ -150,6 +150,6 @@
 
 ---
 
-## 7. Next Steps
+## 💙 7. Next Steps
 
 - [One thing we want to add or change in the next version]
