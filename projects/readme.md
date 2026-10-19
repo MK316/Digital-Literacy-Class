@@ -140,7 +140,7 @@ Make a table of your 10 words. Include the information from the list plus anythi
 
 ### 💦 Step 5. Test and improve (20 mins)
 
-💙 Take turns using the app **as a learner**. 💙 Check:
+💙 Take turns using the app **as a learner**. 💙 Check and record the results in your README.md file:
 
 + [ ] Do all features work? (e.g., Click every button.)
 + [ ] Are all words, meanings, and sentences correct?
