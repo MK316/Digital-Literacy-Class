@@ -20,7 +20,7 @@ Read carefully together to complete the group activity.
   + 상대방이 이메일이나 GitHub 알림에서 초대를 수락하면 추가가 끝납니다. (즉석에서 멤버들이 수락하도록 할 것.)
   + 수락을 하고 나면 그룹 리더가 만든 repository내 파일들을 조원 모두 편집, 새 파일 작성 등이 가능해집니다. 여기에 조별 앱 관리를 앞으로 하게 됩니다.
 4. 누가 오늘 README.md 파일을 관리할지 정하세요. (물론 여러 명이 관리할 수도 있습니다. 동시에 같은 파일을 작업하지만 않으면 됩니다.)
-5. Emoji가 필요한 경우: [Emoji link](https://gist.github.com/rxaviers/7360908)
+5. Emoji가 필요한 경우: 😊💜✌️[Emoji link](https://gist.github.com/rxaviers/7360908) (단, REAMDE.md 파일을 정리할 때 이모지 사용은 최소화하고 효과적인 경우라고 판단될 때만 사용할 것)
 
 ## To do #2: The Group members
 1. Accept the invitation from your team leader.
