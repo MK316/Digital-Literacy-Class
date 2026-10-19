@@ -163,6 +163,7 @@ When something is wrong or missing, ask the AI to fix **one thing at a time**, f
 
 
 #### 2. ❤️ Only one member submit this form [click here](https://forms.gle/pSX6kcUt1iiisCsT8) to report the group activity today.
+Note: 혹시 구글폼으로 제출하는 것에 문제가 생기는 경우에만 직접 조장이 이메일로 보내도 됨. (mirankim@gnu.ac.kr)
 
 Get the below files/contents ready: You'll be asked to upload files and type contents in the Google form.
 
