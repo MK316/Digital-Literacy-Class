@@ -124,7 +124,7 @@ Make a table of your 10 words. Include the information from the list plus anythi
 > Create a vocabulary learning web app as a **single `index.html` file** (HTML, CSS, and JavaScript all in one file, no external server or database).
 >
 > **Learners**: [who]  
-> **Learning goal**: [what learners should be able to do]
+> **Learning goal**: [what learners should be able to do]  
 > **Features**:
 > 1. [feature 1 and how it works]
 > 2. [feature 2 and how it works]
