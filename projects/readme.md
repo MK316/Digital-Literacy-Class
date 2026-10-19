@@ -31,7 +31,7 @@ Use Markdown formatting (for example, # for headings and - for lists) when you e
 # Group work starts from here:
 
 ## 1. Read & Share as a Group (Less than 20 mins)
-The links below provide the summary of two papers. Share the idea of each paper in groups. (The main point, what teachers learn from this article paper, etc.)
+The links below provide the summary of two research papers. Share the idea of each paper in groups. (The main point, what teachers learn from this article paper, etc.)
 
 + [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
