@@ -11,7 +11,7 @@ Read carefully together to complete the group activity.
 
 ## To do #1: Group leader only (Use the main monitor in the room in order to share the screen of the leader's work)
 1. Create a repository named 'G1_miniproject'.
-2. Create a README.md file on **the leader's github repository (G1_miniproject)**.내용은 다른 조원이 하게 됨.
+2. Create a README.md file on **the leader's github repository (G1_miniproject)**.내용은 collaborators를 추가한 후 다른 조원이 이 파일에 보고서처럼 내용을 작성하는 방식임.
 3. Share the repository with your members:
   + 만든 리포지토리 페이지에서 상단 Settings 탭으로 들어갑니다.
   + 왼쪽 메뉴의 Access 아래에서 Collaborators를 클릭합니다. 
