@@ -73,7 +73,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 | High school (고등학교) | 1–3 | Grades 10–12 | 15–18 |
 
 
-💙 APP design draft: 어떤 디자인을 조에서 원하는지 특징을 한글/영어로 작성할 것.아래 항목을 디자인 아래에 위치시키고 각각에 대해 논의한 바를 기록해 둘 것.
+💙 APP design draft: 어떤 디자인을 조에서 원하는지 특징을 한글/영어(편한대로)로 작성할 것.아래 항목을 디자인 아래에 위치시키고 각각에 대해 논의한 바를 기록해 둘 것.
 
 + **Learners**: Who will use the app? (e.g., K6, K9, K12, adult beginners, etc.)
 
