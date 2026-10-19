@@ -27,7 +27,7 @@ The links provide the summary of a paper. Share the idea of each paper in groups
 + You don't need to work with this list yet. Just check out and get familiarize yourself with the list.
 + **Choose 10~20 words** from the list to use for your mini-app that can help learners study and practice the words. (Think: Which words would you choose, why those words?)
 
-## 3. Design your vocabulary application (with the 10 chosen words as sample) (120 mins)
+## 3. Design your vocabulary application Step by Step (with the selected words as sample, learning vocabulary in your application) (120 mins)
 
 > Goal: Build a **first draft** of a vocabulary web app (`index.html`) using generative AI, with your 10 words as sample data.
 > You will connect the data to the full 3,000-word list later. For now, focus on **what learners do** and **why it helps them learn**.
