@@ -54,7 +54,7 @@ The links below provide the summary of two research papers. Share the idea of ea
 
 ## 3. Design your vocabulary application Step by Step (with the selected words as sample, learning vocabulary in your application) (120 mins)
 
-> Goal: Build a **first draft** of a vocabulary web app (`index.html`) using generative AI, with your 10 words as sample data.
+> Goal: Build a **first draft** of a vocabulary web app (`index.html`) using generative AI, with your 10 words (minimum) as sample data.
 > You will connect the data to the full 3,000-word list later. For now, focus on **what learners do** and **why it helps them learn**.
 
 ---
