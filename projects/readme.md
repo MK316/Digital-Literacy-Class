@@ -9,8 +9,14 @@
 
 ## To do #1: Group leader only
 1. Create a repository named 'G1_miniproject'.
-2. Create a README.md file on **the leader's github repository (G1_miniproject)**.
-3. Share the repository with your members: add collaborators for the repository. (collaborator 추가 방법을 모를 때는 AI에게 물어볼 것)
+2. Create a README.md file on **the leader's github repository (G1_miniproject)**.내용은 다른 조원이 하게 됨.
+3. Share the repository with your members:
+  + 만든 리포지토리 페이지에서 상단 Settings 탭으로 들어갑니다.
+  + 왼쪽 메뉴의 Access 아래에서 Collaborators를 클릭합니다. 
+  + Add people 버튼을 클릭합니다.
+  + 상대방의 GitHub 사용자명을 검색해서 선택한 뒤 Add … to this repository를 누릅니다.
+  + 상대방이 이메일이나 GitHub 알림에서 초대를 수락하면 추가가 끝납니다. (즉석에서 멤버들이 수락하도록 할 것.)
+  + 수락을 하고 나면 그룹 리더가 만든 repository내 파일들을 조원 모두 편집, 새 파일 작성 등이 가능해집니다. 여기에 조별 앱 관리를 앞으로 하게 됩니다.
 
 ## To do #2: The Group members
 1. Accept the invitation from your team leader.
