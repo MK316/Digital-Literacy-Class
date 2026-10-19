@@ -123,38 +123,11 @@
 
 ---
 
-## 💙 6. Our Prompt
 
-### 6-1. Start Prompt
 
-```text
-Create a vocabulary learning web app as a single index.html file
-(HTML, CSS, and JavaScript all in one file, no external server or database).
+## 💙 6. Test and Improve
 
-Learners: [who]
-Learning goal: [what learners should be able to do]
-Features:
-1. [feature 1 and how it works]
-2. [feature 2 and how it works]
-3. [feature 3 and how it works]
-
-Word data: Use the target words below. Store them in a JavaScript array at the
-top of the code so we can easily replace it with more words later.
-[paste your table from Section 5]
-
-Design: [e.g., simple and colorful, large buttons, mobile-friendly, Korean instructions]
-```
-
-### 6-2. Follow-up Prompts (Fixes)
-
-1. [예: "The quiz shows the same word twice in a row. Please shuffle the questions so each word appears once per round. Give me the full updated index.html."]
-2. [ ... ]
-
----
-
-## 💙 7. Test and Improve
-
-### 7-1. Checklist
+### 6-1. Checklist
 
 - [ ] All features work (every button was clicked).
 - [ ] All words, meanings, and sentences are correct.
@@ -162,14 +135,14 @@ Design: [e.g., simple and colorful, large buttons, mobile-friendly, Korean instr
 - [ ] Learners **retrieve** words and meet each word **more than once**.
 - [ ] The app is easy to use on a phone.
 
-### 7-2. Problems Found and How We Fixed Them
+### 6-2. Problems Found and How We Fixed Them
 
 | Problem | Fix |
 |---|---|
 | [예: 정답을 맞혀도 점수가 올라가지 않음] | [예: AI에게 점수 계산 부분만 고쳐 달라고 요청] |
 | [ ... ] | [ ... ] |
 
-### 7-3. Saved Versions
+### 6-3. Saved Versions
 
 - `index_v1.html`: [what this version has]
 - `index_v2.html`: [what changed]
@@ -177,6 +150,6 @@ Design: [e.g., simple and colorful, large buttons, mobile-friendly, Korean instr
 
 ---
 
-## 8. Next Steps
+## 7. Next Steps
 
 - [One thing we want to add or change in the next version]
