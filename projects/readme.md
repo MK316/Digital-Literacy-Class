@@ -147,8 +147,9 @@ When something is wrong or missing, ask the AI to fix **one thing at a time**, f
 1. All members complete the following Google form (5 mins): [link to open](https://docs.google.com/forms/d/e/1FAIpQLSeGAGjp7EYsua7SyBDT8Oa3R4wIZ0wPyHrAn01ympMBpN1hbA/viewform): 폼 안에 '과목'은 '영어교육' 선택할 것.
 
 
-3. Get the below files/contents ready:.
-Only one member submit this form❤️[here](https://forms.gle/pSX6kcUt1iiisCsT8). You'll be asked to upload files and type contents in the Google form.
+2. Only one member submit this form❤️[here](https://forms.gle/pSX6kcUt1iiisCsT8).
+
+Get the below files/contents ready: You'll be asked to upload files and type contents in the Google form.
 
 A. Group name and members  
 B. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)  
