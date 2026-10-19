@@ -102,7 +102,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 + For each feature, write one sentence: **"This feature helps learners ___ because ___."**
 + ✅ Write your feature list on your README.md before moving on.
 
-### 💦 Step 3. Prepare your 10 (or 20)-word sample data (15 mins)
+### 💦 Step 3. Prepare your 10 (to 20 words)-word sample data (15 mins)
 
 Make a table of your 10 words. Include the information from the list plus anything your features need.
 (markdown으로 README.md 파일에 어떻게 테이블 만드는지 AI에게 물어보아도 됨.)
