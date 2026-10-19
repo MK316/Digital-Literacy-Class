@@ -17,14 +17,6 @@
 | Date & Time | 10/22, [start time] – [end time] |
 | Location | [e.g., 1층 미래교육센터 / Room 334] |
 
-### Meeting Log
-
-| Time | What we did |
-|---|---|
-| [13:00] | [e.g., Read the two article summaries and shared main ideas] |
-| [13:20] | [e.g., Checked the basic vocabulary list and chose our words] |
-| [13:30] | [e.g., Discussed learners, goal, and app features] |
-| [ ... ] | [ ... ] |
 
 > Take photos at the **start, middle, and end** of the meeting (with a clock visible). You will upload them in the Google Form.
 
