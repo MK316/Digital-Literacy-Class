@@ -7,15 +7,17 @@
 
 # To do
 
-## 1. Read & Share as a Group (20 mins)
+## 1. Read & Share as a Group (Less than 20 mins)
+The links provide the summary of a paper. Share the idea of each paper in groups. (The main point, what teachers learn from this article paper, etc.)
 
 + [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md)
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
 
 ## 2. 2022년 교육과정 기본어휘 (10 mins)
-+ Check the word list: what it is, how it is organized, how levels are marked, what kind of information is included in the list.
+
++ Check the word list ([교육과정기초어휘 목록 pdf](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Basicvoca.pdf)): what it is, how it is organized, how levels are marked, what kind of information is included in the list.
 + You don't need to work with this list yet. Just check out and get familiarize yourself with the list.
-+ Choose 10 words to use for your mini-app that can help learners study and practice the words.
++ Choose 10 words from the list to use for your mini-app that can help learners study and practice the words.
 
 ## 3. Design your vocabulary application (with the 10 chosen words as sample) (120 mins)
 
