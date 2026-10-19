@@ -7,7 +7,7 @@ Read carefully together to complete the group activity.
 
 ❤️ Note: At the end of this activity, you'll be asked to report your meeting log with photos at the start, middle, and the end of your meeting, specifying locations, participants, result files, and your activity details (README.md file 생성).
 
-# Before you get started: 
+# 📕 Before you get started: 
 
 ## To do #1: Group leader only (Use the main monitor in the room in order to share the screen of the leader's work)
 1. Github log in > Create a repository named 'G1_miniproject'. (G2_.., G3_..)
@@ -34,7 +34,7 @@ While that member edits README.md (on the leader's repository, not on your own),
 3. Fill in README.md with the content required below step by step.
 4. Use this [sample README.md file](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/sample_readme.md): Use Markdown formatting (for example, # for headings and - for lists). Think of this as a report writing for today.
 ---
-# Group work starts from here:
+# 📕 Group work starts from here:
 
 ## 1. Read & Share as a Group (Less than 20 mins)
 The links below provide the summary of two research papers. Share the idea of each paper in groups. (The main point, what teachers learn from this article paper, etc.)
