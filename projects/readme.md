@@ -150,10 +150,10 @@ When something is wrong or missing, ask the AI to fix **one thing at a time**, f
 3. Get the below files/contents ready:.
 Only one member submit this form❤️[here](https://forms.gle/pSX6kcUt1iiisCsT8). You'll be asked to upload files and type contents in the Google form.
 
-A. Group name and members
-B. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)
-C. The start and final prompt you used in AI platform
-D. One thing you would want to add or change in the next version
-E. Final html file: `G1_project_draft.html` (your latest version, replace the group number)
+A. Group name and members  
+B. 1–2 screenshots of your meeting (show Clock in the photo; start, mid, end)  
+C. The start and final prompt you used in AI platform  
+D. One thing you would want to add or change in the next version. 
+E. Final html file: `G1_project_draft.html` (your latest version, replace the group number). 
 
 ❤️ Good work! If you have questions regarding this activity, group leaders can chat with me on Kakaotalk.
