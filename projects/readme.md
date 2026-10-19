@@ -14,10 +14,18 @@ The links provide the summary of a paper. Share the idea of each paper in groups
 + [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md)
 
 ## 2. 2022년 교육과정 기본어휘 (10 mins)
+### 교육과정 영어 기초어휘목록(기본 어휘 목록)이란?
+
++ 교육과정 영어 기초어휘목록(기본 어휘 목록)은 국가 영어과 교육과정의 부록(2022 개정 교육과정 [별표 3])으로 제시되는 어휘 목록으로, 성취기준을 달성하는 데 필요한 가장 기본적인 3,000개의 단어로 구성되어 있음. 목록에서 *표가 붙은 800개는 초등학교에서, **표가 붙은 1,200개는 중학교와 고등학교 공통과목에서 사용하도록 권장되며, 나머지 단어는 고등학교 선택과목에서 활용.
++ 각 단어는 대표형으로 제시되는데, 대표형에는 굴절형(복수형, 과거형 등)과 지정된 36개 파생 접사로 만든 변이형이 포함됨.
++ 교육과정은 이 목록을 바탕으로 학년군과 과목별로 새로 학습할 수 있는 어휘 수의 상한을 정하고 있어서(예: 중학교 1,500단어 이내, 고등학교 공통영어 1,800단어 이내), 교과서 집필과 평가 문항 출제에서 어휘 수준을 조절하는 공식 기준 역할을 함.
++  최근 한국교육과정평가원 연구에서는 목록의 규모가 충분하지 않다는 의견과 함께, AI·디지털 미디어 같은 사회 변화를 반영해 목록을 다시 구성할 필요성이 제기되기도 했음.
+
+### To do
 
 + Check the word list ([교육과정기초어휘 목록 pdf](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Basicvoca.pdf)): what it is, how it is organized, how levels are marked, what kind of information is included in the list.
 + You don't need to work with this list yet. Just check out and get familiarize yourself with the list.
-+ Choose 10 words from the list to use for your mini-app that can help learners study and practice the words.
++ **Choose 10~20 words** from the list to use for your mini-app that can help learners study and practice the words. (Think: Which words would you choose, why those words?)
 
 ## 3. Design your vocabulary application (with the 10 chosen words as sample) (120 mins)
 
