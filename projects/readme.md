@@ -149,7 +149,7 @@ Make a table of your 10 words. Include the information from the list plus anythi
 + [ ] Is it easy to use on a phone?
 
 When something is wrong or missing, ask the AI to fix **one thing at a time**, for example:
-> "The quiz shows the same word twice in a row. Please shuffle the questions so each word appears once per round. Give me the full updated index.html."
+> "The quiz shows the same word twice in a row. Shuffle the questions so each word appears once per round. Give me the full updated index.html."
 
 💙 Save each working version (e.g., `index_v1.html`, `index_v2.html`) so you can go back if something breaks.
 
