@@ -50,11 +50,11 @@ The links provide the summary of a paper. Share the idea of each paper in groups
 > Goal: Build a **first draft** of a vocabulary web app (`index.html`) using generative AI, with your 10 words as sample data.
 > You will connect the data to the full 3,000-word list later. For now, focus on **what learners do** and **why it helps them learn**.
 
+---
 ### 💦 Step 1. Discuss: Who, what, and how? (20 mins)
 
 Answer these questions as a group. Write your answers down; you will use them in Step 4.
 
----
 #### 참고: Korean school levels and U.S. grade equivalents (K–12)
 
 Korean grade levels correspond directly to U.S. grade numbers. School divisions differ, however: in the U.S., middle school usually covers Grades 6–8 and high school Grades 9–12, so Korean middle school 3rd year (Grade 9) is the first year of U.S. high school (freshman).
@@ -64,7 +64,7 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
 | Elementary school (초등학교) | 1–6 | Grades 1–6 | 6–12 |
 | Middle school (중학교) | 1–3 | Grades 7–9 | 12–15 |
 | High school (고등학교) | 1–3 | Grades 10–12 | 15–18 |
----
+
 
 💙 APP design draft: 어떤 디자인을 조에서 원하는지 특징을 한글/영어로 작성할 것.아래 항목을 디자인 아래에 위치시키고 각각에 대해 논의한 바를 기록해 둘 것.
 
@@ -77,6 +77,8 @@ Korean grade levels correspond directly to U.S. grade numbers. School divisions 
   + Will learners **retrieve** the word (recall it from memory), not just see it again? When and how often? (Nakata et al. 2021)
 + **Use of the list information**: How will your app use the Level(*, **), Word-family (species~specify), and Variation (rumor / rumour) information?
 + Also, use the 7 elements of context we've learned (LPGCTXF) => Week 03 [ppt link](https://github.com/MK316/Digital-Literacy-Class/blob/main/materials/prompting-context-week3.pdf).
+
+---
 
 ### 💦 Step 2. Decide and share your features (20 mins)
 
@@ -106,6 +108,8 @@ Make a table of your 10 words. Include the information from the list plus anythi
 + Use **NA** for empty cells, as in the word list.
 + Write the meanings and example sentences **yourselves**, or check carefully if AI writes them. AI can make mistakes.
 
+---
+
 ### 💦 Step 4. Write your prompt and generate the app (30 mins)
 
 💙 Copy the template below, fill in the blanks with your answers from Steps 1–3, and give it to a generative AI tool (e.g., ChatGPT, Claude, Gemini).
@@ -127,6 +131,8 @@ Make a table of your 10 words. Include the information from the list plus anythi
 + Save the result as `index.html` and open it in a web browser (Chrome recommended).
 + Tip: Keep the word data in **one place** in the code. This will make it easy to connect the full 3,000-word list later.
 
+---
+
 ### 💦 Step 5. Test and improve (20 mins)
 
 💙 Take turns using the app **as a learner**. 💙 Check:
@@ -141,6 +147,8 @@ When something is wrong or missing, ask the AI to fix **one thing at a time**, f
 > "The quiz shows the same word twice in a row. Please shuffle the questions so each word appears once per round. Give me the full updated index.html."
 
 💙 Save each working version (e.g., `index_v1.html`, `index_v2.html`) so you can go back if something breaks.
+
+---
 
 ### 💦 Step 6. Upload your draft & photos in the Google form link (15 mins)
 
