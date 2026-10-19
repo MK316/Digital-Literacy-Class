@@ -12,11 +12,11 @@
 2. Create a README.md file on the leader's github
 3. Share the repository with your members: add collaborators for the repository. (collaborator 추가 방법을 모를 때는 AI에게 물어볼 것)
 
-## Group member
+## Group members
 1. Accept the invitation from your team leader.
 Check your email for the GitHub collaboration invitation and click Accept invitation. You can edit files in the leader’s repository only after you accept it.
 2. Choose one member to work on the README.md file.
-While that member edits README.md, the rest of the team continues with the discussion below. Make sure your group’s README.md includes an answer for every part marked with 💙 below.
+While that member edits README.md (on the leader's repository, not on your own), the rest of the team continues with the discussion below. Make sure your group’s README.md includes an answer for every part marked with 💙 below.
 
 3. Fill in README.md with the content listed below.
 Use Markdown formatting (for example, # for headings and - for lists) when you edit the file. Think of this as a report for today.
