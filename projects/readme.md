@@ -25,8 +25,8 @@ Check your email for the GitHub collaboration invitation and click Accept invita
 2. Choose one member to work on the README.md file.
 While that member edits README.md (on the leader's repository, not on your own), the rest of the team continues with the discussion below. Make sure your group’s README.md includes an answer for every part marked with 💙 below.
 
-3. Fill in README.md with the content required below step by step. [sample README.md file](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/sample_readme.md)
-Use Markdown formatting (for example, # for headings and - for lists) when you edit the file. Think of this as a report for today.
+3. Fill in README.md with the content required below step by step.
+4. Use this [sample README.md file](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/sample_readme.md): Use Markdown formatting (for example, # for headings and - for lists). Think of this as a report writing for today.
 ---
 # Group work starts from here:
 
