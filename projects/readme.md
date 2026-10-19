@@ -8,8 +8,8 @@
 # Before you get started: 
 
 ## Group leader only
-1. Create a repository named 'G1_miniproject'
-2. Create a README.md file on the leader's github
+1. Create a repository named 'G1_miniproject'.
+2. Create a README.md file on **the leader's github repository (G1_miniproject)**.
 3. Share the repository with your members: add collaborators for the repository. (collaborator 추가 방법을 모를 때는 AI에게 물어볼 것)
 
 ## Group members
