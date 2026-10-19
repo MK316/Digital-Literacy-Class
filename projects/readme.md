@@ -1,4 +1,4 @@
-# Mini-project guidelines 
+# Mini-project guidelines (10/22 Group activity)
 
 + This page is updated at 9PM, Oct. 19, 2026
 
