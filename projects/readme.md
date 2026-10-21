@@ -23,6 +23,8 @@ Read carefully together to complete this group activity.
   + 리더: 활동을 지휘함.
   + Markdown (2사람): 누가 오늘 README.md 파일을 관리할지 정하세요. (물론 여러 명이 관리할 수도 있습니다. 동시에 같은 파일을 작업하지만 않으면 됩니다.)
   + Coders (2사람): 생성형 인공지능을 활용하여 앱코드를 다루는 사람.
+  + APP 확인은 모두가 찬성하는 것을 원칙으로 합니다. (Github에서 조장이 만든 레파지토리에 조원을 공동작업자로 추가해 놓으면 파일을 공유할 수 있게 됩니다. html파일은 다운받아서 각자 실행해 보고 기능을 개선해 보세요.)
+    
 5. Emoji가 필요한 경우: 😊💜✌️[Emoji link](https://gist.github.com/rxaviers/7360908) (단, REAMDE.md 파일을 정리할 때 이모지 사용은 최소화하고 효과적인 경우라고 판단될 때만 사용할 것)
 
 ## To do #2: The Group members
