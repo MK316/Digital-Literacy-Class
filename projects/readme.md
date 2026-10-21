@@ -5,7 +5,7 @@ Read carefully together to complete this group activity.
 * Group meeting: 10/22 (3 hrs)
 * Location: 1층 미래교육센터 및 강의실 (e.g., 334)
 
-❤️ Note: At the end of this activity, you'll be asked to report your meeting log with photos at the start, middle, and the end of your meeting, specifying locations, participants, result files, and your activity details (README.md file 생성).
+❤️ Note: At the end of this activity, you'll be asked to report your meeting log with photos at the start, middle, and the end of your meeting, specifying locations, participants, result files, and your activity details. (README.md file과 구글폼으로 제출한 G1_index.html파일을 제가 확인하게 됩니다. 조장의 G1_miniproject 레파지토리에 최소 이 두 개 파일은 존재해야 합니다.).
 
 # 📕 Before you get started: 
 
