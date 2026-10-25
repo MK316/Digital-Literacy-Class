@@ -80,7 +80,7 @@ Use this structure:
 ## 1. Group Information
 - Group:
 - Members:
-- Leader's Github ID: (e.g., mk316)
+- Project link: (e.g., [https://github.com/mk316](https://github.com/mk316))
 
 ## 2. Target Learners
 Who is this app designed for?
