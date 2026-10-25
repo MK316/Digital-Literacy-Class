@@ -79,7 +79,7 @@ Use this structure:
 
 ## 1. Group Information
 - Group:
-- Members:
+- Members (역할): (e.g., Hong Gil-dong (readme2.md))
 - Project link: (e.g., [https://github.com/mk316](https://github.com/mk316))
 
 ## 2. Target Learners
