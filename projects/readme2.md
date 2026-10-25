@@ -89,7 +89,10 @@ Who is this app designed for? (한국 학습자 기준으로 정보를 바꿀 �
 What should learners practice or learn?
 
 ## 4. What We Updated
-Write what you changed from the first version.
+Write what you changed from the first version. Use lists.
++ 오류 수정
++ 데이터 확대
++ ...
 
 ## 5. Main Features
 List the main 3–4 features.
