@@ -1,4 +1,6 @@
-# 💦 Group Activity 2: Upgrade and Deploy Your Vocabulary App
+# 💦 Group Activity 2 (Due by 10PM, Nov. 11)
+
+Upgrade and Deploy Your Vocabulary App
 
 ## 📌 Goal
 
