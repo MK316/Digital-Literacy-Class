@@ -31,7 +31,7 @@ This time, you will:
 ```text
 1. Open your previous project
 2. Create README2.md
-3. Prepare the CSV file
+3. Prepare the CSV file (교육과정 기초어휘 3,000개: 링크는 아래에 있음.)
 4. Update the app
 5. Build app.py
 6. Deploy on Streamlit
