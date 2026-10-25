@@ -14,8 +14,8 @@
 | **W07** | (**10/22**) 👭 Group meeting | Introduction to Hugging Face, Streamlit <br> Practice activities | Read: [Webb 2007: Vocabulary learning](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Webb2007.md) <br> [Nakata et al. 2021](https://github.com/MK316/Digital-Literacy-Class/blob/main/pages/Nakata2021.md) | 👭 Group work (3 hrs): [Mini-project guidelines](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/readme.md) |
 | **W08** | **10/29** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app | | [Streamlit tutorial](https://github.com/MK316/streamlitsample/tree/main) |
 | **W09** | (**11/5**) No meeting | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application 🌀 Group Assignment | | 👭 Group work by 11/11 (2 hrs) [guidelines](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/readme2.md) |
-| **W10** | **11/12** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |  | |
-| **W11** | **11/19** |**Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project | Koç & Savaş (2025) <br> - G6| |
+| **W10** | **11/12** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Group exploration of digital tools |  | 📌 My own app I|
+| **W11** | **11/19** |**Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project | Koç & Savaş (2025) <br> - G6| 📌 My own app II|
 | **W12** | **11/26** | **Final Project: PBL II** <br> App designing and group work <br> App development <br> Using AI in language teaching | | |
 | **W13** | **12/3** | **Final Project: PBL III** <br> App designing reationale <br> Developing learner-centered educational tools | | Group work (3 hrs) |
 | **W14** | **12/10** | 🌈 **Final Project: Presentation** <br> Showcasing student projects <br> Testing and peer feedback <br> Revising the final project | | |
