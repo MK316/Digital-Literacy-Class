@@ -73,7 +73,7 @@ Full curriculum vocabulary CSV file
 ```
 💾 [Vocabulary file](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Basicvoca.pdf)
 
-Your app should now read vocabulary data from the CSV file rather than depend only on the original sample words.
+Your app should now read vocabulary data from the CSV file rather than depend only on the original sample words. 📌 [How to get csv file from xlsx 통합문서?](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/csvfiles.md)
 
 ### Check that your app can:
 
