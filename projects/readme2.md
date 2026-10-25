@@ -96,7 +96,7 @@ List the main 3–4 features.
 ## 6. Vocabulary Data
 Explain how the app uses the CSV file.
 
-## 7. What We Learned
+## 7. What We Learned Through This Group Activity
 Write 2–4 sentences.
 
 ## 8. Streamlit App
