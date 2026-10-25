@@ -71,6 +71,7 @@ Now, use the **full curriculum vocabulary dataset provided as a CSV file**.
 ```text
 Full curriculum vocabulary CSV file
 ```
+💾 [Vocabulary file](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Basicvoca.pdf)
 
 Your app should now read vocabulary data from the CSV file rather than depend only on the original sample words.
 
