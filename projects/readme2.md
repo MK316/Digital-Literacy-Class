@@ -80,6 +80,7 @@ Use this structure:
 ## 1. Group Information
 - Group:
 - Members:
+- Leader's Github ID: (e.g., mk316)
 
 ## 2. Target Learners
 Who is this app designed for?
@@ -134,20 +135,6 @@ Because your data may contain both English and Korean, save the file as:
 ```text
 CSV UTF-8
 ```
-
-In Python, you may read it like this:
-
-```python
-import pandas as pd
-
-df = pd.read_csv(
-    "vocabulary.csv",
-    encoding="utf-8-sig"
-)
-```
-
-전체 단어를 한 화면에 모두 보여줄 필요는 없습니다.
-
 Your app may:
 
 - randomly select words,
