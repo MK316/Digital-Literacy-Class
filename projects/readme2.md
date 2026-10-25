@@ -90,7 +90,7 @@ What should learners practice or learn?
 
 ## 4. What We Updated
 Write what you changed from the first version. Use lists.
-+ 오류 수정
++ 어떠어떠한 오류 수정
 + 데이터 확대
 + ...
 
