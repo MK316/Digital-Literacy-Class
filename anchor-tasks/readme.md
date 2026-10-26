@@ -7,6 +7,7 @@
 
 - [ ] 인터넷 연결이 잘 되는가?
 - [ ] Github에 로그인할 수 있는가?
+- [ ] Github에 'inclass_practice' repository를 만들 수 있는가?
 - [ ] 구글 계정에 로그인할 수 있는가?
 - [ ] 화면 캡처할 줄 아는가?
 - [ ] html 파일을 생성할 수 있는가? (Github > repository > Add File > Create New File > File name 'anchor2.html'
