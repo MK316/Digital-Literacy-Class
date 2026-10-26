@@ -9,7 +9,7 @@
 - [ ] Github에 로그인할 수 있는가?
 - [ ] 구글 계정에 로그인할 수 있는가?
 - [ ] 화면 캡처할 줄 아는가?
-- [ ] html 파일을 생성할 수 있는가? (Github > repository > Add File > New > File name 'anchor2.html'
+- [ ] html 파일을 생성할 수 있는가? (Github > repository > Add File > Create New File > File name 'anchor2.html'
 - [ ] html 파일을 수정하고 저장할 수 있는가? ('anchor2.html'선택 > ✏️ 선택 > 수정후 'Commit changes'
 - [ ] html 파일을 다운받아 브라우저로 열 줄 아는가? 
 - [ ] 생성형 인공지능 플랫폼에 접근 가능한가? (ChatGPT, Claude, Gemini, etc.)
