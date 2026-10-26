@@ -6,8 +6,16 @@
 # 시작 전 체크리스트
 
 - [ ] 인터넷 연결이 잘 되는가?
+- [ ] Github에 로그인할 수 있는가?
+- [ ] 구글 계정에 로그인할 수 있는가?
 - [ ] 화면 캡처할 줄 아는가?
-- [ ] index.html 파일을 생성할 수 있는가? (Github > repository > New
+- [ ] html 파일을 생성할 수 있는가? (Github > repository > Add File > New > File name 'anchor2.html'
+- [ ] html 파일을 수정하고 저장할 수 있는가?
+- [ ] html 파일을 다운받아 브라우저로 열 줄 아는가?
+- [ ] 생성형 인공지능 플랫폼에 접근 가능한가? (ChatGPT, Claude, Gemini, etc.)
+- [ ] 현재 페이지를 본인 기기에서 열 수 있는가?
+
+모두 체크 가능하면 다음으로 넘어갑시다.
 
 # Step 1: 시작전 GenAI prompt setting:
 
