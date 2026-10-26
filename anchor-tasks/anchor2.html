@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Timer</title>
+<style>
+  :root {
+    --bg: #f6f4ef;
+    --paper: #ffffff;
+    --ink: #1b1b1b;
+    --muted: #5d5a54;
+    --line: #d9d4ca;
+    --accent: #1f4e8c;
+    --accent-ink: #ffffff;
+    --soft: #eef2f8;
+    --warn: #b3261e;
+    --track: #e4e0d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151515; --paper: #1f1f1f; --ink: #ececec; --muted: #a7a39b; --line: #3a3a3a;
+      --accent: #7fa8e6; --accent-ink: #0e1a2b; --soft: #22293a; --warn: #f2928b; --track: #2e2e2e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151515; --paper: #1f1f1f; --ink: #ececec; --muted: #a7a39b; --line: #3a3a3a;
+    --accent: #7fa8e6; --accent-ink: #0e1a2b; --soft: #22293a; --warn: #f2928b; --track: #2e2e2e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); color: var(--ink); padding: 24px 16px;
+    font-family: "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .card {
+    width: 100%; max-width: 420px; background: var(--paper); border: 1px solid var(--line);
+    border-radius: 16px; padding: 28px 24px; text-align: center;
+  }
+  h1 { font-size: 1.1rem; font-weight: 600; margin: 0 0 18px; color: var(--muted); letter-spacing: 0.02em; }
+
+  .ring { position: relative; width: 240px; height: 240px; margin: 0 auto 20px; max-width: 100%; }
+  .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring circle { fill: none; stroke-width: 10; }
+  .ring .track { stroke: var(--track); }
+  .ring .bar { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset 0.25s linear; }
+  .ring.done .bar { stroke: var(--warn); }
+  .time {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 3.2rem; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.01em;
+  }
+  .ring.done .time { color: var(--warn); }
+
+  .inputs { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 14px; }
+  .inputs label { display: flex; flex-direction: column; font-size: 0.78rem; color: var(--muted); gap: 4px; }
+  .inputs input {
+    width: 72px; font: inherit; font-size: 1.3rem; text-align: center; color: var(--ink);
+    background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 6px 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .inputs .colon { font-size: 1.4rem; padding-top: 18px; color: var(--muted); }
+
+  .presets { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-bottom: 20px; }
+  .chip {
+    font: inherit; font-size: 0.88rem; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    border-radius: 999px; padding: 6px 12px; cursor: pointer;
+  }
+  .chip:hover { border-color: var(--accent); }
+
+  .controls { display: flex; justify-content: center; gap: 10px; }
+  .btn {
+    font: inherit; font-weight: 600; font-size: 1rem; border-radius: 10px; padding: 12px 22px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--paper); color: var(--accent); min-width: 110px;
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn:disabled { opacity: 0.45; cursor: default; }
+  input:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .hint { margin: 16px 0 0; font-size: 0.8rem; color: var(--muted); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>Timer</h1>
+
+  <div class="ring" id="ring">
+    <svg viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="track" cx="60" cy="60" r="52"></circle>
+      <circle class="bar" id="bar" cx="60" cy="60" r="52"></circle>
+    </svg>
+    <div class="time" id="time" role="timer" aria-live="off">05:00</div>
+  </div>
+
+  <div class="inputs" id="inputs">
+    <label>min <input type="number" id="min" min="0" max="999" value="5" inputmode="numeric"></label>
+    <span class="colon">:</span>
+    <label>sec <input type="number" id="sec" min="0" max="59" value="0" inputmode="numeric"></label>
+  </div>
+
+  <div class="presets" id="presets">
+    <button type="button" class="chip" data-sec="60">1 min</button>
+    <button type="button" class="chip" data-sec="180">3 min</button>
+    <button type="button" class="chip" data-sec="300">5 min</button>
+    <button type="button" class="chip" data-sec="600">10 min</button>
+    <button type="button" class="chip" data-sec="1500">25 min</button>
+  </div>
+
+  <div class="controls">
+    <button type="button" class="btn primary" id="start">Start</button>
+    <button type="button" class="btn" id="reset">Reset</button>
+  </div>
+
+  <p class="hint">Space: start / pause · R: reset</p>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const timeEl = $("time"), bar = $("bar"), ring = $("ring");
+const minIn = $("min"), secIn = $("sec"), startBtn = $("start"), resetBtn = $("reset");
+const inputs = $("inputs"), presets = $("presets");
+
+const R = 52, CIRC = 2 * Math.PI * R;
+bar.style.strokeDasharray = CIRC;
+
+let total = 300;        // seconds set
+let remaining = 300;    // seconds left (fractional)
+let endAt = null;       // timestamp when running
+let tick = null;
+let audioCtx = null;
+
+function fmt(s) {
+  s = Math.max(0, Math.ceil(s));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+  const mm = String(m).padStart(2, "0"), ss = String(sec).padStart(2, "0");
+  return h ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+function draw() {
+  timeEl.textContent = fmt(remaining);
+  const frac = total > 0 ? remaining / total : 0;
+  bar.style.strokeDashoffset = CIRC * (1 - frac);
+  document.title = endAt ? `${fmt(remaining)} · Timer` : "Simple Timer";
+}
+
+function readInputs() {
+  const m = Math.max(0, parseInt(minIn.value, 10) || 0);
+  const s = Math.min(59, Math.max(0, parseInt(secIn.value, 10) || 0));
+  minIn.value = m; secIn.value = s;
+  return m * 60 + s;
+}
+
+function setTime(sec) {
+  stop();
+  ring.classList.remove("done");
+  total = remaining = sec;
+  minIn.value = Math.floor(sec / 60);
+  secIn.value = sec % 60;
+  startBtn.textContent = "Start";
+  draw();
+}
+
+function start() {
+  if (remaining <= 0) {
+    const t = readInputs();
+    if (t <= 0) return;
+    total = remaining = t;
+  }
+  ring.classList.remove("done");
+  unlockAudio();
+  endAt = Date.now() + remaining * 1000;
+  tick = setInterval(update, 200);
+  startBtn.textContent = "Pause";
+  inputs.hidden = presets.hidden = true;
+  update();
+}
+
+function stop() {
+  if (tick) clearInterval(tick);
+  tick = null;
+  endAt = null;
+}
+
+function pause() {
+  if (!endAt) return;
+  remaining = Math.max(0, (endAt - Date.now()) / 1000);
+  stop();
+  startBtn.textContent = "Resume";
+  draw();
+}
+
+function update() {
+  remaining = Math.max(0, (endAt - Date.now()) / 1000);
+  draw();
+  if (remaining <= 0) finish();
+}
+
+function finish() {
+  stop();
+  remaining = 0;
+  ring.classList.add("done");
+  timeEl.textContent = "00:00";
+  document.title = "Time's up! · Timer";
+  startBtn.textContent = "Start";
+  inputs.hidden = presets.hidden = false;
+  beep();
+}
+
+function reset() {
+  stop();
+  ring.classList.remove("done");
+  total = remaining = readInputs();
+  startBtn.textContent = "Start";
+  inputs.hidden = presets.hidden = false;
+  draw();
+}
+
+function unlockAudio() {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === "suspended") audioCtx.resume();
+  } catch (e) { audioCtx = null; }
+}
+
+function beep() {
+  if (!audioCtx) return;
+  const t0 = audioCtx.currentTime;
+  [0, 0.35, 0.7].forEach(off => {
+    const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+    o.type = "sine"; o.frequency.value = 880;
+    g.gain.setValueAtTime(0.0001, t0 + off);
+    g.gain.exponentialRampToValueAtTime(0.3, t0 + off + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + off + 0.25);
+    o.connect(g).connect(audioCtx.destination);
+    o.start(t0 + off); o.stop(t0 + off + 0.3);
+  });
+}
+
+startBtn.addEventListener("click", () => (endAt ? pause() : start()));
+resetBtn.addEventListener("click", reset);
+presets.addEventListener("click", e => {
+  const b = e.target.closest("[data-sec]");
+  if (b) setTime(Number(b.dataset.sec));
+});
+[minIn, secIn].forEach(inp => inp.addEventListener("input", () => {
+  if (endAt) return;
+  ring.classList.remove("done");
+  total = remaining = readInputs();
+  startBtn.textContent = "Start";
+  draw();
+}));
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  if (e.code === "Space") { e.preventDefault(); endAt ? pause() : start(); }
+  else if (e.key === "r" || e.key === "R") reset();
+});
+
+draw();
+</script>
+</body>
+</html>
