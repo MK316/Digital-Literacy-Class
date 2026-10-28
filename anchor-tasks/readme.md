@@ -54,5 +54,12 @@ For the rest of this chat, do not use an interactive preview as the main output.
 1. 설문에서 시간을 Mid로 선택
 2. 자신의 Task 번호 확인(Task1, Task2, Task3)하기
 3. 설문 작성은 자신의 생각을 표현하여 기록할 것 (생성형 인공지능 사용 금지)
+4. 설문을 완성한 후:
 
+   Github에 'inclass' repository를 만들고, 새 파일 만들기 > index.html을 anchor2.html로 이름을 바꾼후 > 파일 올리기
+
+   또는
+
+   Github에 'inclass' repository를 만들고, 새 파일 만들기 > anchor2.html로 이름 설정 > index.html을 열고 코드 전체를 복사하여 anchor2.html에 붙여넣기
+   
 ## 🌱모두 완료한 사람은 Break time을 가진 후 정해진 시간까지 돌아올 것.
