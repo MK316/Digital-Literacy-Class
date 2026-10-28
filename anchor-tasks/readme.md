@@ -51,5 +51,6 @@ For the rest of this chat, do not use an interactive preview as the main output.
 [Google form link](https://forms.gle/FvUNyYn9tVRZpXak7)
 
 **📌Important: 설문에서 시간을 Mid로 선택**
+**자신의 Task 번호 확인(Task1, Task2, Task3)하기**
 
 ## 🌱모두 완료한 사람은 Break time을 가진 후 정해진 시간까지 돌아올 것.
