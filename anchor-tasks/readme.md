@@ -50,7 +50,9 @@ For the rest of this chat, do not use an interactive preview as the main output.
 
 [Google form link](https://forms.gle/FvUNyYn9tVRZpXak7)
 
-**📌Important: 설문에서 시간을 Mid로 선택**
-**자신의 Task 번호 확인(Task1, Task2, Task3)하기**
+**📌Important:**
+1. 설문에서 시간을 Mid로 선택
+2. 자신의 Task 번호 확인(Task1, Task2, Task3)하기
+3. 설문 작성은 자신의 생각을 표현하여 기록할 것 (생성형 인공지능 사용 금지)
 
 ## 🌱모두 완료한 사람은 Break time을 가진 후 정해진 시간까지 돌아올 것.
