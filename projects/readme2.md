@@ -122,7 +122,7 @@ Now, connect the app to the **full curriculum vocabulary dataset**.
 ### Resources
 
 💾 [Vocabulary file](https://github.com/MK316/Digital-Literacy-Class/blob/main/assets/English_Appendix03.pdf)
-
+💾 [Voca3000 Excel](https://docs.google.com/spreadsheets/d/1r4INiv-dZ3CoZM35tb7kOdOtmgg_N3YV/edit?usp=sharing&ouid=105815276171464608659&rtpof=true&sd=true)
 📌 [How to get a CSV file from an XLSX file 엑셀통합문서](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/csvfiles.md)
 
 ### Important
