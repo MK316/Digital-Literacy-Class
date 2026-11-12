@@ -24,7 +24,7 @@ This time, you will:
 
 - Meet with your group for **at least 2 hours**.
 - You may choose any meeting time before the deadline.
-- Final check time: **2:30 PM, November 19**
+- Final check time: **30 PM, November 19** (inclass demonstration)
 
 ### Today’s workflow
 
