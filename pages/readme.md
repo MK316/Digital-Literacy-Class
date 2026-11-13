@@ -15,8 +15,8 @@
 | **W08** | **10/29** | **Streamlit Basics I** <br> Introduction to Streamlit <br> Designing simple lesson materials <br> Building a basic web-based educational app | 🌀 [Anchor task 2](https://github.com/MK316/Digital-Literacy-Class/blob/main/anchor-tasks/readme.md)| 1. [Learn Supabase](https://github.com/MK316/W9-vocab-quiz/blob/main/README.md) |
 | **W09** | (**11/5**) No meeting | 📌 **Mini project / App Activity** <br> Collaborative problem solving <br> Creating and sharing a simple application 🌀 Group Assignment | | |
 | **W10** | **11/12** | **Data Handling & Digital Tools** <br> Dataframe basics <br> Handling CSV and text files <br> Deployment on [Github vs. Streamlit](https://github.com/MK316/streamlitsample/blob/main/assets/deploy_html_vs_streamlit.pdf) |2. [Streamlit tutorial](https://github.com/MK316/streamlitsample/tree/main) |👭 Group work [guidelines](https://github.com/MK316/Digital-Literacy-Class/blob/main/projects/readme2.md)   |
-| **W11** | **11/19** |**Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project | Koç & Savaş (2025) <br> - G6| 📌 My own app II|
-| **W12** | **11/26** | **Final Project: PBL II** <br> App designing and group work <br> App development <br> Using AI in language teaching | | |
+| **W11** | **11/19** |**Streamlit Basics II** <br> Multi-page apps <br> App structure and interface design <br> Planning the final project | | 📌 My own app II|
+| **W12** | **11/26** | **Final Project: PBL II** <br> App designing and group work <br> App development <br> Using AI in language teaching | Koç & Savaş (2025) <br> - G6| |
 | **W13** | **12/3** | **Final Project: PBL III** <br> App designing reationale <br> Developing learner-centered educational tools | | Group work (3 hrs) |
 | **W14** | **12/10** | 🌈 **Final Project: Presentation** <br> Showcasing student projects <br> Testing and peer feedback <br> Revising the final project | | |
 | **W15** | **12/17** | **Final Report** | Peer evaluation and feedback <br> Reflection and self-evaluation | |
