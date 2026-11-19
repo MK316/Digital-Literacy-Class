@@ -256,29 +256,8 @@ tab1, tab2 = st.tabs([
 # ==================================================
 with tab1:
 
-    st.markdown(
-        "### 👋 Welcome to the Project Gallery"
-    )
-
-    st.write("""
-    This gallery showcases applications developed
-    by students in *Digital Literacy and English
-    Education*.
-
-    The gallery includes vocabulary learning mini
-    projects from Fall 2026 and final group projects
-    from Spring 2025.
-
-    Students worked collaboratively to design,
-    develop, and deploy code-based applications
-    that could be used in English learning and
-    teaching practice.
-    """)
-
-    st.divider()
-
     # ----------------------------------------------
-    # Fall 2026 Mini Projects
+    # Fall 2026 Mini Projects (Vocabulary apps, versions as of Nov.19)
     # ----------------------------------------------
     st.markdown("## 🍂 Fall 2026")
 
