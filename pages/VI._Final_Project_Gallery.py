@@ -1,20 +1,5 @@
+
 import streamlit as st
-import requests
-import pandas as pd
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-import os
-import numpy as np
-
-
-# ==================================================
-# Page Configuration
-# ==================================================
-st.set_page_config(
-    page_title="Final Project Gallery | Fall 2026",
-    page_icon="📘",
-    layout="wide"
-)
 
 
 # ==================================================
@@ -92,3 +77,20 @@ SWOT_IMAGE_URLS = {
     "Group 2": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group2.png",
     "Group 3": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group3.png",
 }
+
+QUESTION_LABELS = {
+    "Q01": "1. Easy to navigate",
+    "Q02": "2. Useful for English learning",
+    "Q03": "3. Explained classroom use",
+    "Q04": "4. Creativity/originality",
+    "Q05": "5. Helpful for my teaching",
+    "Q06": "6. Adaptable for student levels",
+    "Q07": "7. Overall effectiveness"
+}
+
+
+# ==================================================
+# Helper Functions
+# ==================================================
+
+@st.cache_data(ttl=3600)
