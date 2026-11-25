@@ -12,7 +12,7 @@ import numpy as np
 # Page Configuration
 # ==================================================
 st.set_page_config(
-    page_title="Digital Literacy and English Education",
+    page_title="Final Project Gallery | Fall 2026",
     page_icon="📘",
     layout="wide"
 )
@@ -89,8 +89,7 @@ FEEDBACK_URL = (
 )
 
 SWOT_IMAGE_URLS = {
-    "Group 1": (
-        "https://github.com/MK316/"
-        "Digital-Literacy-Class/raw/main/images/Group1.png"
-    ),
-    "Group 2": (
+    "Group 1": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group1.png",
+    "Group 2": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group2.png",
+    "Group 3": "https://github.com/MK316/Digital-Literacy-Class/raw/main/images/Group3.png",
+}
