@@ -451,7 +451,7 @@ LESSON_URLS = {
 # ==================================================
 # Main Page
 # ==================================================
-st.title("📘 Digital Literacy and English Education")
+# st.title("📘 Digital Literacy and English Education")
 st.caption("Fall 2026 | Final Group Project")
 
 intro, guideline, samples = st.tabs([
