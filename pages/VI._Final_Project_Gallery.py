@@ -449,15 +449,21 @@ LESSON_URLS = {
 }
 
 # ==================================================
+# AI Movie Sample (YouTube)
+# ==================================================
+AI_MOVIE_URL = "https://youtu.be/29cv0iC8hqM"  # Paste your YouTube video URL here.
+
+# ==================================================
 # Main Page
 # ==================================================
-# st.title("📘 Digital Literacy and English Education")
+st.title("📘 Digital Literacy and English Education")
 st.caption("Fall 2026 | Final Group Project")
 
-intro, guideline, samples = st.tabs([
+intro, guideline, samples, ai_movie = st.tabs([
     "📘 Introduction",
     "📋 Guideline",
     "💡 Samples",
+    "🎬 AI Movie",
 ])
 
 with intro:
@@ -536,3 +542,16 @@ with samples:
         with st.expander("⛄ Peer Evaluation – Spring 2025"):
             if st.checkbox("Load peer evaluation results", key="load_peer_results"):
                 display_peer_evaluation()
+
+
+# ==================================================
+# AI Movie
+# ==================================================
+with ai_movie:
+    st.markdown("## 🎬 AI Movie Sample")
+    st.write("This sample short film demonstrates how generative AI can be used to create video content for English language learning and teaching.")
+
+    if AI_MOVIE_URL.strip():
+        st.video(AI_MOVIE_URL)
+    else:
+        st.info("The sample video will be available soon.")
