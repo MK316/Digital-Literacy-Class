@@ -1,192 +1,96 @@
 
-def display_peer_evaluation():
-    st.markdown("### ⛄ Peer Evaluation")
+import streamlit as st
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+import os
+import numpy as np
 
-    st.write("""
-    Peer review summaries of each group's
-    application and its classroom use are
-    presented below.
-    """)
 
-    # ----------------------------------------------
-    # Load Feedback
-    # ----------------------------------------------
-    try:
-        df = load_feedback_data()
+# ==================================================
+# Page Configuration
+# ==================================================
+st.set_page_config(
+    page_title="Digital Literacy and English Education",
+    page_icon="📘",
+    layout="wide"
+)
 
-    except Exception as e:
-        st.error(
-            f"Unable to load peer evaluation data: {e}"
+
+# ==================================================
+# Mini Projects: Fall 2026 (Groups 1–6)
+# ==================================================
+MINI_PROJECT_APPS = {
+    "Group 1": "https://g1wordgame.streamlit.app/",
+    "Group 2": "https://g2miniproject.streamlit.app/",
+    "Group 3": "https://baewovocayoyo.streamlit.app/",
+    "Group 4": "https://g4-vocaquiz-mini.streamlit.app/",
+    "Group 5": "https://g5-vocaquiz-sushivoca3000.streamlit.app/",
+    "Group 6": "https://vocab-life.streamlit.app/",
+}
+
+
+# ==================================================
+# Final Projects: Spring 2025 (Groups 1–3)
+# ==================================================
+FINAL_PROJECTS = {
+    "Group 1": {
+        "app": "https://s25g01.streamlit.app/",
+        "qr": (
+            "https://github.com/MK316/"
+            "Digital-Literacy-Class/raw/main/images/DLG1.png"
+        ),
+        "github": (
+            "https://github.com/KY7437/"
+            "G01Final/blob/main/README.md"
         )
-        return
-
-    if "Group" not in df.columns:
-        st.error(
-            "The feedback dataset does not contain "
-            "a 'Group' column."
+    },
+    "Group 2": {
+        "app": "https://g02final.streamlit.app/",
+        "qr": (
+            "https://github.com/MK316/"
+            "Digital-Literacy-Class/raw/main/images/DLG2.png"
+        ),
+        "github": (
+            "https://github.com/yunju05/"
+            "G02Final/blob/main/README.md"
         )
-        return
-
-    group_list = df["Group"].dropna().unique()
-
-    if len(group_list) == 0:
-        st.warning(
-            "No group feedback is available."
+    },
+    "Group 3": {
+        "app": "https://g03final.streamlit.app/",
+        "qr": (
+            "https://github.com/MK316/"
+            "Digital-Literacy-Class/raw/main/images/DLG3.png"
+        ),
+        "github": (
+            "https://github.com/JW-1211/"
+            "G03Final/blob/main/README.md"
         )
-        return
+    }
+}
 
-    selected_group = st.selectbox(
-        "🔍 Select a group to view feedback:",
-        group_list
-    )
 
-    group_df = df[
-        df["Group"] == selected_group
-    ]
+# ==================================================
+# Resources
+# ==================================================
+FONT_URL = (
+    "https://raw.githubusercontent.com/MK316/"
+    "Digital-Literacy-Class/main/data/"
+    "NanumGothic-Regular.ttf"
+)
 
-    st.markdown(
-        f"## 🧾 Feedback Summary for {selected_group}"
-    )
+FONT_PATH = "/tmp/NanumGothic.ttf"
 
-    # ----------------------------------------------
-    # SWOT Image
-    # ----------------------------------------------
-    if selected_group in SWOT_IMAGE_URLS:
+FEEDBACK_URL = (
+    "https://raw.githubusercontent.com/MK316/"
+    "Digital-Literacy-Class/refs/heads/main/"
+    "data/DL-feedback.csv"
+)
 
-        st.image(
-            SWOT_IMAGE_URLS[selected_group],
-            caption=f"SWOT Analysis: {selected_group}",
-            use_container_width=True
-        )
-
-    # ----------------------------------------------
-    # Quantitative Ratings
-    # ----------------------------------------------
-    st.markdown(
-        "### 📊 Quantitative Ratings (1–10 Scale)"
-    )
-
-    rating_columns = [
-        f"Q{i:02d}"
-        for i in range(1, 8)
-    ]
-
-    missing_columns = [
-        col for col in rating_columns
-        if col not in df.columns
-    ]
-
-    if missing_columns:
-
-        st.warning(
-            "Missing rating columns: "
-            + ", ".join(missing_columns)
-        )
-
-    else:
-
-        # Convert ratings to numeric
-        for col in rating_columns:
-
-            df[col] = pd.to_numeric(
-                df[col],
-                errors="coerce"
-            )
-
-        group_df = df[
-            df["Group"] == selected_group
-        ]
-
-        group_means = group_df[
-            rating_columns
-        ].mean()
-
-        overall_means = df[
-            rating_columns
-        ].mean()
-
-        labels = [
-            QUESTION_LABELS[q]
-            for q in rating_columns
-        ]
-
-        x = np.arange(len(labels))
-        width = 0.35
-
-        fig, ax = plt.subplots(
-            figsize=(9, 4.5)
-        )
-
-        bars1 = ax.bar(
-            x - width / 2,
-            group_means.values,
-            width,
-            label=selected_group,
-            color="skyblue"
-        )
-
-        bars2 = ax.bar(
-            x + width / 2,
-            overall_means.values,
-            width,
-            label="All Groups (Average)",
-            color="yellow"
-        )
-
-        # Group value labels
-        for bar in bars1:
-
-            height = bar.get_height()
-
-            if np.isfinite(height):
-
-                ax.text(
-                    bar.get_x()
-                    + bar.get_width() / 2,
-                    height + 0.1,
-                    f"{height:.1f}",
-                    ha="center",
-                    va="bottom",
-                    fontsize=8
-                )
-
-        # Overall value labels
-        for bar in bars2:
-
-            height = bar.get_height()
-
-            if np.isfinite(height):
-
-                ax.text(
-                    bar.get_x()
-                    + bar.get_width() / 2,
-                    height + 0.1,
-                    f"{height:.1f}",
-                    ha="center",
-                    va="bottom",
-                    fontsize=8,
-                    color="gray"
-                )
-
-        ax.set_ylabel("Average Rating")
-
-        ax.set_title(
-            "Average Ratings: Group vs Overall"
-        )
-
-        ax.set_xticks(x)
-
-        ax.set_xticklabels(
-            labels,
-            rotation=45,
-            ha="right"
-        )
-
-        ax.set_ylim(0, 10.5)
-
-        ax.legend()
-
-        fig.tight_layout()
-
-        st.pyplot(fig)
-        plt.close(fig)
+SWOT_IMAGE_URLS = {
+    "Group 1": (
+        "https://github.com/MK316/"
+        "Digital-Literacy-Class/raw/main/images/Group1.png"
+    ),
+    "Group 2": (
