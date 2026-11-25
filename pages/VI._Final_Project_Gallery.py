@@ -551,8 +551,8 @@ with ai_movie:
     st.markdown("## 🎬 AI Movie Sample")
     st.write("This sample short film demonstrates how generative AI can be used to create video content for English language learning and teaching.")
     st.markdown("[Manual online](https://mk316.github.io/Lessons/lessons/ai_movie/AI_Movie_Guide.html?v=8&utm_source=chatgpt.com)")
-    st.markdown("If the link fails to open: [manual html download](https://drive.google.com/file/d/1p9kAwAivRlO-GxXZqUN2K0f3GtBUymHt/view?usp=sharing)")
-    
+    st.markdown("If the link fails to open: [manual html download](https://drive.google.com/file/d/1vsA1OHzNys4l_AysYywN_4KuT2f5mVAS/view?usp=sharing)")
+    st.caption("The file to download is more user-friendly")
     if AI_MOVIE_URL.strip():
         st.video(AI_MOVIE_URL)
     else:
