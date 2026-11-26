@@ -94,7 +94,17 @@ Your video should:
 Think of this video as a guided tour for someone visiting 
 your website for the first time.
 
-### 7. Present your project
+### 7. 📚 Technical Resources (Optional but strongly recommended)
+
+The following materials may help you develop learning apps
+that require data storage and management.
+
+- 🗄️☁️[ SQLite & Supabase](https://docs.google.com/presentation/d/1B1AU4gTSchNW1tX1Ls9aNyp9Y-Ozt-ua/edit?usp=drive_link&ouid=105815276171464608659&rtpof=true&sd=true)
+
+These resources are optional. Use them only if your
+learning activities require a database.
+
+### 8. Present your project
 
 Each group will have 25 minutes in total.
 
