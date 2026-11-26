@@ -451,7 +451,7 @@ LESSON_URLS = {
 # ==================================================
 # AI Movie Sample (YouTube)
 # ==================================================
-AI_MOVIE_URL = "https://youtu.be/29cv0iC8hqM"  # Paste your YouTube video URL here.
+AI_MOVIE_URL = "https://youtu.be/f9mZyQEBnXc"  # Paste your YouTube video URL here.
 
 # ==================================================
 # Main Page
