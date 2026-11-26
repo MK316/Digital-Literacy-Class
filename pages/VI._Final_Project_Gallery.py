@@ -573,7 +573,7 @@ with ai_movie:
     st.markdown("1. [Manual online](https://mk316.github.io/Lessons/lessons/ai_movie/AI_Movie_Guide.html?v=8&utm_source=chatgpt.com)")
     st.markdown("2. If the link fails to open: [manual html download](https://drive.google.com/file/d/1vsA1OHzNys4l_AysYywN_4KuT2f5mVAS/view?usp=sharing)")
     st.caption("The file to download is more user-friendly.")
-    st.markdown("3. [PPT 버전](https://docs.google.com/presentation/d/1oc8fPub0U7cQ1Rt4Kg_E9j6QnO6DPDls/edit?usp=sharing&ouid=105815276171464608659&rtpof=true&sd=true): 수업시간에 실패했던 부분을 보완한 PPT 설명서입니다. 참고해서 개인적으로 다시 시도해 보세요. 제가 해 본 경험으로는 ")
+    st.markdown("3. [PPT 버전](https://docs.google.com/presentation/d/1961MJITpuuQWB1e46Zxfi4IrfJNUfg8b/edit?usp=sharing&ouid=105815276171464608659&rtpof=true&sd=true): 수업시간에 실패했던 부분을 보완한 PPT 설명서입니다. 참고해서 개인적으로 다시 시도해 보세요. 제가 해 본 경험으로는 ")
     st.caption("PPT 버전에 가장 상세하고 따라가기 좋은 것 같습니다.")
     if AI_MOVIE_URL.strip():
         st.video(AI_MOVIE_URL)
