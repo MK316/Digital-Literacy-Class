@@ -34,15 +34,23 @@ Your lesson plan should include:
 | Learning Focus 2 | Speaking |
 | Learning objectives | Understand key vocabulary and describe daily routines in English. |
 
-##### Time allocation
+##### Time Allocation (Suggested)
 
-| Stage | Time | Teacher Activities | Learner Activities | Digital Resources |
-|---|---:|---|---|---|
-| Warm-up | 5 min | Ask questions about daily routines. | Share ideas. | Images |
-| Presentation | 10 min | Introduce key expressions. | Watch and listen. | AI-generated video |
-| Practice | 10 min | Guide vocabulary practice. | Complete a vocabulary quiz. | Vocabulary app |
-| Production | 15 min | Guide speaking activities. | Describe daily routines. | Speaking app |
-| Wrap-up | 5 min | Review and check learning. | Complete a short task. | Online quiz |
+The following table provides a suggested presentation structure 
+and time allocation. You may make minor adjustments to the 
+time allocation while maintaining the overall structure and 
+the 15-minute presentation limit.
+
+| Presentation Content | Time |
+|---|---:|
+| Lesson overview and learning objectives | 2 min |
+| Overview of the website | 2 min |
+| Learning Focus 1: Activity demonstration | 4 min |
+| Learning Focus 2: Activity demonstration | 4 min |
+| Design rationale and reflection | 3 min |
+| **Group presentation** | **15 min** |
+| Q&A and discussion | 10 min |
+| **Total** | **25 min** |
 
 ### 4. Build a multipage Streamlit app
 
