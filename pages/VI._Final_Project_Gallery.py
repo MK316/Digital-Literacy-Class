@@ -569,9 +569,12 @@ with samples:
 with ai_movie:
     st.markdown("## 🎬 AI Movie Sample")
     st.write("This sample short film demonstrates how generative AI can be used to create video content for English language learning and teaching.")
-    st.markdown("[Manual online](https://mk316.github.io/Lessons/lessons/ai_movie/AI_Movie_Guide.html?v=8&utm_source=chatgpt.com)")
-    st.markdown("If the link fails to open: [manual html download](https://drive.google.com/file/d/1vsA1OHzNys4l_AysYywN_4KuT2f5mVAS/view?usp=sharing)")
-    st.caption("The file to download is more user-friendly")
+    st.markdown("#### 매뉴얼이 세 가지입니다. 첫 번째는 온라인 바로 열기, 두 번째는 다운받아서 볼 수 있는 html, 세 번째는 PPT로 만든 가이드라인입니다.")
+    st.markdown("1. [Manual online](https://mk316.github.io/Lessons/lessons/ai_movie/AI_Movie_Guide.html?v=8&utm_source=chatgpt.com)")
+    st.markdown("2. If the link fails to open: [manual html download](https://drive.google.com/file/d/1vsA1OHzNys4l_AysYywN_4KuT2f5mVAS/view?usp=sharing)")
+    st.caption("The file to download is more user-friendly.")
+    st.markdown("3. [PPT 버전](https://docs.google.com/presentation/d/1oc8fPub0U7cQ1Rt4Kg_E9j6QnO6DPDls/edit?usp=sharing&ouid=105815276171464608659&rtpof=true&sd=true)수업시간에 실패했던 부분을 보완한 PPT 설명서입니다. 참고해서 개인적으로 다시 시도해 보세요")
+    st.caption("PPT 버전에 가장 상세하고 따라가기 좋은 것 같습니다.")
     if AI_MOVIE_URL.strip():
         st.video(AI_MOVIE_URL)
     else:
