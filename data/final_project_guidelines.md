@@ -59,18 +59,30 @@ Check the following before deploying your app to Streamlit Cloud:
 - Learning activities
 - Classroom usability
 
-### 6. Create a video introduction
+### 6. Create a video tour
 
-Create a short video (3–5 minutes) introducing your lesson website.
+Create a short video (3–5 minutes) in English to guide 
+first-time visitors through your lesson website.
 
-Include:
+The purpose is to help visitors understand what the website 
+offers, how to navigate it, and how to use it for English 
+language teaching and learning.
 
-- Lesson topic and learning objectives
-- Overview of the website
-- Key learning activities
-- How teachers and learners can use the website in class
+Your video should:
 
-Add a clearly visible link to the video on your Streamlit app.
+- Introduce the lesson topic and learning objectives.
+- Guide visitors through the main pages of the website.
+- Demonstrate key learning activities and digital resources.
+- Explain how teachers and learners can use the website in class.
+
+**Requirements:**
+
+- Record your screen while navigating the website.
+- Provide spoken narration in English.
+- Add a clearly visible link to the video on your Streamlit app.
+
+Think of this video as a guided tour for someone visiting 
+your website for the first time.
 
 ### 7. Present your project
 
