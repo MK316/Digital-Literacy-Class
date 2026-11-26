@@ -34,6 +34,8 @@ Your lesson plan should include:
 | Learning Focus 2 | Speaking |
 | Learning objectives | Understand key vocabulary and describe daily routines in English. |
 
+##### Time allocation
+
 | Stage | Time | Teacher Activities | Learner Activities | Digital Resources |
 |---|---:|---|---|---|
 | Warm-up | 5 min | Ask questions about daily routines. | Share ideas. | Images |
